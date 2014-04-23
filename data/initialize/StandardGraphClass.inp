@@ -1,0 +1,49 @@
+ObjectClasses:
+%%% =====================================================
+%%%  Graph Classes
+%%% =====================================================
+%% -------------------------------------------------
+DataType: Graph My new Graph
+StandardGraph Node Edge
+%% -------------------------------------------------
+DataType: NodeEdgeOperation The Node and Edge Operation
+NodeEdgeLogicDescription DoOperation
+%% -------------------------------------------------
+DataType: GraphElementMatch The Node and Edge Matching Operation
+NodeEdgeMatch LogicalDescriptionCompare
+%% -------------------------------------------------
+DataType: GraphNodePair The continuous graph node pair
+ContinuousGraphNodePair Continuous
+%% -------------------------------------------------
+DataType: GraphNodePairs The continuous set of graph node pairs
+ContinuousGraphNodePairs ContinuousGraphNodePair
+%% -------------------------------------------------
+DataType: IntrinsicExpression  A Numeric Tree
+GraphExpression
+LDescription   NodeEdgeLogicDescription
+Match          NodeEdgeMatch
+Neighbors      GraphNeighbors
+NodeCounts     SimpleGraphCounts
+MatchProps     GraphNodePairsOperation
+END
+NodeEdgeOperation: LogicDescription NodeOperation
+GraphElementMatch: LogicDescription Matches 0.4 NodeMatch
+GraphNeighbors:    Matches: Matches Pairs: Pair
+SimpleGraphCounts: NodeOperation 
+NumberOf: NumberOfNodes    CountRoot: Counts    LogicDescription: LogicDescription
+GraphNodePairsOperation:   NumberOfMatches: NumberOfMatches    MatchValue: MatchValue
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+ParameterizedGraphExpression   ParameterSet GraphExpression Object
+END
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

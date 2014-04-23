@@ -1,0 +1,17 @@
+/*  FILE     ThermoTables.icc
+**  PACKAGE  ThermoTables
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "ThermoTables" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1997 Reaction Library
+*/
+ 
+#ifndef ReactionSRC_THERMOTABLES_ICC
+#define ReactionSRC_THERMOTABLES_ICC
+ 
+
+#endif

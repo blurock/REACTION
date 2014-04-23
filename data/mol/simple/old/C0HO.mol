@@ -1,0 +1,32 @@
+hydrogen-radical
+- AlternativeNames CHEMKIN H
+- AlternativeNames Short H
+- ObjectStringClasses Atom
+hydrogen
+- AlternativeNames CHEMKIN H2
+- AlternativeNames Short H2
+- ObjectStringClasses Diatomic
+oxygen-atom
+- AlternativeNames CHEMKIN O
+- AlternativeNames Short O
+- ObjectStringClasses Atom
+oxygen
+- AlternativeNames CHEMKIN O2
+- AlternativeNames Short O2
+- ObjectStringClasses Diatomic
+hydroxyl-radical
+- AlternativeNames CHEMKIN OH
+- AlternativeNames Short OH
+- ObjectStringClasses Diatomic
+peroxyl-radical
+- AlternativeNames CHEMKIN HO2
+- AlternativeNames Short HO2
+- ObjectStringClasses Triatomic
+water
+- AlternativeNames CHEMKIN H2O
+- AlternativeNames Short H2O
+- ObjectStringClasses Triatomic
+hydrogen-peroxide
+- AlternativeNames CHEMKIN H2O2
+- AlternativeNames Short H2O2
+- ObjectStringClasses Small-Molecule

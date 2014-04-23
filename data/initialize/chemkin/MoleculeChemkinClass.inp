@@ -1,0 +1,20 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList  KeyWords
+ToMove            KeySet
+END
+ObjectClasses:
+END
+ClassNamePairs:
+ChemkinName  String
+ShortName    String
+MoleculeKeys KeyWords
+Chemkin      StandardChemkin
+Linearity    Integer
+Eps          Real
+Sig          Real
+Dipole       Real
+Polarize     Real
+ZRotation    Real
+END

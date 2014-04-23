@@ -1,0 +1,71 @@
+B-C2H6+CH3=C2H5+CH4          ethane methyl-radical = ethyl-radical methane 
+ - StandardRateConstants   Forward        -0.26     4.00      34.67   cm3-mol-s-kJ logA
+B-C2H6+CH3O=C2H5+CH3OH       ethane methoxy-radical = ethyl-radical methanol 
+ - StandardRateConstants   Forward        11.48      0.00      29.3 1  cm3-mol-s-kJ logA
+B-C2H6+CH3O2=C2H5+CH3O2H     ethane methylperoxy = ethyl-radical methylperoxide
+ - StandardRateConstants   Forward        12.62      0.00      85.67   cm3-mol-s-kJ logA
+B-C2H5+CH3=C2H4+CH4          ethyl-radical methyl-radical = ethene methane 
+ - StandardRateConstants   Forward        11.90      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H5+CH3O=C2H4+CH3OH       ethyl-radical methoxy-radical = ethene methanol 
+ - StandardRateConstants   Forward        13.00      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H5+CH3O2=C2H5O+CH3O      ethyl-radical methylperoxy = ethoxy-radical methoxy-radical 
+ - StandardRateConstants   Forward        12.58      0.00      -5.02   cm3-mol-s-kJ logA
+B-C2H5+CH3=C3H8              ethyl-radical methyl-radical = propane
+ - StandardRateConstants   Forward        10.18      1.00      -1.34   cm3-mol-s-kJ logA
+B-C2H5O2+HCHO=C2H5O2H+HCO    ethylperoxy aldehyde = ethylperoxide formyl-radical 
+ - StandardRateConstants   Forward        11.11      0.00      37.68   cm3-mol-s-kJ logA
+B-C2H5O2+CH4=C2H5O2H+CH3     ethylperoxy methane = ethylperoxide methyl-radical
+ - StandardRateConstants   Forward        13.05      0.00      102.41  cm3-mol-s-kJ logA
+B-C2H5O+HCHO=C2H5OH+HCO      ethoxy-radical aldehyde = ethanol formyl-radical
+ - StandardRateConstants   Forward        11.06      0.00      5.36    cm3-mol-s-kJ logA
+B-C2H5O+CH4=C2H5OH+CH3       ethoxy-radical methane = ethanol methyl-radical 
+ - StandardRateConstants   Forward        11.30      0.00      29.31   cm3-mol-s-kJ logA
+B-C2H5O+CH3O=CH3CHO+CH30H    ethoxy-radical methoxy-radical = ethanal methanol 
+ - StandardRateConstants   Forward        13.50      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3O2+CH3CHO=CH3O2H+CH3CO  methylperoxy ethanal = methylperoxide ethanoyl-radical
+ - StandardRateConstants   Forward        9.55      0.00      21.14   cm3-mol-s-kJ logA
+B-CH3CHO+CH3=CH3CO+CH4       ethanal methyl-radical = ethanoyl-radical methane
+ - StandardRateConstants   Forward        12.24      0.00      35.34   cm3-mol-s-kJ logA
+B-CH3CHO+CH3O=CH3CO+CH3OH    ethanal methoxy-radical = ethanoyl-radical methanol
+ - StandardRateConstants   Forward        11.06      0.00      5.36    cm3-mol-s-kJ logA
+B-CH3CO3+CH3O2=CH3CO2+CH3O+O2       methylpercarboxy methylperoxy = methylcarboxy methoxy-radical oxygen
+ - StandardRateConstants   Forward        12.26      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3CO3+CH3O2=CH3CO2H+HCHO+O2      methylpercarboxy methylperoxy = ethanoic-acid aldehyde oxygen
+ - StandardRateConstants   Forward        11.48      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3CO3+HCHO=CH3CO3H+HCO  methylpercarboxy aldehyde = perethanoic-acid formyl-radical
+ - StandardRateConstants   Forward        12.00      0.00      44.21   cm3-mol-s-kJ logA
+B-CH3CO3+CH4=CH3CO3H+CH3  methylpercarboxy methane = perethanoic-acid methyl-radical
+ - StandardRateConstants   Forward        13.05      0.00      85.67   cm3-mol-s-kJ logA
+B-HCHO+C2H5=HCO+C2H6       aldehyde ethyl-radical = formyl-radical ethane
+ - StandardRateConstants Forward        11.00 0.00 25.50   cm3-mol-s-kJ logA
+B-C2H4+CH3=C2H3+CH4        ethene methyl-radical = ethenyl-radical methane
+ - StandardRateConstants Forward        11.62 0.00 46.52   cm3-mol-s-kJ logA
+B-C2H4+CH3O2=C2H3+CH3O2H   ethene methylperoxy = ethenyl-radical methylperoxide
+Instance: 1  - StandardRateConstants Forward        11.85 0.00 71.64   cm3-mol-s-kJ logA
+        13.00 0.00 0.00   
+Instance: 1 B-C2H3+CH3=C3H6            ethenyl-radical methyl-radical = propene
+        10.00 1.00 0.00   
+Instance: 1 B-C2H4+CH3=nC3H7           ethene methyl-radical = 1-propyl-radical
+        11.10 0.00 32.24   
+Instance: 1 B-nC3H7+O2=C3H6+HO2        1-propyl-radical oxygen = propene peroxyl-radical
+        10.56 0.00 0.00   
+Instance: 1 B-C3H6+OH=C3H5+H20         propene hydroxyl-radical = 2-propenyl-radical water
+        13.30 0.00 12.81   
+Instance: 1 B-C3H5+HO2=C2H3CHO+H2O    2-propenyl-radical  peroxyl-radical = propenal water
+        13.00 0.00 0.00  
+Instance: 1 B-C3H5+HO2=C2H2+HCHO+H20  2-propenyl-radical peroxyl-radical = ethyne aldehyde water
+        13.00 0.00 0.00   
+Instance: 1 B-C3H5+OH=C3H5OH          2-propenyl-radical hydroxyl-radical = 1-propene-3-ol
+        13.00 0.00 0.00  
+Instance: 1 B-CH30H+C2H5O2=CH20H+C2H5O2H methanol ethylperoxy = hydroxymethyl ethylperoxide
+        12.80 0.00 81.06   
+Instance: 1 B-CH30H+CH3CO3=CH20H+CH3CO3H methanol methylpercarboxy = hydroxymethyl perethanoic-acid
+        12.80 0.00 81.06   
+Instance: 1 B-C2H3+CH3=C2H2+CH4        ethenyl-radical methyl-radical = ethyne methane
+        11.90 0.00 0.00   
+Instance: 1 B-C2H4+CH3O2=C2H4O+CH30    ethene methylperoxy = oxirane methoxy-radical
+        11.90 0.00 60.96   
+Instance: 1 B-C2H40+CH3=C2H30+CH4      oxirane methyl-radical = oxyethene methane
+        11.30 0.00 42.29   
+Instance: 1 B-CH2CO+CH3=C2H5+CO        allenal methyl-radical = ethyl-radical carbonmonoxide
+        9.66 1.28 13.23   

@@ -1,0 +1,58 @@
+/*  FILE     SimpleBondAtom.icc
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+/* Constructors
+*/
+ 
+/*F SimpleBondAtom()  . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SimpleBondAtom::SimpleBondAtom() 
+: MolFileAtom(), 
+  SingleBondCount(0),
+  DoubleBondCount(0),
+  TripleBondCount(0)
+     {
+     }
+/*F SimpleBondAtom(atombonding) . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    atombonding: The atom information
+**
+**  REMARKS
+**
+*/
+inline SimpleBondAtom::SimpleBondAtom(const SimpleBondAtom& atombonding) 
+: MolFileAtom(atombonding)
+     {
+     SingleBondCount = atombonding.SingleBondCount;
+     DoubleBondCount = atombonding.DoubleBondCount;
+     TripleBondCount = atombonding.TripleBondCount;
+     }
+/*F SimpleBondAtom(atombonding) . . . . . . . . . . . . . .  From MolFileAtom
+**
+**  DESCRIPTION
+**    atombonding: The atom information
+**
+**  REMARKS
+**
+*/
+inline SimpleBondAtom::SimpleBondAtom(const MolFileAtom& atombonding) 
+  : MolFileAtom(atombonding),
+    SingleBondCount(0),
+    DoubleBondCount(0),
+    TripleBondCount(0)
+{
+}

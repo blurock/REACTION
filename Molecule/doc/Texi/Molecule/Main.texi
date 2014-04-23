@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Molecule
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "Molecule".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     Molecule Package
+@section  The "Molecule" Package
+@cindex   package, Molecule
+@cindex   Molecule package
+@cindex   mol namespace
+@cindex   namespaces, mol
+
+@table @strong
+@item Package name
+@code{Molecule}
+
+@item Namespace name
+@code{mol}
+
+@item Header files
+@file{Molecule.hh}, @file{MoleculeType.hh}
+@end table
+
+
+@include Molecule/Overview.texi
+
+@include Molecule/Classes.texi

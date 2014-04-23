@@ -1,0 +1,46 @@
+ObjectClasses:
+DataType: SingleConversionSet The class of the single conversion factor
+StandardSingleUnitConversion ConversionFactors
+DataType: ConversionSet  The set of conversions 
+StandardUnitConversions StandardSingleUnitConversion
+DataType: ChemkinThermo   The real based property class
+StandardChemkin LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Mole
+   Molecule    0.0 6.02e+23
+   END
+%% ------------------------
+KiloJoule
+   Calorie        0.0 0.0002388
+   KiloCalorie    0.0 0.2388
+   Joule          0.0 0.001
+   KiloJoule      0.0 1.000
+   END
+%% ------------------------
+END
+PropertyConversions:
+Entropy               Numerator:   Meter    Denominator:  KiloCalorie   END
+GCCalories-Mole       Numerator: Denominator: END
+GCKiloCalories-Mole   Numerator: KiloCalorie Denominator: END
+GCCalories-Molecule   Numerator: Denominator: Molecule END
+GCJoules-Molecule     Numerator: Joule Denominator: Molecule END
+GCJoules-Mole         Numerator: Joule Denominator: END
+GCKiloJoules-Mole     Numerator: KiloJoule Denominator: END
+END
+298.15  8.31842
+END
+ClassNamePairs:
+END
+ObjectClasses:
+END
+ClassNamePairs:
+ChemkinName  String
+ShortName    String
+MoleculeKeys KeyWords
+Chemkin      StandardChemkin
+END

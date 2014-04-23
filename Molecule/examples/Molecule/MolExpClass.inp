@@ -1,0 +1,24 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: IntrinsicExpression Molecular Operations
+MolecularExpression
+Retrieve RetrieveMoleculeProperty
+Store    StoreMoleculeProperty
+END
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new molecular parameterized function
+ParMolecularExpression    ParameterSet MolecularExpression Object
+END 
+%% -------------------------------------------------
+END
+ClassNamePairs:
+Put  MolecularExpression
+VarsAndExps   KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

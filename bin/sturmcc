@@ -1,0 +1,75 @@
+#!/bin/sh
+#
+# FILE     sturmcc-gnu
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script used as a wraparound for the GNU C compiler.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+
+#f help . . . . . . . . . . . . . . . . . . . . . Writes help text to STDOUT.
+
+help() {
+  awk '/^#F/,/^$/' <$0 \
+  | sed "s/^#F [A-Za-z][^ ]*/$ARGV0/; s/^#//" >&2
+}
+
+
+#F sturmcc [C compiler options] . . . . . . wraparound for the GNU C compiler.
+#
+# DESCRIPTION
+#   This is a wraparound for the GNU C compiler, which sets the include file
+#   search path and library search path.
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+# OPTIONS
+#   Identical to the options which may be given to the GNU C compiler.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+#
+# REFERENCES
+#   gcc(1)
+
+ARGV0=`basename $0`
+
+#
+# 1. Argument and environment check.
+#
+
+if [ $# = 0 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+if [ "$Sturm" = "" ]; then
+  echo 1>&2 $ARGV0: 'Error -- $Sturm not set!'
+  exit $ERR_ENV
+fi
+
+if expr >/dev/null "$*" : ".*-O"; then
+  lspeed=_o
+elif expr >/dev/null "$*" : ".*-g"; then
+  lspeed=_g
+else
+  lspeed=""
+fi
+
+if expr >/dev/null "$*" : ".*-[cESM]"; then
+  link=
+else
+  link="-L$Sturm/lib -lSturm$lspeed -lSturmS$lspeed -lg++ -lgmp -lm -lXt -lX11"
+fi
+
+
+#
+# 2. Call GNU C compiler.
+#
+
+exec gcc $* -I$Sturm/include $link

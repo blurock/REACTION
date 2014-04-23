@@ -1,0 +1,16 @@
+Dbase --------------- Mechanism Database Information ---------------
+Attributes:
+%% -------------------------------------------------
+%% MolecularStructureDataBase    MolecularStructureDataBase
+%% -------------------------------------------------
+MoleculeDataBase       StandardMolecule
+SubstructureDataBase   StandardMolecule
+MoleculeClassDataBase  StandardMolecule
+ReactionDataBase       StandardReaction
+RxnPatternsDataBase    StandardReaction
+MechanismDataBase      StandardMechanism
+MechPatternsDataBase   StandardMechanism
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END

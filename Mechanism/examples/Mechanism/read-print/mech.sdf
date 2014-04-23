@@ -1,0 +1,11 @@
+TestMech
+1-butene       MoleculeChemkin ChemkinName 
+ethyl-radical  MoleculeChemkin ChemkinName 
+butene-4-yl    MoleculeChemkin ChemkinName 
+ethane         MoleculeChemkin ChemkinName 
+oxygen  Chemkin  Short
+END
+ 1-C4H8+C2H5=C4H7+C2H6  MaussWarnatzForward  MaussWarnatzReverseCalculated
+END
+
+END

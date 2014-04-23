@@ -1,0 +1,216 @@
+/*  FILE     ThermoTables.itc
+**  PACKAGE  ThermoTables
+**  AUTHOR   Yuri Tsybukh, Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "ThermoTables" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_THERMOTABLES_ITC
+#define REACTIONSRC_THERMOTABLES_ITC
+#endif
+
+/*S Constructors
+*/
+
+ 
+/*F BaseLeastSquares()  . . . . . . Class BaseLeastSquares empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline BaseLeastSquares::BaseLeastSquares()
+     {
+     }
+/*F BaseLeastSquares(N) . . . . . . . . . Class BaseLeastSquares constructor.
+**
+**  DESCRIPTION
+**    N: param.
+**
+**    Class BaseLeastSquares constructor, which takes as argument integer
+**    and uses it to initialize member PolyProdNumber.
+**    
+**  REMARKS
+**
+*/
+inline BaseLeastSquares::BaseLeastSquares(int N)
+: PolyProdNumber(N)
+     {
+     }
+/*F PolyLeastSquares()  . . . . . . Class PolyLeastSquares empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline PolyLeastSquares::PolyLeastSquares()
+     {
+     }
+/*F PolyLeastSquares(N) . . . . . . . . . Class PolyLeastSquares constructor.
+**
+**  DESCRIPTION
+**    N: param.
+**
+**    Class PolyLeastSquares constructor, which takes as argument integer
+**    and uses it to initialize member PolyProdNumber of base class BaseLeastSquares.    
+**    
+**  REMARKS
+**
+*/
+inline PolyLeastSquares::PolyLeastSquares(int N)
+: BaseLeastSquares(N)
+     {
+     }
+/*F LogLeastSquares() . . . . . . .  Class LogLeastSquares empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline LogLeastSquares::LogLeastSquares()
+     {
+     }
+/*F LogLeastSquares(N)  . . . . . . . . .  Class LogLeastSquares constructor.
+**
+**  DESCRIPTION
+**    N: param.
+**
+**    Class PolyLeastSquares constructor, which takes as argument integer
+**    and uses it to initialize member PolyProdNumber of base class BaseLeastSquares.
+**    
+**  REMARKS
+**
+*/
+inline LogLeastSquares::LogLeastSquares(int N)
+: BaseLeastSquares(N)
+     {
+     }
+
+
+ 
+/*F BensonTable() . . . . . . . . . . .  Class BensonTable empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline BensonTable::BensonTable()
+     {
+     }
+/*F CalculateChemkinHeatCapacity()  . . . . . . . . . . .  Empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline CalculateChemkinHeatCapacity::CalculateChemkinHeatCapacity()
+     {
+     }
+/*F CalculateChemkinHeatCapacity(_ThermoObj)  . . . . Class copy constructor.
+**
+**  DESCRIPTION
+**    _ThermoObj: param.
+**
+**    Class CalculateChemkinHeatCapacity copy constructor.
+**    
+**  REMARKS
+**
+*/
+inline CalculateChemkinHeatCapacity::CalculateChemkinHeatCapacity(ChemkinBaseTableObject& _ThermoObj)
+: ThermoObj(_ThermoObj)
+     {
+     }
+/*F CalculateBensonHeatCapacity() . . . . . . . . . . . .  Empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline CalculateBensonHeatCapacity::CalculateBensonHeatCapacity()
+     {
+     }
+
+/*F CalculateBensonHeatCapacity(_ThermoObj) . . . . . Class copy constructor.
+**
+**  DESCRIPTION
+**    _ThermoObj: param.
+**
+**    Class CalculateBensonHeatCapacity copy constructor.
+**    
+**  REMARKS
+**
+*/
+inline CalculateBensonHeatCapacity::CalculateBensonHeatCapacity(BensonBaseTableObject& _ThermoObj)
+: ThermoObj(_ThermoObj)
+     {
+     }
+
+/*F ChemkinBaseTableObject()  . . . ChemkinBaseTableObject empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline ChemkinBaseTableObject::ChemkinBaseTableObject()
+: UpperCoeff(7, 0.0), LowerCoeff(7, 0.0)
+     {
+     }
+/*F BensonBaseTableObject() . . . .  BensonBaseTableObject empty constructor.
+**
+**  DESCRIPTION
+**    Empty constructor.
+**    
+**  REMARKS
+**
+*/
+inline BensonBaseTableObject::BensonBaseTableObject()
+     {
+     }
+
+
+
+/*F BensonBaseTableObject(stream, Table)  . . . . . . . .  Class constructor.
+**
+**  DESCRIPTION
+**    stream: param.
+**    Table: param.
+
+**    BensonBaseTableObject constructor, which reads Benson table object data from
+**    stream (file) and assigns values to the members of the class (i.e. elements
+**    of Benson table object).
+**    
+**  REMARKS
+**
+*/
+inline BensonBaseTableObject::BensonBaseTableObject(istream &stream, BensonTable& Table)
+     {
+     Table.ReadTemperatures(stream); 
+
+     vector<double> dummy(Table.Temperatures.size(), 0.0);
+
+     copy(Table.Temperatures.begin(), Table.Temperatures.end(), 
+	  back_insert_iterator<vector<double> >(Temps));
+
+     copy(dummy.begin(), dummy.end(), 
+	  back_insert_iterator<vector<double> >(CpS));
+                
+     }

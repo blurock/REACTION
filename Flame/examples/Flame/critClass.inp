@@ -1,0 +1,17 @@
+% **********************************************************
+% The Set up of the Attribute Class Information
+%    for Critical Points
+% **********************************************************
+ObjectClasses:
+END
+ClassNamePairs:
+CriticalPointsFileName                 KeyWords
+CriticalPointsRootName                 KeyWords
+PartitionTypesFromPoints               KeyWords
+END
+% ----------------------------------------------------------
+ObjectClasses:
+END
+% ----------------------------------------------------------
+ClassNamePairs:
+END

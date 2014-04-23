@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MolAtom
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MolAtom".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MolAtom Package
+@section  The "MolAtom" Package
+@cindex   package, MolAtom
+@cindex   MolAtom package
+@cindex   mla namespace
+@cindex   namespaces, mla
+
+@table @strong
+@item Package name
+@code{MolAtom}
+
+@item Namespace name
+@code{mla}
+
+@item Header files
+@file{MolAtom.hh}, @file{MolAtomType.hh}
+@end table
+
+
+@include MolAtom/Overview.texi
+
+@include MolAtom/Classes.texi

@@ -1,0 +1,11 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C2 mechanism from chevalier
+Attributes:
+troe
+   C2H3 + ML      = C2H2  + H   + ML                4.154E+41   -7.5     190.4
+                                                    2.000E+14    0.0     166.29
+                                           0.35     1.000E+98    0.0     999.99
+golden
+   C2H5 + ML      = C2H4   + H  + ML                2.461E+16    0.0     126.0
+                                                    3.200E+13    0.0     167.0
+                                                    0.411       73.4     422.8
+END

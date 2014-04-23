@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  ThermoProps
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "ThermoProps".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     ThermoProps Package
+@section  The "ThermoProps" Package
+@cindex   package, ThermoProps
+@cindex   ThermoProps package
+@cindex   tprp namespace
+@cindex   namespaces, tprp
+
+@table @strong
+@item Package name
+@code{ThermoProps}
+
+@item Namespace name
+@code{tprp}
+
+@item Header files
+@file{ThermoProps.hh}, @file{ThermoPropsType.hh}
+@end table
+
+
+@include ThermoProps/Overview.texi
+
+@include ThermoProps/Classes.texi

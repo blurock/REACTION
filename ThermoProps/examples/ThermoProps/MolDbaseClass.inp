@@ -1,0 +1,16 @@
+ObjectClasses:
+DataType: BensonThermo The standard benson thermo class
+StandardBenson
+6 200 300 400 500 800 1000 
+END
+ClassNamePairs:
+Chemkin     ChemkinThermo
+Benson StandardBenson
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

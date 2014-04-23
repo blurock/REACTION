@@ -1,0 +1,15 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+O+H2=OH+H               oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+O+OH=O2+H               oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+HCO+O=CO+OH             formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+O+HO2=OH+O2             oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+O+H2O2=OH+HO2           oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+CH3+O=HCHO+H            methyl-radical oxygen-atom = aldehyde hydrogen-radical
+CH4+O=CH3+OH            methane oxygen-atom = methyl-radical hydroxyl-radical
+HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical

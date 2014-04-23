@@ -1,0 +1,18 @@
+ObjectClasses:
+%% -------------------------------------------------
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Linearity    Integer
+Eps          Real
+Sig          Real
+Dipole       Real
+Polarize     Real
+ZRotation    Real
+END
+%% -------------------------------------------------

@@ -1,0 +1,26 @@
+O-Atom   Rate Constants for instances
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+Instance: 1   O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+       4.71 2.67  3160   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ; cm3-mol-s logA
+Instance: 2   O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+       13.01   0.0   112   J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) cm3-mol-s logA
+Instance: 3   HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+       13.48 0.00 0.00   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+Instance: 4   O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+       13.50 0.00 0.00   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+Instance: 5   O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+       14.26  0.00 38300   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+Instance: 6   CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical
+         13.92      0.00      0.00    ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+Instance: 7   CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical
+         8.86      1.56      4270   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+Instance: 8   HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+         11.62      0.57      1390   ;  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I) ;  cm3-mol-s logA
+END

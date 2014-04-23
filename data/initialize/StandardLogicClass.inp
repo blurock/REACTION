@@ -1,0 +1,29 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: NValued True-False Logic 
+TrueFalse True 1.0 False 0.0 END
+%% -------------------------------------------------
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: Predicate A numeric predicate
+FuzzyParameterPredicate FuzzyPredicate
+%% -------------------------------------------------
+DataType: ExactlyEqualPredicate   The Production Stage Checker
+TrueFalseCheck  TrueFalse  TrueFalse
+%% -------------------------------------------------
+DataType: LogicDescription  A real function based predicate
+ContLogicDescription Continuous
+%% -------------------------------------------------
+%%DataType: DescriptionExpressions   A set of expressions
+%%ExpDescription ParameterSet Operation Logical ParameterSet ContLogicDescription Logical
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,23 @@
+/*  FILE     GenerateID.icc
+**  PACKAGE  GenerateID
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "GenerateID" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1997 Reaction Library
+*/
+ 
+#ifndef ReactionSRC_GENERATEID_ICC
+#define ReactionSRC_GENERATEID_ICC
+ 
+#pragma interface
+
+
+
+
+
+
+#endif

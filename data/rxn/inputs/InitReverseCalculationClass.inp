@@ -1,0 +1,31 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: CalculateReverseRate  the calculation of the reverse rate from equilibrium constant
+StandardReverseRateCalc
+Equilibrium-cm3-Mole-Calorie
+%% -------------------------------------------------
+DataType: ExpressionTree Reverse Rate Calculation Operations
+ReverseExpression
+CalculateReverse StandardReverseRateCalc
+CalculateEquilibrium OperationMoleculeEquilibrium
+END
+CalculateReverseRate: Equilibrium
+ By Definition ; System ; The Unity Equilibrium
+1.0 0.0 0.0
+%%Equilibrium Calorie-cm3 Calorie-cm3
+Equilibrium KJoule-cm3  KJoule-cm3
+
+ThermoConstant: MoleculeChemkin Equilibrium-cm3-Mole-Calorie GCCalories-Mole
+7 300 500 700 1000 1200 1500 2000
+%% -------------------------------------------------
+END
+ClassNamePairs:
+Reverse            ReverseExpression
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

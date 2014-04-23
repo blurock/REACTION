@@ -1,0 +1,35 @@
+C2H6+CH3=C2H5+CH4          ethane methyl-radical = ethyl-radical methane 
+C2H6+CH3O=C2H5+CH3OH       ethane methoxy-radical = ethyl-radical methanol 
+C2H6+CH3O2=C2H5+CH3O2H     ethane methylperoxy = ethyl-radical methylperoxide
+C2H5+CH3=C2H4+CH4          ethyl-radical methyl-radical = ethene methane 
+C2H5+CH3O=C2H4+CH3OH       ethyl-radical methoxy-radical = ethene methanol 
+C2H5+CH3O2=C2H5O+CH3O      ethyl-radical methylperoxy = ethoxy-radical methoxy-radical 
+C2H5+CH3=C3H8              ethyl-radical methyl-radical = propane
+C2H5O2+HCHO=C2H5O2H+HCO    ethylperoxy aldehyde = ethylperoxide formyl-radical 
+C2H5O2+CH4=C2H5O2H+CH3     ethylperoxy methane = ethylperoxide methyl-radical
+C2H5O+HCHO=C2H5OH+HCO      ethoxy-radical aldehyde = ethanol formyl-radical
+C2H5O+CH4=C2H5OH+CH3       ethoxy-radical methane = ethanol methyl-radical 
+C2H5O+CH3O=CH3CHO+CH30H    ethoxy-radical methoxy-radical = ethanal methanol 
+CH3CHO+CH3=CH3CO+CH4       ethanal methyl-radical = ethanoyl-radical methane
+CH3CHO+CH3O=CH3CO+CH3OH    ethanal methoxy-radical = ethanoyl-radical methanol
+CH3CO3+CH3O2=CH3CO2+CH3O+O2       methylpercarboxy methylperoxy = methylcarboxy methoxy-radical oxygen
+CH3CO3+CH3O2=CH3CO2H+HCHO+O2      methylpercarboxy methylperoxy = ethanoic-acid aldehyde oxygen
+CH3CO3+HCHO=CH3CO3H+HCO  methylpercarboxy aldehyde = perethanoic-acid formyl-radical
+CH3CO3+CH4=CH3CO3H+CH3  methylpercarboxy methane = perethanoic-acid methyl-radical
+HCHO+C2H5=HCO+C2H6       aldehyde ethyl-radical = formyl-radical ethane
+C2H4+CH3=C2H3+CH4        ethene methyl-radical = ethenyl-radical methane
+C2H4+CH3O2=C2H3+CH3O2H   ethene methylperoxy = ethenyl-radical methylperoxide
+C2H3+HCO=C2H3CHO         ethenyl-radical formyl-radical = propenal
+C2H3+CH3=C3H6            ethenyl-radical methyl-radical = propene
+C2H4+CH3=nC3H7           ethene methyl-radical = 1-propyl-radical
+nC3H7+O2=C3H6+HO2        1-propyl-radical oxygen = propene peroxyl-radical
+C3H6+OH=C3H5+H20         propene hydroxyl-radical = 2-propenyl-radical water
+C3H5+HO2=C2H3CHO+H2O    2-propenyl-radical  peroxyl-radical = propenal water
+C3H5+HO2=C2H2+HCHO+H20  2-propenyl-radical peroxyl-radical = ethyne aldehyde water
+C3H5+OH=C3H5OH          2-propenyl-radical hydroxyl-radical = 1-propene-3-ol
+CH30H+C2H5O2=CH20H+C2H5O2H methanol ethylperoxy = hydroxymethyl ethylperoxide
+CH30H+CH3CO3=CH20H+CH3CO3H methanol methylpercarboxy = hydroxymethyl perethanoic-acid
+C2H3+CH3=C2H2+CH4        ethenyl-radical methyl-radical = ethyne methane
+C2H4+CH3O2=C2H4O+CH30    ethene methylperoxy = oxirane methoxy-radical
+C2H40+CH3=C2H30+CH4      oxirane methyl-radical = oxyethene methane
+CH2CO+CH3=C2H5+CO        allenal methyl-radical = ethyl-radical carbonmonoxide

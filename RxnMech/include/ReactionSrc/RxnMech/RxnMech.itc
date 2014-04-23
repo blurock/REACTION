@@ -1,0 +1,60 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+/*F out = operator<<(out,mech)  . . . . . . . . . . . . . . ReactionMechanism
+**
+**  DESCRIPTION
+**    out: The output buffer
+**    mech: The mechanism
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+ostream& operator<<(ostream& out, const ReactionMechanism<ReactionClass>& mech)
+     {
+     return mech.print(out);
+     }
+/*F ans = Encode(buffer,mech) . . . . . . . . . . . . . . . ReactionMechanism
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    mech: The mechanism
+**    ans: True if successful
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+bool Encode(CommBuffer& buffer, ReactionMechanism<ReactionClass>& mech)
+     {
+     return mech.EncodeThis(buffer);
+     }
+
+/*F ans = Decode(buffer,mech) . . . . . . . . . . . . . . . ReactionMechanism
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    mech: The mechanism
+**    ans: True if successful
+**    
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+bool Decode(CommBuffer& buffer, ReactionMechanism<ReactionClass>& mech)
+     {
+     return mech.DecodeThis(buffer);
+     }
+
+
+
+

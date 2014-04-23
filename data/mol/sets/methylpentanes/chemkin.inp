@@ -1,0 +1,89 @@
+C4ket-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Ketone Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2-methylpentane  2-methylpentane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+ic5h12
+ic5h12
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using ic5h12
+ic5h12     1/14/95 thermc   5h  12    0    0g   300.000  5000.000 1390.00      1
+ 1.57973145e+01 2.62613369e-02-9.00865195e-06 1.40120752e-09-8.13944079e-14    2
+-2.72746817e+04-6.15788664e+01-1.34131759e+00 6.31399950e-02-3.89549917e-05    3
+ 1.24066911e-08-1.64037258e-12-2.09234825e+04 3.17254941e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 3-methylpentane 3-methylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC5H11
+3MC5H11
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using ic5h12
+3MC5H11    1/14/95 thermc   5h  12    0    0g   300.000  5000.000 1390.00      1
+ 1.57973145e+01 2.62613369e-02-9.00865195e-06 1.40120752e-09-8.13944079e-14    2
+-2.72746817e+04-6.15788664e+01-1.34131759e+00 6.31399950e-02-3.89549917e-05    3
+ 1.24066911e-08-1.64037258e-12-2.09234825e+04 3.17254941e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2,2-dimethylpentane 2,2-dimethylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+22MC5H10
+22MC5H10
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using 22MC5H10
+22MC5H10                H  16C   7    0    0G   298.000  1500.0001000.000      1
+ 2.07444504e+02-4.48655456e-01 4.40542557e-04-1.78665957e-07 2.58921495e-11    2
+-9.05727734e+04-1.05828650e+03-3.71339912e+01 3.55721712e-01-7.52352818e-04    3
+ 7.72310841e-07-2.91986713e-10-2.47195020e+04 1.85749878e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2,3-dimethylpentane 2,3-dimethylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+23MC5H10
+23MC5H10
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using 23MC5H10
+23MC5H10                H  16C   7    0    0G   298.000  1500.0001000.000      1
+ 2.14139389e+02-4.67825681e-01 4.58198803e-04-1.85263232e-07 2.68044493e-11    2
+-9.22003750e+04-1.09214978e+03-3.73916168e+01 3.57299298e-01-7.63540622e-04    3
+ 7.88969828e-07-2.99281461e-10-2.43264688e+04 1.87886627e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2,4-dimethylpentane 2,4-dimethylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+24MC5H10
+24MC5H10
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using 224C5H9
+24MC5H10                H  16C   7    0    0G   298.000  1500.0001000.000      1
+ 2.14139389e+02-4.67825681e-01 4.58198803e-04-1.85263232e-07 2.68044493e-11    2
+-9.22003750e+04-1.09214978e+03-3.73916168e+01 3.57299298e-01-7.63540622e-04    3
+ 7.88969828e-07-2.99281461e-10-2.43264688e+04 1.87886627e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 3,3-dimethylpentane 3,3-dimethylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+33MC5H10
+33MC5H10
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using 33MC5H10
+33MC5H10                H  16C   7    0    0G   298.000  1500.0001000.000      1
+ 2.07444504e+02-4.48655456e-01 4.40542557e-04-1.78665957e-07 2.58921495e-11    2
+-9.05727734e+04-1.05828650e+03-3.71339912e+01 3.55721712e-01-7.52352818e-04    3
+ 7.72310841e-07-2.91986713e-10-2.47195020e+04 1.85749878e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2,2,4-trimethylpentane 2,2,4-trimethylpentane
+%% Lumped molecule (for Short Name and Chemkin Name)
+224C5H9
+224C5H9
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using 224C5H9
+224C5H9                 H  18C   8    0    0G   298.000  1500.0001000.000      1
+ 2.34795059e+02-5.06965578e-01 4.97218163e-04-2.01375300e-07 2.91638623e-11    2
+-1.02846594e+05-1.20058289e+03-4.23002777e+01 4.03132051e-01-8.49578995e-04    3
+ 8.70315375e-07-3.28730376e-10-2.82115078e+04 2.09068161e+02                   4
+END

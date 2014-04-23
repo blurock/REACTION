@@ -1,0 +1,28 @@
+Instance: 1 B-H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+        13.98 0.00 85.00   
+Instance: 1 B-H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+        13.40 0.00 2.93   
+Instance: 1 B-H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+        14.40 0.00 7.96   
+Instance: 1 B-H+HO2=H20+0              hydrogen-radical peroxyl-radical = water oxygen-atom
+        13.48 0.00 7.20   
+Instance: 1 B-H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+        12.23 0.00 15.70   
+Instance: 1 B-H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+        13.00 0.00 14.98   
+Instance: 1 B-O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+        10.26 1.00 37.26   
+Instance: 1 B-O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+        13.12 0.00 2.85   
+Instance: 1 B-O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+        13.70 0.00 4.19   
+Instance: 1 B-O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+        11.83 0.00 16.64   
+Instance: 1 B-OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+        12.80 0.00 4.61   
+Instance: 1 B-OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+        13.00  0.00 7.54   
+Instance: 1 B-HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+        12.30 0.00 0.00   
+Instance: 1 B-HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+        13.70 0.00 4.19   

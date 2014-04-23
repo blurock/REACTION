@@ -1,0 +1,119 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+hydrogen-radical
+hydrogen
+oxygen-atom
+oxygen
+hydroxyl-radical
+peroxyl-radical
+water
+hydrogen-peroxide
+methane
+methyl-radical
+singlet-methylene
+triplet-methylene
+methylene
+methylyne
+methanol
+methoxy-radical
+aldehyde
+formyl-radical
+methylperoxy
+hydroxymethyl
+methylperoxide
+carbonmonoxide
+carbondioxide
+ethane
+ethyl-radical
+ethene
+ethenyl-radical
+ethyne
+ethynyl-radical
+ethanal
+ethanoyl-radical
+allenal
+allenal-radical
+oxyethene
+ethanol
+ethoxy-radical
+ethylperoxy
+ethylperoxide
+oxirane
+methylcarboxy
+ethanoic-acid
+methylpercarboxy
+perethanoic-acid
+oxyethanal
+peroxyethene
+diformyl
+ethanal-1-yl
+dimethylperoxide
+propane
+1-propyl-radical
+2-propyl-radical
+propene
+propyne
+3-propenyl-radical
+allene
+3-propynyl
+propenal
+1-propanal
+2-propanal
+1-propene-3-ol
+butane
+isobutane
+1-butyl-radical
+2-butyl-radical
+1-butene
+1-butyne
+butadiene
+2-butynyl-radical
+1-buten-3-yne
+butadiyne
+butadiynyl
+1-butyne-3-ene-3-yl
+1-butyne-3-ene-4-yl
+butene-4-yl
+2-butene
+2-methylpropene
+butene-4-yl
+propane
+1-propyl-radical
+2-propyl-radical
+propene
+propyne
+3-propenyl-radical
+allene
+3-propynyl
+propenal
+1-propanal
+2-propanal
+1-propene-3-ol
+1-yl-2-propanal
+2-oxy-1-propene
+1-yl-1-propanal
+3-oxy-1-propene
+3-yl-1-propanal
+2-yl-1-propanal
+1-oxy-1-propene
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

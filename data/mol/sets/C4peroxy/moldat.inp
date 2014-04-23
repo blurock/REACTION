@@ -1,0 +1,55 @@
+MOLDAT  The molecule data for a mechanism
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  1 1-butylperoxy-radical 1-butylperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  2 2-butylperoxy-radical 2-butylperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  3 1-butyl-1-hydroperoxy-radical  1-butyl-1-hydroperoxy-radical 
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  4 2-butyl-1-hydroperoxy-radical  2-butyl-1-hydroperoxy-radical 
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  5 3-butyl-1-hydroperoxy-radical  3-butyl-1-hydroperoxy-radical 
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  6 4-butyl-1-hydroperoxy-radical  4-butyl-1-hydroperoxy-radical 
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  7 1-butyl-2-hydroperoxy-radical 1-butyl-2-hydroperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  8 2-butyl-2-hydroperoxy-radical 2-butyl-2-hydroperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance:  9 3-butyl-2-hydroperoxy-radical 3-butyl-2-hydroperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10 4-butyl-2-hydroperoxy-radical 4-butyl-2-hydroperoxy-radical
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 11 1-hydroperoxy-1-peroxy-butane 1-hydroperoxy-1-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 12 1-hydroperoxy-2-peroxy-butane 1-hydroperoxy-2-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 13 1-hydroperoxy-3-peroxy-butane 1-hydroperoxy-3-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 14 1-hydroperoxy-4-peroxy-butane 1-hydroperoxy-4-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 15 2-hydroperoxy-2-peroxy-butane 2-hydroperoxy-2-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 16 2-hydroperoxy-3-peroxy-butane 2-hydroperoxy-3-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 17 2-hydroperoxy-4-peroxy-butane 2-hydroperoxy-4-peroxy-butane
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

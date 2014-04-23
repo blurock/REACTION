@@ -1,0 +1,29 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+propanon-1-yl-radical
+2-oxy-1-propene
+1-yl-1-propanal
+3-oxy-1-propene
+3-yl-1-propanal
+2-yl-1-propanal
+1-oxy-1-propene
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

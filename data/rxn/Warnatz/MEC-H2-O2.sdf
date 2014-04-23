@@ -1,0 +1,7 @@
+O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+HO2+H=H2O+O              peroxyl-radical hydrogen-radical = water oxygen-atom
+H+O2=HO2                 hydrogen-radical oxygen = peroxyl-radical
+OH+OH=H2O2               hydroxyl-radical hydrogen-radical = hydrogen-peroxide
+H+H=H2                   hydrogen-radical hydrogen-radical = hydrogen
+H+OH=H2O                 hydrogen-radical hydroxyl-radical = water
+O+O=O2                   oxygen-atom oxygen-atom = oxygen

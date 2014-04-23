@@ -1,0 +1,22 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%% ----------------------------------------------
+%%% InstanceNameList      KeyWords
+%%% ----------------------------------------------
+ hydrogen-radical
+END
+%%% ----------------------------------------------
+%%% VarsAndExps           KeyWords
+%%% ----------------------------------------------
+ Instance EquilibriumFromChemkin Equilibrium 
+END
+%%% ----------------------------------------------
+%%% MoveEquilibrium       KeyWords
+%%% ----------------------------------------------
+FromInstance   StoreMoleculeProperty Molecule 
+EquilibriumFromChemkin Equilibrium
+END
+%%% ----------------------------------------------
+%%%  No Instance information
+%%% ----------------------------------------------
+END

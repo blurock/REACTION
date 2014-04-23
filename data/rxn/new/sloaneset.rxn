@@ -1,0 +1,33 @@
+SL-CH4=CH3+H       methane = methyl-radical hydrogen-radical
+ - StandardRateConstants Forward 2.32E+38   -7.0  117670
+ - StandardRateConstants Reverse 1.22E+34   -6.4   10650
+SL-C2H5=C2H4+H-1   ethyl-radical = ethene hydrogen-radical
+ - StandardRateConstants Forward 2.29E+20   -2.8   36360
+ - StandardRateConstants Reverse 3.96E-15    7.1  -21790
+SL-C2H6=2CH3       ethane = methyl-radical methyl-radical 
+ - StandardRateConstants Forward 1.51E+38   -6.5   98540
+ - StandardRateConstants Reverse 9.44E+21    2.9     425
+SL-C2H5=C2H4+H-2   ethyl-radical = ethene hydrogen-radical
+ - StandardRateConstants Forward 3.05E+34   -6.5   47930
+ - StandardRateConstants Reverse 2.19E-60   19.7  -59220
+SL-CH3+O2=CH2O+OH  methyl-radical oxygen = aldehyde hydroxyl-radical
+ - StandardRateConstants Forward 1.70E+11    0.0    8940
+ - StandardRateConstants Reverse 1.75E+11    0.0   62410
+SL-CH3+HO2=CH3O+OH methyl-radical peroxyl-radical = methoxy-radical hydroxyl-radical
+ - StandardRateConstants Forward 1.00E+13    0.0      0
+ - StandardRateConstants Reverse 3.10E+09    0.0      0
+SL-CH2+O2=HCO+OH   methylene oxygen = formyl-radical hydroxyl-radical
+ - StandardRateConstants Forward 4.32E+10    0.0   -500
+ - StandardRateConstants Reverse 6.32E=12    0.0  59430
+SL-CH2+O2=HCO+OH   methylene oxygen = carbondioxide hydrogen
+ - StandardRateConstants Forward 6.90E+11    0.0    500
+ - StandardRateConstants Reverse 1.74E+13    0.37 185800
+SL
+ - StandardRateConstants Forward 
+ - StandardRateConstants Reverse
+ - StandardRateConstants Forward 
+ - StandardRateConstants Reverse
+ - StandardRateConstants Forward 
+ - StandardRateConstants Reverse
+ - StandardRateConstants Forward 
+ - StandardRateConstants Reverse

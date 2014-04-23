@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  C0 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+H+O2=OH+O                hydrogen-radical oxygen = oxygen-atom hydroxyl-radical
+H+HO2=H20+0              hydrogen-radical peroxyl-radical = water oxygen-atom
+H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+OH+H2=H2O+H              hydroxyl-radical hydrogen = water hydrogen-radical
+OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen

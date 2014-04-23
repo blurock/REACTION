@@ -1,0 +1,94 @@
+\documentclass[11pt]{book}
+\usepackage{hyperlatex}
+%\usepackage[pdftex]{hyperref}
+\newcommand{\HlxIcons}{./html/}
+\setcounter{htmldepth}{2}
+%%\usepackage{/usr/lib/texmf/tex/latex/base/letter}
+\T\usepackage{epsf}
+%\usepackage{alltt}
+%\usepackage[dvips]{graphicx}
+%\usepackage{rotating}
+\title{
+Distribution Plots
+}
+
+\author{
+Edward S. Blurock\\
+Johannes Kepler University,A-4040 LINZ, Austria\\
+\xlink{{\bf email:} blurock@risc.uni-linz.ac.at}{mailto:blurock@risc.uni-linz.ac.at}
+}
+
+\setcounter{htmldepth}{3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\gloslabel}[1]{\index{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\inputeps}[3]{
+\begin{center}
+\texorhtml{
+\leavevmode
+\epsfxsize=#2
+\epsfysize=#3 
+\epsffile{#1.eps}
+}
+{
+%%%\htmlimage[align=center width=#2 height=#3 hspace=3]{#1.xbm}
+\htmlimage{#1.xbm}
+}
+\end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\standardeps}[1]{
+\texorhtml{
+\epsfxsize=11cm
+\epsffile{#1.eps}
+}
+{
+%%%\htmlimage[align=center width=#2 height=#3 hspace=3]{#1.xbm}
+\htmlimage{#1.xbm}
+}
+}
+\newcommand{\captionfont}{\small}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\glosterm}[1]{{\it #1}}
+\newcommand{\indexterm}[2]{{\it #1}{\index{#2}}}
+
+\newcommand{\figureref}[1]{\texorhtml{ figure \ref{#1} }{}}
+\newcommand{\sectionref}[2]{\texorhtml{ section \ref{#1} }{ #2 } }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\snapshot}[3]{
+\begin{center}
+\texorhtml{
+\leavevmode
+\epsfxsize=#2
+\epsfysize=#3 
+\epsffile{#1.eps}
+}
+{\htmlimage{#1.jpg}
+}
+\end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\seclink}[2]
+{
+\link{#1}[#1~(Section~\ref{#2})]{#2}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\figlink}[2]
+{
+\link{#1}[#1~(Figure~\ref{#2})]{#2}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\htmlattributes{BODY}{BGCOLOR=white}
+\htmlattributes{FONT}{face="Helvetica,Arial,Verdana"}
+\htmlpanel{0}
+
+\begin{document}
+\bibliographystyle{plain}
+\maketitle
+\normalsize
+\input{report}
+\end{document}

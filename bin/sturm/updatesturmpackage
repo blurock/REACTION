@@ -1,0 +1,190 @@
+#!/bin/sh
+#
+# FILE     updatesturmpackage
+# PACKAGE  Sturm
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script for updating the files of an existing STURM package.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+. `dirname $0`/sturm.sh
+
+
+#f getpac . . . . . Sets the variable PAC to the 3-letter code for the package.
+
+getpac() {
+  PAC=`echo $PACKAGE | cut -c1-4`
+  answer=n
+  while [ "$answer" != "y" ]; do
+    echo The namespace for the package \"$PACKAGE\" is: \"$PAC\"
+    nlecho "Please enter 'y' if this is correct, 'n' otherwise: "
+    read answer
+    if [ "$answer" != "y" ]; then
+      nlecho "Please enter the abbreviation (3-4 letters) for \"$PACKAGE\": "
+      read PAC
+    fi
+  done
+}
+
+#f patchfile FROM TO . . . . . . . . . Copies and patches FROM file to TO file.
+
+patchfile() {
+  if [ -f $2 -a "$force" != 1 ]; then
+    answer=""
+    while [ "$answer" != "y" -a "$answer" != "n" ]; do
+      nlecho "File \"$2\" already exists.  Overwrite it? (y/n) "
+      read answer
+    done
+    if [ "$answer" = "n" ]; then
+      echo "File \"$2\" not updated."
+      return 0
+    fi
+  fi
+  UPPER_PACKAGE=`echo $PACKAGE | tr [a-z] [A-Z]`
+  sed "s/=Package=/$PACKAGE/g;s/=PACKAGE=/$UPPER_PACKAGE/g;\
+       s/=Pac=/$PAC/g;s/=Author=/$NAME/g" $1 >$2
+}
+
+
+#F updatesturmpackage [-h] [-f] PACKAGE [SHORT NAME [AUTHOR]] . . .  Update a
+# . . . . . . . . . . . . . . . . . . . . .  STURM package working directory.
+#
+# DESCRIPTION
+#   This script updates a working directory tree for package PACKAGE.
+#   All required directories and default makefiles are set up.
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+#   -h ... help
+#   -f ... force update (i.e. don't ask user about every file)
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+    ERR_FILE=3 # File error.
+#
+
+#
+# 1. Argument and environment check.
+#
+
+if [ "$Sturm" = "" ]; then
+  eecho '$Sturm' is not set!
+  exit $ERR_ENV
+fi
+
+if [ $# = 0 -o "$1" = "-h" -o $# -gt 4 ]; then
+  help
+  echo >&2 Already existing packages are:
+  packages >&2
+  exit $ERR_ARGS
+fi
+
+if [ "$1" = "-f" ]; then
+  force=1
+  shift
+fi
+
+PACKAGE=$1
+
+if [ ! -d $PACKAGE ]; then
+  eecho Package directory \"$PACKAGE\" not found!
+  exit $ERR_FILE
+fi
+
+if [ "$2" = "" ]; then
+  getpac
+else
+  PAC=$2
+fi
+if [ "$3" = "" ]; then
+  getauthname
+else
+  NAME=$3
+fi
+
+
+#
+# 3. Ask for confirmation.
+#
+
+cat <<ENDOFTEXT
+This script will update the package working directory
+
+	`pwd`/$PACKAGE/
+
+for the package "$PACKAGE", using "$PAC" for the package's namespace.
+The author's name is "$NAME".  Are these values correct?
+
+ENDOFTEXT
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been created."
+  exit 0
+else
+  echo
+fi
+
+cd $PACKAGE
+
+#
+# 4. Set up directories.
+#
+
+echo ===========================================================================
+echo Setting up new directories ...
+
+echo
+echo "[nothing to do]"
+echo
+
+#
+# 5. Set up sample files.
+#
+
+echo Setting up new files ...
+echo
+
+# Documentation.
+patchfile $Sturm/etc/Sturm/Default/Main.texi doc/Texi/$PACKAGE/Main.texi \
+  || errexit $ERR_FILE Could not create file \"doc/Texi/$PACKAGE/Main.texi\"!
+patchfile $Sturm/etc/Sturm/Default/Package.texi doc/Texi/$PACKAGE.texi \
+  || errexit $ERR_FILE Could not create file \"doc/Texi/$PACKAGE.texi\"!
+patchfile $Sturm/etc/Sturm/Default/Packages.head doc/Texi/Packages.head \
+  || errexit $ERR_FILE Could not create file \"doc/Texi/Packages.head\"!
+patchfile $Sturm/etc/Sturm/Default/doc-Makefile doc/Texi/Makefile \
+  || errexit $ERR_FILE Could not create file \"doc/Texi/Makefile\"!
+patchfile $Sturm/etc/Sturm/Default/Configuration.texi \
+          doc/Texi/Configuration.texi \
+  || errexit $ERR_FILE Could not create file \"doc/Texi/Configuration.texi\"!
+patchfile $Sturm/etc/Sturm/Default/Makefile.obj etc/Sturm/Makefile.obj \
+  || errexit $ERR_FILE Could not create file \"etc/Sturm/Makefile.obj\"!
+patchfile $Sturm/etc/Sturm/Default/lib-Makefile lib/Makefile \
+  || errexit $ERR_FILE Could not create file \"lib/Makefile\"!
+
+
+#
+# 6. Finished.
+#
+
+cat <<ENDOFTEXT
+
+===========================================================================
+The working directory tree for package "$PACKAGE" has successfully been set
+up.
+
+If you have questions or problems do not hesitate to send e-mail to
+
+		sturm@risc.uni-linz.ac.at
+
+May you be successful and not be pestered too much by bugs!  ;-)
+ENDOFTEXT

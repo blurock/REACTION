@@ -1,0 +1,61 @@
+ObjectClasses:
+DataType: ThirdBody The Standard Rate Coefficients
+MaussThirdBody
+LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+cm3
+   cm3         0.0   1.0
+   m3          0.0   1000.0
+   END
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Mole
+   Molecule   0.0  6.02e+23
+   Mole       0.0  1.0
+   END
+%% ------------------------
+KiloJoule
+   ECalorie        0.0    239.0
+   EJoule          0.0    1000.0
+   EKiloCalorie    0.0    0.239
+   EKiloJoule      0.0    1.00
+   GCCalorie       0.0    1.000
+   GCJoule         0.0    4.184
+   GCKiloCalorie   0.0    0.001
+   GCKiloJoule     0.0    0.004184
+   END
+%% ------------------------
+END
+PropertyConversions:
+AsInput                 Numerator:                Denominator:                        END
+Calorie-cm3             Numerator: ECalorie       Denominator: GCCalorie  cm3  Mole    END
+Joule-cm3               Numerator: EJoule         Denominator: GCJoule    cm3 Mole     END
+KCalorie-cm3            Numerator: EKiloCalorie   Denominator: GCKiloCalorie cm3 Mole  END
+KJoule-cm3              Numerator: EKiloJoule     Denominator: GCKiloJoule cm3 Mole    END
+Calorie-m3              Numerator: ECalorie       Denominator: GCCalorie  m3 Mole      END
+Joule-m3                Numerator: EJoule         Denominator: GCJoule    m3 Mole      END
+KCalorie-m3             Numerator: EKiloCalorie   Denominator: GCKiloCalorie m3  Mole  END
+KJoule-m3               Numerator: EKiloJoule     Denominator: GCKiloJoule m3 Mole     END
+END
+Real
+Arrhenius TemperatureCoefficient ActivationEnergy
+1.9872
+Inverse-GCCalorie Inverse-GCJoule Inverse-GCKiloCalorie Inverse-GCKiloJoule END
+Inverse-m3 Inverse-cm3 Inverse-Mole END 
+ECalorie EJoule EKiloCalorie EKiloJoule END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+MaussWarnatz MaussThirdBody
+END
+%% -------------------------------------------------

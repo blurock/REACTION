@@ -1,0 +1,74 @@
+Instance: 1 B-CH4+O2=CH3+HO2             methane oxygen = methyl-radical peroxyl-radical
+        13.88      0.00      245.32  
+Instance: 1 B-CH4+H=CH3+H2               methane hydrogen-radical = methyl-radical hydrogen
+        14.10      0.00      49.83   
+Instance: 1 B-CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical
+        6.33      2.20      27.13   
+Instance: 1 B-CH4+OH=CH3+H2O             methane hydroxyl-radical = methyl-radical water
+        6.20      2.10      10.30   
+Instance: 1 B-CH4+HO2=CH3+H2O2           methane peroxyl-radical = methyl-radical hydrogen-peroxide
+        13.30      0.00      75.37   
+Instance: 1 B-CH3+O2=CH3+O+O             methyl-radical oxygen = methyl-radical oxygen-atom oxygen-atom
+        13.68      0.00      121.42  
+Instance: 1 B-CH3+O2=CH3O+O              methyl-radical oxygen = methoxy-radical oxygen-atom
+        13.68      0.00      121.42  
+Instance: 1 B-CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical
+        14.11      0.00      8.37    
+Instance: 1 B-CH3+OH=HCHO+H2             methyl-radical hydroxyl-radical = aldehyde hydrogen
+        12.60      0.00      0.00    
+Instance: 1 B-CH3+OH=CH3OH               methyl-radical hydroxyl-radical = methanol
+        13.73      0.00      0.00    
+Instance: 1 B-CH3O2+HO2=CH3O2H+O2        methylperoxy peroxyl-radical = methylperoxide oxygen
+        10.66      0.00      -10.89  
+Instance: 1 B-CH3O2+HO2=CH3O+O2+OH       methylperoxy peroxyl-radical = methoxy-radical oxygen hydroxyl-radical
+        11.00      0.00      0.00    
+Instance: 1 B-CH3O2H+OH=CH3O2+H2O        methylperoxide hydroxyl-radical = methylperoxy water
+        13.51      0.00      4.19    
+Instance: 1 B-CH3O+O2=HCHO+HO2           methoxy-radical oxygen = aldehyde peroxyl-radical
+        10.88      0.00      11.30   
+Instance: 1 B-CH3OH+H=CH3+H2O            methanol hydrogen-radical = methyl-radical water
+        12.72      0.00      22.36   
+Instance: 1 B-CH3OH+OH=CH3O+H2O          methanol hydroxyl-radical = methoxy-radical water
+        13.09      0.00      13.61   
+Instance: 1 B-HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical
+        15.56      0.00      192.77  
+Instance: 1 B-HCHO+H=HCO+H2           aldehyde hydrogen-radical = formyl-radical hydrogen
+        14.52      0.00      43.96   
+Instance: 1 B-HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+        13.70      0.00      19.26   
+Instance: 1 B-HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water
+        12.88      0.00      0.71    
+Instance: 1 B-HCHO+HO2=HCO+H2O2       aldehyde peroxyl-radical = formyl-radical hydrogen-peroxide
+        11.30      0.00      33.50   
+Instance: 1 B-HCO+O2=CO2+OH            formyl-radical oxygen = carbondioxide hydroxyl-radical
+        11.53 0.00 0.00   
+Instance: 1 B-HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical
+        12.48 0.00 0.00   
+Instance: 1 B-HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen
+        14.30 0.00 0.00   
+Instance: 1 B-HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+        14.00 0.00 0.00   
+Instance: 1 B-HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water
+        14.00 0.00 0.00   
+Instance: 1 B-CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+        7.18 1.30 -3.22   
+Instance: 1 B-CO+HO2=CO2+OH            carbonmonoxide peroxyl-radical = carbondioxide hydroxyl-radical
+        14.18 0.00 99.02   
+Instance: 1 B-CO+O2=CO2+O               carbonmonoxide oxygen = carbondioxide oxygen-atom
+        11.50 0.00 157.43   
+Instance: 1 B-CH30H+H=CH20H+H2         methanol hydrogen-radical = hydroxymethyl hydrogen
+        13.48 0.00 29.31   
+Instance: 1 B-CH30H+O=CH20H+OH         methanol oxygen-atom = hydroxymethyl hydroxyl-radical
+        12.23 0.00 9.59   
+Instance: 1 B-CH3OH+OH=CH20H+H2O       methanol hydroxyl-radical = hydroxymethyl water
+        12.60 0.00 5.74   
+Instance: 1 B-CH3OH+HO2=CH2oH+H2O2     methanol peroxyl-radical = hydroxymethyl hydrogen-peroxide
+        12.80 0.00 81.06   
+Instance: 1 B-CH20H+O2=HCHO+HO2        hydroxymethyl oxygen = aldehyde peroxyl-radical
+     11.92 0.00 0.00   
+Instance: 1 B-CH2+O2=HCO+OH            methylene oxygen = formyl-radical hydroxyl-radical
+        14.00 0.00 15.49   
+Instance: 1 B-CH4=CH3+H                  methane = methyl-radical hydrogen-radical
+        15.00     0.00      418.70  
+Instance: 1 B-CH3O2H=CH3O+OH             methylperoxide = methoxy-radical hydroxyl-radical
+        15.60     0.00      180.04  

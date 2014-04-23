@@ -1,0 +1,17 @@
+@c FILE     Packages.head
+@c PACKAGE  Dbase
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   STURM package descriptions.
+@c
+@c COPYRIGHT (C)  CoreObjects Library
+
+
+@node    Packages
+@chapter Packages
+@cindex  packages, list of
+
+This will contain descriptions of all packages.
+
+

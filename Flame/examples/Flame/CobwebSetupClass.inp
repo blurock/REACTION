@@ -1,0 +1,52 @@
+% **********************************************************
+% The Set up of the Attributes for Cobweb
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Attributes
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+DataType: NumericPredicate A sample predicate
+FuzzyPredicate Continuous PyramidODReal
+%% -------------------------------------------------
+DataType: RealPredicate  A real function based predicate
+ParameterizedPyramidPredicate  PyramidODReal Continuous 
+%% -------------------------------------------------
+DataType: Predicate A numeric predicate
+FuzzyParameterPredicate FuzzyPredicate
+END
+ClassNamePairs:
+MaxLevel                               Integer
+LogicType                              KeyWords
+InstanceNameList                       KeyWords
+TestPercentage                         Real
+GoalNameList                           KeyWords
+aTimeGT-5.00             FuzzyParameterPredicate
+bTimeGT-2.00              FuzzyParameterPredicate
+cTimeGT-0.50             FuzzyParameterPredicate
+dTimeGT+0.00                  FuzzyParameterPredicate
+eTimeGT+0.50                 FuzzyParameterPredicate
+fTimeGT+1.00                 FuzzyParameterPredicate
+gTimeGT+2.00                 FuzzyParameterPredicate
+END
+% **********************************************************
+% The Set up of the Instances Class Information
+% **********************************************************
+%
+% ----------------------------------------------------------
+%  The Type Definition of the Instances
+%  (no new types specified)
+% ----------------------------------------------------------
+ObjectClasses:
+END
+%
+% ----------------------------------------------------------
+%  The instance parameter specifications
+%  Five Parameters are to be read in
+%
+% ----------------------------------------------------------
+ClassNamePairs:
+END
+
+

@@ -1,0 +1,339 @@
+ObjectClasses:
+DataType: GoalRun  A sample goal run class
+TestGoalRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg Initial#InstanceAlgs#Algorithms Matrix
+PartitionAlgs Initial
+     PredGen Initial#PartitionAlgs
+         CrPnts Initial#PartitionAlgs#PredGen
+             ReadCriticalPoints           Initial#PartitionAlgs#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#PartitionAlgs#PredGen#CrPnts Partitions
+DecisionTreeAlgs Initial
+       DTreeAlg           Initial#DecisionTreeAlgs
+       SelectAlg          Initial#DecisionTreeAlgs
+       StandardEntropyAlg Initial#DecisionTreeAlgs
+                EntropySelectPredicate   Initial#DecisionTreeAlgs#SelectAlg           SimpleSelect
+                EntropyAlgorithm         Initial#DecisionTreeAlgs#StandardEntropyAlg  ZEntropy
+                DecisionTreeCreate       Initial#DecisionTreeAlgs#DTreeAlg            Create
+ClusterAlgs Initial
+    CobwebTreeAlg Initial#ClusterAlgs
+       CobwebClusterTreeCreate  Initial#ClusterAlgs#CobwebTreeAlg            CobwebCreate
+VariableGen Initial
+       Expression Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Expression Calculate
+       PCA Initial#VariableGen
+            PCAParameterGenerate Initial#VariableGen#PCA       Calculate
+StatisticsAlgs Initial
+       Distribution Initial#StatisticsAlgs
+            DistributionAlgorithm Initial#StatisticsAlgs#Distribution Calculate
+       PCA Initial#StatisticsAlgs
+            InstancePCA           Initial#StatisticsAlgs#PCA          Calculate
+END
+% ----------------------------------------------------------
+% Set of GoalSummary Definitions
+%
+SetOfGoalDefs: MyDefinitions          % NameTag
+GoalSummary: CobwebClusterPredRead
+     Initial ClusterAlgs             END    % Algorithm Category
+     Parameter Level1                END    % Algorithm KeyWords
+     CobwebCreate                    END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel               %     Integer
+     LogicType              %     KeyWords
+     TrainInstanceNameList  %     KeyWords
+     TestInstanceNameList   %     KeyWords
+     PredicateList          %     KeyWords
+     GoalNameList           %     KeyWords
+     END
+                                            % Algorithm Result Parameters
+     CobwebClusterTree       % CobwebClusterTree
+     END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+       AttributeSetUp
+       END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+GoalSummary: CobwebClusterPredGen
+     Initial ClusterAlgs            END    % Algorithm Category
+     Parameter Level0                END    % Algorithm KeyWords
+     Create      END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel               Integer
+     LogicType              KeyWords
+     TrainInstanceNameList  KeyWords
+     TestInstanceNameList   KeyWords
+     PredicateList          KeyWords
+     GoalNameList           KeyWords
+     END
+                                            % Algorithm Result Parameters
+     CobwebClusterTree       % CobwebClusterTree
+     END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+       AttributeSetUp
+       END
+       PartitionsFromCriticalPoints
+       END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+GoalSummary: DecisionTreeRead
+     Initial DecisionTreeAlgs        END    % Algorithm Category
+     Parameter Level0                END    % Algorithm KeyWords
+     Create SimpleSelect ZEntropy    END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     EntropyGoal            KeyWords
+     PartitionList          KeyWords
+     DecisionTreeParameters KeyWords
+     TrainInstanceNameList  KeyWords
+     END
+     DecisionTree %% KeyWords                        % Algorithm Result Parameters
+     END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+       AttributeSetUp
+       END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+GoalSummary: DecisionTreePredGen
+     Initial DecisionTreeAlgs        END    % Algorithm Category
+     Parameter Level0                END    % Algorithm KeyWords
+     Create SimpleSelect ZEntropy    END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     EntropyGoal            KeyWords
+     PartitionList          KeyWords
+     DecisionTreeParameters KeyWords
+     TrainInstanceNameList  KeyWords
+     END
+   %                                       Algorithm Result Parameters
+     DecisionTree   % KeyWords
+     END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+       AttributeSetUp
+       END
+       PartitionsFromCriticalPoints
+       END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+% Read in the set of Critical Point
+%
+GoalSummary: CriticalPointRead
+Initial PartitionAlgs PredGen END
+Level0 END
+Read END
+CriticalPointsRootName               KeyWords
+CriticalPointsFileName               KeyWords
+END
+CriticalPointsList                   %%KeyWords
+END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+   END
+   % ----- End of List of Prerequisites
+% ----------------------------------------------------------
+% ---------------------- Goal Summary Definition
+% Create Predicates From the Critical Points
+%
+GoalSummary: PartitionsFromCriticalPoints
+Initial PartitionAlgs PredGen END
+Level0 END
+Partitions END
+PartitionTypesFromPoints             KeyWords
+CriticalPointsList                   KeyWords
+END
+PredicateList                        %%KeyWords
+PartitionList                        %%KeyWords
+END
+   % The Goal Parameters (Name-Class Pairs)
+   END
+   % ----- List of Prerequisites (GoalSpecs)
+   CriticalPointRead
+   END
+   % ----- End of List of Prerequisites
+   END
+% ----------------------------------------------------------
+GoalSummary: ReadInstances
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Read END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceReadFiles KeyWords             % (Name-Class Pairs)
+       END
+                                              % Algorithm Result Parameters
+       END
+    % The Goal Parameters (Name-Class Pairs)
+    InstanceReadFile Param
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+    END
+GoalSummary: InstanceSetUp
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+    % The Goal Parameters (Name-Class Pairs)
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+       ReadInstances
+       InstanceReadFile KeyWords              % (Name-Class Pairs)
+       END
+    % ----- End of List of Prerequisites
+    END
+% ---------------------- Goal Summary Definition
+GoalSummary: AttributeSetUp
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+    % The Goal Parameters (Name-Class Pairs)
+       InstanceNameList KeyWords
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+       InstanceSetUp
+       END
+    % ----- End of List of Prerequisites
+    END
+% ---------------------- Goal Summary Definition
+GoalSummary: AttributeByType
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByType END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+    % The Goal Parameters (Name-Class Pairs)
+       InstanceNameList KeyWords
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+       InstanceSetUp
+       END
+    % ----- End of List of Prerequisites
+    END
+% ---------------------- Goal Summary Definition
+GoalSummary: AttributeByName
+       Initial InstanceAlgs END    % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+    % The Goal Parameters (Name-Class Pairs)
+       InstanceNameList KeyWords
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+       InstanceSetUp
+       END
+    % ----- End of List of Prerequisites
+    END
+% ---------------------- Goal Summary Definition
+% ---------------------- Goal Summary Definition
+GoalSummary: MatrixSetUp
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+    % The Goal Parameters (Name-Class Pairs)
+    END
+    % ----- List of Prerequisites (GoalSpecs)
+       AttributeSetUp
+       END
+    % ----- End of List of Prerequisites
+    END
+
+% End of List of GoalSummary Definitions
+END
+DataType: ExpressionTree  A Numeric Tree
+NumericTree
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+END
+% --------------------------------------------------------------------------------
+END
+ClassNamePairs:
+RunID     Integer
+CobwebClusterPredGen                   GoalSpec
+CobwebClusterRead                      GoalSpec
+DecisionTreePredGen                    GoalSpec
+DecisionTreeRead                       GoalSpec
+CriticalPointRead                      GoalSpec
+PartitionsFromCriticalPoints           GoalSpec
+ReadInstances                          GoalSpec
+InstanceSetUp                          GoalSpec
+AttributeSetUp                         GoalSpec
+AttributeByType                        GoalSpec
+AttributeByName                        GoalSpec
+MatrixSetUp                            GoalSpec
+CriticalPointReadAlg                   AlgorithmSummary
+PartitionsFromCriticalPointsAlg        AlgorithmSummary
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+DecisionTreeAlg                        AlgorithmSummary
+CobwebClusterAlg                       AlgorithmSummary
+ExpressionTreeAlg                      AlgorithmSummary
+DistributionAlg                        AlgorithmSummary
+PCAVarGenAlg                           AlgorithmSummary
+PCAAlg                                 AlgorithmSummary
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END

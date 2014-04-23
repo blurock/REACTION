@@ -1,0 +1,36 @@
+Instance: 1 hydroxymethyl   hydroxymethyl thermodynamic constants
+ -2.60e+4   
+ 3.03e-17 9.65 -5777.0 A Kojima
+Instance: 2 methylperoxy   methylperoxy thermodynamic constants
+ 1.76e+4   
+ 1.21e-25 12.78 -2881 A Kojima
+Instance: 3 methylperoxide   methylperoxide thermodynamic constants
+ -1.34e+5   
+ 7.35e-20 11.40 -19577 A Kojima
+Instance: 4 oxyethene   oxyethene thermodynamic constants
+ -1.67e+4   
+ 1.09e-23 12.23 -1755 A Kojima -1.823E+00  4.434E+01 -2.457E+01  7.278E+00 -1.260E+00  1.040E-01 
+Instance: 5 ethanal   ethanal thermodynamic constants
+ -1.66e+5   
+ 5.98e-30 14.15 -25602 A Kojima
+Instance: 6 oxirane   oxirane thermodynamic constants
+ -5.27e+4   
+ 5.04e-32 14.42 -12279 A Kojima
+Instance: 7 methylcarboxy   methylcarboxy thermodynamic constants
+ -1.22e+5   
+ 2.24e-25 13.77 -30176 A Kojima
+Instance: 8 ethoxy-radical   ethoxy-radical thermodynamic constants
+ -1.79e+4   
+ 1.16e-33 15.42 -8317 A Kojima
+Instance: 9 methylpercarboxy   methylpercarboxy thermodynamic constants
+ -2.05e+5   
+ 2.24e-25 13.77 -30176 A Kojima
+Instance: 10 ethylperoxy   ethylperoxy thermodynamic constants
+ -1.59e+4   
+ 5.90e-27 13.94 -9242 A Kojima
+Instance: 11 perethanoic-acid   perethanoic-acid thermodynamic constants
+ -3.37e+5   
+ 6.61e-27 14.60 -48283 A Kojima
+Instance: 12 ethylperoxide   ethylperoxide thermodynamic constants
+ -1.68e+5   
+ 1.95e-27 14.77 -24372 A Kojima

@@ -1,0 +1,45 @@
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.15 9 0.117 0.15 0.001 
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.15 9 0.117 0.15 0.001 
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.15 9 0.117 0.15 0.001 
+Expected MetaAtom Entry
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.15 9 0.117 0.15 0.001 
+
+==================================
+The  Command (0 arguments) is: SenkinGraphSet:  Graph Sets From Senkin
+Create Graph for Dryer-CH2O-92 from Senkin Run Temp=945(With Mech ID= 36) with cutoff0.15
+
+ The Properties
+
+ The Properties
+Mechanism: Dryer-CH2O-92
+ Run under Conditions:
+SENS
+CONP
+PRES 1
+TEMP 945
+TIME 0.15
+DELT 0.015
+REAC N2 0.99288
+REAC CH2O 0.00356
+REAC O2 0.00342
+END
+987 Data points recorded
+ Times: 0.117 0.15 0.001
+Time:      0.117: For:STD-H2O2+H=H2O+OH For:STD-HCHO+H=HCO+H2 For:STD-H+OH+M=H2O+M 
+                  For:STD-CO+O+M=CO2+M For:STD-H+O2+M=HO2+M 
+Time:      0.118: Rev:STD-HCO+M=CO+H+M For:STD-OH+H2=H2O+H For:STD-H+OH+M=H2O+M 
+                  For:STD-H+O2+M=HO2+M For:STD-CO+O+M=CO2+M 
+Time:      0.119: Rev:STD-HCHO+M=HCO+H+M Rev:STD-HCO+M=CO+H+M For:STD-OH+H2=H2O+H 
+                  Rev:STD-H2O2+M=OH+OH+M For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M 
+                  For:STD-CO+O+M=CO2+M 
+Time:      0.122: Rev:STD-HCHO+M=HCO+H+M Rev:STD-H2O2+M=OH+OH+M Rev:STD-HCO+M=CO+H+M 
+                  For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M For:STD-CO+O+M=CO2+M 
+Time:      0.147: For:STD-HCO+M=CO+H+M Rev:STD-HCHO+M=HCO+H+M Rev:STD-H2O2+M=OH+OH+M 
+                  Rev:STD-HCO+M=CO+H+M For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M 
+                  For:STD-CO+O+M=CO2+M 
+Times:
+0.117 0.118 0.119 0.122 0.147 

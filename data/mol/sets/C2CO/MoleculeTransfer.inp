@@ -1,0 +1,47 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+ethane
+ethyl-radical
+ethene
+ethenyl-radical
+ethyne
+ethynyl-radical
+ethanal
+ethanal-2-yl-radical
+ethenone
+ketenyl-radical
+Oxiranyl-radical
+ethanol
+ethoxy-radical
+ethylperoxy-radical
+ethyl-hydroperoxide
+oxirane
+methylcarboxy-radical
+ethanoic-acid
+methylperoxyacyl-radical
+peroxyethanoic-acid
+hydroperoxyethanyl-radical
+diformyl
+ethanoyl-radical
+dimethylperoxide
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END
+

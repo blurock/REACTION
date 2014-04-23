@@ -1,0 +1,44 @@
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.1 6 0.0 0.12 0.001 
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.1 6 0.0 0.12 0.001 
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.1 6 0.0 0.12 0.001 
+Expected MetaAtom Entry
+The Inputs are:
+SenkinGraphSet Dryer-CH2O-92 Temp=945 0.1 6 0.0 0.12 0.001 
+
+==================================
+The  Command (0 arguments) is: SenkinGraphSet:  Graph Sets From Senkin
+Create Graph for Dryer-CH2O-92 from Senkin Run Temp=945(With Mech ID= 36) with cutoff0.1
+
+ The Properties
+
+ The Properties
+Mechanism: Dryer-CH2O-92
+ Run under Conditions:
+SENS
+CONP
+PRES 1
+TEMP 945
+TIME 0.15
+DELT 0.015
+REAC N2 0.99288
+REAC CH2O 0.00356
+REAC O2 0.00342
+END
+987 Data points recorded
+ Times: 0 0.12 0.001
+Time:          0: For:STD-HCHO+M=HCO+H+M For:STD-HCHO+M=CO+H2+M For:STD-HCHO+O2=HCO+HO2 
+Time:      0.001: For:STD-HCO+HO2=OH+H+CO2 For:STD-HCHO+HO2=HCO+H2O2 For:STD-HCHO+OH=HCO+H2O For:STD-HCO+M=CO+H+M For:STD-HCHO+H=HCO+H2 For:STD-H+O2+M=HO2+M 
+Time:      0.015: For:STD-H2O2+M=OH+OH+M For:STD-HCHO+HO2=HCO+H2O2 For:STD-HCO+M=CO+H+M For:STD-HCHO+OH=HCO+H2O For:STD-HCHO+H=HCO+H2 For:STD-H+O2+M=HO2+M 
+Time:      0.033: For:STD-HCO+HO2=OH+H+CO2 For:STD-HCHO+HO2=HCO+H2O2 For:STD-HCO+M=CO+H+M For:STD-HCHO+OH=HCO+H2O For:STD-HCHO+H=HCO+H2 For:STD-H+O2+M=HO2+M 
+Time:      0.053: For:STD-CO+O+M=CO2+M For:STD-HCO+HO2=OH+H+CO2 For:STD-HCO+M=CO+H+M For:STD-HCHO+OH=HCO+H2O For:STD-HCHO+H=HCO+H2 For:STD-H+O2+M=HO2+M 
+Time:      0.067: For:STD-H2O2+M=OH+OH+M For:STD-CO+O+M=CO2+M For:STD-HCO+M=CO+H+M For:STD-HCHO+OH=HCO+H2O For:STD-HCHO+H=HCO+H2 For:STD-H+O2+M=HO2+M 
+Time:       0.09: For:STD-H+OH+M=H2O+M For:STD-HCO+M=CO+H+M For:STD-HCHO+OH=HCO+H2O For:STD-HCHO+H=HCO+H2 For:STD-CO+O+M=CO2+M For:STD-H+O2+M=HO2+M 
+Time:      0.115: For:STD-HCO+M=CO+H+M For:STD-H2O2+H=H2O+OH For:STD-HCHO+H=HCO+H2 For:STD-H+OH+M=H2O+M For:STD-CO+O+M=CO2+M For:STD-H+O2+M=HO2+M 
+Time:      0.117: For:STD-H2O2+H=H2O+OH For:STD-OH+H2=H2O+H For:STD-HCHO+H=HCO+H2 For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M For:STD-CO+O+M=CO2+M 
+Time:      0.118: For:STD-HCHO+H=HCO+H2 Rev:STD-HCO+M=CO+H+M For:STD-OH+H2=H2O+H For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M For:STD-CO+O+M=CO2+M 
+Time:      0.119: Rev:STD-HCO+M=CO+H+M For:STD-OH+H2=H2O+H Rev:STD-H2O2+M=OH+OH+M For:STD-H+OH+M=H2O+M For:STD-H+O2+M=HO2+M For:STD-CO+O+M=CO2+M 
+Times:
+0 0.001 0.015 0.033 0.053 0.067 0.09 0.115 0.117 0.118 0.119 

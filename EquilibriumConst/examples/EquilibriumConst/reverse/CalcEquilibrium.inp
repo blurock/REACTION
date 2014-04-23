@@ -1,0 +1,33 @@
+Expression Calculate Reverse constants
+Attributes:
+%% -------------------------------------------------
+%% InstanceNameList  KeyWords
+%% -------------------------------------------------
+hydrogen
+hydrogen-radical
+oxygen-atom
+oxygen
+hydroxyl-radical
+peroxyl-radical
+water
+hydrogen-peroxide
+END
+%% -------------------------------------------------
+%% Reverse  MolecularExpression
+%% -------------------------------------------------
+  END
+ ( CalculateEquilibrium Molecule )
+%% -------------------------------------------------
+%%    VarsAndExps   KeyWords
+%% -------------------------------------------------
+ Instance EquilibriumFromChemkin Equilibrium END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance   StoreMoleculeProperty Molecule 
+EquilibriumFromChemkin Equilibrium
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

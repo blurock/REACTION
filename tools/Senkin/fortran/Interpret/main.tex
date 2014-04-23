@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{epsf}
+\usepackage{rotating}
+
+\begin{document}
+
+%%% The Reactions
+\clearpage
+
+cat << EOF >> main.tex
+
+\end{document}
+
+# ---------------------------------------------------------------------------
+#
+# Compile the LaTeX file to Postscript file
+#
+latex main
+dvips main
+
+#rm main.dvi
+#rm *.tex
+#rm *.aux
+#rm For*.ps
+#rm Rev*.ps
+#rm *.plt

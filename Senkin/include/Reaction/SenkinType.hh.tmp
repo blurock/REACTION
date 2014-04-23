@@ -1,0 +1,23 @@
+/*  FILE     SenkinType.hh
+**  PACKAGE  Senkin
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Class definitions for the "Senkin" package.
+**
+**  OVERVIEW
+**
+**  IMPLEMENTATION
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1996 Reaction Project, RISC Linz
+*/
+ 
+#ifndef Reaction_SENKintYPE_HH
+#define Reaction_SENKintYPE_HH
+
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+
+#endif

@@ -1,0 +1,36 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: Mechanism The standard mechanism
+StandardMechanism 
+NameInInstance: Mechanism
+MoleculeSummary
+ReactionSummary
+StandardMolecule
+StandardReaction
+%  Moldat Information
+Linearity      Integer   1
+Eps            Real      252.0
+Sig            Real      4.760
+Dipole         Real      0.0
+Polarize       Real      0.0
+ZRotation      Real      1.0
+END
+%% -------------------------------------------------
+DataType: DataBaseInformation The standard database
+StandardDataBase 
+./   438  2
+%% -------------------------------------------------
+DataType: MechanismDataBase  The Standard Molecule Database
+MolecularStructureDataBase StandardDataBase
+%% -------------------------------------------------
+END
+ClassNamePairs:
+MolecularStructureDataBase    MolecularStructureDataBase
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

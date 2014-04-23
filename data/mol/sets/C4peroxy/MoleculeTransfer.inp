@@ -1,0 +1,39 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+2-butylperoxy-radical
+1-butylperoxy-radical
+1-butyl-1-hydroperoxy-radical
+2-butyl-1-hydroperoxy-radical
+3-butyl-1-hydroperoxy-radical
+4-butyl-1-hydroperoxy-radical
+1-butyl-2-hydroperoxy-radical
+2-butyl-2-hydroperoxy-radical
+3-butyl-2-hydroperoxy-radical
+4-butyl-2-hydroperoxy-radical
+1-hydroperoxy-1-peroxy-butane
+1-hydroperoxy-2-peroxy-butane
+1-hydroperoxy-3-peroxy-butane
+1-hydroperoxy-4-peroxy-butane
+2-hydroperoxy-2-peroxy-butane
+2-hydroperoxy-3-peroxy-butane
+2-hydroperoxy-4-peroxy-butane
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

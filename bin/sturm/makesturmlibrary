@@ -1,0 +1,120 @@
+#!/bin/sh
+#
+# FILE     makesturmlibrary
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script for creating the STURM libraries.
+#
+# COPYRIGHT (C) 1996 STURM Project, RISC Linz
+
+#I
+
+. `dirname $0`/sturm.sh
+
+
+#F makesturmlibrary [seq|par|any] [opt|deb|pro] PACKAGE DIR . . . . . Creates
+# . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . *.a files
+#
+# DESCRIPTION
+#   Creates the library files for the PACKAGE with root directory
+#   DIR.  If PACKAGE is "all" all packages are build.  DIR must be an
+#   absolute path.
+#
+#   * "seq" chooses the sequential files, "par" chooses the parallel files,
+#     "any" chooses the files that work in both cases.  Default is "any".
+#   * "opt" chooses the optimizing version, "deb" chooses the debugging
+#     version, "pro" chooses the profiling version.  Default is "opt".
+#
+#   The created library is "[s|p][odp]/libPACKAGE.a" directory
+#   "DIR/lib/Sturm".  Here "s"/"p" depend upon "seq"/"par" and "o"/"d"/"p"
+#   depend upon "opt"/"deb"/"pro".
+#
+#   Object files are taken from "DIR/obj_[o|d|p]/*".
+#
+#   Environment variables AR and RANLIB should be set appropriately.
+#
+# OPTIONS
+#   -h ... print usage message.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_FILE=2 # Error in file/directory access.
+    ERR_PARS=3 # Error in parsing.
+#
+# SEE ALSO
+#   makesturmobjs
+
+#
+# 1. Parse arguments.
+#
+
+if [ "$1" = -debug ]; then
+  set -vx
+  shift
+fi
+
+LType="any"
+LSpeed="optimized"
+LT=s
+LS=o
+
+endopts=""
+while [ "$endopts" = "" ]; do
+  case $1 in
+  -h) help; exit 0;;
+  any) LType="any"; LT=s; shift;;
+  seq) LType="sequential"; LT=s; shift;;
+  par) LType="parallel"; LT=p; shift;;
+  opt) LSpeed="optimized"; LS=o; shift;;
+  deb) LSpeed="debugging"; LS=d; shift;;
+  pro) LSpeed="profiling"; LS=p; shift;;
+  --) endopts=1; shift;;
+   *) endopts=1;;
+  esac
+done
+
+if [ $# != 2 ]; then
+  help
+  exit $ERR_ARGS
+else
+  PACKAGE="$1"
+  DIR="$2"
+fi
+
+if [ "$PACKAGE" = "all" ]; then
+  PACKAGE=`cd $DIR/src; /bin/ls`
+fi
+
+if [ "$AR" = "" ]; then
+  AR=ar -vq
+fi
+if [ "$RANLIB" = "" ]; then
+  myranlib() { ranlib $* || ar -ts $*; }
+  RANLIB=myranlib
+fi
+
+OBJDIR=$DIR/obj_"$LS"
+LIBDIR=$DIR/lib/Sturm
+#
+# 2. Build libraries.
+#
+umask 000
+currpwd=`pwd`
+TMPDIR=.; export TMPDIR
+
+for i in $PACKAGE; do
+  cd $OBJDIR/$i
+  if [ -f flag-type-$LType -a -f flag-speed-$LSpeed ]; then
+    if [ ! -d $LIBDIR/$LT$LS ]; then
+      mkdir $LIBDIR/$LT$LS || exit $ERR_FILE
+    fi
+    libname=$LT$LS/lib"$i".a
+    objs=`find . -type f -name "*.o" -print`
+    rm -f $LIBDIR/$libname
+    $AR $LIBDIR/$libname $objs
+    $RANLIB $LIBDIR/$libname
+  fi
+done
+cd $currpwd

@@ -1,0 +1,36 @@
+ObjectClasses:
+DataType: ChemkinThermo   The real based property class
+StandardChemkin LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Mole
+   Molecule    0.0 6.02e+23
+   END
+%% ------------------------
+Calorie
+   KiloCalorie    0.0 0.001
+   Joule          0.0 4.185
+   END
+%% ------------------------
+END
+PropertyConversions:
+Entropy  Numerator:   Meter    Denominator:  KiloCalorie   END
+END
+298.1  1.9866
+END
+ClassNamePairs:
+ChemkinH2   StandardChemkin
+ChemkinH    StandardChemkin
+ChemkinOH   StandardChemkin
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

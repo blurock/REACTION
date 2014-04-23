@@ -1,0 +1,212 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C1 mechanism from chevalier
+Attributes:
+%------------------------------------------------------------------------------
+Instance:  1 CH+O=CO+H  CH    + O     = CO    + H      
+Baulch.et.al.92   J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.300E+13    0.0       0.0
+Instance:  2  CH+O2=HCO+O  CH    + O2    = HCO   + O                       
+Baulch.et.al.92   J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.000E+13    0.0       0.0
+Instance:  3 CH+CO2=HCO+CO   CH    + CO2   = HCO   + CO                 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.400E+12    0.0       2.9
+Instance:  4 CH+H2O=3-CH2+OH   CH    + H2O   = 3-CH2 + OH               
+Baulch.et.al.92   J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.700E+12    0.0      -3.2
+%------------------------------------------------------------------------------
+Instance:  6 HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical    HCO   + O2    = CO    + HO2  
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 3.000E+12    0.0       0.0
+Instance:  7 HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen    HCO   + H     = CO    + H2   
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 9.000E+13    0.0       0.0
+Instance:  8 HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical   HCO   + O     = CO    + OH 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67  
+ 3.000E+13    0.0       0.0
+Instance:  9 HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water   HCO   + OH    = CO    + H2O 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67  
+ 1.000E+14    0.0       0.0
+Instance: 10 HCO+O=CO2+H   HCO   + O     = CO2   + H                    
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.000E+13    0.0       0.0
+Instance: 11 HCO+HCO=HCHO+CO   HCO   + HCO   = CH2O  + CO               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.000E+13    0.0       0.0
+Instance: 12 3-CH2+H=CH+H2   3-CH2 + H     = CH    + H2                 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.000E+12    0.0      -7.5
+Instance: 13 3-CH2+O=CO+H+H   3-CH2 + O     > CO    + H   + H           
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 8.428E+12    0.0       0.0 
+Instance: 14 3-CH2+O2=CO+OH+H   3-CH2 + O2    > CO    + OH  + H         
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.300E+13    0.0       6.2
+Instance: 15 3-CH2+O2=CO2+H2   3-CH2 + O2    > CO2   + H2               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.200E+13    0.0       6.2
+Instance: 16 3-CH2+3-CH2=C2H2+H2   3-CH2 + 3-CH2 = C2H2  + H2           
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.200E+13    0.0       3.4
+Instance: 17 3-CH2+3-CH2=C2H2+H+H   3-CH2 + 3-CH2 = C2H2  + H   + H     
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.100E+14    0.0       3.4
+Instance: 18 3-CH2+CH3=C2H4+H   3-CH2 + CH3   = C2H4  + H               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.200E+13    0.0       0.0
+Instance: 20 1-CH2+H2=CH3+H   1-CH2 + H2    = CH3   + H                 
+Baulch.et.al.92   J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 7.200E+13    0.0       0.0
+Instance: 30 1-CH2+O2=CO+OH+H   1-CH2 + O2    > CO    + OH  + H         
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.100E+13    0.0       0.0
+Instance: 31 HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical    CH2O  + HO2   = HCO   + H2O2 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.000E+08    0.0       0.0
+Instance: 32 HCHO+H=HCO+H2           aldehyde hydrogen-radical = formyl-radical hydrogen    CH2O  + H     = HCO   + H2 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.300E+10    1.05     13.7
+Instance: 33 HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical    CH2O  + O     = HCO   + OH 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.150E+11    0.57     11.6
+Instance: 34 HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water    CH2O  + OH    = HCO   + H2O 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.400E+09    1.2      -1.9I
+Instance: 35 HCHO+CH3=HCO+CH4         aldehyde methyl-radical = formyl-radical methane   CH2O  + CH3   = HCO   + CH4
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+11    0.0      25.5
+Instance: 37 HCHO+O2=HCO+HO2   CH2O  + O2    = HCO   + HO2              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.000E+13    0.0     170.7
+Instance: 38 CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical    CH3   + O     = CH2O  + H
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 8.430E+13    0.0       0.0 
+Instance: 40 CH3+H=3-CH2+H2   CH3   + H     = 3-CH2 + H2                
+Chevalier.Warnatz.92 private communication 1992 ; Chevalier, C, Warnatz, J; Reaction Mechanism C1-C4/O2 1bar
+ 6.000E+13    0.0      63.0
+Instance: 41 CH3+O2=HCHO+OH   CH3   + O2    > CH2O  + OH                
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.300E+11    0.0      37.4
+Instance: 42 CH3+OH=CH3O+H   CH3   + OH    > CH3O  + H                  
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.260E+14    0.0      64.8
+Instance: 43 CH3O+H=CH3+OH   CH3O  + H     > CH3   + OH                 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.750E+16   -0.13     88.0
+Instance: 44 CH3+HO2=CH3O+OH   CH3   + HO2   = CH3O  + OH               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.800E+13    0.0       0.0
+Instance: 47 CH3+CH3=C2H4+H2   CH3   + CH3   > C2H4  + H2               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+16    0.0     134.0
+Instance: 48 CH3+HO2=CH4+O2   CH3   + HO2   = CH4   + O2                
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.600E+12    0.0       0.0
+Instance: 50 CH3O+H=HCHO+H2   CH3O  + H     = CH2O + H2                 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.800E+13    0.0       0.0
+Instance: 51 CH3O+O2=HCHO+HO2   CH3O  + O2    = CH2O + HO2              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.000E+10    0.0       8.9
+Instance: 52 CH3O+O=CH3+O2   CH3O  + O     = CH3  + O2                  
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.100E+13    0.0       0.0
+Instance: 53 CH3O+O=HCHO+OH   CH3O  + O     = CH2O + OH                 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.400E+12    0.0       0.0
+Instance: 54 CH2OH+O2=HCHO+HO2   CH2OH + O2    = CH2O + HO2             
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+13    0.0      30.0
+Instance: 56 CH2OH+H=HCHO+H2   CH2OH + H     = CH2O + H2                
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.000E+13    0.0       0.0
+Instance: 57 CH3O2+HO2=CH3O2H+O2        methylperoxy peroxyl-radical = methylperoxide oxygen   CH3O2  + HO2   > CH3O2H + O2
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.460E+11    0.0     -10.9
+Instance: 58 CH3O2+CH3=CH3O+CH3O        methylperoxy methyl-radical = methoxy-radical methoxy-radical   CH3O2 + CH3 > CH3O + CH3O
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.380E+13    0.0      -5.0
+Instance: 59 CH3O2+CH3O2=CH3OH+HCHO+O2  methylperoxy methylperoxy = methanol aldehyde oxygen   CH3O2  + CH3O2 > CH2O   + CH3OH + O2
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.180E+13    0.0       0.0
+Instance: 60 CH3O2+CH3O2=CH3O+CH3O+O2   methylperoxy methylperoxy = methoxy-radical methoxy-radical oxygen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.370E+13    0.0       9.2
+Instance: 63 CH3O2+HCHO=CH3O2H+HCO   CH3O2  + CH2O  > CH3O2H + HCO      
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.130E+12    0.0      37.7
+Instance: 64 CH3O2H+HCO=CH3O2+HCHO   CH3O2H + HCO   > CH3O2  + CH2O     
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.250E+11    0.0      42.3
+Instance: 65 CH3O+CH3O=CH3O2+CH3   CH3O   + CH3O  > CH3O2  + CH3        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.200E+11    0.0       0.0
+Instance: 66 CH3O2H+O2=CH3O2+HO2   CH3O2H + O2    > CH3O2  + HO2        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 0.300E+13    0.0     163.3
+Instance: 68 CH3O+CH3O+O2=CH3O2+CH3O2  CH3O   + CH3O  + O2     > CH3O2 + CH3O2   
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E-10    0.0       0.0
+Instance: 69 CH4+H=CH3+H2               methane hydrogen-radical = methyl-radical hydrogen   CH4   + H     = CH3  + H2
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.300E+04    3.0      33.6
+Instance: 70 CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical   CH4   + O     = CH3  + OH
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.923E+08    1.56     35.5
+Instance: 71 CH4+OH=CH3+H2O             methane hydroxyl-radical = methyl-radical water   CH4   + OH    = CH3  + H2O
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.600E+07    1.83     11.6
+Instance: 72 CH4+HO2=CH3+H2O2           methane peroxyl-radical = methyl-radical hydrogen-peroxide   CH4   + HO2   = CH3  + H2O2
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.100E+13    0.0     103.1
+Instance: 73 CH4+3-CH2=CH3+CH3 CH4   + 3-CH2 = CH3  + CH3               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.300E+13    0.0      39.9
+Instance: 74  CH4+CH=C2H4+H CH4   + CH    = C2H4 + H                     
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.000E+13    0.0      -1.7
+Instance: 75 CH3OH+OH=CH20H+H2O       methanol hydroxyl-radical = hydroxymethyl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+13    0.0       7.1
+Instance: 76 CH3OH+HO2=CH2OH+H2O2     methanol peroxyl-radical = hydroxymethyl hydrogen-peroxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.200E+12    0.0      81.1
+Instance: 77 CH3O+CH3O=CH3OH+HCHO       methoxy-radical methoxy-radical = methanol aldehyde 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.000E+15    0.0     180.5
+Instance: 78 CH3OH+CH3=CH2OH+CH4      methanol methyl-radical = hydroxymethyl methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 9.000E+12    0.0      41.1
+Instance: 79 CH30H+CH30=CH20H+CH30H   methanol methoxy-radical = hydroxymethyl methanol
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.000E+11    0.0      29.3
+Instance: 80  CH3O+HCHO=CH3OH+HCO CH3O  + CH2O  > CH3OH+ HCO             
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.000E+11    0.0      13.8
+Instance: 81  CH3OH=CH3+OH CH3OH + HCO   > CH3O + CH2O                   
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.500E+09    0.0      57.2
+Instance: 82 CH3OH+H=CH2OH+H2   CH3OH + H     = CH2OH + H2              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.000E+13    0.0      25.5
+Instance: 83 CH3OH+O=CH2OH+OH   CH3OH + O     = CH2OH + OH              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+13    0.0      19.6
+Instance: 84 CH2OH+H2O2=CH3OH+HO2   CH2OH + H2O2  > CH3OH + HO2         
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+07    1.7      47.9
+Instance: 85 CH3OH+CH3O=CH3OH+CH2OH   CH3OH + CH3O  > CH3OH + CH2OH     
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.000E+11    0.0      29.3
+Instance: 86 CH3OH+CH2OH=CH3OH+CH3O   CH3OH + CH2OH > CH3OH + CH3O      
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.200E+04    1.7      45.4
+Instance: 87 CH3OH+HCHO=CH3O+CH3O   CH3OH + CH2O  > CH3O  + CH3O        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.530E+12    0.0     333.2
+Instance: 88 CH3O2H=CH3O+OH   CH3O2H          = CH3O + OH               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 4.000E+15    0.0     180.5
+Instance: 89 OH+CH3O2H=H2O+CH3O2   OH     + CH3O2H = H2O  + CH3O2       
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.600E+12    0.0       0.0
+END

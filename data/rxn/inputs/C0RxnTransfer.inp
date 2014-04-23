@@ -1,0 +1,18 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+O+H2=OH+H    
+O+OH=O2+H    
+O+HO2=OH+O2  
+O+H2O2=OH+HO2
+ END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreSetOfObjectsProperty Reaction
+Baulch BaulchReaction
+END
+%% ------------------------------------
+END

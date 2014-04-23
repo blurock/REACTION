@@ -1,0 +1,212 @@
+C4peroxy-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%% Codes for names
+%%%  phX   X position of ooh
+%%%  ppXY  X position of ooh Y position of oo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Peroxy Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butylperoxy-radical 1-butylperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+pc4h9o2
+pc4h9o2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using pc4h9o2
+pc4h9o2    1/16/95 thermc   4h   9o   2    0g   300.000  5000.000 1389.00     41
+ 1.58144375e+01 2.13193974e-02-7.33984634e-06 1.14434539e-09-6.65812366e-14    2
+-1.49501873e+04-5.33459665e+01 1.47103883e+00 5.42496074e-02-3.72061139e-05    3
+ 1.39837660e-08-2.26484104e-12-9.78973984e+03 2.40949734e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-butylperoxy-radical 2-butylperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+sc4h9o2
+sc4h9o2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using sc4h9o2
+sc4h9o2    1/16/95 thermc   4h   9o   2    0g   300.000  5000.000 1392.00      1
+ 1.64201902e+01 2.07668293e-02-7.14061871e-06 1.11233445e-09-6.46799300e-14    2
+-1.72912410e+04-5.76462422e+01 8.59225542e-01 5.89774363e-02-4.45935184e-05    3
+ 1.84502497e-08-3.21329944e-12-1.19598721e+04 2.54554544e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butyl-1-hydroperoxy-radical  1-butyl-1-hydroperoxy-radical 
+%% Lumped molecule (for Short Name and Chemkin Name)
+1c4h8ph1
+1c4h8ph1
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+1c4h8ph1    1/16/95 thermc   4h   9o   2    0g   300.000  5000.000 1392.00     1
+ 1.64201902e+01 2.07668293e-02-7.14061871e-06 1.11233445e-09-6.46799300e-14    2
+-1.72912410e+04-5.76462422e+01 8.59225542e-01 5.89774363e-02-4.45935184e-05    3
+ 1.84502497e-08-3.21329944e-12-1.19598721e+04 2.54554544e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-butyl-1-hydroperoxy-radical  2-butyl-1-hydroperoxy-radical 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2c4h8ph1
+2c4h8ph1
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+2c4h8ph1    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1383.00      1
+ 1.75528987e+01 1.91943387e-02-6.56575617e-06 1.01990410e-09-5.92099915e-14    2
+-1.04599887e+04-6.00275798e+01 1.66564301e+00 5.35645827e-02-3.39539455e-05    3
+ 1.05142780e-08-1.25551548e-12-4.68113645e+03 2.62501883e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-butyl-1-hydroperoxy-radical  3-butyl-1-hydroperoxy-radical 
+%% Lumped molecule (for Short Name and Chemkin Name)
+3c4h8ph1
+3c4h8ph1
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+3c4h8ph1    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1383.00      1
+ 1.75528987e+01 1.91943387e-02-6.56575617e-06 1.01990410e-09-5.92099915e-14    2
+-1.04599887e+04-6.00275798e+01 1.66564301e+00 5.35645827e-02-3.39539455e-05    3
+ 1.05142780e-08-1.25551548e-12-4.68113645e+03 2.62501883e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-butyl-1-hydroperoxy-radical  4-butyl-1-hydroperoxy-radical 
+%% Lumped molecule (for Short Name and Chemkin Name)
+4c4h8ph1
+4c4h8ph1
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+4c4h8ph1    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1395.00      1
+ 1.79453871e+01 1.91046728e-02-6.58190896e-06 1.02679661e-09-5.97716743e-14    2
+-9.10786419e+03-6.29500430e+01 4.46269607e-01 6.29716271e-02-4.98978758e-05    3
+ 2.09399717e-08-3.61390527e-12-3.28065135e+03 3.00529360e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butyl-2-hydroperoxy-radical 1-butyl-2-hydroperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+1c4h8ph2
+1c4h8ph2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+1c4h8ph2    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1397.00      1
+ 1.87056308e+01 1.84673227e-02-6.36405049e-06 9.93010226e-10-5.78136789e-14    2
+-1.15379459e+04-6.82007009e+01-3.73115213e-01 6.84383253e-02-5.79400221e-05    3
+ 2.56343337e-08-4.58866100e-12-5.41638987e+03 3.24079546e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-butyl-2-hydroperoxy-radical 2-butyl-2-hydroperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+2c4h8ph2
+2c4h8ph2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c4h8ooh2-1
+2c4h8ph2    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1397.00      1
+ 1.87056308e+01 1.84673227e-02-6.36405049e-06 9.93010226e-10-5.78136789e-14    2
+-1.15379459e+04-6.82007009e+01-3.73115213e-01 6.84383253e-02-5.79400221e-05    3
+ 2.56343337e-08-4.58866100e-12-5.41638987e+03 3.24079546e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-butyl-2-hydroperoxy-radical 3-butyl-2-hydroperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+3c4h8ph2
+3c4h8ph2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+3c4h8ph2    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1386.00      1
+ 1.82919765e+01 1.84250091e-02-6.27217889e-06 9.71379578e-10-5.62825607e-14    2
+-1.28532423e+04-6.50749305e+01 9.86162058e-01 5.85630676e-02-4.16710545e-05    3
+ 1.51223447e-08-2.22454695e-12-6.84048054e+03 2.79289603e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-butyl-2-hydroperoxy-radical 4-butyl-2-hydroperoxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+4c4h8ph2
+4c4h8ph2
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+4c4h8ph2    1/16/95 therc   4h   9o   2    0g   300.000  5000.000 1395.00      1
+ 1.79453871e+01 1.91046728e-02-6.58190896e-06 1.02679661e-09-5.97716743e-14    2
+-9.10786419e+03-6.29500430e+01 4.46269607e-01 6.29716271e-02-4.98978758e-05    3
+ 2.09399717e-08-3.61390527e-12-3.28065135e+03 3.00529360e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-1-peroxy-butane 1-hydroperoxy-1-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po11
+c4h8po11
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c4h8ooh1-2o2
+c4h8po11     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1391.00      1
+ 2.24291038e+01 2.02714152e-02-7.05259371e-06 1.10745437e-09-6.47614997e-14    2
+-2.96571991e+04-8.24787991e+01 1.85795579e+00 7.39736387e-02-6.30036461e-05    3
+ 2.83627899e-08-5.20012149e-12-2.29613545e+04 2.61946762e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-2-peroxy-butane 1-hydroperoxy-2-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po12
+c4h8po12
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c4h8po12     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1391.00      1
+ 2.24291038e+01 2.02714152e-02-7.05259371e-06 1.10745437e-09-6.47614997e-14    2
+-2.96571991e+04-8.24787991e+01 1.85795579e+00 7.39736387e-02-6.30036461e-05    3
+ 2.83627899e-08-5.20012149e-12-2.29613545e+04 2.61946762e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-3-peroxy-butane 1-hydroperoxy-3-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po13
+c4h8po13
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c4h8po13     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1391.00      1
+ 2.24291038e+01 2.02714152e-02-7.05259371e-06 1.10745437e-09-6.47614997e-14    2
+-2.96571991e+04-8.24787991e+01 1.85795579e+00 7.39736387e-02-6.30036461e-05    3
+ 2.83627899e-08-5.20012149e-12-2.29613545e+04 2.61946762e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-4-peroxy-butane 1-hydroperoxy-4-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po14
+c4h8po14
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c4h8po14     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1389.00      1
+ 2.16623914e+01 2.09599128e-02-7.29848423e-06 1.14672111e-09-6.70840147e-14    2
+-2.72772633e+04-7.73103707e+01 2.35698454e+00 6.91345718e-02-5.52811644e-05    3
+ 2.36672213e-08-4.20054418e-12-2.07551831e+04 2.54919587e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-hydroperoxy-2-peroxy-butane 2-hydroperoxy-2-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po22
+c4h8po22
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c4h8ooh2-1o2
+c4h8po22     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1391.00      1
+ 2.24291038e+01 2.02714152e-02-7.05259371e-06 1.10745437e-09-6.47614997e-14    2
+-2.96571991e+04-8.24787991e+01 1.85795579e+00 7.39736387e-02-6.30036461e-05    3
+ 2.83627899e-08-5.20012149e-12-2.29613545e+04 2.61946762e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-hydroperoxy-3-peroxy-butane 2-hydroperoxy-3-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po23
+c4h8po23
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c4h8po23     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1393.00      1
+ 2.31123273e+01 1.96469811e-02-6.82730172e-06 1.07124796e-09-6.26109519e-14    2
+-3.20266724e+04-8.72221224e+01 1.09604492e+00 7.94472856e-02-7.14221316e-05    3
+ 3.34124791e-08-6.26730135e-12-2.51118713e+04 2.82288973e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-hydroperoxy-4-peroxy-butane 2-hydroperoxy-4-peroxy-butane
+%% Lumped molecule (for Short Name and Chemkin Name)
+c4h8po24
+c4h8po24
+%% Molecule classes
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c4h8po24     1/17/95 thec   4h   9o   4    0g   300.000  5000.000 1391.00      1
+ 2.24291038e+01 2.02714152e-02-7.05259371e-06 1.10745437e-09-6.47614997e-14    2
+-2.96571991e+04-8.24787991e+01 1.85795579e+00 7.39736387e-02-6.30036461e-05    3
+ 2.83627899e-08-5.20012149e-12-2.29613545e+04 2.61946762e+01                   4
+END

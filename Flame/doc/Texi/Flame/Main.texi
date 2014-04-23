@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Flame
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "Flame".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     Flame Package
+@section  The "Flame" Package
+@cindex   package, Flame
+@cindex   Flame package
+@cindex   flm namespace
+@cindex   namespaces, flm
+
+@table @strong
+@item Package name
+@code{Flame}
+
+@item Namespace name
+@code{flm}
+
+@item Header files
+@file{Flame.hh}, @file{FlameType.hh}
+@end table
+
+
+@include Flame/Overview.texi
+
+@include Flame/Classes.texi

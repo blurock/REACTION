@@ -1,0 +1,155 @@
+C-Molecules  =====================A Set of one Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  diformyl  diformyl molecule
+OCHCHO OCHCHO C2-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+OCHCHO            103190C   2H   2O   2     G  0300.00   4000.00  1500.00      1
+ 0.10568433E+02 0.02907353E-01-0.03452401E-05-0.10375932E-09 0.02042134E-12    2
+-0.02952623E+06-0.03104084E+03 0.01863564E+02 0.02298297E+00-0.01917997E-03    3
+ 0.08558604E-07-0.16123463E-11-0.02634846E+06 0.16016745E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  1-butyl-radical  1-butyl-radical molecule
+P-C4H9 P-C4H9 C4-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+P-C4H9            L 4/84C   4H   9    0    0G   300.000  5000.000     57.11510R1
+ 0.90049105E 01 0.24003319E-01-0.89551868E-05 0.15322594E-08-0.98247040E-13    2
+ 0.34630112E 04-0.20525192E 02 0.21864157E 01 0.33004966E-01 0.30301208E-05    3
+-0.24040720E-07 0.11306377E-10 0.58979180E 04 0.17254166E 02        2381.1     4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  1-butyne-3-ene-3-yl  1-butyne-3-ene-3-yl molecule
+C4H5S C4H5S C4-Molecule Alkene Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H5S   CH2CHCCH2  82489C   4H   5    0    0G  0300.00   4000.00  1000.00      1
+ 0.11997762E+02 0.07990580E-01-0.08098172E-05-0.04568733E-08 0.08636911E-12    2
+ 0.03228493E+06-0.03528494E+03 0.03879443E+02 0.01997663E+00 0.01872777E-04    3
+-0.09306953E-07 0.02386116E-10 0.03526859E+06 0.09842152E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  2-butene  2-butene molecule
+2-C4H8 2-C4H8 C4-Molecule Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+2-C4H8            T 6/83C   4H   8    0    0G   300.000  5000.00    56.104     1
+ 0.82797676E+00 0.35864539E-01-0.16634498E-04 0.34732759E-08-0.26657398E-12    2
+-0.30521033E+04 0.21342545E+02 0.12594252E+01 0.27808424E-01 0.87013932E-05    3
+-0.24402205E-07 0.98977710E-11-0.29647742E+04 0.20501129E+02           2047.4  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  2-butyl-radical  2-butyl-radical molecule
+S-C4H9 S-C4H9 C4-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+S-C4H9          S-L 9/84C   4H   9    0    0G   300.000  5000.000     57.11510 1
+ 0.94282923E 01 0.21911845E-01-0.72831863E-05 0.10622090E-08-0.55580591E-13    2
+ 0.36300923E 04-0.22419800E 02 0.69567555E 00 0.33100396E-01 0.63189173E-05    3
+-0.27052078E-07 0.12000780E-10 0.68517148E 04 0.26270721E 02 0.85393902E 04    4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  2-methylpropene  2-methylpropene molecule
+C-2-C4H8 C-2-C4H8 C4-Molecule Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C-2-C4H8          T 6/83C   4H   8    0    0G   300.000  5000.      56.104     1
+ 0.11097383E+01 0.35542578E-01-0.16481703E-04 0.34412202E-08-0.26411468E-12    2
+-0.26507607E+04 0.19353516E+02 0.24108791E+01 0.25147773E-01 0.98473047E-05    3
+-0.22716758E-07 0.86585895E-11-0.27758694E+04 0.14084535E+02           2071.7  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  oxyethanal  oxyethanal molecule
+OCH2CHO OCH2CHO C2-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+OCHCHO            103190C   2H   2O   2     G  0300.00   4000.00  1500.00      1
+ 0.10568433E+02 0.02907353E-01-0.03452401E-05-0.10375932E-09 0.02042134E-12    2
+-0.02952623E+06-0.03104084E+03 0.01863564E+02 0.02298297E+00-0.01917997E-03    3
+ 0.08558604E-07-0.16123463E-11-0.02634846E+06 0.16016745E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  2-yl-ethanal  2-yl-ethanal molecule
+CH2CHO CH2CHO C2-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHO            120186O   1H   3C   2     G  0300.00   5000.00  1000.00      1
+ 0.05975670E+02 0.08130591E-01-0.02743624E-04 0.04070304E-08-0.02176017E-12    2
+ 0.04903218E+04-0.05045251E+02 0.03409062E+02 0.10738574E-01 0.01891492E-04    3
+-0.07158583E-07 0.02867385E-10 0.15214766E+04 0.09558290E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  hydroxymethyl  hydroxymethyl molecule
+CH2OH CH2OH C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2OH             120186H   3C   1O   1     G  0250.00   4000.00  1000.00      1
+ 0.06327520E+02 0.03608270E-01-0.03201547E-05-0.01938750E-08 0.03509704E-12    2
+-0.04474509E+05-0.08329365E+02 0.02862628E+02 0.10015273E-01-0.05285435E-05    3
+-0.05138539E-07 0.02246041E-10-0.03349678E+05 0.10397938E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  methylperoxide  methylperoxide molecule
+CH3O2H CH3O2H C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2H   *****    L 1/84C   1H   4O   2    0G   300.000  5000.000 47.034      R1
+ 0.66812963E 01 0.80057271E-02-0.27188507E-05 0.40631365E-09-0.21927725E-13    2
+ 0.52621851E 03-0.99423847E 01 0.20986490E 01 0.15786357E-01 0.75683261E-07    3
+-0.11274587E-07 0.56665133E-11 0.20695879E 04 0.15007068E 02           1471.7  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  methylperoxy  methylperoxy molecule
+CH3O2 CH3O2 C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2    CH3OO    L 1/84C   1H   3O   2    0G   300.000  5000.000 47.034      R1
+ 0.66812963E 01 0.80057271E-02-0.27188507E-05 0.40631365E-09-0.21927725E-13    2
+ 0.52621851E 03-0.99423847E 01 0.20986490E 01 0.15786357E-01 0.75683261E-07    3
+-0.11274587E-07 0.56665133E-11 0.20695879E 04 0.15007068E 02           1471.7  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  methylyne  methylyne molecule
+CH CH C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH                121286C   1H   1          G  0300.00   5000.00  1000.00      1
+ 0.02196223E+02 0.02340381E-01-0.07058201E-05 0.09007582E-09-0.03855040E-13    2
+ 0.07086723E+06 0.09178373E+02 0.03200202E+02 0.02072875E-01-0.05134431E-04    3
+ 0.05733890E-07-0.01955533E-10 0.07045259E+06 0.03331587E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  propyne  propyne molecule
+C3H4P C3H4P C3-Molecule Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H4P    PROPIN   U05/78H   4C   3    0    0G   300.000  5000.000              1
+ 0.65344639E+01 0.10337744E-01-0.34001059E-05 0.49091375E-09-0.25363748E-13    2
+ 0.19441707E+05-0.11395943E+02 0.26681128E+01 0.16177788E-01 0.97236625E-06    3
+-0.11532656E-07 0.56520986E-11 0.20800957E+05 0.98740911E+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  triplet-methylene  triplet-methylene molecule
+3-CH2 3-CH2 C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+3-CH2             120186C   1H   2          G  0250.00   4000.00  1000.00      1
+ 0.03636407E+02 0.01933056E-01-0.01687016E-05-0.10098994E-09 0.01808255E-12    2
+ 0.04534134E+06 0.02156560E+02 0.03762237E+02 0.11598191E-02 0.02489585E-05    3
+ 0.08800836E-08-0.07332435E-11 0.04536790E+06 0.01712577E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  1-butyne-3-ene-4-yl 1-butyne-3-ene-4-yl molecule
+C4H5U C4H5U C4-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H5U   CH2CHCHCH  82489C   4H   5          G  0300.00   4000.00  1000.00      1
+ 0.12865971E+02 0.07943369E-01-0.08626466E-05-0.04655635E-08 0.08951131E-12    2
+ 0.03783552E+06-0.04182502E+03 0.02995240E+02 0.02288456E+00 0.01975471E-04    3
+-0.11482454E-07 0.03197823E-10 0.04142218E+06 0.12894539E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  2-propanal 2-propanal molecule
+C3H6O C3H6O C3-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H6O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  butene-4-yl butene-4-yl molecule
+C4H7 C4H7 C4-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H7              A 8/83C   4H   7    0    0G   300.     5000.     55.0993    R1
+  0.5440662E 01  0.2744603E-01 -0.1365496E-04  0.3340352E-08 -0.3290050E-12    2
+  0.1903712E 05 -0.2875965E 01  0.9278151E 01 -0.2956305E-01  0.1632866E-03    3
+ -0.2000576E-06  0.7934605E-10  0.1963813E 05 -0.1296553E 02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  peroxyethene peroxyethene molecule
+CH2CHOO CH2CHOO C2-Molecule Radical Peroxy Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHOO  bozelli  161095O   2H   3C   2     G  0300.00   5000.00  1000.00      1
+ 0.05975670E+02 0.08130591E-01-0.02743624E-04 0.04070304E-08-0.02176017E-12    2
+ 0.01248280E+06 0.22301900E+00 0.03409062E+02 0.10738574E-01 0.01891492E-04    3
+-0.07158583E-07 0.02867385E-10 0.13514000E+05 0.14826560E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1  singlet-methylene singlet-methylene molecule
+1-CH2 1-CH2 C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+1-CH2              31287C   1H   2          G  0300.00   4000.00  1000.00      1
+ 0.03552888E+02 0.02066788E-01-0.01914116E-05-0.11046733E-09 0.02021349E-12    2
+ 0.04984975E+06 0.01686570E+02 0.03971265E+02-0.01699088E-02 0.10253689E-05    3
+ 0.02492550E-07-0.01981266E-10 0.04989367E+06 0.05753207E+00                   4
+END

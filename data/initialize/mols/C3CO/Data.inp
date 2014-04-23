@@ -1,0 +1,270 @@
+C3-Molecules  =====================A Set of three Carbon molecules==========================
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+propane
+1-propyl-radical
+2-propyl-radical
+propene
+propyne
+3-propenyl-radical
+allene
+3-propynyl
+propenal
+1-propanal
+2-propanal
+1-propene-3-ol
+1-yl-2-propanal
+2-oxy-1-propene
+1-yl-1-propanal
+3-oxy-1-propene
+3-yl-1-propanal
+2-yl-1-propanal
+1-oxy-1-propene
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C3 Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 propane   propane molecule
+C3H8 C3H8 C3-Molecule Alkane END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H8              120186C   3H   8          G  0300.00   5000.00  1000.00      1
+ 0.07525217E+02 0.01889034E+00-0.06283924E-04 0.09179373E-08-0.04812410E-12    2
+-0.01646455E+06-0.01784390E+03 0.08969208E+01 0.02668986E+00 0.05431425E-04    3
+-0.02126001E-06 0.09243330E-10-0.01395492E+06 0.01935533E+03                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-propyl-radical   1-propyl-radical molecule
+N-C3H7 N-C3H7 C3-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+N-C3H7            120186C   3H   7          G  0300.00   5000.00  1000.00      1
+ 0.07978291E+02 0.01576113E+00-0.05173243E-04 0.07443892E-08-0.03824978E-12    2
+ 0.07579402E+05-0.01935611E+03 0.01922537E+02 0.02478927E+00 0.01810249E-04    3
+-0.01783266E-06 0.08582996E-10 0.09713281E+05 0.01399271E+03                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2-propyl-radical   2-propyl-radical molecule
+I-C3H7 I-C3H7 C3-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+I-C3H7            120186C   3H   7          G  0300.00   5000.00  1000.00      1
+ 0.08063369E+02 0.01574488E+00-0.05182392E-04 0.07477245E-08-0.03854422E-12    2
+ 0.05313871E+05-0.02192647E+03 0.01713300E+02 0.02542616E+00 0.01580808E-04    3
+-0.01821286E-06 0.08827710E-10 0.07535809E+05 0.01297901E+03                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 propene    propene  molecule
+C3H6 C3H6 C3-Molecule Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H6              120186C   3H   6          G  0300.00   5000.00  1000.00      1
+ 0.06732257E+02 0.01490834E+00-0.04949899E-04 0.07212022E-08-0.03766204E-12    2
+-0.09235703E+04-0.01331335E+03 0.01493307E+02 0.02092518E+00 0.04486794E-04    3
+-0.01668912E-06 0.07158146E-10 0.01074826E+05 0.01614534E+03                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 propyne    propyne  molecule
+C3H3 C3H3 C3-Molecule Alkyne END
+NASA NASA Polynomial ; NASA ; Estimate with C3H3
+C3H3              U12/77C   3H   3    0    0G   300.000  5000.000             R1
+ 0.80916252E+01 0.37372850E-02 0.13886647E-05-0.12298604E-08 0.20681585E-12    2
+ 0.35437793E+05-0.18204468E+02 0.25097322E+01 0.17103866E-01-0.45710858E-05    3
+-0.82841574E-08 0.54362287E-11 0.37040680E+05 0.11011264E+02                   4
+%%
+ 2   260.000     4.850     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 3-propenyl-radical    3-propenyl-radical  molecule
+CH2CHCH2 CH2CHCH2 C3-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHCH2           82489C   3H   5          G  0300.00   4000.00  1000.00      1
+ 0.09651539E+02 0.08075596E-01-0.07965424E-05-0.04650696E-08 0.08603280E-12    2
+ 0.01530096E+06-0.02686774E+03 0.02276486E+02 0.01985564E+00 0.01123842E-04    3
+-0.01014576E-06 0.03441342E-10 0.01789497E+06 0.01372515E+03                   4
+%%
+ 1   252.000     4.760     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 allene    allene  molecule
+C3H4 C3H4 C3-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H4              101993H   4C   3          G  0300.00   4000.00  1400.00      1
+ 0.09776256E+02 0.05302138E-01-0.03701118E-05-0.03026386E-08 0.05089581E-12    2
+ 0.01954972E+06-0.03077061E+03 0.02539831E+02 0.01633437E+00-0.01764950E-04    3
+-0.04647365E-07 0.01729131E-10 0.02251243E+06 0.09935702E+02                   4
+%%
+ 2   252.000     4.760     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 3-propynyl    3-propynyl  molecule
+C3H3 C3H3 C3-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C3H3              101993C   3H   3    0    0G   300.00   5000.00               1
+ 0.67882490E 01 0.75130276E-02-0.24354367E-05 0.34623371E-09-0.17531546E-13    2
+ 0.35779844E 05-0.11533917E 02 0.25566082E 01 0.16797572E-01-0.38722173E-05    3
+-0.89540002E-08 0.56666390E-11 0.37036375E 05 0.10810117E 02 0.38494059E 05    4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 propenal    propenal  molecule
+C3H4O C3H4O C3-Molecule END
+NASA NASA Polynomials ; NASA; Estimate from C3H6O
+C3H4O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-propanal    1-propanal  molecule
+C3H6O C3H6O C3-Molecule END
+NASA NASA Polynomials ; NASA; Estimate from C3H6O
+C3H6O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2-propanal    2-propanal  molecule
+C3H6O C3H6O C3-Molecule END
+NASA NASA Polynomials ; NASA; Estimate from C3H6O
+C3H6O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-propene-3-ol    1-propene-3-ol  molecule
+C3H6O C3H6O C3-Molecule END
+NASA NASA Polynomials ; NASA; Estimate from C3H6O
+C3H6O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-yl-2-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 2 2-oxy-1-propene propene oxy-radical (resonant with 1-yl-2-propanal)
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Alkoxy Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 3 1-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 4 3-oxy-1-propene propene oxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Alkoxy Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 5 3-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 6  2-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 7 1-oxy-1-propene propene  oxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+C3H5O             L 4/77C   3H   6O   1    0G   300.     5000.                 1
+ 0.87072573E+01 0.15987653E-01-0.53762797E-05 0.79422535E-09-0.42212622E-13    2
+-0.69370352E+04-0.22579315E+02 0.48378503E+00 0.28574701E-01 0.28022350E-05    3
+-0.22371523E-07 0.10581544E-10-0.40665557E+04 0.22616104E+02                   4
+%%
+ 2   266.800     4.982     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

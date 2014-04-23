@@ -1,0 +1,167 @@
+#!/bin/sh
+#
+# FILE     CreateReactionLibrary
+# PACKAGE  Maintenance
+# AUTHOR  Edward S. Blurock 
+#    (Adapted from  Sturm newsturmpackage, Andreas Neubacher)
+#------------------------------------------------------------------------------
+#
+# CONTENT
+#   Shell script for creating the REACTION libraries.
+#
+# COPYRIGHT (C)  REACTION Project, 1996 Edward S. Blurock
+
+#I
+
+. `dirname $0`/Reaction.sh
+
+
+#F CreateReactionLibrary [seq|par] [opt|deb] PACKAGE DIR . . . Creates *.a files.
+#
+# DESCRIPTION
+#   Creates the object and library files for the PACKAGE with root directory
+#   DIR.
+#
+#   * "seq" chooses the sequential version, "par" chooses the parallel
+#     version of the kernel.  Default is "seq".
+#   * "opt" chooses the optimizing version, "deb" chooses the debugging
+#     version.  Default is "opt".
+#
+#   The created libraries are "libPACKAGE_[o|g].a" and optionally
+#   "libPACKAGE[S|P]_[o|g].a", both in directory "DIR/lib".  Here "S"/"P"
+#   depend upon "seq"/"par" and "o"/"g" depend upon "opt"/"deb"
+#
+#   Source files are taken from "DIR/src/*", object files are produced in
+#   "DIR/obj/*".
+#
+#   Environment variables AR, RANLIB, MAKE should be set appropriately.
+#
+# OPTIONS
+#   -h ... print usage message.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_FILE=2 # Error in file/directory access.
+    ERR_PARS=3 # Error in parsing.
+#
+# SEE ALSO
+#   make(1)
+
+#
+# 1. Parse arguments.
+#
+
+if [ "$1" = -debug ]; then
+  set -vx
+  shift
+fi
+
+LType="sequential"
+LT="S"
+LSpeed="optimized"
+LS="_o"
+endopts=""
+while [ "$endopts" = "" ]; do
+  case $1 in
+  -h) help; exit 0;;
+  seq) LType="sequential"; LT="S"; shift;;
+  par) LType="parallel"; LT="P"; shift;;
+  opt) LSpeed="optimized"; LS="_o"; shift;;
+  deb) LSpeed="debugging"; LS="_g"; shift;;
+  --) endopts=1; shift;;
+   *) endopts=1;;
+  esac
+done
+
+if [ $# != 2 ]; then
+  help
+  exit $ERR_ARGS
+else
+  PACKAGE="$1"
+  DIR="$2"
+fi
+
+if [ "$AR" = "" ]; then
+  AR=ar -rvq
+fi
+if [ "$RANLIB" = "" ]; then
+  myranlib() { ranlib $* || ar -ts $*; }
+  RANLIB=myranlib
+fi
+if [ "$MAKE" = "" ]; then
+  MAKE=make
+fi
+
+if [ ! -r $DIR/include/ReactionSrc ]; then
+  ln -s ../src $DIR/include/ReactionSrc
+fi
+
+OBJDIR=$DIR/obj"$LS"
+
+#
+# 2. Compile source files.
+#
+umask 000
+err=0
+
+if [ ! -d "$OBJDIR" ]; then
+  mkdir $OBJDIR
+fi
+
+for i in $DIR/src/*; do
+  b=`basename $i`
+  if [ "$b" = "CVS" -o ! -d "$i" ]; then
+    continue
+  fi
+  if [ ! -d "$OBJDIR/$b" ]; then
+    mkdir $OBJDIR/$b
+  fi
+  if [ -f $DIR/obj/$b/Makefile ]; then
+    ln -s ../../obj/$b/Makefile $OBJDIR/$b/Makefile
+  fi
+  if [ ! \( -f $OBJDIR/$b/flag-type-$LType -o -f $OBJDIR/$b/flag-type-any \) \
+       -o ! -f $OBJDIR/$b/flag-speed-$LSpeed ]; then
+    rm -f $OBJDIR/$b/flag-* $OBJDIR/$b/*.[od]
+  fi
+  $MAKE -i -f $Reaction/etc/Reaction/Makefile.obj -C $OBJDIR/$b \
+    LTYPE=$LType LSPEED=$LSpeed all
+done
+
+#
+# 3. Build libraries.
+#
+
+currpwd=`pwd`
+cd $OBJDIR
+
+libname=libReaction"$LS".a
+objs=""
+for i in *; do
+  if [ -f $i/flag-type-any ]; then
+    objs="$objs `ls $i/*.o`"
+  fi
+done
+rm -f ../lib/$libname
+TMPDIR=.; export TMPDIR
+echo Forming the reaction Library 11
+$AR ../lib/libReaction_o.a $objs
+echo Forming the reaction Library 22
+$RANLIB ../lib/libReaction_o.a
+# $AR ../lib/$libname $objs
+# $RANLIB ../lib/$libname
+
+libname=libReaction"$LT""$LS".a
+objs=""
+for i in *; do
+  if [ -f $i/flag-type-$LType ]; then
+    objs="$objs `ls $i/*.o`"
+  fi
+done
+rm -f ../lib/$libname
+# $AR ../lib/$libname $objs
+# $RANLIB ../lib/$libname
+echo Forming the reaction Library 11
+$AR ../lib/libReaction_o.a $objs
+echo Forming the reaction Library 22
+$RANLIB ../lib/libReaction_o.a
+exit $err

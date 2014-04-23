@@ -1,0 +1,307 @@
+Baulch 1 Baulch reaction constants from  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+Instance: 1   O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 8.5e-20 2.67  3160  
+Instance: 2   O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.0e-11   0.0   -112
+Instance: 3   HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-11 0.00 0.00   
+Instance: 4   O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.3e-11 0.00 0.00   
+Instance: 5   O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.1e-12  0.00 2000   
+Instance: 6   CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.4e-10      0.00      0.00    
+Instance: 7   CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.5e-15      1.56      4270   
+Instance: 8   HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.9e-13      0.57      1390   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O2 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 9   HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 1.0e-10       0.0     20460  
+Instance: 10   CH4+O2=CH3+HO2             methane oxygen = methyl-radical peroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 6.6e-11      0.00      28630  
+Instance: 11   C2H6+O2=C2H5+HO2           ethane oxygen = ethyl-radical peroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 1.0e-10      0.00      26100  
+Instance: 12   CH3CHO+O2=CH3CO+HO2        ethanal oxygen = ethanoyl-radical peroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 5.0e-11      0.50      19700  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  Baulch et. al.
+%%
+%%  H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 13   C2H3+H=C2H2+H2           ethenyl-radical hydrogen-radical = ethyne hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.0e-11 0.00 0.00   
+Instance: 14   H+O2=OH+O             hydrogen-radical oxygen = oxygen-atom hydroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 1.62e-10 0.00 7470   
+Instance: 15   H+HO2=H20+0              hydrogen-radical peroxyl-radical = water oxygen-atom
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-11 0.00 866   
+Instance: 16   H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.8e-10 0.00 440   
+Instance: 17   H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 7.1e-11 0.00 710   
+Instance: 18   H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 7.5e-16 1.6 9270   
+Instance: 19   H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-11 0.00 1800   
+Instance: 20   H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.8e-12 0.00 1890   
+Instance: 21  CH4+H=CH3+H2               methane hydrogen-radical = methyl-radical hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.2e-20      3.0   4045   
+Instance: 22  HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.5e-10 0.00 0.00   
+Instance: 23  HCHO+H=HCO+H2           aldehyde hydrogen-radical = formyl-radical hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.8e-14      1.05   1650   
+Instance: 24  C2H2+H=C2H+H2            ethyne hydrogen-radical = ethynyl-radical hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.0e-10 0.00 14000   
+Instance: 25  C2H4+H=C2H3+H2           ethene hydrogen-radical = ethenyl-radical hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 9.0e-10 0.00 7500   
+Instance: 26  C2H5+H=CH3+CH3             ethyl-radical hydrogen-radical = methyl-radical methyl-radical 
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.0e-11      0.00      0.00    
+Instance: 27  CH3CHO+H=CH3CO+H2          ethanal hydrogen-radical = ethanoyl-radical hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.8e-15      1.16      1210   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 28  OH+H2=H2O+H              hydroxyl-radical hydrogen = water hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-16        1.6      1660    
+Instance: 29  OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.5e-15  1.14  50   
+Instance: 30  HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 4.8e-11 0.00 -250   
+Instance: 31  OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.3e-11  0.00 670   
+Instance: 32  CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.05e-17 1.50 -250   
+Instance: 33  HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.7e-15      1.18   -225    
+Instance: 34  HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-10 0.00 0.00   
+Instance: 35  CH4+OH=CH3+H2O             methane hydroxyl-radical = methyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.6e-17      1.83      1400   
+Instance: 36  C2H2+OH=C2H+H20          ethyne hydroxyl-radical = ethynyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.0e-10 0.00 6500   
+Instance: 37  C2H4+OH=C2H3+H20         ethene hydroxyl-radical = ethenyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.4e-11 0.00 2990   
+Instance: 38  C2H6+OH=C2H5+H2O           ethane hydroxyl-radical = ethyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.2e-17      2.00      435    
+Instance: 39  CH2CO+OH=HCHO+HCO        allenal hydroxyl-radical = aldehyde formyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-11 0.00 0.00   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HO2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 40  HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.1e-12 0.00 775   
+Instance: 41  CH4+HO2=CH3+H2O2           methane peroxyl-radical = methyl-radical hydrogen-peroxide
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.5e-11   0.00      12440   
+Instance: 42  HCHO+HO2=HCO+H2O2       aldehyde peroxyl-radical = formyl-radical hydrogen-peroxide
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-12      0.00      6580   
+Instance: 43  CH3O2+HO2=CH3O2H+O2        methylperoxy peroxyl-radical = methylperoxide oxygen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 4.1e-13      0.00      -790  
+Instance: 44  CH3O2+HO2=CH3O+O2+OH       methylperoxy peroxyl-radical = methoxy-radical oxygen hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 4.1e-13      0.00      -790    
+Instance: 45  C2H6+HO2=C2H5+H2O2         ethane peroxyl-radical = ethyl-radical hydrogen-peroxide
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.2e-11      0.00      10300   
+Instance: 46  CH3CHO+HO2=CH3CO+H2O2      ethanal peroxyl-radical = ethanoyl-radical hydrogen-peroxide
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-12      0.00      6000   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  H2O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 47  CH3+O2=CH3O+O              methyl-radical oxygen = methoxy-radical oxygen-atom
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.2e-10      0.00      15800  
+Instance: 48  HCHO+CH3=HCO+CH4         aldehyde methyl-radical = formyl-radical methane
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.8e-12  0.0  4450   
+Instance: 49  C2H5+CH3=C2H4+CH4          ethyl-radical methyl-radical = ethene methane 
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.9e-12      0.00      0.00    
+Instance: 50  C2H4+CH3=C2H3+CH4        ethene methyl-radical = ethenyl-radical methane
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.9e-12 0.00 5600   
+Instance: 51  C2H6+CH3=C2H5+CH4          ethane methyl-radical = ethyl-radical methane 
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.5e-31     6.0      3043   
+Instance: 52  CH3CHO+CH3=CH3CO+CH4       ethanal methyl-radical = ethanoyl-radical methane
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.3e-30     5.64      1240   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CHO Atom Reactions (HCO)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 53  HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-12 0.00 0.00   
+Instance: 54  HCO+O2=CO2+OH            formyl-radical oxygen = carbondioxide hydroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modelling 
+ 5.0e-12 0.00 0.00   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HCHO Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH2OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 55  CH3O+O2=HCHO+HO2           methoxy-radical oxygen = aldehyde peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 6.7e-14      0.00      1070   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OOH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H3 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H4 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 55  C2H5+O2=C2H4+HO2           ethyl-radical oxygen = ethene peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-14      0.00      1100    
+Instance: 56  C2H5+H2=C2H6+H             ethyl-radical hydrogen = ethane hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.1e-24     3.60      4250  
+Instance: 57  C2H5+C2H5=C2H6+C2H4        ethyl-radical ethyl-radical = ethane ethene 
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.4e-12      0.00      0.00    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H6 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3CO Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5O Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+Instance: 58  C2H5O+O2=CH3CHO+HO2        ethoxy-radical oxygen = ethanal peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.0e-13      0.00      830   
+END

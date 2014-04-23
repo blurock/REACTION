@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  C1 Reactions
+%%   Corresponds to baulch/Baulch-C1.inp
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+HCHO+M=HCO+H+M          aldehyde = formyl-radical hydrogen-radical
+HCHO+M=CO+H2+M          aldehyde = carbonmonoxide hydrogen 
+HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical
+HCHO+H=HCO+H2   `        aldehyde hydrogen-radical = formyl-radical hydrogen
+HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water
+HCHO+HO2=HCO+H2O2       aldehyde peroxyl-radical = formyl-radical hydrogen-peroxide
+HCO+M=CO+H+M             formyl-radical = carbonmonoxide hydrogen-radical
+HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical
+HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen
+HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water
+CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+CO+HO2=CO2+OH            carbonmonoxide peroxyl-radical = carbondioxide hydroxyl-radical
+CO+O+M=CO2+M             carbonmonoxide oxygen-atom = carbondioxide
+CO+O2=CO2+O               carbonmonoxide oxygen = carbondioxide oxygen-atom
+
+CH4=CH3+H                  methane = methyl-radical hydrogen-radical
+CH4+O2=CH3+HO2             methane oxygen = methyl-radical peroxyl-radical
+CH4+H=CH3+H2               methane hydrogen-radical = methyl-radical hydrogen
+CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical
+CH4+OH=CH3+H2O             methane hydroxyl-radical = methyl-radical water
+CH4+HO2=CH3+H2O2           methane peroxyl-radical = methyl-radical hydrogen-peroxide
+CH3+O2+M=CH3O2+M           methyl-radical oxygen = methylperoxy
+CH3+O2=CH3+O+O             methyl-radical oxygen = methyl-radical oxygen-atom oxygen-atom
+CH3+O2=CH3O+O              methyl-radical oxygen = methoxy-radical oxygen-atom
+CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical
+CH3+OH=HCHO+H2             methyl-radical hydroxyl-radical = aldehyde hydrogen
+CH3+OH=CH3OH               methyl-radical hydroxyl-radical = methanol
+CH3O2+HO2=CH3O2H+O2        methylperoxy peroxyl-radical = methylperoxide oxygen
+CH3O2+HO2=CH3O+O2+OH       methylperoxy peroxyl-radical = methoxy-radical oxygen hydroxyl-radical
+CH3O2H=CH3O+OH             methylperoxide = methoxy-radical hydroxyl-radical
+CH3O2H+OH=CH3O2+H2O        methylperoxide hydroxyl-radical = methylperoxy water
+CH3O+O2=HCHO+HO2           methoxy-radical oxygen = aldehyde peroxyl-radical
+CH3OH+H=CH3+H2O            methanol hydrogen-radical = methyl-radical water
+CH3OH+OH=CH3O+H2O          methanol hydroxyl-radical = methoxy-radical water
+
+HCO+O2=CO2+OH            formyl-radical oxygen = carbondioxide hydroxyl-radical
+CH2OH+M=HCHO+H+M          hydroxymethyl = aldehyde hydrogen-radical
+CH20H+O2=HCHO+HO2        hydroxymethyl oxygen = aldehyde peroxyl-radical

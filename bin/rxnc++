@@ -1,0 +1,79 @@
+#!/bin/sh
+#
+# FILE     rxnc++
+# PACKAGE  Maintenance
+# AUTHOR  Edward S. Blurock 
+#    (Adapted from  Sturm newsturmpackage, Andreas Neubacher)
+#------------------------------------------------------------------------------
+#
+# CONTENT
+#   Shell script used as a wraparound for the GNU C++ compiler.
+#
+# COPYRIGHT (C)   REACTION Project, 1996 Edward S. Blurock
+
+
+#f help . . . . . . . . . . . . . . . . . . . . . Writes help text to STDOUT.
+
+help() {
+  awk '/^#F/,/^$/' <$0 \
+  | sed "s/^#F [A-Za-z][^ ]*/$ARGV0/; s/^#//" >&2
+}
+
+
+#F rxnc++ [C++ compiler options] . . . . . . wraparound for the C++ compiler.
+#
+# DESCRIPTION
+#   This is a wraparound for the C++ compiler, which sets the include file
+#   search path and library search path.
+#
+#   The environment variable `Reaction' must be set giving the path to the
+#   STURM root directory.
+#
+# OPTIONS
+#   Identical to the options which may be given to the C++ compiler.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+#
+# REFERENCES
+#   c++(1)
+
+ARGV0=`basename $0`
+
+#
+# 1. Argument and environment check.
+#
+
+if [ $# = 0 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+if [ "$Reaction" = "" ]; then
+  echo 1>&2 $ARGV0: 'Error -- $Reaction not set!'
+  exit $ERR_ENV
+fi
+
+if expr >/dev/null "$*" : ".*-O"; then
+  lspeed=_o
+elif expr >/dev/null "$*" : ".*-g"; then
+  lspeed=_g
+else
+  lspeed=""
+fi
+
+if expr >/dev/null "$*" : ".*-[cESM]"; then
+  link=
+else
+#  link="-L$Reaction/lib -lReaction$lspeed -lReactionS$lspeed -lgmp -lm -lXt -lX11"
+  link="-L$Reaction/lib -lm "
+fi
+
+
+#
+# 2. Call C++ compiler.
+#
+
+exec gcc $* $link -I$Reaction/include -I/home/reaction/Reaction/include/STL
+##exec CC $* $link -I$Reaction/include 

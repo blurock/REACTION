@@ -1,0 +1,347 @@
+/*  FILE     LstOps.icc
+**  PACKAGE  LstOps
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "LstOps" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_LSTOPS_ICC
+#define REACTIONSRC_LSTOPS_ICC
+ 
+/*S ListEvaluation
+ */
+/*F ListEvaluation()  . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluation<T>::ListEvaluation()
+{
+}
+
+ 
+/*F ListEvaluation(eval)  . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    eval: The structure to be copied
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluation<T>::ListEvaluation(const ListEvaluation<T>& eval)
+  : List(eval.List),
+    First(eval.First),
+    Last(eval.Last)
+{
+}
+ 
+/*F ListEvaluation(lst) . . . . . . . . . . . . . . . . constructor from list
+**
+**  DESCRIPTION
+**    lst: The list of objects
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluation<T>::ListEvaluation(const ObjectList<T>& lst)
+  : List(lst),
+    First(lst.front()),
+    Last(lst.back())
+{
+}
+
+
+  
+  
+/*F CopyClone(eval) . . . . . . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    eval: The structure to be cloned
+**
+**  REMARKS
+**
+*/
+template <class T>
+void ListEvaluation<T>::CopyClone(ListEvaluation<T>* eval)
+{
+  *this = *eval;
+}
+ 
+/*F eval = Clone()  . . . . . . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    eval: The cloned structure of this
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluation<T>* ListEvaluation<T>::Clone()
+{
+  ListEvaluation<T> *eval = new ListEvaluation<T>;
+  eval->CopyClone(this);
+  return eval;
+}
+/*F out = print(out)  . . . . . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    out: The output stream
+**
+**  REMARKS
+**
+*/
+template <class T>
+ostream& ListEvaluation<T>::print(ostream& out) const
+{
+  out << "-------------------------------------------\n";
+  List.print(out);
+  out << "\n First Element";
+  out << First;
+  out << "\n Last Element: ";
+  out << Last;
+  out << "\n";
+  
+  return out;
+}
+
+  
+/*F ans = EncodeThis(buffer)  . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool ListEvaluation<T>::EncodeThis(CommBuffer& buffer)
+{
+  bool result = List.EncodeThis(buffer);
+  result = result && First.EncodeThis(buffer);
+  result = result && Last.EncodeThis(buffer);
+  
+  return result;
+}
+/*F ans = DecodeThis(buffer)  . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool ListEvaluation<T>::DecodeThis(CommBuffer& buffer)
+{
+  bool result = List.DecodeThis(buffer);
+  result = result && First.DecodeThis(buffer);
+  result = result && Last.DecodeThis(buffer);
+  
+  return result;
+}
+/*F Filter(filter)  . . . . . . . . . . . . filter out (or leave in) elements
+**
+**  DESCRIPTION
+**    filter: The filter
+**
+**  REMARKS
+**
+*/
+template <class T>
+ObjectList<T> ListEvaluation<T>::Filter(ListEvaluationFilter<T>& filter,
+					bool replace)
+{
+  ObjectList<T> *newlist = new ObjectList<T>(List);
+  
+  ObjectList<T>::iterator iter = remove_if(newlist->begin(),
+					   newlist->end(),
+					   filter);
+  newlist->erase(iter,newlist->end());
+  
+  if(replace)
+    List = *newlist;
+  
+  return *newlist;
+}
+ 
+/*S ListEvaluationClasses
+ */
+/*F ListEvaluationClasses()  . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluationClasses<T>::ListEvaluationClasses()
+{
+}
+
+ 
+/*F ListEvaluationClasses(eval)  . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    eval: The structure to be copied
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluationClasses<T>::ListEvaluationClasses(const ListEvaluationClasses<T>& eval)
+  : ListEvaluation<T>(eval),
+    Classes(eval.Classes)
+{
+}
+ 
+/*F ListEvaluationClasses(lst) . . . . . . . . . . . . . . . . constructor from list
+**
+**  DESCRIPTION
+**    lst: The list of objects
+**    unique: true if the elements of the classes should be unique (no overlap)
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluationClasses<T>::ListEvaluationClasses(const ObjectList<T>& lst,
+						const bool unique)
+  : ListEvaluation<T>(lst),
+    UniqueElements(unique)
+{
+  Classes.ChangeTitle("\nList Classes\n");
+  Classes.ChangeDelimitor("\n------------------------------------------------\n");
+  
+}
+
+
+  
+  
+/*F CopyClone(eval) . . . . . . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    eval: The structure to be cloned
+**
+**  REMARKS
+**
+*/
+template <class T>
+void ListEvaluationClasses<T>::CopyClone(ListEvaluationClasses<T>* eval)
+{
+  *this = *eval;
+}
+ 
+/*F eval = Clone()  . . . . . . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    eval: The cloned structure of this
+**
+**  REMARKS
+**
+*/
+template <class T>
+ListEvaluationClasses<T>* ListEvaluationClasses<T>::Clone()
+{
+  ListEvaluationClasses<T> *eval = new ListEvaluationClasses<T>;
+  eval->CopyClone(this);
+  return eval;
+}
+/*F out = print(out)  . . . . . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    out: The output stream
+**
+**  REMARKS
+**
+*/
+template <class T>
+ostream& ListEvaluationClasses<T>::print(ostream& out) const
+{
+  ListEvaluation<T>::print(out);
+  Classes.print(out);
+  
+  return out;
+}
+
+  
+/*F ans = EncodeThis(buffer)  . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool ListEvaluationClasses<T>::EncodeThis(CommBuffer& buffer)
+{
+  bool result = ListEvaluation<T>::EncodeThis(buffer);
+  result = result && Classes.EncodeThis(buffer);
+  
+  return result;
+}
+/*F ans = DecodeThis(buffer)  . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool ListEvaluationClasses<T>::DecodeThis(CommBuffer& buffer)
+{
+  bool result = ListEvaluation<T>::DecodeThis(buffer);
+  result = result && Classes.DecodeThis(buffer);
+  
+  return result;
+}
+
+/*F CreateClasses(filters)
+**
+**  DESCRIPTION
+**    filters: The set of filters to create the classes
+**
+**  REMARKS
+**
+*/
+template <class T>
+void ListEvaluationClasses<T>::CreateClasses(ObjectList< ListEvaluationFilter<T> >& filters)
+{
+  ObjectList< ListEvaluationFilter<T> >::iterator filter;
+  
+  for(filter = filters.begin();
+      filter != filters.end();
+      filter++)
+    {
+      ObjectList<T> classelement = (*this).Filter(*filter,false);
+      Classes.AddObject(classelement);
+      
+      if(UniqueElements)
+	{
+	  (*filter).ToggleEquality();
+	  (*this).Filter(*filter,true);
+	  (*filter).ToggleEquality();
+	}
+    }
+}
+
+
+
+
+
+#endif

@@ -1,0 +1,18 @@
+DbaseTest  Read in test database items
+Attributes:
+%%%%-----------------------------------------------------------------------------
+%%%%  Charge    AlgorithmSummary
+       Initial ChargeAlgs END
+              END
+       Charge END 
+                               % (Name-Class Pairs)
+           MoleculeNames    KeySet
+      
+       END
+                               %  Algorithm Result Parameters
+       END
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END
+

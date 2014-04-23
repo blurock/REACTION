@@ -1,0 +1,20 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: DataBaseInformation  the standard database
+StandardDataBaseInformation 
+./   438  2
+%% -------------------------------------------------
+END
+ClassNamePairs:
+Dbase   StandardDataBaseInformation
+X       Real
+Y       Real
+Z       Real
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

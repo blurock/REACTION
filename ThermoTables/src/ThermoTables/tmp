@@ -1,0 +1,244 @@
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ThermObject& therm,
+						 ObjectList<double> temperatures);
+/*F exp = CalculateExpEquilibrium(descr,therm,temperatures) . . . Equilibrium
+**
+**  DESCRIPTION
+**    descr: The documentation
+**    therm: The thermodynamic values
+**    temperatures: The temperatures to compute the K values
+**
+**    From the equilibrium values given at the temperatures in
+**    the list, a least squares analysis is done to compute
+**    the equilibrium in exponential form
+**
+**  REMARKS
+**
+*/
+template <class ThermObject>
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ThermObject& therm,
+						 ObjectList<double> temperatures)
+     {
+     MatrixNumeric mat = KTemperatureMatrix(temperatures);
+     VectorNumeric vec = LogEquilibrium(therm,temperatures);
+     VectorNumeric c = SolveLinearSystemOfEquations(mat,vec);
+     
+     double A = exp((double) c[0]);
+     double n = c[1];
+     double E = -c[2] * GAS_CONSTANT;
+     
+     ReactionConstants<double> rxnconst(A,E,n,descr);
+     
+     return rxnconst;
+     }
+ 
+/*F exp = CalculateExpEquilibrium(descr,therm,lowtemp,hitemp) . . Equilibrium
+**
+**  DESCRIPTION
+**    descr: The documentation string
+**    therm: The thermodynamic information
+**    lowtemp: The lower temperature of the range
+**    hitemp: the upper temperature of the range
+**
+**    Within the temperature range, equilibrium values are calculated
+**    and used to do a least squares analysis to get the equilibrium 
+**    in exponential form
+**
+**  REMARKS
+**
+*/
+template <class ThermObject>
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ThermObject& therm,
+						 double lowtemp,
+						 double hitemp)
+     {
+     ObjectList<double> temperatures;
+     double n = 21;
+     
+     double temp = lowtemp;
+     double inc = (hitemp-lowtemp)/(n-1);
+     
+     for(int i=0;i!=n;i++)
+	  {
+	  temperatures.push_back(temp);
+	  temp += inc;
+	  }
+     return CalculateExpEquilibrium(descr,therm,temperatures);
+     }
+/*F exp = CalculateExpEquilibrium(descr,therm)  . . . Equilibrium in exp form
+**
+**  DESCRIPTION
+**    descr: Documentation
+**    therm: The thermodynamic info
+**    exp: The equilibrium function in Arrhenius form
+**
+**  REMARKS
+**
+*/
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ChemkinBaseTableObject& therm)
+     {
+     return CalculateExpEquilibrium(descr,therm,
+				    therm.LowerBoundTemp,
+				    therm.UpperBoundTemp);
+     }
+/*F exp = CalculateExpEquilibrium(descr,therm)  . . . Equilibrium in exp form
+**
+**  DESCRIPTION
+**    descr: Documentation
+**    therm: The thermodynamic info
+**    exp: The equilibrium function in Arrhenius form
+**
+**  REMARKS
+**
+*/
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 BensonBaseTableObject& therm)
+     {
+     double lotemp = therm.Temps[0];
+     double hitemp = therm.Temps[ therm.Temps.size() - 1 ];
+     
+     return CalculateExpEquilibrium(descr,therm,lotemp,hitemp);
+     }
+
+
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ThermObject& therm,
+						 double lowtemp,
+						 double hitemp);
+
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 ChemkinBaseTableObject& therm);
+ReactionConstants<double> CalculateExpEquilibrium(String& descr,
+						 BensonBaseTableObject& therm);
+
+
+
+
+/*F out = OutputThermoElement(out,mol)  . . . . . . . . . . . . From Molecule
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+ostream& OutputThermoTableStyle::OutputThermoElement(ostream& out,
+						     SimpleMolecule& mol)
+{
+  Identify pname(0,"ChemkinThermo");
+  
+  PropertyTypeByName<ChemkinBaseTableObject> *prop 
+    = (PropertyTypeByName<ChemkinBaseTableObject> *) 
+    mol.Properties.GetPointerToObject(pname);
+  ChemkinBaseTableObject chemkin = prop->Object;
+  BensonBaseTableObject benson(chemkin);
+  
+  switch(OutputThermoTableStyle::Style)
+    {
+    case THERMO_TEX:
+      OutputThermoElementLaTeX(out,benson,mol.NameTag);
+      break;
+    case THERMO_ASCII:
+      OutputThermoElementASCII(out,benson,mol.NameTag);
+      break;
+    case THERMO_HTML:
+      OutputThermoElementASCII(out,benson,mol.NameTag);
+      break;
+    }
+  return out;
+}
+/*C ThermoOutput 
+**
+**  DESCRIPTION
+**    Out: The output stream
+**    Style: The style parameters of the Table
+**
+**  REMARKS
+**
+*/
+class ThermoOutput
+{
+  ostream& Out;
+  OutputThermoTableStyle& Style;
+public:
+  ThermoOutput(ostream& out,
+	       OutputThermoTableStyle& style)
+    : Out(out),
+    Style(style)
+    {
+    }
+  void operator()(SimpleMolecule& mol)
+    {
+      Style.OutputThermoElement(Out,mol);
+    }
+};
+/*F ans = OutputThermoTable(molecules,style)  . . . . . . . .  output table
+**
+**  DESCRIPTION
+**    molecules: The list of molecules to output
+**    style: The style with which to output
+**
+**  REMARKS
+**
+*/
+ostream& ThermoTableStyle::OutputThermoTable(ostream& out,
+					     ObjectList<SimpleMolecule>& molecules)
+{
+  Style.OutputThermoHeader(out,Title);
+  ThermoOutput tout(out,Style);
+  
+  for_each(molecules.begin(),molecules.end(),tout);
+
+  Style.OutputThermoTail(out);
+  
+  return out;
+}
+ 
+/*F operator<<(stream, ThermoObj) . . ChemkinBaseTableObject output operator.
+**
+**  DESCRIPTION
+**    stream: param.
+**    ThermoObj: param. 
+**
+**    ChemkinBaseTableObject output operator. Second argument is ChemkinBaseTableObject type.
+**    Writes all Chemkin table object data to a stream (file).
+**      
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const ChemkinBaseTableObject& ThermoObj)
+     {
+     return ThermoObj.print(stream);
+     }
+
+/*F operator<<(stream, ThermoObj) . .  BensonBaseTableObject output operator.
+**
+**  DESCRIPTION
+**    stream: param.
+**    ThermoObj: param. 
+
+**    BensonBaseTableObject output operator. Second argument is BensonBaseTableObject type.
+**    Writes to a stream (file) Benson table object data.  
+**     
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const BensonBaseTableObject ThermoObj)
+     {
+     return ThermoObj.print(stream);
+     }
+/*F out = operator<<(out,series)  . . . . . . . . . . . . . . . CpPowerSeries
+**
+**  DESCRIPTION
+**    out: The output stream
+**    series: The power series
+**
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream& out, const CpPowerSeries& series)
+     {
+     return series.print(out);
+     }

@@ -1,0 +1,16 @@
+ObjectClasses:
+DataType: SingleConversionSet The class of the single conversion factor
+StandardSingleUnitConversion ConversionFactors
+DataType: ConversionSet  The set of conversions 
+StandardUnitConversions StandardSingleUnitConversion
+END
+ClassNamePairs:
+UnitConversions StandardUnitConversions
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,204 @@
+#!/bin/sh
+#
+# FILE     sturmconfig
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script for configuring the STURM library.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+. `dirname $0`/sturm.sh
+
+
+#f systems . . . . . . . . . Writes a list of valid systems for configuration.
+
+systems() {
+  awk '/^[^#]/ { if (NF > 0) { print $1 } }' $Sturm/etc/Sturm/Configurations
+}
+
+
+#f getdependencies CONFIG . . . .  Reads the dependencies of a configuration.
+
+getdependencies() {
+  dependencies=`awk "/^$1/ { \\$1 = \"\"; print \\$0}" <$Sturm/etc/Sturm/Configurations`
+}
+
+
+#f depname  . . . . . . . . . . . .  Matches $DNAME against the dependencies.
+depname() {
+  namedeps=`echo $DNAME | cut -d- -f2-`
+  DNAME=`echo $DNAME | cut -d- -f1`
+  while expr >/dev/null "$namedeps" : ".*-.*"; do
+    namedep=`echo $namedeps | cut -d- -f1`
+    namedeps=`echo $namedeps | cut -d- -f2-`
+    expr >/dev/null " $dependencies " : ".* $namedep "
+    if [ $? != 0 ]; then
+      DNAME=""
+      return
+    fi
+  done
+}
+
+
+#F sturmconfig SYSTEM . . . . . .  Configure the STURM library for `SYSTEM'. 
+#
+# DESCRIPTION
+#   This is the installation script for the STURM library.  It will set up
+#   softlinks to system dependent files based on the desired configuration.
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+# OPTIONS
+#   Identical to the options which may be given to the C compiler.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+    ERR_FILE=3 # File error.
+#
+# FILES
+#   $Sturm/etc/Sturm/Configurations	... Contains configuration information.
+
+
+#
+# 1. Argument and environment check.
+#
+
+ARGV0=`basename $0`
+
+if [ "$Sturm" = "" ]; then
+  eecho '$Sturm' is not set!
+  ecat <<ENDOFTEXT
+This environment variable must be set to the name (including the full path)
+of the STURM root directory.  For example, if the directory is
+"/usr/local/src/Sturm" in 'csh' and 'tcsh' you should do
+
+    setenv Sturm /usr/local/src/Sturm
+
+and in 'sh' or 'bash' you should do
+
+    Sturm=/usr/local/src/Sturm
+
+before calling '$ARGV0'.
+ENDOFTEXT
+  exit $ERR_ENV
+fi
+
+if [ $# = 0 -o "$1" = "-h" ]; then
+  help
+  echo Valid choices for the SYSTEM argument are:
+  systems
+  exit $ERR_ARGS
+fi
+
+if systems | grep "^$1$" >/dev/null; then
+  SYSTEM=$1
+  shift
+else
+  eecho "SYSTEMS argument \"$1\" invalid.  Valid choices are:"
+  systems >&2
+  exit $ERR_ARGS
+fi
+
+
+#
+# 3. Ask for confirmation.
+#
+
+cat <<ENDOFTEXT
+The configuration process will replace generic files by versions specific
+to the system for which the library is being configured.  Are you sure
+you want to configure the STURM library tree in the directory
+
+	$Sturm
+
+for the system "$SYSTEM"?
+
+ENDOFTEXT
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+
+if [ "$answer" = "n" ]; then
+  echo "Configuration process aborted -- no files have been changed."
+  exit 0
+else
+  echo
+fi
+
+
+#
+# 4. Configure.
+#
+
+getdependencies $SYSTEM
+dependencies="$dependencies $*"
+cd $Sturm
+for DEP in $dependencies; do
+  find * -name "*-$DEP" -print \
+  | { while read CFILE; do
+        CPATH=`dirname $CFILE`
+        if [ "`basename $CPATH`" != "Config" ]; then
+          ecat <<ENDOFTEXT
+System file
+
+	$CFILE
+
+is not in a \"Config/\" directory!  Aborting configuration process.
+Correct the problem (e.g. by removing the file) and run \'$ARGV0\'
+again.
+ENDOFTEXT
+	  exit $ERR_FILE
+        fi
+        DPATH=`dirname $CPATH`
+        CNAME=`basename $CFILE`
+        DNAME=`basename $CFILE -$DEP`
+	depname
+        error=false
+        if [ "$DNAME" != "" ]; then
+          if rm -f $DPATH/$DNAME; then
+            if ln -s Config/$CNAME $DPATH/$DNAME; then
+	      echo Configured \"$DPATH/$DNAME\" from \"$CNAME\".
+	    else
+	      error=true
+	    fi
+          else
+            error=true
+          fi
+        fi
+        if `$error`; then
+          ecat <<ENDOFTEXT
+Creating configuration softlink by
+
+    cd $Sturm
+    ln -s Config/$CNAME $DPATH/$DNAME
+
+failed!  This may result in a partially configures system!  Correct the
+problem (e.g. by obtaining write access to the directory and run '$ARGV0'
+again.
+ENDOFTEXT
+	  exit $ERR_FILE
+        fi
+      done
+    }
+done
+
+
+#
+# 5. Finished.
+#
+
+cat <<ENDOFTEXT
+
+Configuration of STURM directory tree
+
+    $Sturm
+
+for system "$SYSTEM" finished.
+ENDOFTEXT

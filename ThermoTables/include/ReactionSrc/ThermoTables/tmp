@@ -1,0 +1,46 @@
+/*F operator<<(stream, ThermoObj) . . ChemkinBaseTableObject output operator.
+**
+**  DESCRIPTION
+**    stream: param.
+**    ThermoObj: param. 
+**
+**    ChemkinBaseTableObject output operator. Second argument is ChemkinBaseTableObject type.
+**    Writes all Chemkin table object data to a stream (file).
+**      
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const ChemkinBaseTableObject& ThermoObj)
+     {
+     return ThermoObj.print(stream);
+     }
+
+/*F operator<<(stream, ThermoObj) . .  BensonBaseTableObject output operator.
+**
+**  DESCRIPTION
+**    stream: param.
+**    ThermoObj: param. 
+
+**    BensonBaseTableObject output operator. Second argument is BensonBaseTableObject type.
+**    Writes to a stream (file) Benson table object data.  
+**     
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const BensonBaseTableObject ThermoObj)
+     {
+     return ThermoObj.print(stream);
+     }
+/*F out = operator<<(out,series)  . . . . . . . . . . . . . . . CpPowerSeries
+**
+**  DESCRIPTION
+**    out: The output stream
+**    series: The power series
+**
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream& out, const CpPowerSeries& series)
+     {
+     return series.print(out);
+     }

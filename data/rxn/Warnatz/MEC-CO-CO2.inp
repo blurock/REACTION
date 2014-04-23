@@ -1,0 +1,10 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: CO CO2 mechanism
+Attributes:
+%------------------------------------------------------------------------------
+Instance: CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+ 6.000E+06    1.5      -3.1
+Instance: CO+HO2=CO2+OH            carbonmonoxide peroxyl-radical = carbondioxide hydroxyl-radical
+ 1.500E+14    0.0      98.7
+Instance: CO+O2=CO2+O               carbonmonoxide oxygen = carbondioxide oxygen-atom
+ 2.500E+12    0.0     200.0
+END

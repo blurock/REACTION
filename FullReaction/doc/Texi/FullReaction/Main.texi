@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  FullReaction
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "FullReaction".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     FullReaction Package
+@section  The "FullReaction" Package
+@cindex   package, FullReaction
+@cindex   FullReaction package
+@cindex   fxn namespace
+@cindex   namespaces, fxn
+
+@table @strong
+@item Package name
+@code{FullReaction}
+
+@item Namespace name
+@code{fxn}
+
+@item Header files
+@file{FullReaction.hh}, @file{FullReactionType.hh}
+@end table
+
+
+@include FullReaction/Overview.texi
+
+@include FullReaction/Classes.texi

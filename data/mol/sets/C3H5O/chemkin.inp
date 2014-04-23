@@ -1,0 +1,97 @@
+C3H5O-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C3H5O Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1   propanon-1-yl-radical propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+CH3COCH2
+CH3COCH2
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H5O
+ch2coch3   5/ 4/92 thermc   3h   5o   1    0g   300.000  5000.000 1391.000    21
+ 1.02303975e+01 1.16494161e-02-4.01005537e-06 6.25205246e-10-3.63784362e-14    2
+-8.44380462e+03-2.79197220e+01 1.80339187e+00 3.01407085e-02-1.93505552e-05    3
+ 6.38199034e-09-8.66103180e-13-5.37233261e+03 1.78046408e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 2      2-oxy-1-propene propene oxy-radical (resonant with 1-yl-2-propanal)
+%% Lumped molecule (for Short Name and Chemkin Name)
+CH3COCH2
+CH3COCH2
+%% Molecule classes
+C3-Molecule Alkane Alkoxy Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H5O
+ch2coch3   5/ 4/92 thermc   3h   5o   1    0g   300.000  5000.000 1391.000    21
+ 1.02303975e+01 1.16494161e-02-4.01005537e-06 6.25205246e-10-3.63784362e-14    2
+-8.44380462e+03-2.79197220e+01 1.80339187e+00 3.01407085e-02-1.93505552e-05    3
+ 6.38199034e-09-8.66103180e-13-5.37233261e+03 1.78046408e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 3      1-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5co
+c2h5co
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H5O
+c2h5co     6/26/95 thermc   3h   5o   1    0g   300.000  5000.000 1373.000    21
+ 9.87881997e+00 1.17515676e-02-4.00614923e-06 6.20850617e-10-3.59835225e-14    2
+-8.47292283e+03-2.49235196e+01 2.93313946e+00 2.47427911e-02-1.21222003e-05    3
+ 2.34701048e-09-5.26843338e-14-5.69663063e+03 1.35958355e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 4      3-oxy-1-propene propene oxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Alkoxy Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+c3h5o      7/20/95 thermc   3h   5o   1    0g   300.000  5000.000 1380.000    11
+ 1.02551752e+01 1.14983720e-02-3.84645659e-06 5.88910346e-10-3.38557923e-14    2
+ 6.26560810e+03-2.77655042e+01 1.19822582e+00 3.05579837e-02-1.80630276e-05    3
+ 4.86150033e-09-4.19854562e-13 9.58217784e+03 2.15566221e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 5      3-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h4cho
+c2h4cho
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O c2h4cho
+END
+NASA Polynomials ; NASA ; Estimate using C3H5O
+ch2ch2cho  6/26/95 thermc   3h   5o   1    0g   300.000  5000.000 1371.00     21
+ 9.97669730e+00 1.15899378e-02-3.93593247e-06 6.08601507e-10-3.52246874e-14    2
+-2.41115816e+03-2.36014420e+01 2.95202753e+00 2.48297051e-02-1.23487153e-05    3
+ 2.49449869e-09-8.44820689e-14 3.85181944e+02 1.53181388e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 6      2-yl-1-propanal propane aldehyde radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3chcho
+ch3chcho
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O ch3chcho
+END
+NASA Polynomials ; NASA ; Estimate using C3H5O
+ch3chcho   6/26/95 thermc   3h   5o   1    0g   300.000  5000.000 1683.000    21
+ 8.13290356e+00 1.37651720e-02-4.86366739e-06 7.75334875e-10-4.59117207e-14    2
+-2.92079632e+03-1.32468628e+01 3.24839539e+00 2.09600531e-02-6.07665825e-06    3
+-1.15341896e-09 6.27874009e-13-9.13395491e+02 1.43591941e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 7      1-oxy-1-propene propene  oxy-radical
+%% Lumped molecule (for Short Name and Chemkin Name)
+C3H5O
+C3H5O
+%% Molecule classes
+C3-Molecule Alkane Aldehyde Radical C3H5O
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+c3h5o      7/20/95 thermc   3h   5o   1    0g   300.000  5000.000 1380.000    11
+ 1.02551752e+01 1.14983720e-02-3.84645659e-06 5.88910346e-10-3.38557923e-14    2
+ 6.26560810e+03-2.77655042e+01 1.19822582e+00 3.05579837e-02-1.80630276e-05    3
+ 4.86150033e-09-4.19854562e-13 9.58217784e+03 2.15566221e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

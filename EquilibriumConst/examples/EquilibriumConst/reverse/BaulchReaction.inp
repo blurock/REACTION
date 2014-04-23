@@ -1,0 +1,59 @@
+reaction  ------------ Reaction Rates From Baulch --------------
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+Instance: 1   O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 8.5e-20 2.67  3160  
+Instance: 2   O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.0e-11   0.0   -112
+Instance: 3   HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.0e-11 0.00 0.00   
+Instance: 4   O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 5.3e-11 0.00 0.00   
+Instance: 5   O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.1e-12  0.00 2000   
+Instance: 14   H+O2=OH+O             hydrogen-radical oxygen = oxygen-atom hydroxyl-radical
+ Combustion and Flame, Vol 98, 1994 ; Baulch et. al ; Summary Table of Evaluated Kinetic Data for Combustion Modeling
+ 1.62e-10 0.00 7470   
+Instance: 16   H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.8e-10 0.00 440   
+Instance: 17   H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 7.1e-11 0.00 710   
+Instance: 18   H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 7.5e-16 1.6 9270   
+Instance: 19   H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-11 0.00 1800   
+Instance: 20   H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.8e-12 0.00 1890   
+Instance: 28  OH+H2=H2O+H              hydroxyl-radical hydrogen = water hydrogen-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.7e-16        1.6      1660    
+Instance: 29  OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 2.5e-15  1.14  50   
+Instance: 30  HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 4.8e-11 0.00 -250   
+Instance: 31  OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 1.3e-11  0.00 670   
+Instance: 40  HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+ J. Phys. Chem. Ref. Data, Vol. 21, 1992 ; Baulch et. al ; Evaluated Kinetic Data for Combustion Modelling
+ 3.1e-12 0.00 775   
+END
+ 

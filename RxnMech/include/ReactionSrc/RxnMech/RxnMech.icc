@@ -1,0 +1,147 @@
+/*  FILE     RxnMech.icc
+**  PACKAGE  RxnMech
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "RxnMech" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_RXNMECH_ICC
+#define REACTIONSRC_RXNMECH_ICC
+ 
+ 
+/*F ReactionMechanism() . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+inline ReactionMechanism<ReactionClass>::ReactionMechanism()
+     {
+     }
+ 
+/*F ReactionMechanism(mech) . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    mech: The mechanism
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+inline ReactionMechanism<ReactionClass>::ReactionMechanism(const ReactionMechanism<ReactionClass>& mech)
+: Identify(mech),
+Reactions(mech.Reactions),
+Properties(mech.Properties)
+     {
+     }
+ 
+/*F CopyClone(mech) . . . . . . . . . . . . . . . . . . . . . . .  copy clone
+**
+**  DESCRIPTION
+**    mech: The mechanism
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+void ReactionMechanism<ReactionClass>::CopyClone(ReactionMechanism<ReactionClass> *mech)
+     {
+     *this = *mech;
+     }
+ 
+/*F mech = Clone()  . . . . . . . . . . . . . . . . . . . . . .  clone a copy
+**
+**  DESCRIPTION
+**    mech: A cloned mechanism
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+ReactionMechanism<ReactionClass> *ReactionMechanism<ReactionClass>::Clone()
+     {
+     ReactionMechanism<ReactionClass> *mech = new ReactionMechanism<ReactionClass>;
+     mech->CopyClone(this);
+     return mech;
+     }
+ 
+/*F out = print(out)  . . . . . . . . . . . . . . . . . . . . . . .  printout
+**
+**  DESCRIPTION
+**    out: The output stream
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+ostream& ReactionMechanism<ReactionClass>::print(ostream& out) const
+     {
+     out << "Mechanism Reactions\n";
+     
+     Reactions.print(out);
+     if(Properties.size() > 0)
+	  {
+	  out << "\nProperties:\n";
+	  Properties.print(out);
+	  }     
+     out << "\n";
+     return out;
+     } 
+/*F ans = EncodeThis(buffer)  . . . . . . . . . . . . . . . ReactionMechanism
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    ans: True if successful
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+bool ReactionMechanism<ReactionClass>::EncodeThis(CommBuffer& buffer)
+     {
+     bool result = Encode(buffer,Identification);
+     result = result && Encode(buffer,NameTag);
+     result = result && Reactions.EncodeThis(buffer);
+     result = result && Properties.EncodeThis(buffer);
+     return result;
+     }
+/*F ans = DecodeThis(buffer)  . . . . . . . . . . . . . . . ReactionMechanism
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    ans: True if successful
+**
+**  REMARKS
+**
+*/
+template <class ReactionClass>
+bool ReactionMechanism<ReactionClass>::DecodeThis(CommBuffer& buffer)
+     {
+     bool result = Decode(buffer,Identification);
+     result = result && Decode(buffer,NameTag);
+     result = result && Reactions.DecodeThis(buffer);
+     result = result && Properties.DecodeThis(buffer);
+     return result;
+     }
+ 
+/*F DbaseMechanism()  . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline DbaseMechanism::DbaseMechanism()
+     {
+     }
+
+
+
+#endif

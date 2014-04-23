@@ -1,0 +1,23 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------
+%% 
+%% ------------------------------------
+StandardMechanism 
+TestMech
+MolecularStructureDataBase
+Reaction
+END
+%% ------------------------------------
+%% 
+%% ------------------------------------
+Test
+StandardMechanism 
+Calorie-cm3 
+GCKiloCalories-Mole
+GCKiloCalories-Mole
+Entropy
+TestMechOut
+END
+%% ------------------------------------
+END

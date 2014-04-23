@@ -1,0 +1,19 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: DataBaseInformation The standard database
+StandardDataBase 
+./data/DB   438  2
+%% -------------------------------------------------
+DataType: ReactionStructuresDataBase  The Standard Molecule Database
+ReactionDataBase StandardDataBase
+END
+ClassNamePairs:
+MolecularStructureDataBase    ReactionDataBase
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

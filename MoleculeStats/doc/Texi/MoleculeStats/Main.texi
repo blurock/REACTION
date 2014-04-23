@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MoleculeStats
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MoleculeStats".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MoleculeStats Package
+@section  The "MoleculeStats" Package
+@cindex   package, MoleculeStats
+@cindex   MoleculeStats package
+@cindex   msts namespace
+@cindex   namespaces, msts
+
+@table @strong
+@item Package name
+@code{MoleculeStats}
+
+@item Namespace name
+@code{msts}
+
+@item Header files
+@file{MoleculeStats.hh}, @file{MoleculeStatsType.hh}
+@end table
+
+
+@include MoleculeStats/Overview.texi
+
+@include MoleculeStats/Classes.texi

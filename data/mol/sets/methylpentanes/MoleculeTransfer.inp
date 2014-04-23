@@ -1,0 +1,30 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+2-methylpentane
+3-methylpentane
+2,2-dimethylpentane
+2,3-dimethylpentane
+2,4-dimethylpentane
+3,3-dimethylpentane
+2,2,4-trimethylpentane
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

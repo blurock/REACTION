@@ -1,0 +1,138 @@
+#!/bin/sh
+#
+# FILE     makesturmappendix
+# PACKAGE  Maintenance
+# AUTHOR  Edward S. Blurock 
+#    (Adapted from  Sturm newsturmpackage, Andreas Neubacher)
+#------------------------------------------------------------------------------
+# CONTENT
+#   Shell script for building the file "Functions.texi" for the STURM
+#   Texinfo manual.
+#
+# COPYRIGHT (C)  # REACTION Project, 1996 Edward S. Blurock
+
+
+#I
+
+. `dirname $0`/Reaction.sh
+
+
+#f heading PARENT . . . . . . . . Writes the next lower heading after PARENT.
+
+heading()
+{
+  case $1 in
+    @appendix)  echo @appendixsec;;
+    @appendixsec)  echo @appendixsubsec;;
+    @appendixsubsec)  echo @appendixsubsubsec;;
+    @*)  echo @subsubheading;;
+    *)  exit 1;;
+  esac
+}
+
+
+#f writeappendix PARENTDIR HEADING . . . . . Recursively writes the appendix.
+
+writeappendix()
+{
+  parent=$1; head=`heading $2`
+  # Write directory information.
+  if [ -f xxAUXxx.texi ]; then
+    cat xxAUXxx.texi
+  fi
+  # Write menu.
+  domenu=0
+  for fd in *; do
+    if [ -d "$fd" -o \
+	 `expr "$fd" : ".*.texi$"` != 0 -a "$fd" != "sturm2texi.texi" -a \
+	 `expr "$fd" : "xxAUXxx.*.texi$"` = 0 ]; then
+      if [ $domenu = 0 ]; then  domenu=1;  echo @menu;  fi
+      fn=`basename "$fd" .texi`
+      echo '*' "$parent$fn" '(FCT)'::
+    fi
+  done
+  if [ $domenu = 1 ]; then  echo @end menu;  fi
+  echo
+  # Write .texi files.
+  if [ -f sturm2texi.texi ]; then
+    cat sturm2texi.texi; echo
+  fi
+  for file in *.texi; do
+    if [ `expr "$file" : "xxAUXxx.*.texi"` = 0 -a "$file" != '*.texi' -a \
+         "$file" != "sturm2texi.texi" ]; then
+      fn=`basename "$file" .texi`
+      echo @node "$parent$fn" '(FCT)'
+      echo $head "$fn"
+      echo
+      if [ -f xxAUXxx."$file" ]; then
+	cat xxAUXxx."$file"; echo
+      fi
+      cat "$file";  echo
+    fi
+  done
+  # Descend directories.
+  for dir in *; do
+    if [ -d "$dir" ]; then
+      echo @node "$parent$dir" '(FCT)'
+      echo $head "$dir"
+      echo;
+      (cd "$dir";  writeappendix "$parent$dir/" $head;  cd ..)
+      echo;
+    fi
+  done
+}
+
+ 
+#F Reaction2Texi [DIR] . . . . Create the file "doc/Texi/Functions.texi".
+#
+# DESCRIPTION
+#   Creates an appendix for the REACTION manual containing all .texi files in
+#   the directory DIR (default: "$Reaction/Texi/Functions") with the directory
+#   names and file names as section headings.
+#
+# OPTIONS
+#   -h ... print usage message.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_FILE=2 # Error in file/directory access.
+#
+# SEE ALSO
+#   (texinfo.info)Top
+
+#
+# 1. Parse arguments.
+#
+
+if [ "$1" = -debug ]; then
+  set -vx
+  shift
+fi
+
+endopts=""
+while [ "$endopts" = "" ]; do
+  case $1 in
+  -h) help; exit 0;;
+  --) endopts=1; shift;;
+   *) endopts=1;;
+  esac
+done
+
+if [ $# = 0 ]; then
+  DIR=$Reaction/doc/Texi/Functions
+else
+  DIR=$1
+fi
+
+
+#
+# 2. Build appendix.
+#
+
+cd $DIR
+if [ $? != 0 ]; then
+  eecho Could not access directory \"$DIR\"!  Aborting ...
+  exit $ERR_FILE
+fi
+
+writeappendix "" @appendix

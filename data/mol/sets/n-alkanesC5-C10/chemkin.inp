@@ -1,0 +1,75 @@
+C4ket-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Ketone Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 pentane  pentane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC5H12
+nC5H12
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate (Come) using C5H12
+C5H12                   C   5H  12O   0     G  0300.00   5000.00  1000.00      1
+ 7.41775E+00    3.80271E-02   -1.37767E-05    2.28670E-09   -1.44197E-13       2
+-2.30190E+04   -1.31484E+01   -3.19654E-01    5.43116E-02   -1.45925E-05       3
+-1.38553E-08    8.24078E-12   -2.07934E+04    2.77076E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 hexane hexane
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC6H14
+nC6H14
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate (Come) using C6H14
+nC6H14                  C   6H  14O   0     G  0300.00   5000.00  1000.00      1
+ 1.00922E+01    4.25999E-02   -1.51299E-05    2.47781E-09   -1.54864E-13       2
+-2.70709E+04   -2.76053E+01   -1.08806E+00    6.84694E-02   -2.44048E-05       3
+-1.16936E-08    8.57931E-12   -2.39377E+04    3.09333E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 heptane heptane
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC7H16
+nC7H16
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using nC7H16
+nC7H16            U05/78C   7H  16    0    0G   300.000  5000.000              1
+ 0.22818893E+02 0.32543454E-01-0.11120041E-04 0.17131743E-08-0.96212101E-13    2
+-0.33678738E+05-0.94335007E+02 0.30149546E+01 0.54457203E-01 0.21812681E-04    3
+-0.54234111E-07 0.20808730E-10-0.26003379E+05 0.17508575E+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 octane octane
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC8H18
+nC8H18
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using nC8H18
+N-C8H18           T 7/80C   8H  18    0    0G   300.000  5000.000              1
+ 0.22451614E 02 0.40858209E-01-0.12878297E-04 0.17911266E-08-0.88108611E-13    2
+-0.36112590E 05-0.89322800E 02 0.25595255E 01 0.68079829E-01 0.13468589E-04    3
+-0.58320591E-07 0.26347424E-10-0.28872742E 05 0.21120300E 02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 nonane nonane
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC9H20
+nC9H20
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Estimate using nC9H20
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 decane decane
+%% Lumped molecule (for Short Name and Chemkin Name)
+nC10H22
+nC10H22
+%% Molecule classes
+MethylSubstituted Alkane C6-Molecule END
+NASA Polynomials ; NASA ; Calculated (Benson) Estimate using nC10H22
+nC10H22                 H  22C  10    0    0G   298.000  1500.0001000.000      1
+ 2.96687958e+02-6.47738636e-01 6.36472076e-04-2.58333927e-07 3.74492937e-11    2
+-1.23232617e+05-1.51906421e+03-5.08688393e+01 4.97379273e-01-1.06990268e-03    3
+ 1.10931796e-06-4.21381124e-10-2.95900801e+04 2.48666199e+02                   4
+END
+
+

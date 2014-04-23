@@ -1,0 +1,58 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------------
+%% ThermoUnits       KeyWords
+%% ------------------------------------------
+PolyCp CpCalorie EnthalpyCalorie  EntropyCalorie END
+%% ------------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------------
+ 1-propene-3-ol
+ 1-propyl-radical
+ 2-propenyl-radical
+ CH3CO3H
+ aldehyde
+ allenal
+ butane
+ carbondioxide
+ carbonmonoxide
+ dimethylperoxide
+ ethanal
+ ethane
+ ethanol
+ ethanoyl-radical
+ ethene
+ ethenyl-radical
+ ethoxy-radical
+ ethyl-radical
+ ethyne
+ ethynyl-radical
+ formyl-radical
+ hydrogen
+ hydrogen-peroxide
+ hydrogen-radical
+ hydroxyl-radical
+ hydroxymethyl
+ methane
+ methanol
+ methoxy-radical
+ methyl-radical
+ methylcarboxy
+ methylene
+ methylpercarboxy
+ methylperoxide
+ methylperoxy
+ oxirane
+ oxyethene
+ oxygen
+ oxygen-atom
+ peroxyl-radical
+ propane
+ propene
+ water
+ END
+%% ------------------------------------------
+%% Temperatures      Vector
+%% ------------------------------------------
+7 298.15 500.0 800.0 1000.0 1200.0 2000.0 3000.0
+END

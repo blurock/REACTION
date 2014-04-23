@@ -1,0 +1,64 @@
+/*  FILE     MoleculeAtom.icc
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*Constructors
+*/
+ 
+/*F MoleculeAtom()  . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline MoleculeAtom::MoleculeAtom() : SimpleElectronicAtom()
+	  {
+	  }
+     
+ 
+/*F MoleculeAtom(atom) . . . . . . . . . . . . . . . . . . . copy constructor 
+**
+**  DESCRIPTION
+**    atom: The atom information
+**
+**  REMARKS
+**
+*/
+inline MoleculeAtom::MoleculeAtom(const MoleculeAtom& atom) 
+: SimpleElectronicAtom(atom), 
+MolFileInfo(atom.MolFileInfo),
+Properties(atom.Properties)
+     {
+	  }
+ 
+/*F MoleculeAtom(mfatom)  . . . . . . . . . . . . . . . . .  from MolFileAtom
+**
+**  DESCRIPTION
+**    mfatom: The atom info as a MolFileAtom
+**
+**  REMARKS
+**
+*/
+inline MoleculeAtom::MoleculeAtom(const MolFileAtom& mfatom) 
+: SimpleElectronicAtom(mfatom),
+  MolFileInfo(mfatom)
+     {
+     }
+
+
+
+
+
+
+
+
+

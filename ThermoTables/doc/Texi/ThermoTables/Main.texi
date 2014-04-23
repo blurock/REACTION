@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  ThermoTables
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "ThermoTables".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     ThermoTables Package
+@section  The "ThermoTables" Package
+@cindex   package, ThermoTables
+@cindex   ThermoTables package
+@cindex   trm namespace
+@cindex   namespaces, trm
+
+@table @strong
+@item Package name
+@code{ThermoTables}
+
+@item Namespace name
+@code{trm}
+
+@item Header files
+@file{ThermoTables.hh}, @file{ThermoTablesType.hh}
+@end table
+
+
+@include ThermoTables/Overview.texi
+
+@include ThermoTables/Classes.texi

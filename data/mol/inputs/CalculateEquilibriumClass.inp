@@ -1,0 +1,15 @@
+ObjectClasses:
+%% -------------------------------------------------
+END
+ClassNamePairs:
+InstanceNameList      KeyWords
+VarsAndExps           KeyWords
+ToMove                KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

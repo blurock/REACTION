@@ -1,0 +1,59 @@
+MaussWarnatz    1 ========================== Reactions From Fabian Mauss (Warnatz) Model =============================
+Attributes:
+Instance: 4   O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.800E+13    0.0      -1.7
+Instance: 5   O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.800E+13    0.0      26.8
+Instance: 14   H+O2=OH+O             hydrogen-radical oxygen = oxygen-atom hydroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.000E+14    0.0      70.3
+Instance: 16   H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.500E+14    0.0       4.2
+Instance: 17   H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.500E+13    0.0       2.9
+Instance: 19   H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+13    0.0      15.0
+Instance: 20   H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.700E+12    0.0      15.7
+Instance: 28  OH+H2=H2O+H              hydroxyl-radical hydrogen = water hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.000E+08    1.6      13.8
+Instance: 29  OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 1.500E+09    1.14      0.42
+Instance: 30  HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 6.000E+13    0.0       0.0
+Instance: 31  OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 5.400E+12    0.0       4.2
+Instance: 40  HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 2.500E+11    0.0      -5.2
+Instance: 1 O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 5.060E+04    2.67     26.3
+Instance: 1 HO2+H=H2O+O   HO2 + H   = H2O + O               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67
+ 3.000E+13    0.0       7.2
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END
+END

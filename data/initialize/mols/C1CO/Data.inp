@@ -1,0 +1,158 @@
+C1-Molecules  =====================A Set of one Carbon molecules==========================
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+methane
+methyl-radical
+methylene
+methanol
+methoxy-radical
+aldehyde
+formyl-radical
+methylperoxy
+hydroxymethyl
+methylperoxide
+carbonmonoxide
+carbondioxide
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C1 Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 methane   methane molecule
+CH4 CH4 C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH4               121286C   1H   4          G  0300.00   5000.00  1000.00      1
+ 0.01683479E+02 0.01023724E+00-0.03875129E-04 0.06785585E-08-0.04503423E-12    2
+-0.01008079E+06 0.09623395E+02 0.07787415E+01 0.01747668E+00-0.02783409E-03    3
+ 0.03049708E-06-0.01223931E-09-0.09825229E+05 0.01372219E+03                   4
+%%
+ 2   141.400     3.746     0.000     2.600    13.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 2 methyl-radical   methyl-radical molecule
+CH3 CH3 C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3               121286C   1H   3          G  0300.00   5000.00  1000.00      1
+ 0.02844052E+02 0.06137974E-01-0.02230345E-04 0.03785161E-08-0.02452159E-12    2
+ 0.01643781E+06 0.05452697E+02 0.02430443E+02 0.01112410E+00-0.01680220E-03    3
+ 0.01621829E-06-0.05864953E-10 0.01642378E+06 0.06789794E+02                   4
+%%
+ 1   144.000     3.800     0.000     0.000     0.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 3 methylene   methylene molecule
+CH2 CH2 C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2               120186C   1H   2          G  0250.00   4000.00  1000.00      1
+ 0.03636408E+02 0.01933057E-01-0.01687016E-05-0.01009899E-08 0.01808256E-12    2
+ 0.04534134E+06 0.02156561E+02 0.03762237E+02 0.01159819E-01 0.02489585E-05    3
+ 0.08800836E-08-0.07332435E-11 0.04536791E+06 0.01712578E+02                   4
+%%
+ 1   144.000     3.800     0.000     0.000     0.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 4 methanol   methanol molecule
+CH3OH CH3OH C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3OH             121686C   1H   4O   1     G  0300.00   5000.00  1000.00      1
+ 0.04029061E+02 0.09376593E-01-0.03050254E-04 0.04358793E-08-0.02224723E-12    2
+-0.02615791E+06 0.02378196E+02 0.02660115E+02 0.07341508E-01 0.07170051E-04    3
+-0.08793194E-07 0.02390570E-10-0.02535348E+06 0.01123263E+03                   4
+%%
+ 2   481.800     3.626     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 5 methoxy-radical   methoxy-radical molecule
+CH3O CH3O C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O              121686C   1H   3O   1     G  0300.00   3000.00  1000.00      1
+ 0.03770800E+02 0.07871497E-01-0.02656384E-04 0.03944431E-08-0.02112616E-12    2
+ 0.01278325E+04 0.02929575E+02 0.02106204E+02 0.07216595E-01 0.05338472E-04    3
+-0.07377636E-07 0.02075611E-10 0.09786011E+04 0.01315218E+03                   4
+%%
+ 2   417.000     3.690     1.700     0.000     2.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 6 aldehyde   aldehyde molecule
+CH2O CH2O C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2O              121286C   1H   2O   1     G  0300.00   5000.00  1000.00      1
+ 0.02995606E+02 0.06681321E-01-0.02628955E-04 0.04737153E-08-0.03212517E-12    2
+-0.01532037E+06 0.06912572E+02 0.01652731E+02 0.01263144E+00-0.01888168E-03    3
+ 0.02050031E-06-0.08413237E-10-0.01486540E+06 0.01378482E+03                   4
+%%
+ 2   498.000     3.590     0.000     0.000     2.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 7 formyl-radical   formyl-radical molecule
+HCO HCO C1-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+HCO               121286H   1C   1O   1     G  0300.00   5000.00  1000.00      1
+ 0.03557271E+02 0.03345573E-01-0.01335006E-04 0.02470573E-08-0.01713851E-12    2
+ 0.03916324E+05 0.05552299E+02 0.02898330E+02 0.06199147E-01-0.09623084E-04    3
+ 0.01089825E-06-0.04574885E-10 0.04159922E+05 0.08983614E+02                   4
+%%
+ 2   498.000     3.590     0.000     0.000     0.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 8 methylperoxy  methylperoxy molecule
+CH3O2 CH3O2   
+C1-Molecule Radical Alkoxy END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2                   C   1H   3O   2    0g   300.000  5000.000 1385.00     11
+ 5.95787891e+00 7.90728626e-03-2.68246234e-06 4.13891337e-10-2.39007330e-14    2
+-3.78224468e+02-3.53695139e+00 4.26146906e+00 1.00873599e-02-3.21506184e-06    3
+ 2.09409267e-10 4.18339103e-14 4.73129653e+02 6.34599067e+00                   4
+%%
+ 2   498.000     3.590     0.000     0.000     2.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 9 hydroxymethyl hydroxymethyl molecule
+CH3OH CH3OH C1-Molecule Radical Alkoxy END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3OH                   C   1H   4O   1     g  0300.00   5000.00  1000.00      1
+ 0.04029061e+02 0.09376593e-01-0.03050254e-04 0.04358793e-08-0.02224723e-12    2
+-0.02615791e+06 0.02378196e+02 0.02660115e+02 0.07341508e-01 0.07170051e-04    3
+-0.08793194e-07 0.02390570e-10-0.02535348e+06 0.01123263e+03                   4
+%%
+ 2   498.000     3.590     0.000     0.000     2.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10 methylperoxide methylperoxide molecule
+CH3O2H CH3O2H 
+C1-Molecule Radical Alkoxy END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2H                  C   1H   4O   2    0g   300.000  5000.000 1390.00     21
+ 8.43117091e+00 8.06817909e-03-2.77094921e-06 4.31332243e-10-2.50692146e-14    2
+-1.96678771e+04-1.86137916e+01 3.23442817e+00 1.90129767e-02-1.13386287e-05    3
+ 3.40306653e-09-4.11830222e-13-1.77197926e+04 9.75951075e+00                   4
+%%
+ 2   498.000     3.590     0.000     0.000     2.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 11 carbonmonoxide   carbonmonoxide molecule
+CO CO C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CO                121286C   1O   1          G  0300.00   5000.00  1000.00      1
+ 0.03025078E+02 0.01442689E-01-0.05630828E-05 0.01018581E-08-0.06910952E-13    2
+-0.01426835E+06 0.06108218E+02 0.03262452E+02 0.01511941E-01-0.03881755E-04    3
+ 0.05581944E-07-0.02474951E-10-0.01431054E+06 0.04848897E+02                   4
+%%
+ 1    98.100     3.650     0.000     1.950     1.800
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 12 carbondioxide   carbondioxide molecule
+CO2 CO2 C1-Molecule END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CO2               121286C   1O   2          G  0300.00   5000.00  1000.00      1
+ 0.04453623E+02 0.03140169E-01-0.01278411E-04 0.02393997E-08-0.01669033E-12    2
+-0.04896696E+06-0.09553959E+01 0.02275725E+02 0.09922072E-01-0.01040911E-03    3
+ 0.06866687E-07-0.02117280E-10-0.04837314E+06 0.01018849E+03                   4
+%%
+ 1   244.000     3.763     0.000     2.650     2.100
+END

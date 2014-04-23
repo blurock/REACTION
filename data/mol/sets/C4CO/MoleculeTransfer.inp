@@ -1,0 +1,39 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+butane
+isobutane
+1-butyl-radical
+2-butyl-radical
+1-butene
+1-butyne
+butadiene
+2-butynyl-radical
+1-buten-3-yne
+butadiyne
+butadiynyl
+3-butyne-1-en-2-yl
+3-butyne-1-en-1-yl
+3-buten-1-yl
+2-butene
+2-methylpropene
+2-methylpropane
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

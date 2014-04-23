@@ -1,0 +1,38 @@
+ObjectClasses:
+DataType: AlgorithmRun  Goal run class for ANALYSIS algorithms
+BaseAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg  Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg  Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg     Initial#InstanceAlgs#Algorithms Matrix
+                        MatrixGraphOutput     Initial#InstanceAlgs#Algorithms Report
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Expression           AlgorithmSummary
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AllAttributesSetUpAlg                  AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+MatrixPlotAlg                          AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

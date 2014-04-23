@@ -1,0 +1,68 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: EquilibriumConstant  The standard equilibrium constant
+Equilibrium-cm3-Mole-Calorie
+LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+cm3
+   m3          0.0   1000.0
+   END
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Molecule
+   Mole       0.0  1.661129e-24
+   END
+%% ------------------------
+Calorie
+   ECalorie        0.0    1.000
+   EJoule          0.0    4.187
+   EKiloCalorie    0.0    0.001
+   EKiloJoule      0.0    0.004187
+   GCCalorie       0.0    1.00
+   GCJoule         0.0    4.187
+   GCKiloCalorie   0.0    0.001
+   GCKiloJoule     0.0    0.004187
+   END
+%% ------------------------
+END
+PropertyConversions:
+Calorie-cm3             Numerator: ECalorie       Denominator: GCCalorie  cm3    END
+Joule-cm3               Numerator: EJoule         Denominator: GCJoule    cm3     END
+KCalorie-cm3            Numerator: EKiloCalorie   Denominator: GCKiloCalorie cm3   END
+KJoule-cm3              Numerator: EKiloJoule     Denominator: GCKiloJoule cm3    END
+Calorie-m3             Numerator: ECalorie       Denominator: GCCalorie  m3    END
+Joule-m3               Numerator: EJoule         Denominator: GCJoule    m3     END
+KCalorie-m3            Numerator: EKiloCalorie   Denominator: GCKiloCalorie m3   END
+KJoule-m3              Numerator: EKiloJoule     Denominator: GCKiloJoule m3    END
+END
+Real
+Arrhenius TemperatureCoefficient ActivationEnergy
+1.9872
+GCCalorie GCJoule GCKiloCalorie GCKiloJoule END
+m3 cm3 Mole END 
+ECalorie EJoule EKiloCalorie EKiloJoule END
+%% -------------------------------------------------
+DataType: ExpressionTree Reverse Rate Calculation Operations
+EquilibriumExpression
+CalculateEquilibrium OperationMoleculeEquilibrium 
+END
+ThermoConstant: MoleculeChemkin Equilibrium-cm3-Mole-Calorie GCCalories-Mole
+7 300 400 500 600 700 800 900 
+%% 1100 1300 1500 1700 1900 2100
+%% -------------------------------------------------
+END
+ClassNamePairs:
+Equilibrium                   EquilibriumExpression
+MoveEquilibriumConstant       KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

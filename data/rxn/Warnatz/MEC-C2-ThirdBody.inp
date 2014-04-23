@@ -1,0 +1,21 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C2 mechanism from chevalier
+Attributes:
+Instance: 1 C2H2=C2H+H   C2H2  + M'     = C2H   + H   + M'             
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.600E+16    0.0     446.0
+Instance: 1 CH2CO=3-CH2+CO   CH2CO + M'     = 3-CH2 + CO  + M'             
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+16    0.0     248.0
+Instance: 1 OCHCHO=HCO+HCO   OCHCHO  + M'   = HCO + HCO + M'               
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   7.000E+15    0.0     340.0
+Instance: 1 CH3CHO=CH3+HCO   CH3CHO + M'    = CH3    + HCO     + M'        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   7.000E+15    0.0     342.8
+Instance: 1 C2H4=C2H2+H2   C2H4   + M'    = C2H2   + H2  + M'            
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.500E+17    0.0     319.8
+Instance: 1 C2H4=C2H3+H   C2H4   + M'    = C2H3   + H   + M'            
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.700E+18    0.0     404.0
+END

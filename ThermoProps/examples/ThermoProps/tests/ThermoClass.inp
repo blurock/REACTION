@@ -1,0 +1,50 @@
+ObjectClasses:
+DataType: RealBasedProperty   The real based property class
+RealProperty LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+ Meter
+   MilliMeter  0.0  1000.0
+   CentiMeter  0.0  100.0
+   KiloMeter   0.0  0.001
+   END
+%% ------------------------
+Calorie
+   KiloCalorie    0.0 0.001
+   END
+%% ------------------------
+END
+PropertyConversions:
+Entropy  Numerator:   Meter    Denominator:  KiloCalorie   END
+END
+
+DataType: ThermoProperty   The real based property class
+StandardThermoProperty LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+ Meter
+   MilliMeter  0.0  1000.0
+   CentiMeter  0.0  100.0
+   KiloMeter   0.0  0.001
+   END
+%% ------------------------
+Calorie
+   KiloCalorie    0.0 0.001
+   END
+%% ------------------------
+END
+PropertyConversions:
+Entropy  Numerator:   Meter    Denominator:  KiloCalorie   END
+END
+298.0  4.102
+END
+ClassNamePairs:
+AThermoProperty   StandardThermoProperty
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

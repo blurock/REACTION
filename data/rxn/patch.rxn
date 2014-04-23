@@ -1,0 +1,6 @@
+STD-CH3O2+CH4=CH3O2H+CH3       methylperoxy methane = methylperoxide methyl-radical 
+ - StandardRateConstants   Forward        13.05      0.00      85.67   cm3-mol-s-kJ logA
+STD-CH4+CH3O=CH3+CH3OH         methane methoxy-radical = methyl-radical methanol
+ - StandardRateConstants   Forward        11.30      0.00      29.31  cm3-mol-s-kJ logA
+
+ Rxn CalcReverse 'STD-C2H6+CH3O2=C2H5+CH3O2H' Reverse

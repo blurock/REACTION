@@ -1,0 +1,23 @@
+/*  FILE     FullReaction.icc
+**  PACKAGE  FullReaction
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "FullReaction" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1997 Reaction Library
+*/
+ 
+#ifndef ReactionSRC_FULLREACTION_ICC
+#define ReactionSRC_FULLREACTION_ICC
+ 
+#pragma interface
+
+
+
+
+
+
+#endif

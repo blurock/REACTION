@@ -1,0 +1,55 @@
+ELEMENTS
+H O C N Ar
+SPECIES
+H
+O
+H2
+OH
+O2
+H2O
+HO2
+H2O2
+CO
+HCO
+CO2
+CH2O
+N2
+END
+REACTIONS
+CH2O + M  = HCO + H + M           4.9e+35 -5.54 96695
+CH2O + M  = CO + H2 + M           1.1e+36 -5.54 96695
+CH2O + O2 = HCO + HO2          6e+13 0 40660
+CH2O + H = HCO + H2          1.25893e+08 1.62 2166.02
+CH2O + O = HCO + OH          4.16869e+11 0.57 2762.17
+CH2O + OH = HCO + H2O          3.46737e+09 1.18 -447.113
+CH2O + HO2 = HCO + H2O2          3.01995e+12 0 13075.6
+HCO + M  = CO + H + M           1.44544e+14 0 18999.3
+HCO + O2 = CO + HO2          3.01995e+12 0 0
+HCO + H = CO + H2          8.91251e+13 0 0
+HCO + O = CO + OH          3.01995e+13 0 0
+HCO + O = CO2 + H          3e+13 0 0
+HCO + OH = CO + H2O          1.02329e+14 0 0
+HCO + HO2 = OH + H + CO2          3e+14 0 0
+CO + OH = CO2 + H          6.30957e+06 1.5 -496.793
+CO + HO2 = CO2 + OH          1.51356e+14 0 23649.4
+CO + O + M  = CO2 + M           6.2e+14 0 3000
+CO + O2 = CO2 + O          2.5e+12 0 47700
+H + O2 = O + OH          9.77237e+13 0 14844.2
+H2 + O = OH + H          51000 2.67 6280
+OH + OH = H2O + O          1.51356e+09 1.14 99.3585
+OH + H2 = H2O + H          1e+08 1.6 3300
+H2O2 + OH = H2O + HO2          7.8e+12 0 1300
+H2O2 + H = H2O + OH          1e+13 0 3600
+HO2 + HO2 = H2O2 + O2          4.16869e+14 0 11982.6
+H + HO2 = OH + OH          1.69824e+14 0 874.355
+H + HO2 = O2 + H2          4.2658e+13 0 1410.89
+HO2 + OH = O2 + H2O          2.88403e+13 0 -496.793
+O + HO2 = OH + O2          3.16228e+13 0 0
+H + H2O2 = H2 + HO2          1.69824e+12 0 3755.75
+O2 + M  = O + O + M           5.12861e+15 0 115001
+H2 + M  = H + H + M           2.22e+14 0 96100
+H + OH + M  = H2O + M           2.4e+22 -2 0
+H2O2 + M  = OH + OH + M           1.2e+17 0 45300
+OH + M  = O + H + M           7.94328e+19 -1 103700
+H + O2 + M  = HO2 + M           6.2e+17 -0.8 0
+END

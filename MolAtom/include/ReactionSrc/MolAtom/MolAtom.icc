@@ -1,0 +1,17 @@
+/*  FILE     MolAtom.icc
+**  PACKAGE  MolAtom
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "MolAtom" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_MOLATOM_ICC
+#define REACTIONSRC_MOLATOM_ICC
+ 
+
+#endif

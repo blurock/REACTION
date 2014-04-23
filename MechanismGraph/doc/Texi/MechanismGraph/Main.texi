@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MechanismGraph
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MechanismGraph".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MechanismGraph Package
+@section  The "MechanismGraph" Package
+@cindex   package, MechanismGraph
+@cindex   MechanismGraph package
+@cindex   mgrp namespace
+@cindex   namespaces, mgrp
+
+@table @strong
+@item Package name
+@code{MechanismGraph}
+
+@item Namespace name
+@code{mgrp}
+
+@item Header files
+@file{MechanismGraph.hh}, @file{MechanismGraphType.hh}
+@end table
+
+
+@include MechanismGraph/Overview.texi
+
+@include MechanismGraph/Classes.texi

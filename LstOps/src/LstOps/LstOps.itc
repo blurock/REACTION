@@ -1,0 +1,73 @@
+/*  FILE     LstOps.itc
+**  PACKAGE  LstOps
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "LstOps" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+/*S ListEvaluation
+ */
+ 
+/*F Encode(buffer,eval) . . . . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    eval: The structure
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool Encode(CommBuffer& buffer, ListEvaluation<T>& eval)
+{
+  return eval.EncodeThis(buffer);
+}
+/*F Decode(buffer,eval) . . . . . . . . . . . . . . . . . . .  ListEvaluation
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    eval: The structure
+**
+**  REMARKS
+**
+*/
+template <class T> 
+bool Decode(CommBuffer& buffer, ListEvaluation<T>& eval)
+{
+  return eval.DecodeThis(buffer);
+}
+/*S ListEvaluationClasses
+ */
+ 
+/*F Encode(buffer,eval) . . . . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    eval: The structure
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool Encode(CommBuffer& buffer, ListEvaluationClasses<T>& eval)
+{
+  return eval.EncodeThis(buffer);
+}
+/*F Decode(buffer,eval) . . . . . . . . . . . . . . . . . . .  ListEvaluationClasses
+**
+**  DESCRIPTION
+**    buffer: The output buffer
+**    eval: The structure
+**
+**  REMARKS
+**
+*/
+template <class T>
+bool Decode(CommBuffer& buffer, ListEvaluationClasses<T>& eval)
+{
+  return eval.DecodeThis(buffer);
+}

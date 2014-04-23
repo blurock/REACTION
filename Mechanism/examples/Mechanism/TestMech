@@ -1,0 +1,8 @@
+ {butane} + {oxygen}   =   {peroxyl-radical} + {1-butyl-radical} 		3.62284e+34 0 5186.59 
+ {butane} + {oxygen}   =   {peroxyl-radical} + {2-butyl-radical} 		2.41522e+34 0 5186.59 
+ {1-butyl-radical} + {oxygen}   =   {1-butylperoxy-radical} 		3.26284e+33 0 0 
+ {1-butyl-radical} + {oxygen}   =   {1-butylperoxy-radical} 		3.26284e+33 0 0 
+ {2-butyl-radical} + {oxygen}   =   {2-butylperoxy-radical} 		3.26284e+33 0 0 
+ {2-butyl-radical} + {oxygen}   =   {2-butylperoxy-radical} 		3.26284e+33 0 0 
+ {1-butylperoxy-radical} + {peroxyl-radical}   =   {oxygen} + {M9} 		0 0 5186.59 
+ {2-butylperoxy-radical} + {peroxyl-radical}   =   {oxygen} + {M10} 		0 0 5186.59 

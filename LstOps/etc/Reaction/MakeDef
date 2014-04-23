@@ -1,0 +1,25 @@
+# FILE     MakeDef
+# PACKAGE  LstOps
+# AUTHOR   Edward S. Blurock
+#
+# CONTENT
+#   GNU Makefile containing standard definitions for makefiles used in the
+#   STURM package "LstOps".  This file is intended for inclusion in other
+#   makefiles.
+#
+#   The variable `PackageRoot' must give the absolute path to the root of
+#   the package working directory tree.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+include $(CodeBaseRoot)/etc/Reaction/MakeDef
+
+
+#V Package specific variable definitions.
+
+DevelopmentRoot = $(PackageRoot)/..
+CPPFLAGS += -I$(PackageRoot)/include
+LDFLAGS  += -L$(PackageRoot)/lib
+LDLIBS   := -lLstOps $(LDLIBS)

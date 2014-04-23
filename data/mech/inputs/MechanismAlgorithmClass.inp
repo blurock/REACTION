@@ -1,0 +1,82 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: RxnAlgorithmRun  Molecule Algorithms
+MechanismAlgorithmRun
+MechanismUtilities    Initial
+        Input       Initial#MechanismUtilities
+             Choices Initial#MechanismUtilities#Input
+                 ReadChemkin Initial#MechanismUtilities#Input#Choices  ReadMechanism
+        GraphAlg    Initial#MechanismUtilities
+             Create Initial#MechanismUtilities#GraphAlg
+                CreateChoices Initial#MechanismUtilities#GraphAlg#Create
+                    CreateMechanismGraph Initial#MechanismUtilities#GraphAlg#Create#CreateChoices MechanismAsGraph
+             Reduce Initial#MechanismUtilities#GraphAlg
+                    ReductionMethods Initial#MechanismUtilities#GraphAlg#Reduce
+                    MechanismGraphReduction Initial#MechanismUtilities#GraphAlg#Reduce#ReductionMethods SimpleReduction
+        Output    Initial#MechanismUtilities
+           Choices Initial#MechanismUtilities#Output
+             PrintOutMechanism    Initial#MechanismUtilities#Output#Choices        Print
+             GetGeneratedMechanism    Initial#MechanismUtilities#Output#Choices    InputGenerated
+        Fill      Initial#MechanismUtilities
+             Choices Initial#MechanismUtilities#Fill
+             FillMechanism            Initial#MechanismUtilities#Fill#Choices      FillMechanism
+      Predicates Initial#MechanismUtilities
+         Choices Initial#MechanismUtilities#Predicates
+             PredicatesFromDistribution Initial#MechanismUtilities#Predicates#Choices Form
+             PredicatesFromKeyWords     Initial#MechanismUtilities#Predicates#Choices FromKeyWords
+       Reduce    Initial#MechanismUtilities
+          Choices Initial#MechanismUtilities#Reduce
+              LumpMechanism               Initial#MechanismUtilities#Reduce#Choices Reduce
+              AddEquivalentNameToKeyWords Initial#MechanismUtilities#Reduce#Choices ClassKeyWords
+       LumpIt    Initial#MechanismUtilities
+          Choices Initial#MechanismUtilities#LumpIt
+             SimpleLumpedMolecules      Initial#MechanismUtilities#LumpIt#Choices CreateLumpedMolecules
+             SimpleEquivalentReactions  Initial#MechanismUtilities#LumpIt#Choices CreateLumpedReactions
+             BuildMechanism             Initial#MechanismUtilities#LumpIt#Choices Build
+      Lumping Initial#MechanismUtilities
+         Choices Initial#MechanismUtilities#Lumping
+             FormMoleculeSetStatistics Initial#MechanismUtilities#Lumping#Choices Distribution
+             RxnClassesInMolecules   Initial#MechanismUtilities#Lumping#Choices       RxnClasses
+      Grouping  Initial#MechanismUtilities
+         Choices Initial#MechanismUtilities#Grouping
+             DescriptionMatrixSetUp Initial#MechanismUtilities#Grouping#Choices        Matrix
+             SimpleEquivalentSetAlgorithm Initial#MechanismUtilities#Grouping#Choices  Group
+SetOfRuns              Initial
+        Iterations     Initial#SetOfRuns
+               RunSetOfConditions     Initial#SetOfRuns#Iterations   RunSet
+        SingleRun      Initial#SetOfRuns
+               RunIgnition            Initial#SetOfRuns#SingleRun    Ignition
+END
+% ----------------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+PrintMechLaTeX                 AlgorithmSummary
+PrintMechStandardShort         AlgorithmSummary
+PrintMechStandardShortWithReverse         AlgorithmSummary
+PrintReversePrintMechStandard  AlgorithmSummary
+InputGenerated                 AlgorithmSummary
+FillMechanism                  AlgorithmSummary
+MechanismAsGraph               AlgorithmSummary
+SimpleReduction                AlgorithmSummary
+SimpleReductionOnlyForward     AlgorithmSummary
+ReduceMechanism               AlgorithmSummary
+AddClassKeyWords              AlgorithmSummary
+PredicatesDistributions                AlgorithmSummary
+MoleculeAtomDistributions              AlgorithmSummary
+DescriptionMatrixAlg                   AlgorithmSummary
+SimpleGroupAlg                         AlgorithmSummary
+FindMolRxnClassesAlg                   AlgorithmSummary
+PredicatesFromKeyWordsAlg              AlgorithmSummary
+SimpleCreateLumpedMolecules               AlgorithmSummary
+SimpleCreateLumpedReactions               AlgorithmSummary
+BuildMechanism                            AlgorithmSummary
+ReadChemkinAlg                 AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

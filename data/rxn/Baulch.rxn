@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+STD-O+H2=OH+H                oxygen-atom hydrogen = hydroxyl-radical hydrogen-radical
+ - StandardRateConstants Forward        4.71 2.67  3160   cm3-mol-s logA
+STD-O+OH=O2+H                oxygen-atom hydroxyl-radical = oxygen hydrogen-radical
+-  StandardRateConstants Forward        13.01   0.0   112  cm3-mol-s logA
+STD-HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+ - StandardRateConstants Forward        13.48 0.00 0.00   cm3-mol-s logA
+STD-O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+ - StandardRateConstants Forward        13.50 0.00 0.00   cm3-mol-s logA
+STD-O+H2O2=OH+HO2            oxygen-atom hydrogen-peroxide = hydroxyl-radical peroxyl-radical
+ - StandardRateConstants Forward        14.26  0.00 38300   cm3-mol-s logA
+STD-CH3+O=HCHO+H               methyl-radical oxygen-atom = aldehyde hydrogen-radical
+ - StandardRateConstants   Forward        13.92      0.00      0.00    cm3-mol-s logA
+STD-CH4+O=CH3+OH               methane oxygen-atom = methyl-radical hydroxyl-radical
+ - StandardRateConstants   Forward        8.86      1.56      4270   cm3-mol-s logA
+STD-HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+ - StandardRateConstants   Forward        11.62      0.57      1390   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O2 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical
+ - StandardRateConstants   Forward      6.0e+13       0.0     40660  cm3-mol-s-cal A 
+STD-CH4+O2=CH3+HO2             methane oxygen = methyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        13.60      0.00      28630  cm3-mol-s logA
+STD-C2H6+O2=C2H5+HO2           ethane oxygen = ethyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        13.78      0.00      26100  cm3-mol-s logA
+STD-CH3CHO+O2=CH3CO+HO2        ethanal oxygen = ethanoyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        13.47      0.50      19700  cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  Baulch et. al.
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%  H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+STD-C2H3+H=C2H2+H2           ethenyl-radical hydrogen-radical = ethyne hydrogen
+ - StandardRateConstants Forward        13.08 0.00 0.00   cm3-mol-s logA
+STD-H+O2=OH+O             hydrogen-radical oxygen = oxygen-atom hydroxyl-radical
+ - StandardRateConstants Forward        13.99 0.00 7470   cm3-mol-s logA
+STD-H+HO2=H20+0              hydrogen-radical peroxyl-radical = water oxygen-atom
+ - StandardRateConstants Forward        13.48 0.00 866   cm3-mol-s logA
+STD-H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        14.23 0.00 440   cm3-mol-s logA
+STD-H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+ - StandardRateConstants Forward        13.63 0.00 710   cm3-mol-s logA
+STD-H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+ - StandardRateConstants Forward        8.65 1.6 9270   cm3-mol-s logA
+STD-H+H2O2=OH+H2O            hydrogen-radical hydrogen-peroxide = hydroxyl-radical water
+ - StandardRateConstants Forward        13.01 0.00 1800   cm3-mol-s logA
+STD-H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+ - StandardRateConstants Forward        12.23 0.00 1890   cm3-mol-s logA
+STD-CH4+H=CH3+H2               methane hydrogen-radical = methyl-radical hydrogen
+ - StandardRateConstants   Forward      4.12      3.0   4045   cm3-mol-s logA
+STD-HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen
+ - StandardRateConstants Forward        13.95 0.00 0.00   cm3-mol-s logA
+STD-HCHO+H=HCO+H2           aldehyde hydrogen-radical = formyl-radical hydrogen
+ - StandardRateConstants   Forward      8.10      1.62   1090   cm3-mol-s logA
+STD-C2H2+H=C2H+H2            ethyne hydrogen-radical = ethynyl-radical hydrogen
+ - StandardRateConstants Forward        13.82 0.00 14000   cm3-mol-s logA
+STD-C2H4+H=C2H3+H2           ethene hydrogen-radical = ethenyl-radical hydrogen
+ - StandardRateConstants Forward        14.73 0.00 7500   cm3-mol-s logA
+STD-C2H5+H=CH3+CH3             ethyl-radical hydrogen-radical = methyl-radical methyl-radical 
+ - StandardRateConstants   Forward        13.56      0.00      0.00    cm3-mol-s logA
+STD-CH3CHO+H=CH3CO+H2          ethanal hydrogen-radical = ethanoyl-radical hydrogen
+ - StandardRateConstants   Forward        9.61      1.16      1210   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-OH+H2=H2O+H              hydroxyl-radical hydrogen = water hydrogen-radical
+ - StandardRateConstants Forward        1.0e+8        1.6      3300    cm3-mol-s-cal A
+STD-OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+ - StandardRateConstants Forward        9.18 1.14 50   cm3-mol-s logA
+STD-HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+ - StandardRateConstants Forward        13.46 0.00 -250   cm3-mol-s logA
+STD-OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+ - StandardRateConstants Forward        12.89  0.00 670   cm3-mol-s logA
+STD-CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+ - StandardRateConstants Forward        6.8 1.50 -250   cm3-mol-s logA
+STD-HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water
+ - StandardRateConstants   Forward        9.54      1.18   -225    cm3-mol-s logA
+STD-HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water
+ - StandardRateConstants Forward        14.01 0.00 0.00   cm3-mol-s logA
+STD-CH4+OH=CH3+H2O             methane hydroxyl-radical = methyl-radical water
+ - StandardRateConstants   Forward        7.19      1.83      1400   cm3-mol-s logA
+STD-C2H2+OH=C2H+H20          ethyne hydroxyl-radical = ethynyl-radical water
+ - StandardRateConstants Forward        13.78 0.00 6500   cm3-mol-s logA
+STD-C2H4+OH=C2H3+H20         ethene hydroxyl-radical = ethenyl-radical water
+ - StandardRateConstants Forward        13.31 0.00 2990   cm3-mol-s logA
+STD-C2H6+OH=C2H5+H2O           ethane hydroxyl-radical = ethyl-radical water
+ - StandardRateConstants   Forward        6.86      2.00      435    cm3-mol-s logA
+STD-CH2CO+OH=HCHO+HCO        allenal hydroxyl-radical = aldehyde formyl-radical
+ - StandardRateConstants Forward        13.01 0.00 0.00   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HO2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+ - StandardRateConstants Forward        14.62 0.00 6030   cm3-mol-s logA
+STD-CH4+HO2=CH3+H2O2           methane peroxyl-radical = methyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        12.96      0.00      12440   cm3-mol-s logA
+STD-HCHO+HO2=HCO+H2O2       aldehyde peroxyl-radical = formyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        12.48      0.00      6580   cm3-mol-s logA
+STD-CH3O2+HO2=CH3O2H+O2        methylperoxy peroxyl-radical = methylperoxide oxygen
+ - StandardRateConstants   Forward        11.39      0.00      -790  cm3-mol-s logA
+STD-CH3O2+HO2=CH3O+O2+OH       methylperoxy peroxyl-radical = methoxy-radical oxygen hydroxyl-radical
+ - StandardRateConstants   Forward        11.39      0.00      -790    cm3-mol-s logA
+STD-C2H6+HO2=C2H5+H2O2         ethane peroxyl-radical = ethyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        13.12      0.00      10300   cm3-mol-s logA
+STD-CH3CHO+HO2=CH3CO+H2O2      ethanal peroxyl-radical = ethanoyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        12.48      0.00      6000   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  H2O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-CH3+O2=CH3O+O              methyl-radical oxygen = methoxy-radical oxygen-atom
+ - StandardRateConstants   Forward        14.12      0.00      15800  cm3-mol-s logA
+STD-HCHO+CH3=HCO+CH4         aldehyde methyl-radical = formyl-radical methane
+ - StandardRateConstants Forward        -7.11 6.1 6800   cm3-mol-s logA
+STD-C2H5+CH3=C2H4+CH4          ethyl-radical methyl-radical = ethene methane 
+ - StandardRateConstants   Forward        12.06      0.00      0.00    cm3-mol-s logA
+STD-C2H4+CH3=C2H3+CH4        ethene methyl-radical = ethenyl-radical methane
+ - StandardRateConstants Forward        12.62 0.00 5600   cm3-mol-s logA
+STD-C2H6+CH3=C2H5+CH4          ethane methyl-radical = ethyl-radical methane 
+ - StandardRateConstants   Forward        -6.82     6.0      3043   cm3-mol-s logA
+STD-CH3CHO+CH3=CH3CO+CH4       ethanal methyl-radical = ethanoyl-radical methane
+ - StandardRateConstants   Forward        -5.70     5.6      1240   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CHO Atom Reactions (HCO)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical
+ - StandardRateConstants Forward        12.48 0.00 0.00   cm3-mol-s logA
+STD-HCO+O2=CO2+OH            formyl-radical oxygen = carbondioxide hydroxyl-radical
+ - StandardRateConstants Forward        12.48 0.00 0.00   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HCHO Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH2OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-CH3O+O2=HCHO+HO2           methoxy-radical oxygen = aldehyde peroxyl-radical
+ - StandardRateConstants   Forward        10.34      0.00      880   cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OOH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H3 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H4 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-C2H5+O2=C2H4+HO2           ethyl-radical oxygen = ethene peroxyl-radical
+ - StandardRateConstants   Forward        10.01      0.00      1100    cm3-mol-s logA
+STD-C2H5+H2=C2H6+H             ethyl-radical hydrogen = ethane hydrogen-radical
+ - StandardRateConstants   Forward        0.48     3.60      4250  cm3-mol-s logA
+STD-C2H5+C2H5=C2H6+C2H4        ethyl-radical ethyl-radical = ethane ethene 
+ - StandardRateConstants   Forward        12.16      0.00      0.00    cm3-mol-s logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H6 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3CO Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5O Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  J. Phys. Chem. Ref. Data, Vol. 23, 1994 (Supplement I)
+%%
+STD-C2H5O+O2=CH3CHO+HO2        ethoxy-radical oxygen = ethanal peroxyl-radical
+ - StandardRateConstants   Forward        10.78      0.00      830   cm3-mol-s logA
+
+
+
+

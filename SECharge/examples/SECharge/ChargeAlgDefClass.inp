@@ -1,0 +1,25 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+ChargeAlgs Initial
+           Algorithms Initial#ChargeAlgs
+                      EletronegativityAlgorithm Initial#ChargeAlgs#Algorithms Charge
+END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+Charge    AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------
+

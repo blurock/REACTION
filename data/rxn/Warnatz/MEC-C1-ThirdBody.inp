@@ -1,0 +1,28 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C1 (Third Body Reactions) mechanism from chevalier
+Attributes:
+%------------------------------------------------------------------------------
+Instance:  5 HCO=CO+H   HCO   + M'    = CO    + H   + M'                
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 7.100E+14    0.0      70.3
+Instance: 19 1-CH2=3-CH2   1-CH2 + M'    = 3-CH2 + M'                   
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 1.200E+13    0.0       0.0
+Instance: 36 HCHO=HCO+H   CH2O  + M'    = HCO   + H   + M'              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 5.000E+16    0.0     320.0
+Instance: 39 CH3=3-CH2+H   CH3   + M'    = 3-CH2 + H   + M'             
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 1.000E+16    0.0     380.0
+Instance: 49 CH3O=HCHO+H   CH3O  + M'    = CH2O + H   + M'              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 5.000E+13    0.0     105.0
+Instance: 55 CH2OH=HCHO+H   CH2OH + M'    = CH2O + H  + M'              
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 5.000E+13    0.0     105.0
+Instance: 61 CH3O2=CH3+O2   CH3O2  + M'    > CH3    + O2    + M'        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 0.724E+17    0.0     111.1
+Instance: 62 CH3+O2=CH3O2   CH3    + O2    + M'     > CH3O2 + M'        
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 0.141E+17    0.0      -4.6
+END

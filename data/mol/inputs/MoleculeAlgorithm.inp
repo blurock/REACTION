@@ -1,0 +1,60 @@
+DbaseTest  Read in test database items
+Attributes:
+%% -------------------------------------------------
+%%%%  Charge    AlgorithmSummary
+%% -------------------------------------------------
+       Initial ChargeAlgs END
+              END
+       Charge END 
+                               % (Name-Class Pairs)
+           MoleculeNames    KeySet
+      
+       END
+                               %  Algorithm Result Parameters
+       END
+%% -------------------------------------------------
+%%    ThermoMatrix             AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial ThermoProps END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+ThermoValues END                    % Algorithm Specification
+                                    % Algorithm Input Parameters
+ThermoUnits       KeyWords
+InstanceNameList  KeyWords
+Temperatures      Vector
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    ChemkinConversion   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial ThermoProps Chemkin END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+ChemkinValue END                    % Algorithm Specification
+                                    % Algorithm Input Parameters
+InstanceNameList  KeyWords
+ThermoUnits       KeyWords
+ThermoInfo        KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    MoveIt                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial Utilities END               % The Algorithm Category
+END                                 % The Algorithm Keywords
+MoveIt END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+InstanceNameList  KeyWords
+ToMove            KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END
+

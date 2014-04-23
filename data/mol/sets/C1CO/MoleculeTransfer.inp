@@ -1,0 +1,34 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+methane
+methyl-radical
+methanol
+methoxy-radical
+aldehyde
+formyl-radical
+methylperoxy-radical
+hydroxymethyl-radical
+methyl-hydroperoxide
+carbon-monoxide
+carbon-dioxide
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END
+

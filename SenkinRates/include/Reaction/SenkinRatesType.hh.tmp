@@ -1,0 +1,23 @@
+/*  FILE     SenkinRatesType.hh
+**  PACKAGE  SenkinRates
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Class definitions for the "SenkinRates" package.
+**
+**  OVERVIEW
+**
+**  IMPLEMENTATION
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1996 Reaction Project, RISC Linz
+*/
+ 
+#ifndef Reaction_SENKINRATESTYPE_HH
+#define Reaction_SENKINRATESTYPE_HH
+
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+
+#endif

@@ -1,0 +1,35 @@
+VectorNumeric MatrixSolveLinearSystemOfEquations(MatrixNumeric& mat, 
+						 VectorNumeric& vec)
+{
+
+  MatrixNumeric t_mat = mat.transpose();
+  MatrixNumeric alpha = t_mat * mat;
+
+  MatrixNumeric vec_m(1,vec.size());
+  copy(vec.begin(),vec.end(),vec_m[0].begin());
+  MatrixNumeric t_vec_m = vec_m.transpose();
+  MatrixNumeric beta = t_mat * t_vec_m;
+  
+  unsigned int nsize = alpha.size();
+  MatrixUtilities mutil;
+  MatrixNumeric unit(nsize,nsize);
+  VectorNumeric c(nsize);
+  for(unsigned int j1=0;j1<nsize;j1++)
+    {
+      for(unsigned int j2=0;j2<nsize;j2++)
+	{
+	  unit[j1][j2] = 0.0;
+	}
+      unit[j1][j1] = 1.0;
+      c[j1] = 0.0;
+    }
+  mutil.gauss_jordan_invert(alpha,unit,c,nsize);
+
+  MatrixNumeric ans1 = unit *  beta;
+  VectorNumeric vec_beta(nsize);
+  for(unsigned i=0; i<nsize; i++)
+    vec_beta[i]=ans1[i][0];
+
+  return vec_beta;
+}
+

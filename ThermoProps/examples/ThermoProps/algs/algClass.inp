@@ -1,0 +1,30 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+Utilities    Initial
+       Transfer    Initial#Utilities
+             MoveData   Initial#Utilities#Transfer               MoveIt
+ThermoProps Initial
+       Algorithms Initial#ThermoProps
+            ThermoValuesAlgorithm Initial#ThermoProps#Algorithms ThermoValues
+       Chemkin    Initial#ThermoProps
+            ConvertToChemkin Initial#ThermoProps#Chemkin         ChemkinValue
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+ThermoMatrix           AlgorithmSummary
+ChemkinConversion      AlgorithmSummary
+MoveIt                 AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

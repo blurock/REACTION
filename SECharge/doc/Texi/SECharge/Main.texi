@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  SECharge
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "SECharge".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     SECharge Package
+@section  The "SECharge" Package
+@cindex   package, SECharge
+@cindex   SECharge package
+@cindex   sec namespace
+@cindex   namespaces, sec
+
+@table @strong
+@item Package name
+@code{SECharge}
+
+@item Namespace name
+@code{sec}
+
+@item Header files
+@file{SECharge.hh}, @file{SEChargeType.hh}
+@end table
+
+
+@include SECharge/Overview.texi
+
+@include SECharge/Classes.texi

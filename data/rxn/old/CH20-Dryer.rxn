@@ -1,0 +1,84 @@
+STD-HCHO+M=HCO+H+M          aldehyde = formyl-radical hydrogen-radical
+ - StandardRateConstants   Forward        16.52     0.00      339.15  cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-HCHO+M=CO+H2+M          aldehyde = carbonmonoxide hydrogen 
+ - StandardRateConstants   Forward        16.70     0.00      320.31  cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-HCHO+O2=HCO+HO2         aldehyde oxygen = formyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        15.56      0.00      192.77  cm3-mol-s-kJ logA
+B-HCHO+H=HCO+H2   `        aldehyde hydrogen-radical = formyl-radical hydrogen
+ - StandardRateConstants   Forward        14.52      0.00      43.96   cm3-mol-s-kJ logA
+B-HCHO+O=HCO+OH           aldehyde oxygen-atom = formyl-radical hydroxyl-radical
+ - StandardRateConstants   Forward        13.70      0.00      19.26   cm3-mol-s-kJ logA
+B-HCHO+OH=HCO+H2O         aldehyde hydroxyl-radical = formyl-radical water
+ - StandardRateConstants   Forward        12.88      0.00      0.71    cm3-mol-s-kJ logA
+B-HCHO+HO2=HCO+H2O2       aldehyde peroxyl-radical = formyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        11.30      0.00      33.50   cm3-mol-s-kJ logA
+B-HCO+M=CO+H+M             formyl-radical = carbonmonoxide hydrogen-radical
+ - StandardRateConstants Forward        14.16 0.00 79.55   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-HCO+O2=CO+HO2            formyl-radical oxygen = carbonmonoxide peroxyl-radical
+ - StandardRateConstants Forward        12.48 0.00 0.00   cm3-mol-s-kJ logA
+B-HCO+H=CO+H2              formyl-radical hydrogen-radical = carbonmonoxide hydrogen
+ - StandardRateConstants Forward        14.30 0.00 0.00   cm3-mol-s-kJ logA
+B-HCO+O=CO+OH              formyl-radical oxygen-atom = carbonmonoxide hydroxyl-radical
+ - StandardRateConstants Forward        14.00 0.00 0.00   cm3-mol-s-kJ logA
+
+
+
+B-HCO+OH=CO+H2O            formyl-radical hydroxyl-radical = carbonmonoxide water
+ - StandardRateConstants Forward        14.00 0.00 0.00   cm3-mol-s-kJ logA
+
+
+
+B-CO+OH=CO2+H              carbonmonoxide hydroxyl-radical = carbondioxide hydrogen-radical
+ - StandardRateConstants Forward        7.18 1.30 -3.22   cm3-mol-s-kJ logA
+B-CO+HO2=CO2+OH            carbonmonoxide peroxyl-radical = carbondioxide hydroxyl-radical
+ - StandardRateConstants Forward        15.18 0.00 99.02   cm3-mol-s-kJ logA
+B-CO+O+M=CO2+M             carbonmonoxide oxygen-atom = carbondioxide
+ - StandardRateConstants Forward        9.77 0.00 17.17   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-CO+O2=CO2+O               carbonmonoxide oxygen = carbondioxide oxygen-atom
+ - StandardRateConstants Forward        11.50 0.00 157.43   cm3-mol-s-kJ logA
+
+
+B-OH+OH=H2O+O              hydroxyl-radical hydroxyl-radical = water oxygen-atom
+ - StandardRateConstants Forward        12.80 0.00 4.61   cm3-mol-s-kJ logA
+B-H+H2O=H2+OH              hydrogen-radical water = hydrogen hydroxyl-radical
+ - StandardRateConstants Forward        13.98 0.00 85.00   cm3-mol-s-kJ logA
+B-OH+H2O2=H2O+HO2          hydroxyl-radical hydrogen-peroxide = water peroxyl-radical
+ - StandardRateConstants Forward        13.00  0.00 7.54   cm3-mol-s-kJ logA
+B-H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+ - StandardRateConstants Forward        13.23 0.00 15.70   cm3-mol-s-kJ logA
+
+
+B-HO2+HO2=H2O2+O2          peroxyl-radical peroxyl-radical = hydrogen-peroxide oxygen
+ - StandardRateConstants Forward        12.30 0.00 0.00   cm3-mol-s-kJ logA
+B-H+HO2=OH+OH              hydrogen-radical peroxyl-radical = hydroxyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        14.40 0.00 7.96   cm3-mol-s-kJ logA
+B-H+HO2=O2+H2              hydrogen-radical peroxyl-radical = oxygen hydrogen
+ - StandardRateConstants Forward        13.40 0.00 2.93   cm3-mol-s-kJ logA
+B-HO2+OH=O2+H2O            peroxyl-radical hydroxyl-radical = oxygen water
+ - StandardRateConstants Forward        13.70 0.00 4.19   cm3-mol-s-kJ logA
+B-O+HO2=OH+O2              oxygen-atom peroxyl-radical = hydroxyl-radical oxygen
+ - StandardRateConstants Forward        13.70 0.00 4.19   cm3-mol-s-kJ logA
+B-H+H2O2=H2+HO2            hydrogen-radical hydrogen-peroxide = hydrogen peroxyl-radical
+ - StandardRateConstants Forward        13.23 0.00 15.70   cm3-mol-s-kJ logA
+B-O2+M=O+O+M               oxygen = oxygen-atom oxygen-atom
+ - ThirdBody 0 0.0 0.0 0.0
+ - StandardRateConstants Forward        15.71 0.00 481.51  cm3-mol-s-kJ logA
+B-H2+M=H+H+M               hydrogen = hydrogen-radical hydrogen-radical
+ - StandardRateConstants Forward        14.34 0.00 401.95   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-H2O+M=H+OH+M             water = hydrogen-radical hydroxyl-radical
+ - StandardRateConstants Forward        16.34 0.00 439.64   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-H2O2+M=OH+OH+M           hydrogen-peroxide = hydroxyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        16.78 0.00 190.51   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-OH+M=O+H+M               hydroxyl-radical = oxygen-atom hydrogen-radical
+ - StandardRateConstants Forward        19.90 -1.00 434.19   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-H+O2+M=HO2+M             hydrogen-radical oxygen = peroxyl-radical
+ - StandardRateConstants Forward        9.22 0.00 -4.19   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0

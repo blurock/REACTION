@@ -1,0 +1,16 @@
+BensonThermodynamics  ==== A set of benson thermo constants ====
+Attributes:
+Instance: 1 Ethane   Ethane molecule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+  -1.66E+05  263.6  
+6 -4.696E+00  6.914E+01 -5.857E+01  2.707E+01 -6.555E+00  6.410E-01
+Instance: 2 Aldehyde   Aldehyde molecule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+  -1.16E+05  218.4   
+6 2.383E+00  2.120E+01 -1.163E+01  3.287E+00 -4.470E-01  2.110E-02
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% No Instances
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

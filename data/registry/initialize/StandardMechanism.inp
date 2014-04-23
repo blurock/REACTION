@@ -1,0 +1,28 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: Mechanism The standard mechanism
+StandardMechanism 
+NameInInstance: Mechanism
+MoleculeSummary
+ReactionSummary
+StandardMolecule
+SIStandardReaction
+%  Moldat Information
+Linearity      Integer   1
+Eps            Real      252.0
+Sig            Real      4.760
+Dipole         Real      0.0
+Polarize       Real      0.0
+ZRotation      Real      1.0
+END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

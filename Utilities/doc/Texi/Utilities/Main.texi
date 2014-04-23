@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Utilities
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "Utilities".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     Utilities Package
+@section  The "Utilities" Package
+@cindex   package, Utilities
+@cindex   Utilities package
+@cindex   util namespace
+@cindex   namespaces, util
+
+@table @strong
+@item Package name
+@code{Utilities}
+
+@item Namespace name
+@code{util}
+
+@item Header files
+@file{Utilities.hh}, @file{UtilitiesType.hh}
+@end table
+
+
+@include Utilities/Overview.texi
+
+@include Utilities/Classes.texi

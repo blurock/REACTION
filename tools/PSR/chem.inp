@@ -1,0 +1,31 @@
+ELEMENTS O H N END
+SPECIES  O  O2  H  H2  OH  HO2  H2O  H2O2 N2 END
+REACTIONS
+  H+O2 = O+OH            5.1E16   -0.82  16510 !MILLER 81
+  H2+O = H+OH            1.8E10    1.0    8830 !MILLER 77
+  H2+OH = H2O+H          1.2E09    1.3    3630 !DIXON-LEWIS 77
+  OH+OH = H2O+O          6.0E08    1.3    0.0 !COHEN 79
+  H+OH+M = H2O+M         7.5E23   -2.6    0.0 !MILLER 77
+    H2O /20.0/
+  O2+M = O+O+M           1.9E11    0.5   95560 !MILLER 81
+  H2+M = H+H+M           2.2E12    0.5   92600 !MILLER 77
+    H2O /6.0/
+    H   /2.0/
+    H2  /3.0/
+  H2+O2 = OH+OH           1.7E13    0.0   47780 !MILLER 77
+  H+O2+M = HO2+M          2.1E18   -1.0    0.0 !SLACK 77
+    H2O /21.0/
+    H2  /3.3/
+    O2  /0.0/
+    N2  /0.0/
+  H+O2+O2 = HO2+O2       6.7E19   -1.42    0.0 !SLACK 77
+  H+O2+N2 = HO2+N2       6.7E19   -1.42    0.0 !SLACK 77
+  HO2+H = H2+O2          2.5E13    0.0     700 !LLOYD 74
+  HO2+H = OH+OH          2.5E14    0.0    1900 !LLOYD 74
+  HO2+O = OH+O2          4.8E13    0.0    1000 !LLOYD 74
+  HO2+OH = H2O+O2        5.0E13    0.0    1000 !LLOYD 74
+  HO2+HO2 = H2O2+O2      2.0E12    0.0    0.0 !TROE 69
+  H2O2+M = OH+OH+M       1.2E17    0.0   45500 !BAULCH 72
+  H2O2+H = HO2 + H2      1.7E12    0.0    3750 !BAULCH 72
+  H2O2+OH = H2O+HO2      1.0E13    0.0    1800 !BAULCH 72
+END

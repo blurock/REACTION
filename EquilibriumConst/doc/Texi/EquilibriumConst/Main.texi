@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  EquilibriumConst
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "EquilibriumConst".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     EquilibriumConst Package
+@section  The "EquilibriumConst" Package
+@cindex   package, EquilibriumConst
+@cindex   EquilibriumConst package
+@cindex   equ namespace
+@cindex   namespaces, equ
+
+@table @strong
+@item Package name
+@code{EquilibriumConst}
+
+@item Namespace name
+@code{equ}
+
+@item Header files
+@file{EquilibriumConst.hh}, @file{EquilibriumConstType.hh}
+@end table
+
+
+@include EquilibriumConst/Overview.texi
+
+@include EquilibriumConst/Classes.texi

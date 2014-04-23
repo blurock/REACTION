@@ -1,0 +1,274 @@
+alkeneC5-C10-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  Alkene Peroxy Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-pentene 1-pentene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c5h10-1
+c5h10-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c5h10-1
+c5h10-1    2/14/95      c   5h  10    0    0g   300.000  5000.000 1392.00     31
+ 1.45851539e+01 2.24072471e-02-7.63348025e-06 1.18188966e-09-6.84385139e-14    2
+-1.00898205e+04-5.23683936e+01-1.06223481e+00 5.74218294e-02-3.74486890e-05    3
+ 1.27364989e-08-1.79609789e-12-4.46546666e+03 3.22739790e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hexene 1-hexene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c6h12-1
+c6h12-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c6h12-1
+c6h12-1    2/14/95      c   6h  12    0    0g   300.000  5000.000 1392.00     41
+ 1.78337529e+01 2.67377658e-02-9.10036773e-06 1.40819768e-09-8.15124244e-14    2
+-1.42062860e+04-6.83818851e+01-1.35275205e+00 6.98655426e-02-4.59408022e-05    3
+ 1.56967343e-08-2.21296175e-12-7.34368617e+03 3.53120691e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-heptene 1-heptene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c7h14-1
+c7h14-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c7h14-1
+c7h14-1    2/10/95      c   7h  14    0    0g   300.000  5000.000 1392.000    51
+ 2.10898039e+01 3.10607878e-02-1.05644793e-05 1.63405780e-09-9.45598219e-14    2
+-1.83260065e+04-8.44391108e+01-1.67720549e+00 8.24611601e-02-5.46504108e-05    3
+ 1.87862303e-08-2.65737983e-12-1.02168601e+04 3.85068032e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-octene 1-octene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c8h16-1
+c8h16-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c8h16-1
+c8h16-1           T 5/83C   8H  16    0    0G   300.     4000.      112.208    1
+ 0.25359207E+02 0.27841240E-01-0.40735995E-05-0.93202601E-09 0.21516030E-12    2
+-0.21615809E+05-0.10340465E+03 0.26774750E+01 0.63882887E-01 0.99165463E-05    3
+-0.51358793E-07 0.23292035E-10-0.13626941E+05 0.21278259E+02           4133.5  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-nonene 1-nonene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c9h18-1
+c9h18-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using C9H18Z
+c9h18-1                 C   9H  18O   0     G  0300.00   5000.00  1000.00      1
+ 1.53793E+01    5.61292E-02   -1.98147E-05    3.23022E-09   -2.01192E-13       2
+-2.06309E+04   -4.56273E+01    5.26230E-01    8.78248E-02   -2.39189E-05       3
+-2.41905E-08    1.44519E-11   -1.63330E+04    3.28075E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-decene 1-decene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c10h20-1
+c10h20-1
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using C10H20Z
+c10h20-1                C  10H  20O   0     G  0300.00   5000.00  1000.00      1
+ 1.74052E+01    6.20349E-02   -2.18371E-05    3.55296E-09   -2.21002E-13       2
+-2.41512E+04   -5.45075E+01    2.86905E-01    1.00011E-01   -3.19131E-05       3
+-2.17285E-08    1.42532E-11   -1.92368E+04    3.56120E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-pentene 2-pentene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c5h10-2
+c5h10-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c5h10-2
+c5h10-2    2/14/95      c   5h  10    0    0g   300.000  5000.000 1389.00     31
+ 1.41109267e+01 2.28348272e-02-7.78626835e-06 1.20627491e-09-6.98795983e-14    2
+-1.14336507e+04-5.01601163e+01-5.41560551e-01 5.39629918e-02-3.23508738e-05    3
+ 9.77416037e-09-1.18534668e-12-5.98606169e+03 2.97142748e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-hexene 2-hexene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c6h12-2
+c6h12-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c6h12-2
+c6h12-2    2/14/95      c   6h  12    0    0g   300.000  5000.000 1390.00     41
+ 1.73616148e+01 2.71634902e-02-9.25249439e-06 1.43247725e-09-8.29472521e-14    2
+-1.55509547e+04-6.61857343e+01-8.37810520e-01 6.64334712e-02-4.08801772e-05    3
+ 1.27558015e-08-1.60665165e-12-8.86347329e+03 3.27785200e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-heptene 2-heptene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c7h14-2
+c7h14-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c7h14-2
+c7h14-2    2/10/95      c   7h  14    0    0g   300.000  5000.000 1390.000    51
+ 2.06192047e+01 3.14852991e-02-1.07162057e-05 1.65827662e-09-9.59911785e-14    2
+-1.96713162e+04-8.22519387e+01-1.16533279e+00 7.90439806e-02-4.96101666e-05    3
+ 1.58569009e-08-2.05346433e-12-1.17362359e+04 3.59871070e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-octene 2-octene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c8h16-2
+c8h16-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c8h16-1
+c8h16-2           T 5/83C   8H  16    0    0G   300.     4000.      112.208    1
+ 0.25359207E+02 0.27841240E-01-0.40735995E-05-0.93202601E-09 0.21516030E-12    2
+-0.21615809E+05-0.10340465E+03 0.26774750E+01 0.63882887E-01 0.99165463E-05    3
+-0.51358793E-07 0.23292035E-10-0.13626941E+05 0.21278259E+02           4133.5  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-nonene 2-nonene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c9h18-2
+c9h18-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using C9H18Z
+c9h18-2                 C   9H  18O   0     G  0300.00   5000.00  1000.00      1
+ 1.53793E+01    5.61292E-02   -1.98147E-05    3.23022E-09   -2.01192E-13       2
+-2.06309E+04   -4.56273E+01    5.26230E-01    8.78248E-02   -2.39189E-05       3
+-2.41905E-08    1.44519E-11   -1.63330E+04    3.28075E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-decene 2-decene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c9h20-2
+c9h20-2
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using C10H20Z
+c9h20-2                 C  10H  20O   0     G  0300.00   5000.00  1000.00      1
+ 1.74052E+01    6.20349E-02   -2.18371E-05    3.55296E-09   -2.21002E-13       2
+-2.41512E+04   -5.45075E+01    2.86905E-01    1.00011E-01   -3.19131E-05       3
+-2.17285E-08    1.42532E-11   -1.92368E+04    3.56120E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-hexene 3-hexene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c6h12-3
+c6h12-3
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c6h12-3
+c6h12-3    2/14/95      c   6h  12    0    0g   300.000  5000.000 1392.00     41
+ 1.74392115e+01 2.72012909e-02-9.28739405e-06 1.44011755e-09-8.34782517e-14    2
+-1.55311520e+04-6.72316177e+01-1.74471739e+00 7.02087492e-02-4.60836866e-05    3
+ 1.58225609e-08-2.26113570e-12-8.63510107e+03 3.65273503e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-heptene 3-heptene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c7h14-3
+c7h14-3
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c7h14-3
+c7h14-3    2/10/95      c   7h  14    0    0g   300.000  5000.000 1392.000    51
+ 2.06822750e+01 3.15388629e-02-1.07571215e-05 1.66690260e-09-9.65810393e-14    2
+-1.96450604e+04-8.25235002e+01-2.03026994e+00 8.26324377e-02-5.45514471e-05    3
+ 1.87705822e-08-2.67571220e-12-1.15141029e+04 4.02316266e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-octene 3-octene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c8h16-3
+c8h16-3
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c8h16-1
+c8h16-3           T 5/83C   8H  16    0    0G   300.     4000.      112.208    1
+ 0.25359207E+02 0.27841240E-01-0.40735995E-05-0.93202601E-09 0.21516030E-12    2
+-0.21615809E+05-0.10340465E+03 0.26774750E+01 0.63882887E-01 0.99165463E-05    3
+-0.51358793E-07 0.23292035E-10-0.13626941E+05 0.21278259E+02           4133.5  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-nonene 3-nonene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c9h16-3
+c9h16-3
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c9h16-3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-decene 3-decene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c10h20-3
+c10h20-3
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using cC10H20Z
+10h20-3                 C  10H  20O   0     G  0300.00   5000.00  1000.00      1
+ 1.74052E+01    6.20349E-02   -2.18371E-05    3.55296E-09   -2.21002E-13       2
+-2.41512E+04   -5.45075E+01    2.86905E-01    1.00011E-01   -3.19131E-05       3
+-2.17285E-08    1.42532E-11   -1.92368E+04    3.56120E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-octene 4-octene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c8h16-4
+c8h16-4
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using c8h16-1
+c8h16-4           T 5/83C   8H  16    0    0G   300.     4000.      112.208    1
+ 0.25359207E+02 0.27841240E-01-0.40735995E-05-0.93202601E-09 0.21516030E-12    2
+-0.21615809E+05-0.10340465E+03 0.26774750E+01 0.63882887E-01 0.99165463E-05    3
+-0.51358793E-07 0.23292035E-10-0.13626941E+05 0.21278259E+02           4133.5  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-nonene 4-nonene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c9h18-4
+c9h18-4
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using C9H18Z
+c9h18-4                 C   9H  18O   0     G  0300.00   5000.00  1000.00      1
+ 1.53793E+01    5.61292E-02   -1.98147E-05    3.23022E-09   -2.01192E-13       2
+-2.06309E+04   -4.56273E+01    5.26230E-01    8.78248E-02   -2.39189E-05       3
+-2.41905E-08    1.44519E-11   -1.63330E+04    3.28075E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-decene 4-decene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c10h20-4
+c10h20-4
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using cC10H20Z
+10h20-4                 C  10H  20O   0     G  0300.00   5000.00  1000.00      1
+ 1.74052E+01    6.20349E-02   -2.18371E-05    3.55296E-09   -2.21002E-13       2
+-2.41512E+04   -5.45075E+01    2.86905E-01    1.00011E-01   -3.19131E-05       3
+-2.17285E-08    1.42532E-11   -1.92368E+04    3.56120E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      5-decene 5-decene
+%% Lumped molecule (for Short Name and Chemkin Name)
+c10h20-5
+c10h20-5
+%% Molecule classes
+Alkene
+END
+NASA Polynomials ; NASA ; Estimate using cC10H20Z
+10h20-5                 C  10H  20O   0     G  0300.00   5000.00  1000.00      1
+ 1.74052E+01    6.20349E-02   -2.18371E-05    3.55296E-09   -2.21002E-13       2
+-2.41512E+04   -5.45075E+01    2.86905E-01    1.00011E-01   -3.19131E-05       3
+-2.17285E-08    1.42532E-11   -1.92368E+04    3.56120E+01                      4
+END

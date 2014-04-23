@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MechGraph
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MechGraph".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MechGraph Package
+@section  The "MechGraph" Package
+@cindex   package, MechGraph
+@cindex   MechGraph package
+@cindex   mgr namespace
+@cindex   namespaces, mgr
+
+@table @strong
+@item Package name
+@code{MechGraph}
+
+@item Namespace name
+@code{mgr}
+
+@item Header files
+@file{MechGraph.hh}, @file{MechGraphType.hh}
+@end table
+
+
+@include MechGraph/Overview.texi
+
+@include MechGraph/Classes.texi

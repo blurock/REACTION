@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MolStats
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MolStats".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MolStats Package
+@section  The "MolStats" Package
+@cindex   package, MolStats
+@cindex   MolStats package
+@cindex   mst namespace
+@cindex   namespaces, mst
+
+@table @strong
+@item Package name
+@code{MolStats}
+
+@item Namespace name
+@code{mst}
+
+@item Header files
+@file{MolStats.hh}, @file{MolStatsType.hh}
+@end table
+
+
+@include MolStats/Overview.texi
+
+@include MolStats/Classes.texi

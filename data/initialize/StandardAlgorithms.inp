@@ -1,0 +1,427 @@
+No attributes
+Attributes:
+12345
+%%%%% CobwebClusterPredGen                   GoalSpec
+END
+%%%%% CobwebClusterRead                      GoalSpec
+END
+%%%%% DecisionTreePredGen                    GoalSpec
+END
+%%%%% DecisionTreeRead                       GoalSpec
+END
+%%%%% CriticalPointRead                      GoalSpec
+END
+%%%%% PartitionsFromCriticalPoints           GoalSpec
+END
+%%%%% ReadInstances                          GoalSpec
+END
+%%%%% InstanceSetUp                          GoalSpec
+END
+%%%%% AttributeSetUp                         GoalSpec
+END
+%%%%% AttributeByType                        GoalSpec
+END
+%%%%% AttributeByName                        GoalSpec
+END
+%%%%% MatrixSetUp                            GoalSpec
+END
+%%%%-----------------------------------------------------------------------------
+%%%%  CriticalPointReadAlg    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Read END 
+                               % (Name-Class Pairs)
+     CriticalPointsRootName               KeyWords
+      CriticalPointsFileName               KeyWords
+      END
+                               %  Algorithm Result Parameters
+      CriticalPointsList             %  KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%  PartitionsFromCriticalPointsAlg    AlgorithmSummary
+      Initial PartitionAlgs PredGen END
+      Level0 END
+      Partitions END
+                               % (Name-Class Pairs)
+      PartitionTypesFromPoints             KeyWords
+      CriticalPointsList                   KeyWords
+      END
+                               %  Algorithm Result Parameters
+      PredicateList                        %%KeyWords
+      PartitionList                        %%KeyWords
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Read END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       InstanceReadFiles KeyWords
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   InstanceSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Instances END                          % Algorithm Specification
+                                              % Algorithm Input Parameters
+       InstanceNameList KeyWords              % (Name-Class Pairs)
+       TestPercentage   Real
+       END
+                                              % Algorithm Result Parameters
+       TotalInstanceNameList %%KeyWords              % (Name-Class Pairs)
+       TestInstanceNameList  %%KeyWords
+       TrainInstanceNameList %%KeyWords
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AllAttributesSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       allAttributes END                      % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END    % Algorithm Category
+       Parameter END                          % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByTypeAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByType END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%% AttributeByNameAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       AttributesByName END                   % Algorithm KeyWords
+       Attributes END                         % Algorithm Specification
+                                              % Algorithm Input Parameters
+                                              % (Name-Class Pairs)
+        AttributeSpecs        KeyWords
+        TotalInstanceNameList KeyWords
+        END
+                                              % Algorithm Result Parameters
+       AttributeNames
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixSetUpAlg    AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Matrix END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames KeyWords
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   DecisionTreeAlg    AlgorithmSummary
+     Initial DecisionTreeAlgs            END    % Algorithm Category
+     Parameter Level0                    END    % Algorithm KeyWords
+     Create SimpleSelect Entropy Filter  END    % Algorithm Specification
+                                                % (Name-Class Pairs)
+     EntropyGoal                         KeyWords
+     PartitionList                       KeyWords
+     TrainInstanceNameList               KeyWords
+     DecisionTreeMinimumInstances        KeyWords
+     DecisionTreePartitionPercent        Real
+     DecisionTreeMinimumEntropy          Real
+     DecisionTreeMaximumNodes            Integer
+     END
+                                      %% Algorithm Result Parameters
+     DecisionTree                     %% KeyWords     
+     END
+%%%%-----------------------------------------------------------------------------
+%%%%   CobwebClusterAlg    AlgorithmSummary
+     Initial ClusterAlgs CobwebTreeAlg END    % Algorithm Category
+                                     END    % Algorithm KeyWords
+     Create Matrix Cobweb            END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel                    Integer
+     LogicType                   KeyWords
+     TrainInstanceNameList       KeyWords
+     TestInstanceNameList        KeyWords
+     PredicateList               KeyWords
+     GoalNameList                KeyWords
+     END
+                                            % Algorithm Result Parameters
+     CobwebClusterTree                      % CobwebClusterTree
+     END
+%%%%-----------------------------------------------------------------------------
+%%%%   CobwebClusterTestAlg    AlgorithmSummary
+     Initial ClusterAlgs CobwebTreeAlg END    % Algorithm Category
+                                     END    % Algorithm KeyWords
+     Test Matrix Cobweb            END    % Algorithm Specification
+                                            % (Name-Class Pairs)
+     MaxLevel                    Integer
+     LogicType                   KeyWords
+     TrainInstanceNameList       KeyWords
+     TestInstanceNameList        KeyWords
+     PredicateList               KeyWords
+     GoalNameList                KeyWords
+     CobwebClusterTree           CobwebClusterTree
+     END
+                                            % Algorithm Result Parameters
+     END
+
+%%%%-----------------------------------------------------------------------------
+%%     ExpressionTreeAlg   AlgorithmSummary
+                                    % The name of the Algorithm
+Initial VariableGen Expression END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate END                       % Algorithm Specification
+                                    % Algorithm Input Parameters
+VarsAndExps   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%     DistributionAlg     AlgorithmSummary
+                                    % The name of the Algorithm
+Initial StatisticsAlgs Distribution END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+RootName          KeyWords
+MatrixObject      InstanceMatrix
+END
+                                    % Algorithm Output Parameters
+Distributions
+END
+%%%%-----------------------------------------------------------------------------
+%%    PCAVarGenAlg   AlgorithmSummary
+                                    % The name of the Algorithm
+Initial VariableGen PCA END   % The Algorithm Category
+Normalize END                       % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+PCANames               KeyWords
+TotalInstanceNameList  KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%    PCAAlg   AlgorithmSummary
+                                       % The name of the Algorithm
+Initial StatisticsAlgs PCA END         % The Algorithm Category
+Normalize END                          % The Algorithm Keywords
+Calculate       END                    % Algorithm Specification
+                                       % Algorithm Input Parameters
+PCANames          KeyWords
+MatrixObject      InstanceMatrix
+END
+                                       % Algorithm Output Parameters
+PCAAnalysis
+END
+%%%%-----------------------------------------------------------------------------
+%%    PCAAlg   AlgorithmSummary
+                                       % The name of the Algorithm
+Initial DecisionTreeAlgs  END         % The Algorithm Category
+ END                                   % The Algorithm Keywords
+Filter          END                    % Algorithm Specification
+                                       % Algorithm Input Parameters
+DecisionTree                        DecisionTree
+DecisionTreeMinimumInstances        KeyWords
+DecisionTreePartitionPercent        Real
+DecisionTreeMinimumEntropy          Real
+DecisionTreeMaximumNodes            Integer
+END
+                                       % Algorithm Output Parameters
+DecisionTreeFilterAnswer          %  Continuous
+END
+%% -------------------------------------------------
+%%    RuleSystemSearch     AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Calculate  END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+ProductionSystem           NormalProductionSystem
+TrainInstanceNameList      KeyWords
+MaximumNumberOfNodes       Integer
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    RuleSystemSearch     AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial RuleSystem END              % The Algorithm Category
+END                                 % The Algorithm Keywords
+Action  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+Rule                       SimpleAction
+TrainInstanceNameList      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%    Verify               AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial Verify END             % The Algorithm Category
+END                                 % The Algorithm Keywords
+Verify END                      % Algorithm Specification
+                                    % Algorithm Input Parameters
+VerificationOperation     KeyWords
+LogicalDescriptionNames   KeyWords
+InstanceNames             KeyWords
+END
+                                    % Algorithm Output Parameters
+ErrorInstanceNames       %%      KeyWords
+END
+
+%% -------------------------------------------------
+%%    InstanceListFromPredicate               AlgorithmSummary
+%% -------------------------------------------------
+                                     % The name of the Algorithm
+Initial InstanceAlgs END             % The Algorithm Category
+END                                  % The Algorithm Keywords
+Predicate END                        % Algorithm Specification
+                                     % Algorithm Input Parameters
+InstanceListFromPredicates  KeyWords
+InstanceNameList            KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%%%   SATestAlg    AlgorithmSummary
+       Initial SAAlgs END                   % Algorithm Category
+       TestTheOpt END                       % Algorithm KeyWords
+       SimAnn END                           % Algorithm Specification
+                                            % Algorithm Input Parameters
+       TestMatrixObject InstanceMatrix
+       TheUpperLower SimAnnUpperLower
+       TheFunctionToOptimize WidthModelOptimization
+       TheOptimizedPars InstanceVector
+       END
+                                            % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   SAOptAlg    AlgorithmSummary
+       Initial SAAlgs END                   % Algorithm Category
+       END                                  % Algorithm KeyWords
+       SimAnn END                           % Algorithm Specification
+                                            % Algorithm Input Parameters
+       TrainMatrixObject InstanceMatrix
+       TheUpperLower SimAnnUpperLower
+       TheFunctionToOptimize WidthModelOptimization
+       END
+                                            % Algorithm Result Parameters
+       TheOptimizedPars   %% InstanceVector
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   MatrixPlotAlg      AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Report END                             % Algorithm Specification
+                RootName      String
+                Xcoordinate   String
+                Ycoordinates  KeyWords
+                MatrixObject  InstanceDoubleMatrix
+                                              % Algorithm Input Parameters
+       END
+                                              % Algorithm Result Parameters
+       MatrixObject                           % (Name-Class Pairs)
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%  ClusterSetsAlg             AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+      Initial ConsecutiveAlgs END
+      END
+      ClusterSets END 
+                               % (Name-Class Pairs)
+         RootName                String
+         ClusterObject           String
+      END
+                               %  Algorithm Result Parameters
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%  FindConsecutive             AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+      Initial ConsecutiveAlgs END
+      END
+      FindConsecutive END 
+                               % (Name-Class Pairs)
+           ClusterSets         KeyWords
+           MaximumGap          Integer
+           TrainInstanceNameList    KeyWords
+           MinimumNumberOfElements           Integer
+      END
+                               %  Algorithm Result Parameters
+      END
+%%%%-----------------------------------------------------------------------------
+%%%%  SortInstances             AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+      Initial ConsecutiveAlgs END
+      END
+      SortInstances END 
+                               % (Name-Class Pairs)
+           SortParameter       String
+           TrainInstanceNameList    KeyWords
+      END
+                               %  Algorithm Result Parameters
+      END
+%% -------------------------------------------------------------
+%%%%   NumericProperties      AlgorithmSummary
+       Initial InstanceAlgs END               % Algorithm Category
+       END                                    % Algorithm KeyWords
+       Calculate END                             % Algorithm Specification
+                                              % Algorithm Input Parameters
+       TotalInstanceNameList KeyWords
+       AttributeNames        KeyWords
+       LowerPower            Integer
+       UpperPower            Integer
+       XParameters           KeyWords
+       YParameters           KeyWords
+       END
+                                              % Algorithm Result Parameters
+                                              % (Name-Class Pairs)
+       AttributeNames       
+       END
+%% -------------------------------------------------
+%%    NormalizeFromDistAlg                   AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial StatisticsAlgs END          % The Algorithm Category
+ZeroPreserving END                  % The Algorithm Keywords
+NormalizationOps END                % Algorithm Specification
+                                    % Algorithm Input Parameters
+OperationRoot     String
+Distributions     KeyWords
+OperationClass    String
+ExpressionTreeClass String
+END
+                                    % Algorithm Output Parameters
+OperationList   %%  KeyWords
+END
+END
+
+
+
+

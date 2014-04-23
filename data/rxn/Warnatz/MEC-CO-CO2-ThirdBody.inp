@@ -1,0 +1,6 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: CO CO2 mechanism (Third Body Reactions)
+Attributes:
+%------------------------------------------------------------------------------
+Instance: 1 CO+O=CO2  carbonmonoxide oxygen-atom = carbondioxide
+ 7.100E+13    0.0     -19.0
+END

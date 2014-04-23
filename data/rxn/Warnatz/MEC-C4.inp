@@ -1,0 +1,355 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C4 mechanism from chevalier
+Attributes:
+Instance: 1 C2H2+C2H=C4H2+H                 ethyne ethynyl-radical                  = butadiyne hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.000E+13    0.0       0.0 
+Instance: 1 C4H2+OH=C2H2+HCCO               butadiyne hydroxyl-radical              = ethyne allenal-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.500E+13    0.0       0.0
+Instance: 1 C2H2+C2H=C4H3U                  ethyne ethynyl-radical                  = 1-butyne-3-ene-4-yl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.200E+12    0.0       0.0
+Instance: 1 C2H2+C2H2=C4H3U+H               ethyne ethyne                           = 1-butyne-3-ene-4-yl hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+12    0.0     192.2
+Instance: 1 C4H3U=C4H2+H                    1-butyne-3-ene-4-yl                     = butadiyne hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+16    0.0     250.0
+Instance: 1 C4H3S=C4H2+H                    1-butyne-3-ene-3-yl                     = butadiyne hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+16    0.0     250.0
+Instance: 1 C4H3U+H=C4H2+H2                 1-butyne-3-ene-4-yl hydrogen-radical    = butadiyne hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+13    0.0       0.0
+Instance: 1 C4H3S+H=C4H2+H2                 1-butyne-3-ene-3-yl hydrogen-radical    = butadiyne hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+13    0.0       0.0
+Instance: 1 C4H3U+O2=C2H+HCO+HCO            1-butyne-3-ene-4-yl oxygen              = ethynyl-radical formyl-radical formyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+12    0.0       8.4
+Instance: 1 C4H3S+O2=C2H+CH2O+CO            1-butyne-3-ene-3-yl oxygen              = ethynyl-radical aldehyde carbonmonoxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+12    0.0       8.4
+Instance: 1 C2H2+C2H3=CH2CHCCH+H            ethyne ethenyl-radical                  = 1-buten-3-yne hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.600E+13    0.0     105.0
+Instance: 1 C4H3U+H=CH2CHCCH                1-butyne-3-ene-4-yl hydrogen-radical    = 1-buten-3-yne
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+15    0.0       0.0
+Instance: 1 C4H3S+H=CH2CHCCH                1-butyne-3-ene-3-yl hydrogen-radical    = 1-buten-3-yne
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+15    0.0       0.0
+Instance: 1 CH2CHCCH+H=C4H3U+H2             1-buten-3-yne hydrogen-radical          = 1-butyne-3-ene-4-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.500E+14    0.0      42.7
+Instance: 1 CH2CHCCH+H=C4H3S+H2             1-buten-3-yne hydrogen-radical          = 1-butyne-3-ene-3-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.500E+14    0.0      42.7
+Instance: 1 CH2CHCCH+OH=C4H3U+H2O           1-buten-3-yne hydroxyl-radical          = 1-butyne-3-ene-4-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   7.000E+13    0.0      12.6
+Instance: 1 CH2CHCCH+OH=C4H3S+H2O           1-buten-3-yne hydroxyl-radical          = 1-butyne-3-ene-3-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   7.000E+13    0.0      12.6
+Instance: 1 CH2CHCCH+C2H=C4H3U+C2H2         1-buten-3-yne ethynyl-radical           = 1-butyne-3-ene-4-yl ethyne
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+13    0.0       0.0
+Instance: 1 CH2CHCCH+C2H=C4H3S+C2H2         1-buten-3-yne ethynyl-radical           = 1-butyne-3-ene-3-yl ethyne
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+13    0.0       0.0
+Instance: 1 CH2CHCCH+C2H=C4H2+C2H3          1-buten-3-yne ethynyl-radical           = butadiyne ethenyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+13    0.0       0.0
+Instance: 1 CH2CHCCH+C4H=C4H3U+C4H2         1-buten-3-yne butadiynyl                = 1-butyne-3-ene-4-yl butadiyne
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+13    0.0       0.0
+Instance: 1 C2H2+C2H3=C4H5U                 ethyne ethenyl-radical                  = 1-butyne-3-ene-4-yl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.200E+12    0.0       0.0
+Instance: 1 CH2CHCCH+H=C4H5S                1-buten-3-yne hydrogen-radical          = 1-butyne-3-ene-3-yl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.500E+12    0.0      10.0
+Instance: 1 CH2CHCCH+H=C4H5U                1-buten-3-yne hydrogen-radical          = 1-butyne-3-ene-4-yl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.500E+12    0.0      10.0
+Instance: 1 C4H5S+H=CH2CHCCH+H2             1-butyne-3-ene-3-yl hydrogen-radical    = 1-buten-3-yne hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+13    0.0       0.0
+Instance: 1 C4H5U+H=CH2CHCCH+H2             1-butyne-3-ene-4-yl hydrogen-radical    = 1-buten-3-yne hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+13    0.0       0.0
+Instance: 1 C4H5U+H=C4H5S+H                 1-butyne-3-ene-4-yl hydrogen-radical    = 1-butyne-3-ene-3-yl hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+14    0.0       0.0
+Instance: 1 C4H5U+O2=C2H3+HCO+HCO           1-butyne-3-ene-4-yl oxygen              = ethenyl-radical formyl-radical formyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.480E+26   -4.55     22.9
+Instance: 1 C4H5S+O2=C2H3+CH2O+CO           1-butyne-3-ene-3-yl oxygen              = ethenyl-radical aldehyde carbonmonoxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.480E+26   -4.55     22.9
+Instance: 1 C4H6=C2H3+C2H3                      butadiene                               = ethenyl-radical ethenyl-radical 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E-20  0.0     411.0
+Instance: 1 C2H3+C2H4=C4H6+H            ethenyl-radical ethene                  = butadiene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0      30.5
+Instance: 1 C4H6+H=C4H5U+H2                     butadiene hydrogen-radical              = 1-butyne-3-ene-4-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.000E+07  2.0      54.4
+Instance: 1 C4H6+H=C4H5S+H2                     butadiene hydrogen-radical              = 1-butyne-3-ene-3-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.000E+07  2.0      25.1
+Instance: 1 C4H6+OH=C4H5U+H2O               butadiene hydroxyl-radical          = 1-butyne-3-ene-4-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+07  2.0      20.9
+Instance: 1 C4H6+OH=C4H5S+H2O               butadiene hydroxyl-radical          = 1-butyne-3-ene-3-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+07  2.0       8.4
+Instance: 1 C4H6+O=C2H4+CH2CO               butadiene oxygen-atom                       = ethene allenal 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+13  0.0       0.0
+Instance: 1 C4H6+O=CH2O+C3H4                butadiene oxygen-atom                       = aldehyde allene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+13  0.0       0.0
+Instance: 1 C4H6+OH=C2H5+CH2CO          butadiene hydroxyl-radical              = ethyl-radical allenal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+13  0.0       0.0
+Instance: 1 C4H6+OH=CH2O+C3H5               butadiene hydroxyl-radical          = aldehyde 3-propenyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.200E+13  0.0       0.0
+Instance: 1 C4H6+OH=C2H3+CH3CHO             butadiene hydroxyl-radical          = ethenyl-radical ethanal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.500E+13  0.0       0.0
+Instance: 1 C4H7=C4H6+H                     butene-4-yl                                 = butadiene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.120E+15  0.0     206.4
+Instance: 1 C4H7=C2H4+C2H3                  butene-4-yl                             = ethene ethenyl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0     154.9
+Instance: 1 H+C4H7=C4H6+H2                  hydrogen-radical butene-4-yl            = butadiene hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.316E+13  0.0       0.0
+Instance: 1 C4H7+O2=C4H6+HO2                butene-4-yl oxygen                      = butadiene peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0       0.0
+Instance: 1 C4H7+C4H7=C4H6+1-C4H8           butene-4-yl butene-4-yl                 = butadiene 1-butene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.160E+12  0.0       0.0
+Instance: 1 C4H7+CH3=C4H6+CH4               butene-4-yl methyl-radical              = butadiene methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+13  0.0       0.0
+Instance: 1 C4H7+C2H3=C4H6+C2H4             butene-4-yl ethenyl-radical             = butadiene ethene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+12  0.0       0.0
+Instance: 1 C4H7+C2H5=C4H6+C2H6             butene-4-yl ethyl-radical               = butadiene ethane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+12  0.0       0.0
+Instance: 1 C4H7+C2H5=1-C4H8+C2H4           butene-4-yl ethyl-radical               = 1-butene ethene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.000E+11  0.0       0.0
+Instance: 1 C4H7+C2H5=2-C4H8+C2H4           butene-4-yl ethyl-radical               = 2-butene ethene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.000E+11  0.0       0.0
+Instance: 1 C4H7+C2H5=C-2-C4H8+C2H4         butene-4-yl ethyl-radical               = 2-methylbutene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.000E+11  0.0       0.0
+Instance: 1 C4H7+C3H5=C4H6+C3H6             butene-4-yl 3-propenyl-radical          = butadiene propene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+13  0.0       0.0
+Instance: 1 1-C4H8=2-C4H8                   1-butene                                = 2-butene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+11  0.0     251.0
+Instance: 1 1-C4H8=C-2-C4H8                 1-butene                                = 2-methylbutene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+11  0.0     251.0
+Instance: 1 1-C4H8=C3H5+CH3                 1-butene                                = 3-propenyl-radical methyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   8.000E+16  0.0     307.4
+Instance: 1 1-C4H8=C2H3+C2H5                1-butene                                = ethenyl-radical ethyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.000E+18 -1.0     405.2
+Instance: 1 1-C4H8=H+C4H7                   1-butene                                = hydrogen-radical butene-4-yl 
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.411E+19 -1.0     407.7
+Instance: 1 1-C4H8+H=C4H7+H2                1-butene hydrogen-radical               = butene-4-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.500E+14  0.0      16.3
+Instance: 1 1-C4H8+O=CH3CHO+C2H4            1-butene oxygen-atom                    = ethanal ethene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   2.505E+12  0.0       0.0
+Instance: 1 1-C4H8+O=CH3+C2H5+CO            1-butene oxygen-atom                    = methyl-radical ethyl-radical carbonmonoxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.625E+13  0.0       3.6
+Instance: 1 1-C4H8+O=C3H6+CH2O              1-butene oxygen-atom                    = propene aldehyde
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.723E+06  2.3      -4.4
+Instance: 1 1-C4H8+O=C4H7+OH                1-butene oxygen-atom                    = butene-4-yl hydroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.300E+13  0.0      18.8
+Instance: 1 1-C4H8+OH=CH3CHO+C2H5           1-butene hydroxyl-radical               = ethanal ethyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0       0.0
+Instance: 1 1-C4H8+OH=CH3+C2H6+CO           1-butene hydroxyl-radical               = methyl-radical ethane aldehyde
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+11  0.0       0.0
+Instance: 1 1-C4H8+OH=N-C3H7+CH2O           1-butene hydroxyl-radical               = 1-propyl-radical aldehyde
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   6.500E+12  0.0       0.0
+Instance: 1 1-C4H8+OH=C4H7+H2O              1-butene hydroxyl-radical               = butene-4-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.750E+13  0.0      29.1
+Instance: 1 1-C4H8+CH3=C4H7+CH4             1-butene methyl-radical                 = butene-4-yl methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0      30.6
+Instance: 1 1-C4H8+O2=C4H7+HO2              1-butene oxygen                         = butene-4-yl peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+12  0.0     167.4
+Instance: 1 1-C4H8+HO2=C4H7+H2O2            1-butene peroxyl-radical                = butene-4-yl hydrogen-peroxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+11  0.0      71.4
+Instance: 1 1-C4H8+C2H5=C4H7+C2H6           1-butene ethyl-radical                  = butene-4-yl ethane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0      33.5
+Instance: 1 1-C4H8+C3H5=C4H7+C3H6           1-butene 3-propenyl-radical             = butene-4-yl propene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   8.000E+10  0.0      51.9
+Instance: 1 1-C4H8+C4H7=C4H7+2-C4H8         1-butene butene-4-yl                    = butene-4-yl 2-butene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.980E+10  0.0      51.9
+Instance: 1 1-C4H8+C4H7=C4H7+C-2-C4H8       1-butene butene-4-yl                    = butene-4-yl 2-methylbutene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   3.980E+10  0.0      51.9
+Instance: 1 2-C4H8=H+C4H7                   2-butene                                = hydrogen-radical butene-4-yl
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.411E+19 -1.0     407.7
+Instance: 1 2-C4H8=CH3+C3H5                 2-butene                                = methyl-radical 3-propenyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   6.500E+14  0.0     298.3
+Instance: 1 2-C4H8+H=C4H7+H2                2-butene hydrogen-radical               = butene-4-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.500E+13  0.0      14.6
+Instance: 1 2-C4H8+O=C2H4+CH3CHO            2-butene oxygen-atom                    = ethene ethanal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+12  0.0       0.0
+Instance: 1 2-C4H8+O=I-C3H7+HCO             2-butene oxygen-atom                    = 2-propyl-radical formyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.603E+07  0.0       0.0
+Instance: 1 2-C4H8+OH=C4H7+H2O              2-butene hydroxyl-radical               = butene-4-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.010E+14  0.0      12.8
+Instance: 1 2-C4H8+OH=C2H5+CH3CHO           2-butene hydroxyl-radical               = ethyl-radical ethanal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.514E+13  0.0       0.0
+Instance: 1 2-C4H8+CH3=C4H7+CH4             2-butene methyl-radical                 = butene-4-yl methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+12  0.0      34.3
+Instance: 1 C-2-C4H8=2-C4H8                 2-methylbutene                          = 2-butene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+13  0.0     259.4
+Instance: 1 C-2-C4H8=C4H6+H2                2-methylbutene                          = butadiene hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+13  0.0     274.1
+Instance: 1 C-2-C4H8=C4H7+H                 2-methylbutene                          = butene-4-yl hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.074E+18 -1.0     407.3
+Instance: 1 C-2-C4H8=C3H5+CH3               2-methylbutene                          = 3-propenyl-radical methyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.254E+15  0.0     298.3
+Instance: 1 C-2-C4H8+H=C4H7+H2              2-methylbutene hydrogen-radical         = butene-4-yl hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+12  0.0      14.6
+Instance: 1 C-2-C4H8+OH=C4H7+H2O            2-methylbutene hydroxyl-radical         = butene-4-yl water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.255E+14  0.0      12.8
+Instance: 1 C-2-C4H8+OH=C2H5+CH3CHO         2-methylbutene hydroxyl-radical         = 3-propenyl-radical ethanal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.400E+13  0.0       0.0
+Instance: 1 C-2-C4H8+O=I-C3H7+HCO           2-methylbutene oxygen-atom              = 2-propyl-radical formyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   6.030E+12  0.0       0.0
+Instance: 1 C-2-C4H8+O=C2H4+CH3CHO          2-methylbutene oxygen-atom              = ethene ethanal
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+12  0.0       0.0
+Instance: 1 C-2-C4H8+CH3=C4H7+CH4           2-methylbutene methyl-radical           = butene-4-yl methyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   1.000E+11  0.0      34.3
+Instance: 1 P-C4H9=C2H5+C2H4                1-butyl-radical                         = ethyl-radical ethene
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.250E+14  0.0     120.6
+Instance: 1 P-C4H9=1-C4H8+H                 1-butyl-radical                         = 1-butene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.126E+14  0.0     161.6
+Instance: 1 P-C4H9+O2=1-C4H8+HO2            1-butyl-radical oxygen                  = 1-butene peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+13  0.0       8.4
+Instance: 1 S-C4H9=2-C4H8+H                 2-butyl-radical                         = 2-butene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.000E+13  0.0     158.7
+Instance: 1 S-C4H9=C-2-C4H8+H               2-butyl-radical                         = 2-methylbutene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   5.000E+13  0.0     158.7
+Instance: 1 S-C4H9=1-C4H8+H                 2-butyl-radical                         = 1-butene hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.200E+14  0.0     169.2
+Instance: 1 S-C4H9=C3H6+CH3                 2-butyl-radical                         = propene methyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   4.000E+14  0.0     139.0
+Instance: 1 S-C4H9+O2=1-C4H8+HO2            2-butyl-radical oxygen                  = 1-butene peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.200E+13  0.0      18.8
+Instance: 1 S-C4H9+O2=2-C4H8+HO2            2-butyl-radical oxygen                  = 2-butene peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.200E+14  0.0      17.8
+Instance: 1 S-C4H9+O2=C-2-C4H8+HO2          2-butyl-radical oxygen                  = 2-methylbutene peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.200E+14  0.0      17.8
+Instance: 1 C2H5+C2H5=C4H10                 ethyl-radical ethyl-radical             = butane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   8.000E+12    0.0       0.0 
+Instance: 1 C4H10>N-C3H7+CH3                butane                                  = ethyl-radical methyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.100E+18    0.0     357.6 
+Instance: 1 C4H10+H>P-C4H9+H2               butane hydrogen-radical                 = 1-butyl-radical hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.563E+08    2.0      32.2
+Instance: 1 C4H10+H>S-C4H9+H2               butane hydrogen-radical                 = 2-butyl-radical hydrogen
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.175E+08    2.0      20.9
+Instance: 1 C4H10+O>P-C4H9+OH               butane oxygen-atom                      = 1-butyl-radical hydroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.113E+15    0.0      32.9
+Instance: 1 C4H10+O>S-C4H9+OH               butane oxygen-atom                      = 2-butyl-radical hydroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.562E+14    0.0      21.8
+Instance: 1 C4H10+OH>P-C4H9+H2O             butane hydroxyl-radical                 = 1-butyl-radical water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.413E+08    1.7       3.2
+Instance: 1 C4H10+OH>S-C4H9+H2O             butane hydroxyl-radical                 = 2-butyl-radical water
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.723E+08    1.6      -1.0
+Instance: 1 C4H10+HO2>P-C4H9+H2O2           butane peroxyl-radical                  = 1-butyl-radical hydrogen-peroxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.170E+14    0.0      85.7
+Instance: 1 C4H10+HO2>S-C4H9+H2O2           butane peroxyl-radical                  = 2-butyl-radical hydrogen-peroxide
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.400E+13    0.0      71.2
+Instance: 1 C4H10+CH3>P-C4H9+CH4            butane methyl-radical                   = 1-butyl-radical methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.130E+13    0.0      48.6
+Instance: 1 C4H10+CH3>S-C4H9+CH4            butane methyl-radical                   = 2-butyl-radical methane
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.800E+12    0.0      39.8
+Instance: 1 C4H10+O2>P-C4H9+HO2             butane oxygen                           = 1-butyl-radical peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.250E+14    0.0     205.2
+Instance: 1 C4H10+O2>S-C4H9+HO2             butane oxygen                           = 2-butyl-radical peroxyl-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.400E+14    0.0     199.3
+Instance: 1 C4H10+CH3O>P-C4H9+CH3OH         butane methoxy-radical                  = 1-butyl-radical methanol
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.300E+12    0.0      29.3
+Instance: 1 C4H10+CH3O>S-C4H9+CH3OH         butane methoxy-radical                  = 2-butyl-radical methanol
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+   0.600E+12    0.0      29.3
+END
+

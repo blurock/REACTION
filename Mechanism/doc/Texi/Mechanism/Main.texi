@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Mechanism
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "Mechanism".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     Mechanism Package
+@section  The "Mechanism" Package
+@cindex   package, Mechanism
+@cindex   Mechanism package
+@cindex   mech namespace
+@cindex   namespaces, mech
+
+@table @strong
+@item Package name
+@code{Mechanism}
+
+@item Namespace name
+@code{mech}
+
+@item Header files
+@file{Mechanism.hh}, @file{MechanismType.hh}
+@end table
+
+
+@include Mechanism/Overview.texi
+
+@include Mechanism/Classes.texi

@@ -1,0 +1,19 @@
+DataType: MoleculeAtom  The Standard Molecule Atom
+StandardMoleculeAtom StandardMolFileAtom 
+%% -------------------------------------------------
+DataType: MolFileBond The standard MolFile bond class
+StandardMolFileBond  0
+%% -------------------------------------------------
+DataType: MoleculeBond The standard molecule bond class
+StandardMoleculeBond StandardMolFileBond
+%% -------------------------------------------------
+DataType: SimpleMolecule  The standard molecule
+StandardMolecule  StandardMoleculeAtom StandardMoleculeBond
+%% -------------------------------------------------
+DataType: DataBaseInformation  the standard database
+StandardDataBaseInformation 
+./   438  2
+%% -------------------------------------------------
+DataType: MolecularStructuresDataBase The standard Molecule database info
+StandardMolecularDatabase StandardDataBaseInformation
+%% -------------------------------------------------

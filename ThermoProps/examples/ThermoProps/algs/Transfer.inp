@@ -1,0 +1,19 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+ oxygen
+ oxygen-atom
+ peroxyl-radical
+ water
+ END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+PolyCp MoleculePolyCp
+Chemkin MoleculeChemkin 
+END
+%% ------------------------------------
+END

@@ -1,0 +1,204 @@
+#!/bin/sh 
+#
+# FILE     mergesturmpackage
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script for merging a STURM package into the library tree.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+. `dirname $0`/sturm.sh
+
+
+#F mergesturmpackage [-f] [-r] PACKAGE  . . . . .  Copies a package tree into
+# . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . the STURM tree.
+#
+# DESCRIPTION
+#   This script copies all required files from a package working directory
+#   tree into the STURM library tree.
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+    ERR_FILE=3 # File error.
+#
+
+#
+# 1. Basic definitions.
+#
+
+ARGV0=`basename $0`
+
+TMPFILE=/tmp/mergesturmpackage.$$
+DELFILE=/tmp/mergesturmpackagedel.$$
+
+
+#
+# 2. Argument and environment check.
+#
+
+if [ "$Sturm" = "" ]; then
+  eecho '$Sturm' is not set!
+  exit $ERR_ENV
+fi
+
+realarg=0
+force=0
+remove=0
+while [ "$realarg" = "0" -a $# != 0 ]; do
+  case $1 in
+  -f) force=1; shift;;
+  -r) remove=1; shift;;
+  -h) help; exit 0;;
+  *) realarg=1;;
+  esac
+done
+
+if [ $# = 0 -o $# -gt 1 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+if [ ! -d $1 ]; then
+  eecho PACKAGE argument \"$1\" invalid!
+  ecat <<ENDOFTEXT
+
+The package working directory "$1" must exist in the current directory
+and be readable.  Please correct the problem (e.g. by changing into the
+correct directory) and run this script again.
+ENDOFTEXT
+  exit $ERR_ARGS
+else
+  PACKAGE=$1
+fi
+
+SRCDIR=`pwd`/$PACKAGE
+DSTDIR=$Sturm
+
+umask 002
+
+#
+# 3. Ask for confirmation.
+#
+
+if [ "$force" = 0 ]; then
+cat <<ENDOFTEXT
+This script will copy files from the package working directory
+
+	`pwd`/$PACKAGE
+
+for the package "$PACKAGE" into the STURM library tree rooted at
+
+	$Sturm
+
+Are you sure you want to do this?
+
+ENDOFTEXT
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been copied."
+  exit 0
+else
+  echo
+fi
+fi
+
+cd $SRCDIR
+echo The following files will be copied:
+echo ==================================
+files 2>/dev/null | tee $TMPFILE
+echo ==================================
+
+if [ "$force" = 0 ]; then
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been copied."
+  rm $TMPFILE
+  exit 0
+else
+  echo
+fi
+fi
+
+#
+# 4. Remove old files
+#
+
+if [ "$remove" = 1 ]; then
+cd $DSTDIR
+echo The following files will be removed from \"$DSTDIR\" before merging:
+echo ===================================================================
+delfiles 2>/dev/null | tee $DELFILE
+echo ===================================================================
+if [ "$force" = 0 ]; then
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been copied or removed."
+  rm -f $TMPFILE $DELFILE
+  exit 0
+else
+  echo
+fi
+fi
+
+echo ===========================================================================
+echo Removing old files ...
+echo
+
+rm -rf `cat $DELFILE`
+fi
+
+#
+# 5. Copy files.
+#
+
+echo ===========================================================================
+echo Copying new files ...
+echo
+
+cd $SRCDIR
+tar -cf - `cat $TMPFILE` \
+| (cd $DSTDIR; tar -xvf -)
+
+if [ $? != 0 ]; then
+  eecho File copy using 'tar' failed!
+  rm -f $TMPFILE
+  exit $ERR_FILE
+fi
+
+
+#
+# 6. Finished.
+#
+
+cat <<ENDOFTEXT
+
+===========================================================================
+The files listed above have been copied from the working directory tree for
+package "$PACKAGE" to the STURM tree in
+
+	$DSTDIR
+
+Now do not forget to rebuild the STURM library!
+ENDOFTEXT
+
+rm -f $TMPFILE $DELFILE

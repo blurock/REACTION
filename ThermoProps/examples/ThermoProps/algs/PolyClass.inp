@@ -1,0 +1,87 @@
+ObjectClasses:
+DataType: PolynomialCp   The real based property class
+StandardPolynomialCp LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Mole
+   Molecule    0.0 6.02e+23
+   END
+%% ------------------------
+Calorie
+   CKiloCalorie    0.0 0.001
+   CKiloJoule      0.0 0.004185
+   CJoule          0.0 4.185
+   END
+%% ------------------------
+Joule
+   JCalorie        0.0 0.23885
+   JKiloCalorie    0.0 0.0041868
+   JKiloJoule      0.0 0.001
+   END
+%% ------------------------
+END
+PropertyConversions:
+CpKCal        Numerator:    KiloCalorie Denominator:    END
+EnthalpyKCal  Numerator:    JKiloCalorie Denominator:    END
+EntropyKCal   Numerator:    JKiloCalorie Denominator:    END
+CpCalorie        Numerator:    Denominator:    END
+EnthalpyCalorie  Numerator:    JCalorie Denominator:    END
+EntropyCalorie   Numerator:    JCalorie Denominator:    END
+CpJoule          Numerator:    Joule Denominator:    END
+EnthalpyJoule    Numerator:    Denominator:    END
+EntropyJoule     Numerator:    Denominator:    END
+END
+298.15  1.9871
+DataType: ChemkinThermo   The chemkin based property class
+StandardChemkinThermo LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Mole
+   Molecule    0.0 6.02e+23
+   END
+%% ------------------------
+Calorie
+   CKiloCalorie    0.0 0.001
+   CKiloJoule      0.0 0.004185
+   CJoule          0.0 4.185
+   END
+%% ------------------------
+Joule
+   JCalorie        0.0 0.23885
+   JKiloCalorie    0.0 0.0041868
+   JKiloJoule      0.0 0.001
+   END
+%% ------------------------
+END
+PropertyConversions:
+CpKCal        Numerator:    KiloCalorie Denominator:    END
+EnthalpyKCal  Numerator:    JKiloCalorie Denominator:    END
+EntropyKCal   Numerator:    JKiloCalorie Denominator:    END
+CpCalorie        Numerator:    Denominator:    END
+EnthalpyCalorie  Numerator:    Denominator:    END
+EntropyCalorie   Numerator:    Denominator:    END
+CpJoule          Numerator:    Joule Denominator:    END
+EnthalpyJoule    Numerator:    Joule Denominator:    END
+EntropyJoule     Numerator:    Joule Denominator:    END
+END
+298.15  1.9871
+END
+
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+PolyCp    StandardPolynomialCp
+END
+%% -------------------------------------------------

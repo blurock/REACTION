@@ -1,0 +1,86 @@
+#!/bin/sh
+#
+# FILE     CreatePackageTexi
+# PACKAGE  Maintenance
+# AUTHOR  Edward S. Blurock 
+#    (Adapted from  Sturm newsturmpackage, Andreas Neubacher)
+#------------------------------------------------------------------------------
+#
+# CONTENT
+#   Shell script for creating the .texi files of a single package for the
+#   REACTION Texinfo manual.
+#
+# COPYRIGHT (C)  REACTION Project, 1996 Edward S. Blurock
+
+#I
+
+. `dirname $0`/Reaction.sh
+
+
+#F CreatePackageTexi FILES  . . .  Creates .texi files from given source FILES.
+#
+# DESCRIPTION
+#   Create the .texi files in the current directory for the given source
+#   files.
+#
+# OPTIONS
+#   -h ... print usage message.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_FILE=2 # Error in file/directory access.
+    ERR_PARS=3 # Error in parsing.
+#
+# SEE ALSO
+#   (texinfo.info)Top
+
+#
+# 1. Parse arguments.
+#
+
+if [ "$1" = -debug ]; then
+  set -vx
+  shift
+fi
+
+endopts=""
+while [ "$endopts" = "" ]; do
+  case $1 in
+  -h) help; exit 0;;
+  --) endopts=1; shift;;
+   *) endopts=1;;
+  esac
+done
+
+if [ $# = 0 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+#
+# 2. Build files.
+#
+
+find . -type f -name "*.texi" ! -name "xxAUXxx.*" -exec rm -f {} \;
+umask 000
+err=0
+cat $* 2>/dev/null \
+  | `dirname $0`/sturm2texi
+if [ $? != 0 ]; then
+  eecho Parse error for package \"$i\".
+  err=$ERR_PARS
+fi
+for t in *.texi; do
+  for s in *.sub; do
+    sed -f $s <"$t" >"$t".tmp
+    if [ $? != 0 ]; then
+      eecho \"$s\" not parseable by sed when processing \"$t\".
+      err=$ERR_PARS
+      rm -f "$t".tmp
+    else
+      rm -f "$t"; mv "$t".tmp "$t"
+    fi
+  done
+done
+
+exit $err

@@ -1,0 +1,61 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: EquilibriumConstant  The standare equilibrium constant
+StandardEquilibrium 
+LiteratureReference StandardUnitConversions
+StandardUnits:
+%% ------------------------
+cm3
+   m3          0.0   1000.0
+   END
+%% ------------------------
+Kelvin
+   Celcius     273.15  0.0
+   END
+%% ------------------------
+Molecule
+   Mole       0.0  1.661129e-24
+   END
+%% ------------------------
+Calorie
+   ECalorie        0.0    1.9872
+   EJoule          0.0    8.3204064
+   EKiloCalorie    0.0    0.0019872
+   EKiloJoule      0.0    0.0083204064
+   GCCalorie       0.0    1.00
+   GCJoule         0.0    4.187
+   GCKiloCalorie   0.0    0.001
+   GCKiloJoule     0.0    0.004187
+   END
+%% ------------------------
+END
+PropertyConversions:
+Calorie-cm3             Numerator: ECalorie       Denominator: GCCalorie  cm3      END
+Joule-cm3               Numerator: EJoule         Denominator: GCJoule    cm3      END
+KCalorie-cm3            Numerator: EKiloCalorie   Denominator: GCKiloCalorie cm3   END
+KJoule-cm3              Numerator: EKiloJoule     Denominator: GCKiloJoule cm3     END
+Calorie-m3             Numerator: ECalorie       Denominator: GCCalorie  m3      END
+Joule-m3               Numerator: EJoule         Denominator: GCJoule    m3      END
+KCalorie-m3            Numerator: EKiloCalorie   Denominator: GCKiloCalorie m3   END
+KJoule-m3              Numerator: EKiloJoule     Denominator: GCKiloJoule m3     END
+END
+Real
+Arrhenius TemperatureCoefficient ActivationEnergy
+1.9872
+GCCalorie GCJoule GCKiloCalorie GCKiloJoule END
+m3 cm3 END 
+ECalorie EJoule EKiloCalorie EKiloJoule END
+%% -------------------------------------------------
+END
+ClassNamePairs:
+InstanceNameList  KeyWords
+ToMove       KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Equilibrium StandardEquilibrium
+END
+%% -------------------------------------------------

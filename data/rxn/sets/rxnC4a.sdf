@@ -1,0 +1,21 @@
+C2H6+C2H5O=C2H5+C2H5OH     ethane ethoxy-radical = ethyl-radical ethanol 
+C2H5+C2H5=C2H6+C2H4        ethyl-radical ethyl-radical = ethane ethene 
+C2H5+C2H5O=C2H4+C2H5OH     ethyl-radical ethoxy-radical = ethene ethanol
+C2H5+C2H5O2=C2H5O+C2H5O    ethyl-radical ethylperoxy = ethoxy-radical ethoxy-radical 
+C2H5+C2H3=C2H4+C2H4        ethyl-radical ethenyl-radical = ethene ethene 
+C2H5+C2H5=nC4H10           ethyl-radical ethyl-radical = butane
+C2H5O2+CH3CHO=C2H5O2H+CH3CO  ethylperoxy ethanal = ethylperoxide ethanoyl-radical
+C2H5O2+C2H6=C2H5O2H+C2H5   ethylperoxy ethane = ethylperoxide ethyl-radical 
+2C2H5O2=2C2H5O+O2          ethylperoxy ethylperoxy = ethoxy-radical ethoxy-radical oxygen
+2C2H5O2=C2H5OH+CH3CHO+O2   ethylperoxy ethylperoxy = ethanol ethanal oxygen
+C2H5O2+C2H5O2H=C2H5O2H+CH3CHO+OH  ethylperoxy ethylperoxide = ethylperoxide ethanal hydroxyl-radical
+C2H5O+CH3CHO=C2H5OH+CH3CO  ethoxy-radical ethanal = ethanol ethanoyl-radical 
+C2H5O+C2H5O=C2H5OH+CH3CHO  ethoxy-radical ethoxy-radical = ethanol ethanal 
+CH3CHO+C2H5=CH3CO+C2H6     ethanal ethyl-radical = ethanoyl-radical ethane
+2CH3CO3=2CH3CO2+O2       methylpercarboxy methylpercarboxy = methylcarboxy methylcarboxy oxygen
+CH3CO3+CH3CHO=CH3CO3H+CH3CO methylpercarboxy ethanal = perethanoic-acid ethanoyl-radical 
+C2H4+C2H5O2=C2H3+C2H5O2H ethene ethylperoxy = ethenyl-radical ethylperoxide
+C2H4+CH3CO3=C2H3+CH3CO3H ethene methylpercarboxy = ethenyl-radical perethanoic-acid
+CH3+nC3H7=nC4Hl0         methyl-radical 1-propyl-radical = butane
+C3H6+CH3=C3H5+CH4        propene methyl-radical = 2-propenyl-radical methane
+C2H4+C2H5O2=C2H4O+C2H5O  ethene ethylperoxy = oxirane ethoxy-radical

@@ -1,0 +1,12 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C1 (Troe Reactions) mechanism from chevalier
+Attributes:
+%------------------------------------------------------------------------------
+Instance: 1 CH3+H=CH4 
+      2.108E+14    0.0       0.0
+      8.480E+09   -1.8       0.0
+      0.577  2370.0  0.0 1.0
+Instance: 2 CH3+CH3=C2H6 
+      3.613E+13    0.0       0.0
+      1.006E+28   -7.0      11.56
+   0.38  73.0  0.62  1180.0
+END

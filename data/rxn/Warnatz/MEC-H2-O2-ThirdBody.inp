@@ -1,0 +1,18 @@
+MaussWarnatz 1 ========================== Reactions From Fabian Mauss (Warnatz) Model =============================
+Attributes:
+Instance: 1 H+O2=HO2         H   + O2  + M'  = HO2 + M'                     
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 2.300E+18   -0.8       0.0
+Instance: 1 OH+OH=H2O2       OH  +OH  +M' =H2O2+M'                          
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 3.250E+22   -2.0       0.0
+Instance: 1 H+H=H2          H   +H   +M' =H2  +M'                          
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 1.800E+18   -1.0       0.0
+Instance: 1 H+OH=H2O        H   +OH  +M' =H2O +M'                          
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 2.200E+22   -2.0       0.0
+Instance: 1 O+O=O2          O   +O   +M' =O2  +M'                          
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 2.900E+17   -1.0       0.0
+END

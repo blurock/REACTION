@@ -1,0 +1,52 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+propane 
+1-propyl-radical 
+2-propyl-radical 
+cyclopropane 
+prop-2-en-1-yl-radical 
+prop-1-en-2-yl-radical 
+propene 
+allene 
+propyne 
+prop-2-yn-1-yl-radical 
+propyn-1-yl-radical 
+propanal 
+propanone 
+propanoyl-radical 
+2-oxopropan-1-yl-radical 
+propanal-3-yl-radical 
+2-formylethan-1-yl-radical 
+prop-2-en-1-ol 
+prop-2-en-1-oxy-radical 
+propenal 
+propyl-2-peroxy-radical 
+propylperoxy-radical 
+1-formylethan-1-one 
+1,3-dipropanal 
+2-formylethanoyl-radical 
+diformylmethyl-radical 
+2-oxopropanoyl-radical 
+2-formyl-2-oxoethan-1-yl-radical 
+prop-1-en-1-one 
+prop-3-en-1-peroxy-radical 
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

@@ -1,0 +1,121 @@
+#! /bin/csh
+# ---------------------------------------------------------------------------
+#
+# Run a Job for Senkin
+#
+#
+# ---------------------------------------------------------------------------
+#    This is a script to automatically run a SENKIN job and
+#    then form several output files of interpretation.
+# 
+#    The input to this script is:
+#        RootName: The rootname of all the input and output files
+# 
+#    The expected input files are:
+#        RootName.inp:  The CHEMKIN mechanism file
+#        RootName.thm:  The Thermodynamic data for all the species
+#        RootName.senk: The conditions of the SENKIN run
+# 
+#    The output files generated are:
+#        RootName.chem.out:  The output to the CHEMKIN preprocessor
+#        RootName.senk.out:  The output of the SENKIN run
+#        RootName.intr.out:  The Species Concentrations as a
+#                            function of time
+# ---------------------------------------------------------------------------
+#    The expected directories are:
+#        $Reaction/tools/Senkin/tmp:  To run the job (cleared afterwards)    
+#        $Reaction/bin:               Directory with FORTRAN programs
+# 
+#    The expected fortran programs are:
+#        ChemkinExe:  The CHEMKIN preprocessor
+#        SenkinExe:   The SENKIN program
+#        SenkinInterpret:  The program to convert the save.bin to readable form
+# 
+#    While the job is running, a file named lockjob is created.  This allows
+#    only one job to be running at a time.
+# ---------------------------------------------------------------------------
+# pushd ./tmp
+
+set CHEMKINDIR   = $Reaction/tools/Senkin/tmp
+set CHEMKINRUN   = $Reaction/bin/ChemkinExe
+set SENKINRUN    = $Reaction/bin/SenkinExe
+set SENKININTERP = $Reaction/bin/SenkinInterpret
+
+set JOBLOCK      = $CHEMKINDIR/lockjob
+
+set CHEMKININPUT  = $CHEMKINDIR/chem.inp
+set CHEMKINTHERM  = $CHEMKINDIR/therm.dat
+set CHEMKINOUTPUT = $CHEMKINDIR/chem.out
+set SENKININPUT   = $CHEMKINDIR/senk.inp
+set SENKINOUTPUT  = $CHEMKINDIR/senk.out
+set INTERPRET     = $CHEMKINDIR/save.out
+set SMALL         = $CHEMKINDIR/sml.out
+
+if( $#argv < 1 ) then
+   echo "Usage: $0 RootName"
+   echo "    RootName:  The rootname of all input and output files"
+   exit(1)
+endif
+
+set ROOTNAME      = $1
+
+set CHEMINPUT     = $ROOTNAME.inp
+set THERMINPUT    = $ROOTNAME.thm
+set CONDITIONS    = $ROOTNAME.senk
+set CHEMOUTPUT        = $ROOTNAME.chem.out
+set SENKOUTPUT        = $ROOTNAME.senk.out
+set INTROUTPUT        = $ROOTNAME.intr.out
+set INTRSMALL         = $ROOTNAME.small.out
+set JOBDONE       = $ROOTNAME.done
+
+if(-f $JOBLOCK ) then
+   echo "$JOBLOCK exists, SENKIN job running (or delete if override)"
+   exit(1)
+endif
+
+if( ! -f $CHEMINPUT ) then
+    echo "$CHEMINPUT does not exist, cannot start"
+    exit(1)
+endif
+if( ! -f $THERMINPUT ) then
+    echo "$THERMINPUT does not exist, cannot start"
+    exit(1)
+endif
+if( ! -f $CONDITIONS ) then
+    echo "$CONDITIONS does not exist, cannot start"
+    exit(1)
+endif
+
+if(-f $JOBDONE) then
+    rm $JOBDONE
+endif
+
+touch $JOBLOCK
+
+cp $CHEMINPUT $CHEMKININPUT
+cp $THERMINPUT $CHEMKINTHERM
+cp $CONDITIONS $SENKININPUT
+
+pushd $CHEMKINDIR
+$CHEMKINRUN
+$SENKINRUN < $SENKININPUT >! $SENKINOUTPUT
+$SENKININTERP
+rm *.bin
+rm tign.out
+popd
+
+cp $CHEMKINOUTPUT $CHEMOUTPUT
+cp $SENKINOUTPUT $SENKOUTPUT 
+cp $INTERPRET $INTROUTPUT
+cp $SMALL $INTRSMALL 
+
+rm $CHEMKINOUTPUT
+rm $SENKINOUTPUT
+rm $INTERPRET
+rm $JOBLOCK
+rm $CHEMKININPUT
+rm $CHEMKINTHERM
+rm $SENKININPUT
+
+touch $JOBDONE
+

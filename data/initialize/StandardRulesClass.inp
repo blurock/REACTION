@@ -1,0 +1,20 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: ActionRule    Expression Action
+StandardAction       ParameterSet Operation Continuous 
+                     ParameterizedIntrinsicExpression ParameterSet
+%% -------------------------------------------------
+DataType: ProductionSystem
+StandardProductionSystem 
+ParameterSet IntrinsicExpression Continuous
+SetOfRules ProductionSystemNode DirectedTree
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,73 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+ 
+/*F ans = Encode(buffer,cnt)  . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Encode(CommBuffer& buffer, AtomicNumberCount<ValenceType>& cnt)
+     {
+     return cnt.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,cnt)  . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Decode(CommBuffer& buffer, AtomicNumberCount<ValenceType>& cnt)
+     {
+     return cnt.DecodeThis(buffer);
+     }
+/*F ans = Encode(buffer,cnt)  . . . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Encode(CommBuffer& buffer, AtomCountList<ValenceType>& cnt)
+     {
+     return cnt.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,cnt)  . . . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Decode(CommBuffer& buffer, AtomCountList<ValenceType>& cnt)
+     {
+     return cnt.DecodeThis(buffer);
+     }

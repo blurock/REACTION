@@ -1,0 +1,41 @@
+/*  FILE    MolFileAtom.icc 
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+/*S Constructors
+*/
+ 
+/*F MolFileAtom() . . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline MolFileAtom::MolFileAtom() : SimpleAtom()
+	  {
+	  }
+/*F MolFileAtom(atom) . . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    atom: The MolFile atom information
+**
+**  REMARKS
+**
+*/
+inline  MolFileAtom::MolFileAtom(const MolFileAtom& atom) 
+: SimpleAtom(atom), 
+Coordinates(atom.Coordinates), 
+Parameters(atom.Parameters)
+     {
+     }
+
+/*S Calculations
+*/

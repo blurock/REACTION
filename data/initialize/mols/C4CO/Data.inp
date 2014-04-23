@@ -1,0 +1,135 @@
+C4-Molecules  ===========A Set of simple four Carbon molecules================
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+butane
+isobutane
+1-butene
+1-butyne
+butadiene
+2-butynyl-radical
+1-buten-3-yne
+butadiyne
+butadiynyl
+butene-4-yl
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 butane   butane molecule
+C4H10 C4H10 C4-Molecule Alkane END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H10              62090C   4H  10          G  0300.00   4000.00  1500.00      1
+ 0.01998784E+03 0.10372807E-01-0.09610818E-05-0.04623017E-08 0.08202828E-12    2
+-0.02625571E+06-0.08837907E+03-0.02256618E+02 0.05881732E+00-0.04525782E-03    3
+ 0.02037115E-06-0.04079458E-10-0.01760233E+06 0.03329595E+03                   4
+%%
+ 2   357.000     5.176     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 isobutane   isobutane molecule
+ISOBUTANE ISOBUTANE C4-Molecule Alkane END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+ISOBUTANE       I-L 4/85C   4H  10    0    0G   300.00   5000.00               1
+ 0.10854125E 02 0.23317061E-01-0.77685427E-05 0.11348074E-08-0.59397203E-13    2
+-0.21728570E 05-0.35915939E 02 0.54559016E 00 0.37825324E-01 0.56197796E-05    3
+-0.30570963E-07 0.14058456E-10-0.18034047E 05 0.21129608E 02-0.16193704E 05    4
+%%
+ 2   357.000     5.176     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-butene   1-butene molecule
+C4H8 C4H8 C4-Molecule Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H8              120386C   4H   8          G  0300.00   5000.00  1000.00      1
+ 0.02053584E+02 0.03435050E+00-0.15883196E-04 0.03308966E-07-0.02536104E-11    2
+-0.02139723E+05 0.15543201E+02 0.11811380E+01 0.03085338E+00 0.05086524E-04    3
+-0.02465488E-06 0.11110192E-10-0.01790400E+05 0.02106247E+03                   4
+%%
+ 2   357.000     5.176     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-butyne   1-butyne molecule
+CH3CH2CCH CH3CH2CCH C4-Molecule Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CH2CCH         120189C   4H   6          G  0300.00   4000.00  1000.00      1
+ 0.12006946E+02 0.09576069E-01-0.08995018E-05-0.05369808E-08 0.09934174E-12    2
+ 0.01729419E+06-0.03802692E+03 0.03726043E+02 0.02053492E+00 0.03021439E-04    3
+-0.08131812E-07 0.10952799E-11 0.02048821E+06 0.08538826E+02                   4
+%%
+ 2   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 butadiene   butadiene molecule
+CH2CHCHCH2 CH2CHCHCH2 C4-Molecule Alkene END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHCHCH2        120189C   4H   6          G  0300.00   4000.00  1000.00      1
+ 0.12544366E+02 0.09596525E-01-0.09187012E-05-0.05429640E-08 0.10053636E-12    2
+ 0.08597330E+05-0.04217450E+03 0.01931624E+02 0.02479030E+00 0.03018071E-04    3
+-0.11546856E-07 0.02586623E-10 0.12554682E+05 0.01701999E+03                   4
+%%
+ 2   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 2-butynyl-radical   2-butynyl-radical molecule
+CH3CCCH2 CH3CCCH2 C4-Molecule Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CCCH2           82489C   4H   5          G  0300.00   4000.00  1000.00      1
+ 0.11565059E+02 0.08030297E-01-0.07649450E-05-0.04476533E-08 0.08313260E-12    2
+ 0.03256813E+06-0.03014066E+03 0.05068450E+02 0.15717475E-01 0.02968975E-04    3
+-0.04990586E-07-0.02984224E-11 0.03518855E+06 0.06791893E+02                   4
+%%
+ 2   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 1-buten-3-yne   1-buten-3-yne molecule
+CH2CHCCH CH2CHCCH C4-Molecule Alkene Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHCCH           82489C   4H   4          G  0300.00   4000.00  1000.00      1
+ 0.10697773E+02 0.06982014E-01-0.06567747E-05-0.03884517E-08 0.07200946E-12    2
+ 0.03034803E+06-0.03128430E+03 0.03233893E+02 0.01865634E+00 0.12703205E-05    3
+-0.09410096E-07 0.02956110E-10 0.03301097E+06 0.09922676E+02                   4
+%%
+ 2   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 butadiyne   butadiyne molecule
+C4H2 C4H2 C4-Molecule Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H2              121686C   4H   2          G  0300.00   5000.00  1000.00      1
+ 0.09031407E+02 0.06047252E-01-0.01948788E-04 0.02754863E-08-0.13856080E-13    2
+ 0.05294735E+06-0.02385067E+03 0.04005191E+02 0.01981000E+00-0.09865877E-04    3
+-0.06635158E-07 0.06077413E-10 0.05424065E+06 0.01845736E+02                   4
+%%
+ 1   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 butadiynyl   butadiynyl molecule
+C4H C4H C4-Molecule Alkyne END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H               121686C   4H   1          G  0300.00   5000.00  1000.00      1
+ 0.06242882E+02 0.06193682E-01-0.02085931E-04 0.03082203E-08-0.16364826E-13    2
+ 0.07568019E+06-0.07210806E+02 0.05023247E+02 0.07092375E-01-0.06073762E-07    3
+-0.02275752E-07 0.08086994E-11 0.07623812E+06-0.06942594E+00                   4
+%%
+ 1   357.000     5.180     0.000     0.000     1.000
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1 butene-4-yl   butene-4-yl molecule
+C4H7 C4H7 C4-Molecule Alkene Radical END
+Baulch.et.al.1992 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C4H7              A 8/83C   4H   7    0    0G   300.     5000.    1000.00      1
+  0.5440662E 01  0.2744603E-01 -0.1365496E-04  0.3340352E-08 -0.3290050E-12    2
+  0.1903712E 05 -0.2875965E 01  0.9278151E 01 -0.2956305E-01  0.1632866E-03    3
+ -0.2000576E-06  0.7934605E-10  0.1963813E 05 -0.1296553E 02                   4
+%%
+ 2   357.000     5.176     0.000     0.000     1.000
+END

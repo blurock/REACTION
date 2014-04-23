@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  LstOps
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "LstOps".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     LstOps Package
+@section  The "LstOps" Package
+@cindex   package, LstOps
+@cindex   LstOps package
+@cindex   lst namespace
+@cindex   namespaces, lst
+
+@table @strong
+@item Package name
+@code{LstOps}
+
+@item Namespace name
+@code{lst}
+
+@item Header files
+@file{LstOps.hh}, @file{LstOpsType.hh}
+@end table
+
+
+@include LstOps/Overview.texi
+
+@include LstOps/Classes.texi

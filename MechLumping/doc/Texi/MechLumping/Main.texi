@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  MechLumping
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "MechLumping".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     MechLumping Package
+@section  The "MechLumping" Package
+@cindex   package, MechLumping
+@cindex   MechLumping package
+@cindex   lump namespace
+@cindex   namespaces, lump
+
+@table @strong
+@item Package name
+@code{MechLumping}
+
+@item Namespace name
+@code{lump}
+
+@item Header files
+@file{MechLumping.hh}, @file{MechLumpingType.hh}
+@end table
+
+
+@include MechLumping/Overview.texi
+
+@include MechLumping/Classes.texi

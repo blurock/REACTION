@@ -1,0 +1,24 @@
+/*  FILE     MolStats.icc
+**  PACKAGE  MolStats
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "MolStats" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_MOLSTATS_ICC
+#define REACTIONSRC_MOLSTATS_ICC
+
+/*S Constructors
+*/
+ 
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+
+
+#endif
+

@@ -1,0 +1,77 @@
+/*  FILE     SimpleAtom.itc
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*S Constructors
+*/
+ 
+/*F SimpleAtom(atomicnum,charge,radical)  . . . . . . . . . .  initialization
+**
+**  DESCRIPTION
+**    atomicnum: Atomic Number of the Atom
+**    charge:    The floating charge (initially an integer)
+**    radical:   Non-zero, a radical
+**
+**  REMARKS
+**
+*/
+inline SimpleAtom::SimpleAtom(const int atomicnum =0, 
+			      const double charge =0.0,
+			      const int radical = 0) : Identify()
+     {
+     AtomicNumber = atomicnum;
+     Charge = charge;
+     Radical = radical;
+     }
+ 
+/*F SimpleAtom(atom)  . . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    atom: The SimpleAtom to be copied
+**
+**  REMARKS
+**
+*/
+inline SimpleAtom::SimpleAtom(const SimpleAtom& atom) : Identify(atom)
+     {
+     AtomicNumber = atom.AtomicNumber;
+     Charge = atom.Charge;
+     Radical = atom.Radical;
+     }
+
+ 
+/*F Coordinates3D() . . . . . . . . . . . . . . . . . . .  simple constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline Coordinates3D::Coordinates3D()
+     {
+     }
+ 
+/*F Coordinates3D(coord)  . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    coord: The 3D coordinates to be copied
+** 
+**  REMARKS
+**
+*/
+inline Coordinates3D::Coordinates3D(const Coordinates3D& coord)
+: X(coord.X), Y(coord.Y), Z(coord.Z)
+	  {
+	  }
+
+
+
+

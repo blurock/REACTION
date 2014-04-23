@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%% 
+STD-C2H5+O=C2H4+OH             ethyl-radical oxygen-atom = ethene hydroxyl-radical
+ - StandardRateConstants   Forward        13.40      0.00      26.62   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  O2 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H5+H=C2H4+H2             ethyl-radical hydrogen-radical = ethene hydrogen
+ - StandardRateConstants   Forward        13.00      0.00      0.00    cm3-mol-s-kJ logA
+STD-H+O2+M=HO2+M             hydrogen-radical oxygen = peroxyl-radical
+ - StandardRateConstants Forward        15.22 0.00 -4.19   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+STD-CH3OH+H=CH3+H2O            methanol hydrogen-radical = methyl-radical water
+ - StandardRateConstants   Forward        12.72      0.00      22.36   cm3-mol-s-kJ logA
+STD-HCO+M=CO+H+M             formyl-radical = carbonmonoxide hydrogen-radical
+ - StandardRateConstants Forward        14.16 0.00 79.55   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+STD-C2H6=H+C2H5             ethane = ethyl-radical hydrogen-radical
+ - StandardRateConstants Forward        26.95 -1.23 428.00   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+STD-H+O2+M=HO2+M             hydrogen-radical oxygen = peroxyl-radical
+ - StandardRateConstants Forward        6.2e+17        -0.8    0.0     cm3-mol-s-cal A
+ - ThirdBody 0 0.0 0.0 0.0
+STD-H+OH+M=H2O+M             hydrogen-radical hydroxyl-radical =  water
+ - StandardRateConstants Forward        2.4e+22       -2.0     0       cm3-mol-s-cal A
+ - ThirdBody 0 0.0 0.0 0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HO2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  H2O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Barbieri
+%% 
+STD-H2O2+M=OH+OH+M           hydrogen-peroxide = hydroxyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        1.2e+17        0.0     45300   cm3-mol-s-cal A
+ - ThirdBody 0 0.0 0.0 0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-CH3+O2+M=CH3O2+M           methyl-radical oxygen = methylperoxy
+ - StandardRateConstants   Forward        25.33     -3.30     0.00    cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+STD-CH3+O2=CH3+O+O             methyl-radical oxygen = methyl-radical oxygen-atom oxygen-atom
+ - StandardRateConstants   Forward        13.68      0.00      121.42  cm3-mol-s-kJ logA
+STD-C2H5+CH3=C3H8              ethyl-radical methyl-radical = propane
+ - StandardRateConstants   Forward        10.18      1.00      -1.34   cm3-mol-s-kJ logA
+STD-C2H4+CH3=nC3H7           ethene methyl-radical = 1-propyl-radical
+ - StandardRateConstants Forward        11.10 0.00 32.24   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CHO Atom Reactions (HCO)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+STD-HCO+M=CO+H+M             formyl-radical = carbonmonoxide hydrogen-radical
+ - StandardRateConstants Forward        1.6e+14       0.0      15800  cm3-mol-s-cal A 
+ - ThirdBody 0 0.0 0.0 0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  HCHO Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+STD-HCHO+M=HCO+H+M aldehyde = formyl-radical hydrogen-radical
+ - StandardRateConstants Forward 4.9e+35 -5.54 96695 cm3-mol-s-cal A   
+ - ThirdBody 0 0.0 0.0 0.0
+STD-HCHO+M=CO+H2+M          aldehyde = carbonmonoxide hydrogen 
+ - StandardRateConstants   Forward      1.1e+36       -5.54   96695  cm3-mol-s-cal A 
+ - ThirdBody 0 0.0 0.0 0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH2OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+STD-CH3O+M=HCHO+H+M            methoxy-radical = aldehyde hydrogen-radical
+ - StandardRateConstants   Forward        13.70      0.00      87.93   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+STD-C2H6+CH3O=C2H5+CH3OH       ethane methoxy-radical = ethyl-radical methanol 
+ - StandardRateConstants   Forward        11.48      0.00      29.31  cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3O2 Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-CH3O2+CH3O2=CH3OH+HCHO+O2  methylperoxy methylperoxy = methanol aldehyde oxygen
+ - StandardRateConstants   Forward        10.15      0.00      2.09    cm3-mol-s-kJ logA
+STD-CH3O2+CH3O2=CH3O+CH3O+O2   methylperoxy methylperoxy = methoxy-radical methoxy-radical oxygen
+ - StandardRateConstants   Forward        10.88      0.00      -2.09   cm3-mol-s-kJ logA
+STD-CH3O2+CH3O2=CH3O2CH3+O2    methylperoxy methylperoxy = dimethylperoxide oxygen
+ - StandardRateConstants   Forward        11.70      0.00      8.37    cm3-mol-s-kJ logA
+STD-C2H6+CH3O2=C2H5+CH3O2H     ethane methylperoxy = ethyl-radical methylperoxide
+ - StandardRateConstants   Forward        12.62      0.00      85.67   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3OOH Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H Atom Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H+O2=HCO+CO            ethynyl-radical oxygen = formyl-radical carbonmonoxide
+ - StandardRateConstants Forward        13.00 0.00 29.31   cm3-mol-s-kJ logA
+STD-CH2+O2=HCO+OH            methylene oxygen = formyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        14.00 0.00 15.49   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H3 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H3+M=C2H2+H+M          ethenyl-radical = ethyne hydrogen-radical
+ - StandardRateConstants Forward        15.48 0.00 134.11  cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H4 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H4+M=C2H3+H+M          ethene = ethenyl-radical hydrogen-radical
+ - StandardRateConstants Forward        18.80 0.00 455.13   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+STD-C2H4+M=C2H2+H2+M         ethene = ethyne hydrogen
+ - ThirdBody 0 0.0 0.0 0.0
+ - StandardRateConstants Forward        16.97 0.00 323.24   cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H5=C2H4+H                ethyl-radical = ethene hydrogen-radical 
+ - StandardRateConstants   Forward        13.30     0.00      166.01  cm3-mol-s-kJ logA
+STD-C2H5+C2H5=nC4H10           ethyl-radical ethyl-radical = butane
+ - StandardRateConstants   Forward        12.60      0.00      0.00    cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H6 Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H6=CH3+CH3               ethane = methyl-radical methyl-radical 
+ - StandardRateConstants   Forward        28.03     -2.79     389.59  cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  CH3CO Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-CH3CO+O2=CH3CO3            ethanoyl-radical oxygen = methylpercarboxy
+ - StandardRateConstants   Forward        10.00      0.00      -11.30  cm3-mol-s-kJ logA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%%  C2H5O Reactions
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+STD-C2H6+C2H5O=C2H5+C2H5OH     ethane ethoxy-radical = ethyl-radical ethanol 
+ - StandardRateConstants   Forward        11.48      0.00      29.31   cm3-mol-s-kJ logA
+

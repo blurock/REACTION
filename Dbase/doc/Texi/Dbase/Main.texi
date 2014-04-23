@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Dbase
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for CoreObjects library package "Dbase".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@node     Dbase Package
+@section  The "Dbase" Package
+@cindex   package, Dbase
+@cindex   Dbase package
+@cindex   dbs namespace
+@cindex   namespaces, dbs
+
+@table @strong
+@item Package name
+@code{Dbase}
+
+@item Namespace name
+@code{dbs}
+
+@item Header files
+@file{Dbase.hh}, @file{DbaseType.hh}
+@end table
+
+
+@include Dbase/Overview.texi
+
+@include Dbase/Classes.texi

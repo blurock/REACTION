@@ -1,0 +1,31 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: StaticAtomInfo  The Standard Static Atom Information
+StandardStaticAtomInfo
+ClassNamePairs:
+CovalentRadius  Real
+END
+%% -------------------------------------------------
+DataType: MetaAtomData  Standare Meta Atom Data Information
+StandardMetaAtomData 
+Single 0.0 Double 0.5 Triple 1.0 END
+%% -------------------------------------------------
+DataType: CompleteMetaAtom  Standard Complete Meta Atom Information
+StandardCompleteMetaAtom  StandardMetaAtomData 
+%% -------------------------------------------------
+DataType: AtomInformation   Standard Static Atom Information
+StaticAtomInformation StandardStaticAtomInfo StandardCompleteMetaAtom
+%% -------------------------------------------------
+END
+ClassNamePairs:
+StaticAtomH   StandardStaticAtomInfo
+StaticInfo StaticAtomInformation
+MetaAtomR StandardCompleteMetaAtom
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

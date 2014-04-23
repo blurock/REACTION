@@ -1,0 +1,22 @@
+Literature Test for the Literature references
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+hydrogen-radical
+hydrogen
+oxygen-atom
+oxygen
+hydroxyl-radical
+peroxyl-radical
+water
+hydrogen-peroxide
+ END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+END
+%% ------------------------------------
+END

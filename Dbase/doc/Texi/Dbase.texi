@@ -1,0 +1,119 @@
+\input texinfo   @c -*-texinfo-*-
+@c FILE     Dbase.texi
+@c PACKAGE  Dbase
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Main .texi file for the "Dbase" package manual.
+@c
+@c COPYRIGHT (C)  1997 CoreObjects Library
+
+
+@setfilename Dbase.info
+@settitle Test Manual for the "Dbase" Package of the CoreObjects Library
+
+@c I CONFIGURATION
+@c ****************************************************************************
+@c   Description:
+@c     Flags to be set or cleared in "Configuration.texi":
+@c
+@c     - implementation ... add implementation details to the manual.
+@c     - functions      ... add formal function definitions.
+@c     - manual         ... activates references in function descriptions.
+
+@include Configuration.texi
+
+
+@c o PREAMBLE STUFF
+
+@c setchapternewpage odd
+@iftex
+@afourpaper
+@end iftex
+@footnotestyle separate
+@syncodeindex vr fn
+
+@c o COPYRIGHT CONDITIONS FOR THE INFO FILE.
+
+@ifinfo
+This file documents a package of the @sc{CoreObjects} library -- a C++ library
+for symbolic computation.
+ 
+Copyright @copyright{} 1997 Edward S. Blurock
+
+This document must not be distributed.
+@end ifinfo
+
+
+@c o TITLEPAGE SECTION FOR TEX FILE.
+
+@titlepage
+@title The "Dbase" Package of the CoreObjects Library
+@subtitle DRAFT -- FOR TEST USE ONLY.
+@author Edward S. Blurock
+
+@c @page
+
+@vskip 0pt plus 1filll
+Copyright @copyright{} 1997 Edward S. Blurock
+
+This document must not be distributed!
+@end titlepage
+
+@c o MASTER MENU FOR "Dbase.INFO".
+
+@ifinfo
+@node Top
+@top Overview
+
+This manual is used for testing the documentation of the @sc{Dbase}
+package of the @sc{CoreObjects} library.
+
+DRAFT -- FOR INTERNAL USE ONLY.
+
+Autor: Edward S. Blurock
+
+
+@menu
+* Packages::                  Documentation of the Dbase package.
+* Function Specifications::   Formal specifications of all functions.
+* Concept Index::
+* Type Index::
+* Function Index::
+@end menu
+@end ifinfo
+
+@include Packages.texi
+
+
+@node     Function Specifications
+@appendix Function Specifications
+
+@ifset functions
+@include Functions.texi
+@end ifset
+@ifclear functions
+This version of the manual was created without formal function
+specifications.  Please contact your local @sc{CoreObjects} maintainer for full
+documentation.
+@end ifclear
+
+@node       Concept Index
+@unnumbered Concept Index
+
+@printindex cp
+
+@node       Type Index
+@unnumbered Type Index
+
+@printindex tp
+
+@node       Function Index
+@unnumbered Function Index
+
+@printindex fn
+
+
+@contents
+
+@bye

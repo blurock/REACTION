@@ -1,0 +1,17 @@
+Expression Calculate Reverse constants
+Attributes:
+%% -------------------------------------------------
+%% Equilibrium                   EquilibriumExpression
+%% -------------------------------------------------
+LocalExpressionKeyWords: END 
+( CalculateEquilibrium Molecule )
+%% ------------------------------------
+%% MoveEquilibriumConstant       KeyWords
+%% ------------------------------------
+FromInstance StoreMoleculeProperty Molecule 
+EquilibriumFromChemkin Equilibrium
+END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

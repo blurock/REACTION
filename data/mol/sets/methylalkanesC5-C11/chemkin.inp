@@ -1,0 +1,196 @@
+C4ket-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Ketone Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-methylbutane  2-methylbutane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2MC5H12
+2MC5H12
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using C6H14
+2MC5H12           T 5/83C   6H  14    0    0G   300.000  4000.      86.172     1
+ 0.22804718E+02 0.20979892E-01-0.35306739E-05-0.54662452E-09 0.14789499E-12    2
+-0.30737566E+05-0.95831619E+02 0.18361740E+01 0.50984614E-01 0.12595857E-04    3
+-0.44283624E-07 0.18722371E-10-0.22927496E+05 0.20881454E+02           3452.2  4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-methylhexane  2-methylhexane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2MC6H13
+2MC6H13
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc7h16
+2MC6H13    2/10/95      c   7h  16    0    0g   300.000  5000.000 1391.000    61
+ 2.22148969e+01 3.47675750e-02-1.18407129e-05 1.83298478e-09-1.06130266e-13    2
+-3.42760081e+04-9.23040196e+01-1.26836187e+00 8.54355820e-02-5.25346786e-05    3
+ 1.62945721e-08-2.02394925e-12-2.56586565e+04 3.53732912e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-methyloctane  2-methyloctane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2MC8H17
+2MC8H17
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Calculated Estimate using nC9h20
+2MC8H17                 H  20C   9    0    0G   298.000  1500.0001000.000      1
+ 2.69247375e+02-5.88451445e-01 5.78166451e-04-2.34643920e-07 3.40127579e-11    2
+-1.12120789e+05-1.37681494e+03-4.61067581e+01 4.50398356e-01-9.69737477e-04    3
+ 1.00604461e-06-3.82262916e-10-2.71405742e+04 2.27182419e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-methylnonane  2-methylnonane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2MC9H19
+2MC9H19
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nC10H22
+2MC9H19                 H  22C  10    0    0G   298.000  1500.0001000.000      1
+ 2.96687958e+02-6.47738636e-01 6.36472076e-04-2.58333927e-07 3.74492937e-11    2
+-1.23232617e+05-1.51906421e+03-5.08688393e+01 4.97379273e-01-1.06990268e-03    3
+ 1.10931796e-06-4.21381124e-10-2.95900801e+04 2.48666199e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-methyldecane  2-methyldecane 
+%% Lumped molecule (for Short Name and Chemkin Name)
+2MC10H21
+2MC10H21
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; come (ndecane) Estimate C10H22
+2MC10H21                C  10H  22O   0     G  0300.00   5000.00  1000.00      1
+ 1.78403E+01    6.65048E-02   -2.32831E-05    3.77059E-09   -2.33609E-13       2
+-3.96948E+04   -5.82861E+01    4.80311E-01    1.04086E-01   -3.18681E-05       3
+-2.25594E-08    1.44230E-11   -3.46127E+04    3.34559E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-methylhexane 3-methylhexane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC6H13
+3MC6H13
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc7h16
+3MC6H13    2/10/95      c   7h  16    0    0g   300.000  5000.000 1391.000    61
+ 2.22148969e+01 3.47675750e-02-1.18407129e-05 1.83298478e-09-1.06130266e-13    2
+-3.42760081e+04-9.23040196e+01-1.26836187e+00 8.54355820e-02-5.25346786e-05    3
+ 1.62945721e-08-2.02394925e-12-2.56586565e+04 3.53732912e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-methylheptane 3-methylheptane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC7H15
+3MC7H15
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using N-C8H18 
+3MC7H15           T 7/80C   8H  18    0    0G   300.000  5000.000              1
+ 0.22451614E 02 0.40858209E-01-0.12878297E-04 0.17911266E-08-0.88108611E-13    2
+-0.36112590E 05-0.89322800E 02 0.25595255E 01 0.68079829E-01 0.13468589E-04    3
+-0.58320591E-07 0.26347424E-10-0.28872742E 05 0.21120300E 02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-methyloctane 3-methyloctane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC8H17
+3MC8H17
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Calculated Estimate using nC9h20
+3MC8H17                 H  20C   9    0    0G   298.000  1500.0001000.000      1
+ 2.69247375e+02-5.88451445e-01 5.78166451e-04-2.34643920e-07 3.40127579e-11    2
+-1.12120789e+05-1.37681494e+03-4.61067581e+01 4.50398356e-01-9.69737477e-04    3
+ 1.00604461e-06-3.82262916e-10-2.71405742e+04 2.27182419e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-methylnonane 3-methylnonane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC9H19
+3MC9H19
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nC10H22
+3MC9H19                 H  22C  10    0    0G   298.000  1500.0001000.000      1
+ 2.96687958e+02-6.47738636e-01 6.36472076e-04-2.58333927e-07 3.74492937e-11    2
+-1.23232617e+05-1.51906421e+03-5.08688393e+01 4.97379273e-01-1.06990268e-03    3
+ 1.10931796e-06-4.21381124e-10-2.95900801e+04 2.48666199e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-methyldecane 3-methyldecane
+%% Lumped molecule (for Short Name and Chemkin Name)
+3MC10H21
+3MC10H21
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; come (ndecane) Estimate C10H22
+3MC10H21                C  10H  22O   0     G  0300.00   5000.00  1000.00      1
+ 1.78403E+01    6.65048E-02   -2.32831E-05    3.77059E-09   -2.33609E-13       2
+-3.96948E+04   -5.82861E+01    4.80311E-01    1.04086E-01   -3.18681E-05       3
+-2.25594E-08    1.44230E-11   -3.46127E+04    3.34559E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-methylheptane 4-methylheptane
+%% Lumped molecule (for Short Name and Chemkin Name)
+4MC7H15
+4MC7H15
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using N-C8H18 
+4MC7H15           T 7/80C   8H  18    0    0G   300.000  5000.000              1
+ 0.22451614E 02 0.40858209E-01-0.12878297E-04 0.17911266E-08-0.88108611E-13    2
+-0.36112590E 05-0.89322800E 02 0.25595255E 01 0.68079829E-01 0.13468589E-04    3
+-0.58320591E-07 0.26347424E-10-0.28872742E 05 0.21120300E 02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-methyloctane 4-methyloctane
+%% Lumped molecule (for Short Name and Chemkin Name)
+4MC8H17
+4MC8H17
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Calculated Estimate using nC9h20
+4MC8H17                  H  20C   9    0    0G   298.000  1500.0001000.000      1
+ 2.69247375e+02-5.88451445e-01 5.78166451e-04-2.34643920e-07 3.40127579e-11    2
+-1.12120789e+05-1.37681494e+03-4.61067581e+01 4.50398356e-01-9.69737477e-04    3
+ 1.00604461e-06-3.82262916e-10-2.71405742e+04 2.27182419e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-methylnonane 4-methylnonane
+%% Lumped molecule (for Short Name and Chemkin Name)
+4MC9H19
+4MC9H19
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nC10H22
+4MC9H19                 H  22C  10    0    0G   298.000  1500.0001000.000      1
+ 2.96687958e+02-6.47738636e-01 6.36472076e-04-2.58333927e-07 3.74492937e-11    2
+-1.23232617e+05-1.51906421e+03-5.08688393e+01 4.97379273e-01-1.06990268e-03    3
+ 1.10931796e-06-4.21381124e-10-2.95900801e+04 2.48666199e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-methyldecane 4-methyldecane
+%% Lumped molecule (for Short Name and Chemkin Name)
+4MC10H21
+4MC10H21
+%% Molecule classes
+Alkane MethylAlkane END
+4MC10H21                C  10H  22O   0     G  0300.00   5000.00  1000.00      1
+ 1.78403E+01    6.65048E-02   -2.32831E-05    3.77059E-09   -2.33609E-13       2
+-3.96948E+04   -5.82861E+01    4.80311E-01    1.04086E-01   -3.18681E-05       3
+-2.25594E-08    1.44230E-11   -3.46127E+04    3.34559E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      5-methylnonane 5-methylnonane
+%% Lumped molecule (for Short Name and Chemkin Name)
+5MC9H19
+5MC9H19
+%% Molecule classes
+Alkane MethylAlkane END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nC10H22
+5MC9H19                 H  22C  10    0    0G   298.000  1500.0001000.000      1
+ 2.96687958e+02-6.47738636e-01 6.36472076e-04-2.58333927e-07 3.74492937e-11    2
+-1.23232617e+05-1.51906421e+03-5.08688393e+01 4.97379273e-01-1.06990268e-03    3
+ 1.10931796e-06-4.21381124e-10-2.95900801e+04 2.48666199e+02                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      5-methyldecane 5-methyldecane
+%% Lumped molecule (for Short Name and Chemkin Name)
+5MC10H21
+5MC10H21
+%% Molecule classes
+Alkane MethylAlkane END
+5MC10H21                C  10H  22O   0     G  0300.00   5000.00  1000.00      1
+ 1.78403E+01    6.65048E-02   -2.32831E-05    3.77059E-09   -2.33609E-13       2
+-3.96948E+04   -5.82861E+01    4.80311E-01    1.04086E-01   -3.18681E-05       3
+-2.25594E-08    1.44230E-11   -3.46127E+04    3.34559E+01                      4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+END

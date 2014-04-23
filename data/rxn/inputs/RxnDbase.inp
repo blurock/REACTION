@@ -1,0 +1,14 @@
+DbaseTest  Read in test database items
+Attributes:
+%% -------------------------------------------------
+%% ReactionDataBase    ReactionDataBase
+%% -------------------------------------------------
+MoleculeDataBase       StandardMolecule
+SubstructureDataBase   StandardMolecule
+MoleculeClassDataBase  StandardMolecule
+ReactionDataBase       StandardReaction
+RxnPatternsDataBase    StandardReaction
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END

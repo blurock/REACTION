@@ -1,0 +1,287 @@
+/*  FILE     SenkinRates.hh
+**  PACKAGE  SenkinRates
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Definitions for the "SenkinRates" package.
+**
+**  OVERVIEW
+**
+**  IMPLEMENTATION
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1996 Reaction, Edward S. Blurock
+*/
+ 
+#ifndef REACTION_SENKINRATES_HH
+#define REACTION_SENKINRATES_HH
+ 
+ 
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+/*C FindSenkinMoleculeDataPoints  . . . . . . . . . . .  find a set of points
+**
+**  DESCRIPTION
+**
+**  REMARKS
+**
+*/
+class FindSenkinMoleculeDataPoints
+     {
+     Identify ID;
+ public:
+     FindSenkinMoleculeDataPoints(const Identify& id)
+	  : ID(id)
+	  {
+	  }
+     bool operator()(const SenkinMoleculeDataPoints& points)
+	  {
+	  return points.Molecule == ID;
+	  }
+     };
+/*C FindReactionValuesFromMol . . . . . . . . . rate constants from molecules
+**
+**  DESCRIPTION
+**     This class is for calculating the rate constants for a given reaction
+**     using the temperatures and times given by the
+**     MechanismSenkinDataPoints class.  The Initialize() function
+**     calculates the base rate constant.  The operator() multiplies in 
+**     the concentration of a given molecule (Identify).
+**     
+**  REMARKS
+**
+*/
+class FindReactionValuesFromMol
+{
+  DbaseReaction& Rxn;
+  bool Forward;
+  const MechanismSenkinDataPoints& MolPoints;
+  String Constants;
+  
+public:
+  vector<FLOAT> Values;
+  
+  FindReactionValuesFromMol(DbaseReaction& rxn,
+			    vector<FLOAT> values,
+			    const MechanismSenkinDataPoints& molpoints,
+			    const String& constants);
+  void operator()(const Identify& id);
+  void Initialize();
+  friend class MechanismSenkinDataPoints;
+};
+
+	       
+/*C FindReactionValues  . . . . . . . . . . . . . . .  Compute Rate Constants
+**
+**  DESCRIPTION
+**    For each reaction, the operator() function will compute the
+**    vector of rate constants from the vector of temperatures (and
+**    times) of the Senkin run.  
+**
+**  REMARKS
+**
+*/
+class FindReactionValues
+     {
+     bool Forward;
+     int Length;
+     int Cnt;
+     int SkipFactor;
+     
+     public:
+     const MechanismSenkinDataPoints& MolPoints;
+     Matrix<FLOAT>& Mat;
+     
+     FindReactionValues(Matrix<FLOAT>& mat,
+			const MechanismSenkinDataPoints& molpoints,
+			const bool forward,
+			const int length,
+			const int skip);
+     vector<FLOAT> KineticValues(DbaseReaction& rxn,
+				 ObjectList<Identify> mlist,
+				 const String& constant);
+     void operator()(DbaseReaction& rxn);
+     };
+/*C ComputePressureFromConcentrations . . . . . . . . . . . . . .  operator()
+**
+**  DESCRIPTION
+**    The operator() adds the list of concentrations into the total pressure
+**
+**  REMARKS
+**
+*/
+class ComputePressureFromConcentrations
+{
+  ObjectList<FLOAT>& Pressure;
+public:
+  ComputePressureFromConcentrations(unsigned int n,ObjectList<FLOAT>& p);
+  ObjectList<FLOAT>& TotalPressure();
+  void operator()(const SenkinMoleculeDataPoints& concs);
+};
+/*C ThirdBodyRateCalc . . . . . . . . . . . . . . . . .  correct with weights
+**
+**  DESCRIPTION
+**     The elements of the class are:
+**     - Mol: The molecule ID
+**     - A: The weight
+**
+**     This is used to adjust the third body 
+**     rate constants.  There are two operators
+**     - Match the molecule ID
+**     - Correct the pressure with the concentration
+**
+**     The correction, (A-1.0), has the following elements:
+**     - The Arrhenius factor gives the contribution weight of the molecule
+**     - The factor minus one is because all molecules were already included in the total pressure
+**
+**  REMARKS
+**
+*/
+class ThirdBodyRateCalc
+{
+  unsigned int Mol;
+  FLOAT A;
+public:
+  ThirdBodyRateCalc(StandardThirdBody& third);
+  bool operator()(const SenkinMoleculeDataPoints& points);
+  FLOAT operator()(const FLOAT p,
+		   const FLOAT conc);
+};
+/*C CalculateTotalPressureVersusTime  . . . . . . . . . . . . .  add up concs
+**
+**  DESCRIPTION
+**     The elements:
+**     - Points: The data points
+**     - TotalPressure: The calculated pressure
+**     - Calc: Helping class to calculate
+**
+**     When the class is created, the total pressure
+**     is calculated.  The following operators are 
+**     available:
+**     - TotalPressure: returns the total pressure
+**     - ThirdBody: the weights of the third body molecules
+**
+**  REMARKS
+**
+*/
+class CalculateTotalPressureVersusTime
+{
+  const MechanismSenkinDataPoints& Points;
+  ObjectList<FLOAT> TotalPressure;
+  ComputePressureFromConcentrations Calc;
+  
+public:
+  CalculateTotalPressureVersusTime(const MechanismSenkinDataPoints& points);
+  ObjectList<FLOAT>& ReturnTotalPressure();
+  ObjectList<FLOAT>& ThirdBody(ListOfThirdBodyMolecules& third);
+};
+/*C MolRateSumCalculate . . . . . . . . . . . . . Calculate Molecule Rate Sum
+**
+**  DESCRIPTION
+**
+**      The following routine are called after each operator loop
+**      - Increment(): Increment to next reaction
+**      - IncrementTime(): Increment to next time
+**      - ResetTime(): Reset the time count to zero
+**      - ForwardSet(): Next will be forward reaction
+**      - ReverseSet(): Next will be reverse reaction
+**
+**      The operator(id) loops through the set of times
+**	and for the molecule specified by id, adds in the 
+**	reaction rate.
+**
+**  REMARKS
+**
+*/
+class MolRateSumCalculate
+{
+  SearchableObjectList<Identify, vector<FLOAT> >& Fi;
+  Matrix<FLOAT>& Mat;
+
+  unsigned int Rxn;
+  unsigned int Itime;
+  
+  bool Forward;
+public:
+  MolRateSumCalculate(SearchableObjectList<Identify, vector<FLOAT> >& fi,
+		      Matrix<FLOAT>& mat);
+  void Increment()
+    {
+      Rxn++;
+    }
+  void IncrementTime()
+    {
+      Itime++;
+    }
+  void ResetTime()
+    {
+      Itime = 0;
+    }
+  void ForwardSet()
+    {
+      Forward = true;
+    }
+  void ReverseSet()
+    {
+      Forward = false;
+    }
+  void operator()(const Identify& id);
+  FLOAT operator()(FLOAT rate, const Identify& id);
+};
+/*C MolRateSum  . . . . . . . . . . . .  Calculate molecule for all reactions
+**
+**  DESCRIPTION
+**     The class has the following values:
+**     - Fi: The set of Fi to be constructed
+**     - Mat: The reaction rate versus time matrix
+**
+**     This class is used to create the set of Fi's.
+**
+**  REMARKS
+**
+*/
+class MolRateSum
+{
+  SearchableObjectList<Identify,vector<FLOAT> > Fi;
+  Matrix<FLOAT>& Mat;
+
+  void CalculateFi(ObjectList<DbaseReaction>& rxns);
+  void CalculateNormalizedRate(ObjectList<DbaseReaction>& rxns);
+  
+public:
+  MolRateSum(MechanismSenkinDataPoints points,
+	     ObjectList<DbaseReaction>& rxns,
+	     Matrix<FLOAT>& mat);
+  SearchableObjectList<Identify,vector<FLOAT> > GetFi();
+  
+};
+ 
+ 
+ 
+/*P  . . . PROTOTYPES  . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+void CalculateValuesFromReactions(ObjectList<DbaseReaction>& rxns,
+				  FindReactionValues& values,
+				  bool compfi,
+				  bool takelog);
+int SkipMatrixSize(INT fullsize, INT skip);
+void FormAndAddReactionNames(ObjectList<DbaseReaction>& rxns,
+			     ObjectList<String>& names,
+			     const bool includerev = true);
+bool FillTimeTemperatureMatrix(Matrix<FLOAT>& mat,
+			       const ObjectList<FLOAT>& timeValues,
+			       const ObjectList<FLOAT>& temps,
+			       const int skip);
+Matrix<double>& ReduceMatrixByRowSpecification(Matrix<double>& mat,
+					       const unsigned int initial,
+					       const unsigned int ifinal);
+Matrix<double> ReduceMatToTimeInterval(Matrix<double>& mat,
+				       const MechanismSenkinDataPoints points,
+				       double initialtime,
+				       double finaltime,
+				       const bool includerev);
+
+#endif
+
+

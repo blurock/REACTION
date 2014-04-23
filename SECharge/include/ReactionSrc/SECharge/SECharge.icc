@@ -1,0 +1,472 @@
+/*  FILE     SECharge.icc
+**  PACKAGE  SECharge
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "SECharge" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+ 
+#ifndef REACTIONSRC_SECHARGE_ICC
+#define REACTIONSRC_SECHARGE_ICC
+ 
+/*S Constructors
+*/
+/*F BondMatricies() . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline BondMatricies::BondMatricies() : MatrixOfBondOrders()
+     {
+     }
+ 
+/*F BondMatricies(mats) . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    mat: The matricies to be copied
+**
+**  REMARKS
+**
+*/
+inline BondMatricies::BondMatricies(const BondMatricies& mats) 
+: MatrixOfBondOrders(mats.MatrixOfBondOrders)
+     {
+     }
+/*F BondMatricies(size) . . . . . . . . . . . . . . . . . .  giving dimension
+**
+**  DESCRIPTION
+**    size: The dimension (number of atoms)
+**
+**  REMARKS
+**
+*/
+inline BondMatricies::BondMatricies(const int size)
+: MatrixOfBondOrders(size)
+     {
+     }
+
+
+
+
+
+/*F TransferBndOrdMat(size) . . . . . . . . . . . . . . . only with dimension
+**
+**  DESCRIPTION
+**       size: The size of the matrix (the number of atoms)
+**
+**       The C routines AllocateBondOrderMatrix and CreateBondOrderMatrix
+**       are called to set up the matrix.  The ZeroBndOrdMat routine
+**       is used to initialize the elements to zero.
+**
+**  REMARKS
+**
+*/
+inline TransferBndOrdMat::TransferBndOrdMat(INDEX size)
+     {
+#ifdef SECHARGE_DEBUG
+     cout << "TransferBndOrdMat begin \n";
+#endif     
+     bndord = AllocateBondOrderMatrix;
+     CreateBondOrderMatrix(bndord,0,(char *) 0,
+			   size,size*size,0);
+     
+     ZeroBndOrdMat(bndord);
+     }
+/*F TransferBondToConjAtomInfo(info)  . . . . . . . . . . . . . . . . . setup
+**
+**  DESCRIPTION
+**    info: The C structure pointer is put in the class for use
+**
+**  REMARKS
+**
+*/
+inline TransferBondToConjAtomInfo::TransferBondToConjAtomInfo(ConjAtomInfoVec *info)
+     {
+     atominfo = info;
+     vect = atominfo->Vector;
+     i = 0;
+     }
+ 
+/*F ChargeElectronic()  . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline ChargeElectronic::ChargeElectronic() : ElectronicMatricies()
+     {
+     }
+/*F ChargeElectronic(molecule)  . . . . . . . Calculation with SimpleMolecule
+**
+**  DESCRIPTION
+**    molecule: The molecule on which to do the calculations
+**
+**    The information of the simple molecule is enough to 
+**    perform the set of electronic calculations.  This constructor
+**    does the calculations and puts the results back in the molecule
+**
+**  REMARKS
+**
+*/
+inline ChargeElectronic::ChargeElectronic(const SimpleMolecule& molecule) 
+: ElectronicMatricies(molecule.Atoms.size())
+     {
+     int msize;
+
+     
+#ifdef SECHARGE_DEBUG
+     cout << "++++++++++++++++++++++++++++++++++++++++\n";
+     cout << "Charge Electronic\n";
+     cout << molecule;
+     cout << "++++++++++++++++++++++++++++++++++++++++\n";
+#endif     
+     msize = molecule.Atoms.size();
+     Conjset = AllocateConjBndSet(msize);    
+     Conjset->BondOrder  = MFMol2BndOrdMat( molecule );
+     Conjset->ConjAtomInfo = MFMol2CnjAtmInf( molecule );
+     ElectronicFromMolFile(Conjset);
+     ElectronicMatricies.FillBondOrder(Conjset->BondOrder);
+#ifdef SECHARGE_DEBUG
+     cout << "++++++++++++++++++++++++++++++++++++++++\n";
+#endif     
+     } 
+/*F SubBetaCalcIJ() . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SubBetaCalcIJ::SubBetaCalcIJ() 
+: SimpleElectronicAtom()
+	  {
+	  }
+ 
+/*F SubBetaCalcIJ(atom) . . . . . . . . . . . . . . . . . . . from SimpleAtom
+**
+**  DESCRIPTION
+**    atom: The atom info
+**
+**    The AtomicNumber and the Identification of the atom are used.  The Beta
+**    and Valence fields are initialized to zero
+**
+**  REMARKS
+**
+*/
+inline SubBetaCalcIJ::SubBetaCalcIJ(SimpleElectronicAtom& atom) : SimpleElectronicAtom(atom)
+	  {
+	  AtomicNumber = atom.AtomicNumber;
+	  Beta = 0.0;
+	  Valence = 0.0;
+	  I = atom.Identification;
+	  J = 0;
+	  }
+/*F InitialBetaCalc(atoms,BondOrder)  . . .  from set of atoms and bondorders
+**
+**  DESCRIPTION
+**    atoms: The atoms
+**    BondOrder: Matrix of bond orders
+**
+**    The vector of SubBetaCalcIJ classes is initialized with the atoms
+**    and each vector of bond orders
+**
+**  REMARKS
+**
+*/
+inline InitialBetaCalc::InitialBetaCalc(ObjectList<SimpleElectronicAtom>& atoms,
+					vector< vector<double> > & BondOrder)
+: Calc(atoms.size())
+     {
+     copy(atoms.begin(),atoms.end(),Calc.begin());
+     
+     transform(Calc.begin(),Calc.end(),
+	       BondOrder.begin(),
+	       Calc.begin(),
+	       *this);
+     }
+ 
+/*F ShiftElectronic() . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline ShiftElectronic::ShiftElectronic() 
+: SimpleElectronicAtom()
+     {
+#ifdef DEBUG_CHARGE
+     cout << "Create ShiftElectronic()\n";
+#endif
+     }
+/*F ShiftElectronic(electronic) . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    electronic: The shift info
+**
+**  REMARKS
+**
+*/
+inline ShiftElectronic::ShiftElectronic(const ShiftElectronic& electronic) 
+: SimpleElectronicAtom(electronic)
+     {
+     BondOrderJJ = electronic.BondOrderJJ;
+     NElectrons = electronic.NElectrons;
+     NuclearCharge = electronic.NuclearCharge;
+     Delta = electronic.Delta;
+     }
+
+ 
+/*F ShiftElectronic(atom) . . . . . . . . . . . . . from SimpleElectronicAtom
+** 
+**  DESCRIPTION
+**    atom: The atom information (NumberOfElectrons)
+**
+**  REMARKS
+**
+*/
+inline ShiftElectronic::ShiftElectronic(const SimpleElectronicAtom& atom) 
+: SimpleElectronicAtom(atom)
+     {
+#ifdef DEBUG_CHARGE
+     cout << "Create ShiftElectronic(atom)\n";
+#endif
+     NElectrons = atom.NumberOfElectrons;
+     NuclearCharge = atom.NumberOfElectrons;
+     }
+/*F ShiftElectronsIJ(i) . . . . . . . . . . . . . . . initialize with i index
+**
+**  DESCRIPTION
+**    i: The I index in the loop
+**
+**  REMARKS
+**
+*/
+inline ShiftElectronsIJ::ShiftElectronsIJ(INDEX i)
+	  {
+	  I = i;
+	  J = 0;
+	  }
+/*F ShiftElectronsI() . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline ShiftElectronsI::ShiftElectronsI()
+	  {
+	  I = 0;
+	  }
+ 
+/*F ShiftElectronsI(shift)  . . . . . . . . . . . initialize with I subscript
+**
+**  DESCRIPTION
+**    shift: The I subscript for the calculation is substituted
+**
+**  REMARKS
+**
+*/
+inline ShiftElectronsI::ShiftElectronsI(ShiftElectronsI& shift)
+	  {
+	  I = shift.I;
+	  }
+     
+ 
+/*F UpdateElectronegativity() . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline UpdateElectronegativity::UpdateElectronegativity()
+     {
+     } 
+/*F DeltaShift()  . . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline DeltaShift::DeltaShift() 
+: updated()
+	  {
+	  Counter = 0;
+	  }
+/*F DeltaShift(shift) . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    shift: to be copied
+**
+**  REMARKS
+**
+*/
+inline DeltaShift::DeltaShift(const DeltaShift& shift)
+	  : updated(shift.updated.size())
+	       {
+	       copy(shift.updated.begin(),
+		    shift.updated.end(),
+		    updated.begin());
+	       Counter = 0;
+	       }
+ 
+/*F DeltaShift(n) . . . . . . . . . . . . . . . . . . .  with number of atoms
+**
+**  DESCRIPTION
+**    n: The dimension (The number of atoms)
+**
+**  REMARKS
+**
+*/ 
+inline DeltaShift::DeltaShift(const INDEX n) 
+: updated(n)
+	  {
+	  Counter = 0;
+	  } 
+/*F SingleShiftIterate()  . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SingleShiftIterate::SingleShiftIterate()
+: update(), 
+shiftelectrons(),
+delta(),
+oldelectronic()
+     {
+     }
+/*F SingleShiftIterate(shift) . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    shift: The shift to be copied
+**
+**  REMARKS
+**
+*/
+inline SingleShiftIterate::SingleShiftIterate(const SingleShiftIterate& shift)
+  : update(), 
+    shiftelectrons(),
+    delta(shift.oldelectronic.size()),
+    oldelectronic(shift.oldelectronic.size())
+{
+	       copy(shift.oldelectronic.begin(),
+		    shift.oldelectronic.end(),
+		    oldelectronic.begin());
+	       }
+
+ 
+/*F SingleShiftIterate(atoms) . . . . . . . . . . . . . . . .  from atom list
+**
+**  DESCRIPTION
+**    atoms: The list of atoms in the molecule
+**
+**  REMARKS
+**
+*/
+inline SingleShiftIterate::SingleShiftIterate(const ObjectList<MoleculeAtom>& atoms)
+: 
+update(), 
+shiftelectrons(),
+delta(atoms.size()),
+oldelectronic(atoms.size())
+     {
+     copy(atoms.begin(),atoms.end(),oldelectronic.begin());
+     }
+/*F ShiftElectrons()  . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline ShiftElectrons::ShiftElectrons()
+  : Iterate(),
+  ShiftE()
+     {
+#ifdef DEBUG_CHARGE
+     cout << "Create ShiftElectrons()\n";
+#endif
+     Delta = 1000.0;
+     StopLimit = .005;
+     CountStop = 20;
+     }
+ 
+/*F ShiftElectrons(shift) . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    shift: The shift to be copied
+**
+**  REMARKS
+**
+*/
+inline ShiftElectrons::ShiftElectrons(const ShiftElectrons& shift) 
+: 
+  Iterate(shift.Iterate),
+ShiftE(shift.ShiftE)
+     {	  
+     Delta = 1000.0;
+     StopLimit = .001;
+     CountStop = 20;
+     
+     Delta = shift.Delta;
+     StopLimit = shift.StopLimit;
+     CountStop = shift.CountStop;
+     }
+/*F ShiftElectrons(atoms) . . . . . . . . . . . . . . . initialize with atoms
+**
+**  DESCRIPTION
+**    atoms: The set of atoms in a molecule
+**
+**  REMARKS
+**
+*/
+inline ShiftElectrons::ShiftElectrons(ObjectList<MoleculeAtom>& atoms)
+: 
+  Iterate(atoms),
+ShiftE(atoms.size())
+     {
+#ifdef DEBUG_CHARGE
+     cout << "Create ShiftElectrons(atoms)\n";
+#endif
+     Delta = 1000.0;
+     StopLimit = .001;
+     CountStop = 20;
+     
+     copy(atoms.begin(),atoms.end(),ShiftE.begin());
+     } 
+/*F TransferShiftToAtom() . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline TransferShiftToAtom::TransferShiftToAtom()
+     {
+     }
+ 
+/*F CalculateMoleculeElectronic() . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline CalculateMoleculeElectronic::CalculateMoleculeElectronic()
+	  {
+	  }
+          
+
+
+#endif 

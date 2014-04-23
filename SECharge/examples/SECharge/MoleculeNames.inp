@@ -1,0 +1,9 @@
+MoleculeNames -------  The MoleculeNames variable definition -----
+Attributes:
+StandardMolecule
+propane propane-ElectronegativityVector
+1-propene-3-ol 1-propene-3-ol-ElectronegativityVector
+1-propyl-radical 1-propyl-radical-ElectronegativityVector
+END
+%% No Instances -------------------------------------------------
+END

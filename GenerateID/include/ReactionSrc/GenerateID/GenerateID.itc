@@ -1,0 +1,63 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*F
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class Object>
+ostream& operator<<(ostream& out,const EquivalentIDs<Object>& equiv)
+{
+  out << (ObjectList<Identify>&) equiv;
+  return out;
+}
+ 
+/*F
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class Object>
+bool Encode(CommBuffer& buffer, EquivalentIDs<Object>& equiv)
+{
+  return equiv.EncodeThis(buffer);
+}
+/*F
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class Object>
+bool Decode(CommBuffer& buffer, EquivalentIDs<Object>& equiv)
+{
+  return equiv.DecodeThis(buffer);
+}
+/*F
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+template <class Object>
+ostream& operator<<(ostream& out, const SearchableObjectList<int,EquivalentIDs<Object> >& list)
+	  {
+	  list.print(out);
+	  return out;
+	  }

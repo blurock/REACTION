@@ -1,0 +1,13 @@
+MoleculeDbase  Setup Molecule Database Structure
+Attributes:
+%% -------------------------------------------------
+%% MolecularStructureDataBase    MolecularStructureDataBase
+%% -------------------------------------------------
+MoleculeDataBase       StandardMolecule
+SubstructureDataBase   StandardMolecule
+MoleculeClassDataBase  StandardMolecule
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END
+

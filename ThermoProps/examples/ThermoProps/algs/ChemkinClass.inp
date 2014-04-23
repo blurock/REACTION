@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList  KeyWords
+ThermoUnits       KeyWords
+ThermoInfo        KeyWords
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,169 @@
+B-C2H6+O2=C2H5+HO2           ethane oxygen = ethyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        13.60      0.00      213.12  cm3-mol-s-kJ logA
+B-C2H6+H=C2H5+H2             ethane hydrogen-radical = ethyl-radical hydrogen
+ - StandardRateConstants   Forward        2.73     3.50      21.77  cm3-mol-s-kJ logA
+B-C2H6+O=C2H5+OH             ethane oxygen-atom = ethyl-radical hydroxyl-radical
+ - StandardRateConstants   Forward        14.05      0.00      32.87   cm3-mol-s-kJ logA
+B-C2H6+OH=C2H5+H2O           ethane hydroxyl-radical = ethyl-radical water
+ - StandardRateConstants   Forward        6.71      2.10      3.60    cm3-mol-s-kJ logA
+B-C2H6+HO2=C2H5+H2O2         ethane peroxyl-radical = ethyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        13.23      0.00      83.87   cm3-mol-s-kJ logA
+B-C2H5+O2=C2H5O2             ethyl-radical oxygen = ethylperoxy 
+ - StandardRateConstants   Forward        11.19      0.00      -13.95  cm3-mol-s-kJ logA
+B-C2H5+O2=C2H4+HO2           ethyl-radical oxygen = ethene peroxyl-radical
+ - StandardRateConstants   Forward        11.28      0.00      8.84    cm3-mol-s-kJ logA
+B-C2H5O2=C2H4+HO2            ethylperoxy = ethene peroxyl-radical
+ - StandardRateConstants   Forward        11.75     0.00      121.00  cm3-mol-s-kJ logA
+B-C2H5=C2H4+H                ethyl-radical = ethene hydrogen-radical 
+ - StandardRateConstants   Forward        13.30     0.00      166.01  cm3-mol-s-kJ logA
+B-C2H5+H=C2H4+H2             ethyl-radical hydrogen-radical = ethene hydrogen
+ - StandardRateConstants   Forward        13.00      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H5+H=CH3+CH3             ethyl-radical hydrogen-radical = methyl-radical methyl-radical 
+ - StandardRateConstants   Forward        13.50      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H5+O=C2H4+OH             ethyl-radical oxygen-atom = ethene hydroxyl-radical
+ - StandardRateConstants   Forward        13.40      0.00      26.62   cm3-mol-s-kJ logA
+B-C2H5+OH=C2H4+H2O           ethyl-radical hydroxyl-radical = ethene water
+ - StandardRateConstants   Forward        13.04      0.00      10.23   cm3-mol-s-kJ logA
+B-C2H5+OH=C2H5OH             ethyl-radical hydroxyl-radical = ethanol 
+ - StandardRateConstants   Forward        10.00      1.00      -5.02   cm3-mol-s-kJ logA
+B-C2H5O2+HO2=C2H5O2H+O2      ethylperoxy peroxyl-radical = ethylperoxide oxygen 
+ - StandardRateConstants   Forward        10.66      0.00      -10.89  cm3-mol-s-kJ logA
+B-C2H5O=CH3+HCHO             ethoxy-radical = methyl-radical aldehyde
+ - StandardRateConstants   Forward        15.00     0.00      90.44   cm3-mol-s-kJ logA
+B-C2H5O=CH3CHO+H             ethoxy-radical = ethanal hydrogen-radical
+ - StandardRateConstants   Forward        14.40     0.00      97.98   cm3-mol-s-kJ logA
+B-C2H5O+OH=CH3CHO+H2O        ethoxy-radical hydroxyl-radical = ethanal water
+ - StandardRateConstants   Forward        13.50      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H5O+O2=CH3CHO+HO2        ethoxy-radical oxygen = ethanal peroxyl-radical
+ - StandardRateConstants   Forward        11.30      0.00      20.93   cm3-mol-s-kJ logA
+B-CH4+CH3O=CH3+CH3OH         methane methoxy-radical = methyl-radical methanol
+ - StandardRateConstants   Forward        11.30      0.00      29.3 1  cm3-mol-s-kJ logA
+B-CH3O2+CH3=CH3O+CH3O        methylperoxy methyl-radical = methoxy-radical methoxy-radical
+ - StandardRateConstants   Forward        12.58      0.00      -5.02   cm3-mol-s-kJ logA
+B-CH3O2+CH3O2=CH3OH+HCHO+O2  methylperoxy methylperoxy = methanol aldehyde oxygen
+ - StandardRateConstants   Forward        10.15      0.00      2.09    cm3-mol-s-kJ logA
+B-CH3O2+CH3O2=CH3O+CH3O+O2   methylperoxy methylperoxy = methoxy-radical methoxy-radical oxygen
+ - StandardRateConstants   Forward        10.88      0.00      -2.09   cm3-mol-s-kJ logA
+B-CH3O2+CH3O2=CH3O2CH3+O2    methylperoxy methylperoxy = dimethylperoxide oxygen
+ - StandardRateConstants   Forward        11.70      0.00      8.37    cm3-mol-s-kJ logA
+B-CH3O2CH3=CH3O+CH3O         dimethylperoxide = methoxy-radical methoxy-radical
+ - StandardRateConstants   Forward        15.48     0.00       154.92 cm3-mol-s-kJ logA
+B-CH3O2+HCHO=CH3O2H+HCO      methylperoxy aldehyde = methylperoxide formyl-radical 
+ - StandardRateConstants   Forward        11.11      0.00      37.68   cm3-mol-s-kJ logA
+B-CH3O2+CH4=CH3O2H+CH3       methylperoxy methane = methylperoxide methyl-radical 
+ - StandardRateConstants   Forward        13.05      0.00      85 67   cm3-mol-s-kJ logA
+B-CH3O+CH3O=CH3OH+HCHO       methoxy-radical methoxy-radical = methanol aldehyde 
+ - StandardRateConstants   Forward        13.48      0.00      0.00    cm3-mol-s-kJ logA
+B-C2H4+O=CH3CHO              ethene oxygen-atom = ethanal 
+ - StandardRateConstants   Forward        10.63      0.63      5.74    cm3-mol-s-kJ logA
+B-CH3CHO=CH3+HCO             ethanal = methyl-radical formyl-radical
+ - StandardRateConstants   Forward        15.85     0.00      342.37  cm3-mol-s-kJ logA
+B-CH3CHO+O2=CH3CO+HO2        ethanal oxygen = ethanoyl-radical peroxyl-radical
+ - StandardRateConstants   Forward        13.30      0.50      176.69  cm3-mol-s-kJ logA
+B-CH3CHO+H=CH3CO+H2          ethanal hydrogen-radical = ethanoyl-radical hydrogen
+ - StandardRateConstants   Forward        13.60      0.00      17.59   cm3-mol-s-kJ logA
+B-CH3CHO+O=CH3CO+OH          ethanal oxygen-atom = ethanoyl-radical hydroxyl-radical
+ - StandardRateConstants   Forward        12.70      0.00      7.49    cm3-mol-s-kJ logA
+B-CH3CHO+OH=CH3CO+H2O        ethanal hydroxyl-radical = ethanoyl-radical water
+ - StandardRateConstants   Forward        13.00      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3CHO+HO2=CH3CO+H2O2      ethanal peroxyl-radical = ethanoyl-radical hydrogen-peroxide
+ - StandardRateConstants   Forward        12.23      0.00      44.80   cm3-mol-s-kJ logA
+B-CH3CO+O2=CH3CO3            ethanoyl-radical oxygen = methylpercarboxy
+ - StandardRateConstants   Forward        10.00      0.00      -11.30  cm3-mol-s-kJ logA
+B-CH3CO3+HO2=CH3CO2+O2+OH    methylpercarboxy peroxyl-radical = methylcarboxy oxygen hydroxyl-radical
+ - StandardRateConstants   Forward        12.00      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3CO3+HO2=CH3CO3H+O2    methylpercarboxy peroxyl-radical = perethanoic-acid oxygen
+ - StandardRateConstants   Forward        12.00      0.00      0.00    cm3-mol-s-kJ logA
+B-CH3CO3H=CH3CO2+OH       perethanoic-acid = methylcarboxy hydroxyl-radical
+ - StandardRateConstants   Forward        15.60     0.00      167.48  cm3-mol-s-kJ logA
+B-HCHO+CH3=HCO+CH4         aldehyde methyl-radical = formyl-radical methane
+ - StandardRateConstants Forward        10.00 0.50 25.12   cm3-mol-s-kJ logA
+B-HCHO+CH30=HCO+CH3OH      aldehyde methoxy-radical = formyl-radical methanol
+ - StandardRateConstants Forward        11.06 0.00 5.36   cm3-mol-s-kJ logA
+B-HCO+CH3=CH4+CO           formyl-radical methyl-radical = methane carbonmonoxide
+ - StandardRateConstants Forward        11.48 0.50 0.00   cm3-mol-s-kJ logA
+B-C2H4+O2=C2H3+HO2         ethene oxygen = ethenyl-radical peroxyl-radical
+ - StandardRateConstants Forward        13.60 0.00 257.50   cm3-mol-s-kJ logA
+B-C2H4+H=C2H3+H2           ethene hydrogen-radical = ethenyl-radical hydrogen
+ - StandardRateConstants Forward        7.18 2.00 25.12   cm3-mol-s-kJ logA
+B-C2H4+OH=C2H3+H20         ethene hydroxyl-radical = ethenyl-radical water
+ - StandardRateConstants Forward        13.31 0.00 24.91   cm3-mol-s-kJ logA
+B-C2H4+HO2=C2H3+H2O2       ethene peroxyl-radical = ethenyl-radical hydrogen-peroxide
+ - StandardRateConstants Forward        11.85 0.00 71.64   cm3-mol-s-kJ logA
+B-C2H3+H=C2H2+H2           ethenyl-radical hydrogen-radical = ethyne hydrogen
+ - StandardRateConstants Forward        13.30 0.00 10.47   cm3-mol-s-kJ logA
+B-C2H2+H=C2H+H2            ethyne hydrogen-radical = ethynyl-radical hydrogen
+ - StandardRateConstants Forward        14.30 0.00 79.55   cm3-mol-s-kJ logA
+B-CH3OH+CH3=CH2OH+CH4      methanol methyl-radical = hydroxymethyl methane
+ - StandardRateConstants Forward        11.26 0.00 41.03   cm3-mol-s-kJ logA
+B-CH30H+CH30=CH20H+CH30H   methanol methoxy-radical = hydroxymethyl methanol
+ - StandardRateConstants Forward        12.18 0.00 29.31   cm3-mol-s-kJ logA
+B-CH30H+CH3O2=CH20H+CH3O2H methanol methylperoxy = hydroxymethyl methylperoxide
+ - StandardRateConstants Forward        12.80 0.00 81.06   cm3-mol-s-kJ logA
+B-C2H4+O=HCHO+CH2          ethene oxygen-atom = aldehyde methylene
+ - StandardRateConstants Forward        10.81 0.60 5.74   cm3-mol-s-kJ logA
+B-C2H4+0=CH3+HCO           ethene oxygen-atom = methyl-radical formyl-radical
+ - StandardRateConstants Forward        10.81 0.60 5.74   cm3-mol-s-kJ logA
+B-C2H3+OH=CH3CHO           ethenyl-radical hydroxyl-radical = ethanal
+ - StandardRateConstants Forward        13.50 0.00 0.00   cm3-mol-s-kJ logA
+B-C2H2=C2H+H               ethyne = ethynyl-radical hydrogen-radical
+ - StandardRateConstants Forward        21.42 0.00 519.19   cm3-mol-s-kJ logA
+B-C2H2+O2=HCO+HCO          ethyne oxygen = formyl-radical formyl-radical
+ - StandardRateConstants Forward        12.60 0.00 117.24   cm3-mol-s-kJ logA
+B-C2H2+0=C2H+OH            ethyne oxygen-atom = ethynyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        15.50 -0.60 71.18   cm3-mol-s-kJ logA
+B-C2H2+O=CH2+CO            ethyne oxygen-atom = methylene carbonmonoxide
+ - StandardRateConstants Forward        13.83 0.00 16.75   cm3-mol-s-kJ logA
+B-C2H2+OH=C2H+H20          ethyne hydroxyl-radical = ethynyl-radical water
+ - StandardRateConstants Forward        12.78 0.00 29.31   cm3-mol-s-kJ logA
+B-C2H+O2=HCO+CO            ethynyl-radical oxygen = formyl-radical carbonmonoxide
+ - StandardRateConstants Forward        13.00 0.00 29.31   cm3-mol-s-kJ logA
+B-CH3+CH2=C2H4+H           methyl-radical methylene = ethene hydrogen-radical
+ - StandardRateConstants Forward        13.48 0.00 0.00   cm3-mol-s-kJ logA
+B-C2H4O=CH3+HCO            oxirane = methyl-radical formyl-radical
+ - StandardRateConstants Forward        13.56 0.00 239.50   cm3-mol-s-kJ logA
+B-C2H40=CH4+CO             oxirane = methane carbonmonoxide
+ - StandardRateConstants Forward        13.08 0.00 239.50   cm3-mol-s-kJ logA
+B-C2H4O+H=C2H30+H2         oxirane hydrogen-radical = oxyethene hydrogen
+ - StandardRateConstants Forward        13.30 0.00 34.75   cm3-mol-s-kJ logA
+B-C2H40+OH=C2H30+H20       oxirane hydroxyl-radical = oxyethene water
+ - StandardRateConstants Forward        13.30 0.00 6.95   cm3-mol-s-kJ logA
+B-C2H30=CH2CO+H            oxyethene = allenal hydrogen-radical
+ - StandardRateConstants Forward        10.48 0.00 33.50   cm3-mol-s-kJ logA
+B-C2H3O=CH3+CO             oxyethene = methyl-radical carbonmonoxide
+ - StandardRateConstants Forward        11.50 0.00 50.24   cm3-mol-s-kJ logA
+B-CH2CO+OH=HCHO+HCO        allenal hydroxyl-radical = aldehyde formyl-radical
+ - StandardRateConstants Forward        9.66 1.28 13.23   cm3-mol-s-kJ logA
+B-CH2CO+HO2=CH3CO3         allenal peroxyl-radical = methylpercarboxy
+ - StandardRateConstants Forward        9.66 1.28 13.23   cm3-mol-s-kJ logA
+B-CH2CO+OH=CH3CO2          allenal hydroxyl-radical = methylcarboxy
+ - StandardRateConstants Forward        9.66 1.28 13.23   cm3-mol-s-kJ logA
+B-C2H2+H=C2H3              ethyne hydrogen-radical = ethenyl-radical
+ - StandardRateConstants Forward        12.74 0.00 10.10   cm3-mol-s-kJ logA
+B-C2H6=C2H5+H             ethane = ethyl-radical hydrogen-radical
+ - StandardRateConstants Forward        26.95 -1.23 428.00   cm3-mol-s-kJ logA
+B-C2H6=CH3+CH3               ethane = methyl-radical methyl-radical 
+ - StandardRateConstants   Forward        28.03     -2.79     389.59  cm3-mol-s-kJ logA
+B-C2H5O2H=C2H5O+OH           ethylperoxide = ethoxy-radical hydroxyl-radical
+ - StandardRateConstants   Forward        15.60     0.00      180.04  cm3-mol-s-kJ logA
+B-C2H+H+M=C2H2+M           ethynyl-radical hydrogen-radical = ethyne
+ - StandardRateConstants Forward        3.04 1.00 3.22   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-CH3CO+M=CH3+CO+M           ethanoyl-radical = methyl-radical carbonmonoxide
+ - StandardRateConstants   Forward        16.26     0.00      60.29   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-CH3CO2+M=CH3+CO2+M      methylcarboxy = methyl-radical carbondioxide
+ - StandardRateConstants   Forward        16.26     0.00      60.29   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-C2H4+M=C2H3+H+M          ethene = ethenyl-radical hydrogen-radical
+ - StandardRateConstants Forward        18.80 0.00 455.13   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-C2H4+M=C2H2+H2+M         ethene = ethyne hydrogen
+ - ThirdBody 0 0.0 0.0 0.0
+ - StandardRateConstants Forward        16.97 0.00 323.24   cm3-mol-s-kJ logA
+B-C2H3+M=C2H2+H+M          ethenyl-radical = ethyne hydrogen-radical
+ - StandardRateConstants Forward        15.48 0.00 134.11  cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0
+B-C2H4O+M=CH3CHO+M         oxirane = ethanal
+ - StandardRateConstants Forward        16.86 0.00 239.50   cm3-mol-s-kJ logA
+ - ThirdBody 0 0.0 0.0 0.0

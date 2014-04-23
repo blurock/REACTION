@@ -1,0 +1,15 @@
+ReadMoleculeTest  Read in test database items
+Attributes:
+
+%% -------------------------------------------------
+%% ReadInNames    KeyWords
+%% -------------------------------------------------
+dummy
+hydrogen
+hydrogen-radical
+END
+%% ------------------------------------
+%% No Instances
+%% ------------------------------------
+END
+

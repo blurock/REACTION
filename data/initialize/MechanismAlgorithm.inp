@@ -1,0 +1,151 @@
+Algorithms  Setup
+Attributes:
+%% -------------------------------------------------
+%%   PrintMechLaTeX                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+PrintReverse LaTeX END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShort         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShortWithReverse         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName PrintReverse END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandard              AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   InputGenerated                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+InputGenerated  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Generated   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   FillMechanism                  AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Fill END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+FillMechanism  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Parameters   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%%%   RunIgnitionAlg    AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+       Initial MechanismRoutines  END    % Algorithm Category
+       ShowTimeSteps 
+       Excel
+       MolFractions
+       ForwardRates
+       ReverseRates
+       NetProductionRates
+       TimeStepProperties
+       END                     % Algorithm KeyWords
+       Run END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       FileRoot             String   
+       Conditions           Real
+       FinalTime            Real
+       OutputName           String
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   RunSetOfConditionsAlg    AlgorithmSummary
+%%%%-----------------------------------------------------------------------------
+       Initial SetOfRuns  END    % Algorithm Category
+       ShowTimeSteps 
+       FileSummary
+       ExtraOutput
+       Excel
+       MolFractions
+       ForwardRates
+       ReverseRates
+       NetProductionRates
+       TimeStepProperties
+       END                     % Algorithm KeyWords
+       RunSet Ignition END     % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+       FileRoot             String   
+       Conditions           Real
+       FinalTime            Real
+       OutputName           String
+       IterationSet         IterationSet
+       END
+                                              % Algorithm Result Parameters
+       END
+%%%%-----------------------------------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+       Initial MechanismUtilities  Fill END    % Algorithm Category
+       END                     % Algorithm KeyWords
+       ReadChemkin END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+MoleculeClass          String
+ReactionClass          String
+MechanismClass         String
+ChemkinClass            String
+ThermoNameInInstance   String
+ChemkinNameInInstance  String
+LiteratureReference    String
+MoleculeSummaryName    String
+FileRoot               String
+ReactionRate            String
+ThirdBody               String
+ReactionRateHiLow       String
+       END
+                                              % Algorithm Result Parameters
+       END
+%% =================================================
+%%      The Instances
+%% =================================================
+END

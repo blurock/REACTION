@@ -1,0 +1,195 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10708200 ethane ethane
+C2H6  C2H6  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H6                    C   2H   6    0    0G   300.000  4000.0001000.000      1
+ 4.82593822e+00 1.38404304e-02-4.55725922e-06 6.72496725e-10-3.59816106e-14    2
+-1.27177900e+04-5.23950720e+00 1.46253896e+00 1.54946698e-02 5.78050685e-06    3
+-1.25783197e-08 4.58626713e-12-1.12391797e+04 1.44322901e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20607200 ethyl-radical ethyl-radical
+C2H5  C2H5  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H5                    C   2H   5    0    0G   300.000  5000.0001000.000      1
+ 7.19048023e+00 6.48407685e-03-6.42806526e-07-2.34787911e-10 3.88087694e-14    2
+ 1.06745498e+04-1.47808905e+01 2.69070196e+00 8.71913321e-03 4.41983912e-06    3
+ 9.33870314e-10-3.92777304e-12 1.28704004e+04 1.21381998e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10506200 ethene ethene
+C2H4  C2H4  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H4                    C   2H   4    0    0G   300.000  5000.0001000.000      1
+ 3.52841902e+00 1.14851799e-02-4.41838483e-06 7.84460108e-10-5.26684816e-14    2
+ 4.42828906e+03 2.23038912e+00-8.61487985e-01 2.79616304e-02-3.38867685e-05    3
+ 2.78515202e-08-9.73787891e-12 5.57304590e+03 2.42114906e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20405200 ethenyl-radical ethenyl-radical
+C2H3  C2H3  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H3                    C   2H   3    0    0G   300.000  5000.0001000.000      1
+ 5.93346786e+00 4.01774608e-03-3.96674011e-07-1.44126697e-10 2.37864402e-14    2
+ 3.18543496e+04-8.53031254e+00 2.45927596e+00 7.37147592e-03 2.10987309e-06    3
+-1.32164202e-09-1.18478404e-12 3.33522500e+04 1.15562000e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10304200 ethyne ethyne
+C2H2  C2H2  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H2                    C   2H   2    0    0G   300.000  5000.0001000.000      1
+ 4.43676996e+00 5.37603907e-03-1.91281697e-06 3.28637895e-10-2.15671004e-14    2
+ 2.56676602e+04-2.80033803e+00 2.01356196e+00 1.51904495e-02-1.61631906e-05    3
+ 9.07899178e-09-1.91274600e-12 2.61244395e+04 8.80537796e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20203200 ethynyl-radical ethynyl-radical
+C2H  C2H  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H                     C   2H   1    0    0G   300.000  4000.0001000.000      1
+ 3.98636699e+00 3.14312289e-03-1.26724296e-06 2.92436297e-10-2.71631997e-14    2
+ 6.65588438e+04 1.19106305e+00 2.73770404e+00 8.04844592e-03-9.24430969e-06    3
+ 6.52525900e-09-1.93958001e-12 6.68381328e+04 7.30022001e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10607200 ethanal ethanal
+CH3CHO  CH3CHO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CHO                  C   2O   1H   4    0G   300.000  5000.0001000.000      1
+ 5.86864996e+00 1.07942401e-02-3.64552989e-06 5.41291179e-10-2.89684387e-14    2
+-2.26456895e+04-6.01294613e+00 2.50569510e+00 1.33699104e-02 4.67195287e-06    3
+-1.12813998e-08 4.26356606e-12-2.12458906e+04 1.33508902e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20506200 ethanal-2-yl-radical ethanal-2-yl-radical
+CH2CHO  CH2CHO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CHO                  C   2H   3O   1    0G   300.000  5000.0001000.000      1
+ 5.61227894e+00 8.44988599e-03-2.85414694e-06 4.23837604e-10-2.26840404e-14    2
+-5.18786279e+03-3.27494907e+00 3.12527800e+00 9.77822021e-03 4.52144786e-06    3
+-9.00946162e-09 3.19371808e-12-4.10850781e+03 1.12288504e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10405200 ethenone ethenone
+CH2CO  CH2CO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2CO                   C   2H   2O   1    0G   300.000  5000.0001000.000      1
+ 6.03881693e+00 5.80484001e-03-1.92095399e-06 2.79448492e-10-1.45886805e-14    2
+-8.58340234e+03-7.65758085e+00 2.97497106e+00 1.21187102e-02-2.34504591e-06    3
+-6.46668497e-09 3.90564881e-12-7.63263721e+03 8.67355347e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20304200 ketenyl-radical ketenyl-radical
+HCCO  HCCO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+HCCO                    H   1C   2O   1    0G   300.000  4000.0001000.000      1
+ 6.75807285e+00 2.00040010e-03-2.02760702e-07-1.04113197e-10 1.96516506e-14    2
+ 1.90151309e+04-9.07126236e+00 5.04796505e+00 4.45347792e-03 2.26828305e-07    3
+-1.48209500e-09 2.25074205e-13 1.96589199e+04 4.81843889e-01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20506201 Oxiranyl-radical Oxiranyl-radical
+C2H3O  C2H3O  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H3O                   O   1H   3C   2    0G   300.000  5000.000  43.040      1
+ 5.97566986e+00 8.13059136e-03-2.74362446e-06 4.07030409e-10-2.17601714e-14    2
+ 4.90321777e+02-5.04525089e+00 3.40906239e+00 1.07385740e-02 1.89149250e-06    3
+-7.15858306e-09 2.86738515e-12 1.52147656e+03 9.55829048e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10809200 ethanol ethanol
+C2H5OH  C2H5OH  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H5OH                  C   2H   6O   1    0G   300.000  5000.000   0.000      1
+ 7.90872860e+00 1.22277290e-02-3.51442486e-06 4.25720348e-10-1.54681769e-14    2
+-3.19438672e+04-1.64268951e+01 1.64872265e+00 2.11396441e-02 3.26720328e-06    3
+-1.63753988e-08 7.35217876e-12-2.96735977e+04 1.82714233e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20708200 ethoxy-radical ethoxy-radical
+C2H5O  C2H5O  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H5O                   O   1C   2H   5    0G   300.000  5000.000  45.000      1
+ 6.01143456e+00 1.21652186e-02-4.04496041e-06 5.90765881e-10-3.09695947e-14    2
+-4.93669922e+03-6.80334282e+00 1.73025036e+00 1.69084892e-02 3.99962209e-06    3
+-1.37111797e-08 5.76436034e-12-3.29224829e+03 1.73229523e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20809200 ethylperoxy-radical ethylperoxy-radical
+C2H5O2  C2H5O2  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H5O2                  C   2H   6O   1    0G   300.000  5000.000   0.000      1
+ 7.90872860e+00 1.22277290e-02-3.51442486e-06 4.25720348e-10-1.54681769e-14    2
+-3.19438672e+04-1.64268951e+01 1.64872265e+00 2.11396441e-02 3.26720328e-06    3
+-1.63753988e-08 7.35217876e-12-2.96735977e+04 1.82714233e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10910200 ethyl-hydroperoxide ethyl-hydroperoxide
+C2H4O2H  C2H4O2H  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H4O2H                 C   2H   5O   2    0G   300.000  5000.0001000.000      1
+ 1.19638996e+01 6.99398015e-03-1.39221004e-06 1.46300999e-10-6.56315009e-15    2
+-1.64410004e+02-3.25611000e+01 9.12805021e-01 4.29305993e-02-5.09704987e-05    3
+ 3.45646995e-08-9.73010995e-12 2.78459009e+03 2.35877991e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10707200 oxirane oxirane
+OXIRANE  OXIRANE  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+OXIRANE                 C   2O   1H   4    0G   300.000  5000.000   0.000      1
+ 5.86865044e+00 1.07942410e-02-3.64553034e-06 5.41291234e-10-2.89684421e-14    2
+-2.26456875e+04-6.01294613e+00 2.50569534e+00 1.33699067e-02 4.67195332e-06    3
+-1.12814007e-08 4.26356606e-12-2.12458867e+04 1.33508873e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20607201 methylcarboxy-radical methylcarboxy-radical
+CH3CO2  CH3CO2  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CO2                  C   2H   3O   2    0G   300.000  5000.0001395.000      1
+ 8.54059696e+00 8.32951255e-03-2.84722000e-06 4.41927189e-10-2.56373393e-14    2
+-2.97290684e+04-2.03883553e+01 1.37440765e+00 2.49115601e-02-1.74308898e-05    3
+ 6.24799501e-09-9.09516819e-13-2.72330156e+04 1.81405449e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10708201 ethanoic-acid ethanoic-acid
+CH3COOH  CH3COOH  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3COOH                 C   2H   4O   2    0G   300.000  5000.000   0.000      1
+ 8.01156223e-01 1.28463507e-02-4.86384761e-06 8.02975020e-10-4.82346232e-14    2
+-5.58711231e-01-1.73259124e-01 1.20575242e-01 2.21008472e-02 2.35463358e-06    3
+-1.60491815e-08 7.13682325e-12-5.33226848e-01 2.06443474e-01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20708201 methylperoxyacyl-radical methylperoxyacyl-radical
+CH3CO3  CH3CO3  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CO3                  C   2H   4O   3    0G   300.000  5000.0001391.000      1
+ 1.25060482e+01 9.47789662e-03-3.30402236e-06 5.19630783e-10-3.04233567e-14    2
+-4.59856719e+04-3.79195938e+01 2.24135876e+00 3.37963514e-02-2.53887483e-05    3
+ 9.67583613e-09-1.49266157e-12-4.24677812e+04 1.70668125e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10809201 peroxyethanoic-acid peroxyethanoic-acid
+CH3CO3H  CH3CO3H  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CO3H                 C   2H   4O   3    0G   300.000  5000.0001000.000      1
+ 7.87651014e+00 1.42400004e-02-4.81648021e-06 7.62395980e-10-4.65513993e-14    2
+-4.39851016e+04-9.71105003e+00 2.19568998e-01 3.53130996e-02-2.24275991e-05    3
+ 3.22888005e-09 1.67242999e-12-4.19548008e+04 2.96616993e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20809201 hydroperoxyethanyl-radical hydroperoxyethanyl-radical
+C2H4O2H  C2H4O2H  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+C2H4O2H                 C   2H   5O   2    0G   300.000  5000.0001000.000      1
+ 1.19638996e+01 6.99398015e-03-1.39221004e-06 1.46300999e-10-6.56315009e-15    2
+-1.64410004e+02-3.25611000e+01 9.12805021e-01 4.29305993e-02-5.09704987e-05    3
+ 3.45646995e-08-9.73010995e-12 2.78459009e+03 2.35877991e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10506201 diformyl diformyl
+CHOCHO  CHOCHO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CHOCHO                  c   2h   2o   2    0G   300.000  5000.0001396.000      1
+ 9.75438595e+00 4.97645931e-03-1.74410479e-06 2.75586998e-10-1.61969894e-14    2
+-2.95832896e+00-2.48038363e+00 1.88105118e+00 2.36386359e-02-1.83443299e-05    3
+ 6.84842982e-09-9.92733673e-13-2.69280195e+00 1.72994757e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20506202 ethanoyl-radical ethanoyl-radical
+CH3CO  CH3CO  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3CO                   C   2H   3O   1    0G   300.000  5000.0001000.000      1
+ 5.17844009e+00 8.15191958e-03-2.10111011e-06 2.71446005e-10-1.42896999e-14    2
+-5.94327002e+03-2.17361003e-01 3.78076005e+00 5.97858010e-03 8.17510045e-06    3
+-8.25542035e-09 1.81653997e-12-5.11877002e+03 8.85731030e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10910201 dimethylperoxide dimethylperoxide
+CH3O2CH3  CH3O2CH3  SourceREACT C2HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2CH3                C   2H   6O   2    0G   300.000  5000.0001387.000      1
+ 1.19434137e+01 1.25318011e-02-4.36306664e-06 6.85475454e-10-4.01001017e-14    2
+-2.60583594e+04-3.61824074e+01 9.19554234e-01 3.86243351e-02-2.86589802e-05    3
+ 1.13083374e-08-1.86975413e-12-2.22070723e+04 2.29982357e+01                   4
+END

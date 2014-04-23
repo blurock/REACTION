@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Rxn
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "Rxn".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     Rxn Package
+@section  The "Rxn" Package
+@cindex   package, Rxn
+@cindex   Rxn package
+@cindex   rxn namespace
+@cindex   namespaces, rxn
+
+@table @strong
+@item Package name
+@code{Rxn}
+
+@item Namespace name
+@code{rxn}
+
+@item Header files
+@file{Rxn.hh}, @file{RxnType.hh}
+@end table
+
+
+@include Rxn/Overview.texi
+
+@include Rxn/Classes.texi

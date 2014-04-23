@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList  KeyWords
+ToMove            KeySet
+StoreMoleculeProperty StoreMoleculeProperty
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

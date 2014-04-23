@@ -1,0 +1,448 @@
+C4ket-Molecules  =====================A Set of Carbon molecules==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Instances:  C4 Ketone Molecules
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-1-butanal 1-hydroperoxy-1-butanal molecule
+c3h7coo2h
+c3h7coo2h
+%% Molecule classes
+ROOH Ketone C4-Molecule END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket12
+c3h7coo2h  8/ 0/ 95 thermc   4h   8o   3    0g   300.000  5000.000 1391.00    51
+ 2.01740406e+01 1.76170467e-02-6.16102133e-06 9.70914937e-10-5.69215162e-14    2
+-4.57281341e+04-7.47242429e+01 6.02898088e-01 6.66368471e-02-5.44143361e-05    3
+ 2.30567327e-08-3.98160341e-12-3.92218536e+04 2.92822185e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-hydroperoxy-1-butanal 2-hydroperoxy-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5cho2hcho
+c2h5cho2hcho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket12
+ c2h5cho2hcho      thermc   4h   8o   3    0g   300.000  5000.000 1391.00     51
+ 2.01740406e+01 1.76170467e-02-6.16102133e-06 9.70914937e-10-5.69215162e-14    2
+-4.57281341e+04-7.47242429e+01 6.02898088e-01 6.66368471e-02-5.44143361e-05    3
+ 2.30567327e-08-3.98160341e-12-3.92218536e+04 2.92822185e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-hydroperoxy-1-butanal 3-hydroperoxy-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3cho2hch2cho
+ch3cho2hch2cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket13
+ch3cho2hch2cho     thermc   4h   8o   3    0g   300.000  5000.000 1388.00     51
+ 1.95956315e+01 1.80568312e-02-6.29994700e-06 9.91157547e-10-5.80382406e-14    2
+-4.61056387e+04-7.09341439e+01 2.43440296e+00 6.05409309e-02-4.81250984e-05    3
+ 2.03656751e-08-3.57059537e-12-4.02872220e+04 2.05488821e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-hydroperoxy-1-butanal 4-hydroperoxy-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch2o2hch2ch2cho
+ch2o2hch2ch2cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using C3H6O
+ch2o2hch2ch2cho    thermc   4h   8o   3    0g   300.000  5000.000 1384.00     51
+ 1.89910849e+01 1.86043986e-02-6.49667247e-06 1.02270513e-09-5.99098791e-14    2
+-4.37670775e+04-6.66487177e+01 3.06032585e+00 5.57190394e-02-4.05846370e-05    3
+ 1.58024015e-08-2.60096812e-12-3.81182868e+04 1.91250328e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-hydroperoxy-2-butanone 1-hydroperoxy-2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5coch2o2h
+c2h5coch2o2h
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket21
+c2h5coch2o2h thermc   4h   8o   3    0g   300.000  5000.000 1379.00     51
+ 1.85808386e+01 1.90555811e-02-6.67530026e-06 1.05300095e-09-6.17720935e-14    2
+-4.66179210e+04-6.49236796e+01 4.35235851e+00 5.04498161e-02-3.40946262e-05    3
+ 1.25618397e-08-2.02591620e-12-4.13250415e+04 1.24294166e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-hydroperoxy-2-butanone 3-hydroperoxy-2-butanone molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5cho2hcoch3
+c2h5cho2hcoch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket23
+c2h5cho2hcoch3     thermc   4h   8o   3    0g   300.000  5000.000 1389.00     51
+ 1.99059014e+01 1.79207845e-02-6.28322129e-06 9.91852620e-10-5.82175499e-14    2
+-4.94903624e+04-7.39871452e+01 1.22697495e-01 6.68046814e-02-5.37217127e-05    3
+ 2.24284036e-08-3.82975514e-12-4.28404617e+04 3.13940685e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-hydroperoxy-2-butanal 4-hydroperoxy-2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch2o2hch2coch3
+ch2o2hch2coch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc4ket24
+ch2o2hch2coch3     thermc   4h   8o   3    0g   300.000  5000.000 1383.00     51
+ 1.87247744e+01 1.89083707e-02-6.61938315e-06 1.04376998e-09-6.12153197e-14    2
+-4.75295516e+04-6.59154138e+01 2.62138177e+00 5.57305761e-02-3.96792464e-05    3
+ 1.50523640e-08-2.42411738e-12-4.17438996e+04 2.10450217e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,2-dibutanal 1,2-dibutanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+diketb12
+diketb12
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using diketb13
+diketb13                 H   6C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.24039917e+01-1.67544156e-01 1.69077553e-04-7.07765508e-08 1.04297621e-11    2
+-6.27897461e+04-4.08948975e+02-1.50374250e+01 1.61366642e-01-3.35367862e-04    3
+ 3.41149956e-07-1.28520181e-10-3.68468945e+04 8.48930435e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,3-dibutanal 1,3-dibutanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+diketb13
+diketb13
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using diketb13  
+diketb13                H   6C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.24039917e+01-1.67544156e-01 1.69077553e-04-7.07765508e-08 1.04297621e-11    2
+-6.27897461e+04-4.08948975e+02-1.50374250e+01 1.61366642e-01-3.35367862e-04    3
+ 3.41149956e-07-1.28520181e-10-3.68468945e+04 8.48930435e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,4-dibutanal 1,4-dibutanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+diketb14
+diketb14
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using diketb13
+diketb14                H   6C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.24039917e+01-1.67544156e-01 1.69077553e-04-7.07765508e-08 1.04297621e-11    2
+-6.27897461e+04-4.08948975e+02-1.50374250e+01 1.61366642e-01-3.35367862e-04    3
+ 3.41149956e-07-1.28520181e-10-3.68468945e+04 8.48930435e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2,3-dibutanal 2,3-dibutanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+diketb23
+diketb23
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using diketb13
+diketb23                 H   6C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.24039917e+01-1.67544156e-01 1.69077553e-04-7.07765508e-08 1.04297621e-11    2
+-6.27897461e+04-4.08948975e+02-1.50374250e+01 1.61366642e-01-3.35367862e-04    3
+ 3.41149956e-07-1.28520181e-10-3.68468945e+04 8.48930435e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-yl-1-butanal 1-yl-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+n-c3h7co
+n-c3h7co
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Westbrook (heptane) Estimate using nc3h7co
+nc3h7co    9/27/95 thermc   4h   7o   1    0g   300.000  5000.000 1380.00     31
+ 1.30026331e+01 1.63104877e-02-5.57642899e-06 8.65670629e-10-5.02255667e-14    2
+-1.25523385e+04-4.02608515e+01 2.67256826e+00 3.71198825e-02-2.06862859e-05    3
+ 5.48873888e-09-5.35864183e-13-8.58050888e+03 1.64848950e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-yl-1-butanal 2-yl-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3ch2chcho
+ch3ch2chcho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; Westbrook (heptane) NASA ; Estimate using C3H6O
+ch3ch2chcho             c   4h   7o   1    0g   300.000  5000.000 1387.000    31
+ 1.34301738e+01 1.62250792e-02-5.60631713e-06 8.76356273e-10-5.10864241e-14    2
+-1.13561098e+04-4.47371262e+01 1.35168659e+00 4.23714083e-02-2.69123192e-05    3
+ 8.70132567e-09-1.15287455e-12-6.91166610e+03 2.09381509e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      3-yl-1-butanal 3-yl-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3chch2cho
+ch3chch2cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using c3h6cho-3
+ch3chch2cho             c   4h   7o   1    0g   300.000  5000.000 1682.000    31
+ 1.11942816e+01 1.81806772e-02-6.35916662e-06 1.00727333e-09-5.93943618e-14    2
+-6.86826460e+03-2.80298956e+01 2.95067531e+00 3.34223079e-02-1.45356815e-05    3
+ 1.67282048e-09 2.62011555e-13-3.79034324e+03 1.74324072e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      4-yl-1-butanal 4-yl-1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch2ch2ch2cho
+ch2ch2ch2cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using c3h6cho-1
+ch2ch2ch2cho            c   4h   7o   1    0g   300.000  5000.000 1379.000    31
+ 1.30322954e+01 1.62418373e-02-5.54388124e-06 8.59723685e-10-4.98459726e-14    2
+-6.45915975e+03-3.92399021e+01 2.67672303e+00 3.73064128e-02-2.11281405e-05    3
+ 5.80472681e-09-6.09688236e-13-2.49714183e+03 1.75750933e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Instance: 1      1-yl-2-butanone 1-yl-2-butanone molecule
+Instance: 1      1-yl-2-butanal 1-yl-2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5coch2
+c2h5coch2
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+c2h5coch2  6/22/95      c   4h   7o   1    0g   300.000  5000.000 1380.00     31
+ 1.24694368e+01 1.71022143e-02-5.92156726e-06 9.26816806e-10-5.40730504e-14    2
+-1.32581060e+04-3.69081191e+01 2.40255609e+00 3.67294268e-02-1.97316510e-05    3
+ 5.07323216e-09-4.99655275e-13-9.27035071e+03 1.87098570e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Instance: 1      3-yl-2-butanone 3-yl-2-butanone molecule
+Instance: 1      3-yl-2-butanal 3-yl-2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3chcoch3
+ch3chcoch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+ch3chcoch3 6/22/95      c   4h   7o   1    0g   300.000  5000.000 1685.00     31
+ 1.07613637e+01 1.87333351e-02-6.59368444e-06 1.04870721e-09-6.20096742e-14    2
+-1.51823516e+04-2.63491544e+01 2.49798069e+00 3.35071700e-02-1.38163705e-05    3
+ 1.10802778e-09 3.83650093e-13-1.20439071e+04 1.94105896e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Instance: 1      4-yl-2-butanone 4-yl-2-butanone molecule
+Instance: 1      4-yl-2-butanal 4-yl-2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch2ch2coch3
+ch2ch2coch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+ch2ch2coch3 6/21/95 therc   4h   7o   1    0g   300.000  5000.000 1380.00     31
+ 1.24694368e+01 1.71022143e-02-5.92156726e-06 9.26816806e-10-5.40730504e-14    2
+-1.01378242e+04-3.62186375e+01 2.40255609e+00 3.67294268e-02-1.97316510e-05    3
+ 5.07323216e-09-4.99655275e-13-6.15006886e+03 1.93993386e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butanal 1-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+n-c3h7cho
+n-c3h7cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+n-c3h7cho  9/27/95 thermc   4h   8o   1    0g   300.000  5000.000 1378.00     31
+ 1.35988068e+01 1.81652474e-02-6.17844458e-06 9.55980208e-10-5.53442958e-14    2
+-3.15845348e+04-4.51790228e+01 1.87415959e+00 4.19240315e-02-2.35148779e-05    3
+ 6.26913673e-09-6.09443908e-13-2.71032194e+04 1.91568574e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-butanal 2-butanal molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5coch3
+c2h5coch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+c2h5coch3  6/19/95 thermc   4h   8o   1    0g   300.000  5000.000 1466.00     31
+ 1.81450718e+01 1.57522701e-02-5.67272532e-06 9.11569266e-10-5.41719472e-14    2
+-3.50447157e+04-5.39091522e+01 2.65229585e+00 3.66061120e-02-4.75754779e-06    3
+-9.64468834e-09 3.45604903e-12-2.82667526e+04 3.45156480e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,2-dibutanal-1-yl 1,2-dibutanal-1-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+12diket1r
+12diket1r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 13diket1r  
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,2-dibutanal-3-yl 1,2-dibutanal-3-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+12diket3r
+12diket3r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 13diket1r
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,2-dibutanal-4-yl 1,2-dibutanal-4-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+12diket4r
+12diket4r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 13diket1r
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,3-dibutanal-1-yl 1,3-dibutanal-1-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+13diket1r
+13diket1r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,3-dibutanal-2-yl 1,3-dibutanal-2-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+13diket2r
+13diket2r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 13diket1r
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,3-dibutanal-4-yl 1,3-dibutanal-4-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+13diket4r
+13diket4r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 13diket1r 
+13diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 5.41304359e+01-1.06045850e-01 1.08263550e-04-4.59113991e-08 6.81332725e-12    2
+-5.17326055e+04-2.62659515e+02-6.63413811e+00 9.49771404e-02-1.98176072e-04    3
+ 2.06959328e-07-7.98755367e-11-3.52128945e+04 4.66661034e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,4-dibutanal-1-yl 1,4-dibutanal-1-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+14diket1r
+14diket1r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using C3H6O
+14diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.59624329e+01-1.74283847e-01 1.76080328e-04-7.38073780e-08 1.08863396e-11    2
+-6.15228750e+04-4.18442505e+02-1.28739166e+01 1.54142082e-01-3.23465036e-04    3
+ 3.35355509e-07-1.28319563e-10-3.48339102e+04 8.40554123e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,4-dibutanal-2-yl 1,4-dibutanal-2-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+14diket2r
+14diket2r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 14diket1r 
+14diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.59624329e+01-1.74283847e-01 1.76080328e-04-7.38073780e-08 1.08863396e-11    2
+-6.15228750e+04-4.18442505e+02-1.28739166e+01 1.54142082e-01-3.23465036e-04    3
+ 3.35355509e-07-1.28319563e-10-3.48339102e+04 8.40554123e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1,4-dibutanal-3-yl 1,4-dibutanal-3-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+14diket3r
+14diket3r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 14diket1r
+14diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.59624329e+01-1.74283847e-01 1.76080328e-04-7.38073780e-08 1.08863396e-11    2
+-6.15228750e+04-4.18442505e+02-1.28739166e+01 1.54142082e-01-3.23465036e-04    3
+ 3.35355509e-07-1.28319563e-10-3.48339102e+04 8.40554123e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2,3-dibutanal-1-yl 2,3-dibutanal-1-yl molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+23diket1r
+23diket1r
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using 14diket1r
+14diket1r               H   5C   4O   2    0G   298.000  1500.0001000.000      1
+ 8.59624329e+01-1.74283847e-01 1.76080328e-04-7.38073780e-08 1.08863396e-11    2
+-6.15228750e+04-4.18442505e+02-1.28739166e+01 1.54142082e-01-3.23465036e-04    3
+ 3.35355509e-07-1.28319563e-10-3.48339102e+04 8.40554123e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butanal-1-ene 1-butanal-1-ene molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h5chco
+c2h5chco
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using c2h5chco
+c2h5chco   9/27/95 thermc   4h   6o   1    0g   300.000  5000.000 1400.00     21
+ 1.34100537e+01 1.38766678e-02-4.74130143e-06 7.35504188e-10-4.26457752e-14    2
+-1.83790837e+04-4.45295352e+01 2.76600655e-01 4.82966593e-02-4.02376928e-05    3
+ 1.76564254e-08-3.14365357e-12-1.41717351e+04 2.47118671e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butanal-2-ene 1-butanal-2-ene molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch3chchcho
+ch3chchcho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using ac3h5cho
+HCOC3H52   2/29/96 thermc   4h   6o   1    0g   300.000  5000.000 1390.000    21
+ 1.22811161e+01 1.50167397e-02-5.17605303e-06 8.07796972e-10-4.70379360e-14    2
+-1.50985283e+04-3.72055710e+01 1.59653121e-01 4.25761347e-02-2.91900593e-05    3
+ 1.04044255e-08-1.53682904e-12-1.07859656e+04 2.82087323e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      1-butanal-3-ene 1-butanal-3-ene molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+ch2chch2cho
+ch2chch2cho
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using ac3h5cho
+ch2chch2cho        thermc   4h   6o   1    0g   300.000  5000.000 1390.000    21
+ 1.22811161e+01 1.50167397e-02-5.17605303e-06 8.07796972e-10-4.70379360e-14    2
+-1.50985283e+04-3.72055710e+01 1.59653121e-01 4.25761347e-02-2.91900593e-05    3
+ 1.04044255e-08-1.53682904e-12-1.07859656e+04 2.82087323e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 1      2-butanal-3-ene 2-butanal-3-ene molecule
+%% Lumped molecule (for Short Name and Chemkin Name)
+c2h3coch3
+c2h3coch3
+%% Molecule classes
+Ketone C4-Molecule
+END
+NASA Polynomials ; NASA ; Estimate using c2h3coch3
+c2h3coch3  6/19/95 thermc   4h   6o   1    0g   300.000  5000.000 1386.00     21
+ 1.25571995e+01 1.49672645e-02-5.20015351e-06 8.15864365e-10-4.76824406e-14    2
+-2.14622958e+04-4.01434299e+01 2.45578501e-01 4.26432049e-02-2.91126822e-05    3
+ 1.03478392e-08-1.53551381e-12-1.70305379e+04 2.64430799e+01                   4
+END

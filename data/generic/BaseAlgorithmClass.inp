@@ -1,0 +1,84 @@
+ObjectClasses:
+DataType: AlgorithmRun  Goal run class for ANALYSIS algorithms
+BaseAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+InstanceAlgs Initial
+             Algorithms Initial#InstanceAlgs
+                        InstanceReadASCIIAlg  Initial#InstanceAlgs#Algorithms Read
+                        InstanceInstancesAlg  Initial#InstanceAlgs#Algorithms Instances
+                        InstanceAttributesAlg Initial#InstanceAlgs#Algorithms Attributes
+                        InstanceMatrixAlg     Initial#InstanceAlgs#Algorithms Matrix
+                        MatrixGraphOutput     Initial#InstanceAlgs#Algorithms Report
+                        ReadMatrix            Initial#InstanceAlgs#Algorithms MatrixRead
+                        MatrixToInstances     Initial#InstanceAlgs#Algorithms InstancesFromMatrix
+VariableGen Initial
+       Algorithms Initial#VariableGen
+            ExpressionAlgorithm Initial#VariableGen#Algorithms Expression
+StatisticsAlgs Initial
+       Distribution Initial#StatisticsAlgs
+            DistributionAlgorithm Initial#StatisticsAlgs#Distribution Calculate
+            NormalizeOpFromDistribution Initial#StatisticsAlgs#Distribution NormalizationOps
+PartitionAlgs Initial
+     PredGen Initial#PartitionAlgs
+         CrPnts Initial#PartitionAlgs#PredGen
+             ReadCriticalPoints           Initial#PartitionAlgs#PredGen#CrPnts Read
+             PartitionsFromCriticalPoints Initial#PartitionAlgs#PredGen#CrPnts Partitions
+DecisionTreeAlgs Initial
+       1-TreeAlg           Initial#DecisionTreeAlgs
+                DecisionTreeCreate       Initial#DecisionTreeAlgs#1-TreeAlg           Create
+       2-SelectAlg          Initial#DecisionTreeAlgs
+                EntropySelectPredicate   Initial#DecisionTreeAlgs#2-SelectAlg         SimpleSelect
+       3-EntropyAlg Initial#DecisionTreeAlgs
+                EntropyAlgorithm         Initial#DecisionTreeAlgs#3-EntropyAlg        Entropy
+       4-Filter Initial#DecisionTreeAlgs
+                FilterDecisionTreeNode   Initial#DecisionTreeAlgs#4-Filter            Filter
+ClusterAlgs Initial
+    CobwebTreeAlg Initial#ClusterAlgs
+       A-CowebCreate                  Initial#ClusterAlgs#CobwebTreeAlg
+                        CobwebClusterTreeCreate  Initial#ClusterAlgs#CobwebTreeAlg#A-CowebCreate Create
+                        CobwebClusterTree        Initial#ClusterAlgs#CobwebTreeAlg#A-CowebCreate Test
+       B-DescriptionMat           Initial#ClusterAlgs#CobwebTreeAlg
+                        DescriptionMatrixSetUp   Initial#ClusterAlgs#CobwebTreeAlg#B-DescriptionMat Matrix
+       C-Cluster                  Initial#ClusterAlgs#CobwebTreeAlg
+                        CobwebBestGroup          Initial#ClusterAlgs#CobwebTreeAlg#C-Cluster        Cobweb
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Expression                             AlgorithmSummary
+ReadInstancesAlg                       AlgorithmSummary
+InstanceSetUpAlg                       AlgorithmSummary
+AllAttributesSetUpAlg                  AlgorithmSummary
+AttributeSetUpAlg                      AlgorithmSummary
+AttributeByTypeAlg                     AlgorithmSummary
+AttributeByNameAlg                     AlgorithmSummary
+MatrixSetUpAlg                         AlgorithmSummary
+MatrixPlotAlg                          AlgorithmSummary
+MatrixReadAlg                          AlgorithmSummary
+MatrixToInstancesAlg                   AlgorithmSummary
+DecisionTreeAlg                        AlgorithmSummary
+CobwebClusterAlg                       AlgorithmSummary
+CobwebClusterTestAlg                   AlgorithmSummary
+ExpressionTreeAlg                      AlgorithmSummary
+DistributionAlg                        AlgorithmSummary
+PCAVarGenAlg                           AlgorithmSummary
+PCAAlg                                 AlgorithmSummary
+DecisionTreeFilter                     AlgorithmSummary
+InstanceListFromPredicate              AlgorithmSummary
+MatrixPlotAlg                          AlgorithmSummary
+ClusterSetsAlg                         AlgorithmSummary
+FindConsecutive                        AlgorithmSummary
+SortInstances                          AlgorithmSummary
+NumericProperties                      AlgorithmSummary
+NormalizeFromDistAlg                   AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

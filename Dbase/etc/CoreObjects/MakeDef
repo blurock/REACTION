@@ -1,0 +1,24 @@
+# FILE     MakeDef
+# PACKAGE  Dbase
+# AUTHOR   Edward S. Blurock
+#
+# CONTENT
+#   GNU Makefile containing standard definitions for makefiles used in the
+#   STURM package "Dbase".  This file is intended for inclusion in other
+#   makefiles.
+#
+#   The variable `PackageRoot' must give the absolute path to the root of
+#   the package working directory tree.
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+include $(CodeBaseRoot)/etc/CoreObjects/MakeDef
+
+
+#V Package specific variable definitions.
+
+DevelopmentRoot = $(PackageRoot)/..
+CPPFLAGS += -g -I$(PackageRoot)/include/CoreObjects  -I$(PackageRoot)/include/Basis
+LDFLAGS  += -L$(PackageRoot)/lib
+LDLIBS   := -lDbase $(LDLIBS)

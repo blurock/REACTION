@@ -1,0 +1,27 @@
+Literature Test for the Literature references
+Attributes:
+%% --------------------------------------------
+%% UnitConversions StandardUnitConversions
+%% --------------------------------------------
+StandardUnits:
+%% ------------------------
+ Meter
+   MilliMeter  0.0  1000.0
+   CentiMeter  0.0  100.0
+   KiloMeter   0.0  0.001
+   END
+%% ------------------------
+Calorie
+   KiloCalorie    0.0 0.001
+   END
+%% ------------------------
+END
+PropertyConversions:
+Entropy  Numerator:   Meter    Denominator:  KiloCalorie   END
+END
+
+END
+%% --------------------------------------------
+%% No Instances
+%% --------------------------------------------
+END

@@ -1,0 +1,48 @@
+C2H+O=CO+CH                     ethynyl-radical oxygen-atom             = carbonmonoxide methylyne
+C2H+O2=HCCO+O                   ethynyl-radical oxygen                  = allenal-radical oxygen-atom
+HCCO+H=3-CH2+CO                 allenal-radical hydrogen-radical        = ethynyl-radical carbonmonoxide
+HCCO+O=CO+CO+H                  allenal-radical oxygen-atom             = carbonmonoxide carbonmonoxide hydrogen-radical
+HCCO+O2=HCO+CO2                 allenal-radical oxygen                  = formyl-radical carbondioxide
+HCCO+3-CH2=C2H3+CO              allenal-radical triplet-methylene       = ethenyl-radical carbonmonoxide
+3-CH2+3-CH2=C2H2+H2             triplet-methylene triplet-methylene     = ethyne hydrogen
+C2H2=C2H+H                      ethyne                                  = ethynyl-radical hydrogen-radical
+C2H2+H=C2H+H2                   ethyne hydrogen-radical                 = ethynyl-radical hydrogen
+C2H2+O=3-CH2+CO                 ethyne oxygen-atom                      = triplet-methylene carbonmonoxide
+C2H2+O=HCCO+H                   ethyne oxygen-atom                      = allenal-radical hydrogen-radical
+C2H2+O2=HCCO+OH                 ethyne oxygen                           = allenal-radical hydroxyl-radical
+CH2CO=3-CH2+CO                  allenal                                 = triplet-methylene carbonmonoxide
+CH2CO+H=CH3+CO                  allenal hydrogen-radical                = methyl-radical carbonmonoxide
+CH2CO+O=HCO+HCO                 allenal oxygen-atom                     = formyl-radical formyl-radical 
+C2H3=C2H2+H                     ethenyl-radical                         = ethyne hydrogen-radical
+C2H3+O=C2H2+OH                  ethenyl-radical oxygen-atom             = ethyne hydroxyl-radical
+C2H3+OH=C2H2+H2O                ethenyl-radical hydroxyl-radical        = ethyne water
+C2H3+O=CH3+CO                   ethenyl-radical oxygen-atom             = methyl-radical carbonmonoxide
+C2H3+O=HCO+3-CH2                ethenyl-radical oxygen-atom             = formyl-radical triplet-methylene 
+C2H3+O2=C2H2+HO2                ethenyl-radical oxygen                  = ethyne peroxyl-radical
+C2H3+O2=CH2O+HCO                ethenyl-radical oxygen                  = aldehyde formyl-radical
+%%% C2H3+O2=CH2CHOO                 ethenyl-radical oxygen                  = peroxyethene
+CH2CHOO=OCH2CHO                 peroxyethene                            = oxyethanal
+CH2CHOO=CH2CHO+O                peroxyethene                            = 2-yl-ethanal oxygen-atom
+CH2CHOO=C2H2+HO2                peroxyethene                            = ethyne peroxyl-radical
+OCH2CHO=CH2O+HCO                oxyethanal                              = aldehyde formyl-radical
+OCH2CHO=OCHCHO+H                oxyethanal                              = diformyl hydrogen-radical
+OCHCHO=HCO+HCO                  diformyl                                = formyl-radical formyl-radical
+OCHCHO+H=CH2O+HCO               diformyl hydrogen-radical               = aldehyde formyl-radical
+C2H3+O2=CH3+CO2                 ethenyl-radical oxygen                  = methyl-radical carbondioxide
+CH3CO=CH3+CO                    ethanoyl-radical                        = methyl-radical carbonmonoxide
+CH3CO+H=CH2CO+H2                ethanoyl-radical hydrogen-radical       = allenal hydrogen
+CH3CO+CH3=C2H6+CO               ethanoyl-radical methyl-radical         = ethene carbonmonoxide
+CH3CHO=CH3+HCO                  ethanal                                 = methyl-radical formyl-radical
+CH3CHO+H=CH2CHO+H2              ethanal hydrogen-radical                = 2-yl-ethanal hydrogen
+CH3CHO+O=CH2CHO+OH              ethanal oxygen-atom                     = 2-yl-ethanal hydroxyl-radical
+CH3CHO+3-CH2=CH3CO+CH3          ethanal triplet-methylene               = ethanoyl-radical methyl-radical
+C2H4=C2H2+H2                    ethene                                  = ethyne hydrogen
+C2H4=C2H3+H                     ethene                                  = ethenyl-radical hydrogen-radical
+C2H4+O=CH2CHO+H                 ethene oxygen-atom                      = 2-yl-ethanal hydrogen-radical
+C2H5=C2H4+H                     ethyl-radical                           = ethene hydrogen-radical
+C2H5+C2H5=C2H6+C2H4             ethyl-radical ethyl-radical             = ethane ethene
+C2H5+H=CH3+CH3                  ethyl-radical hydrogen-radical          = methyl-radical methyl-radical
+C2H5+O=CH3CHO+H                 ethyl-radical oxygen-atom               = ethanal hydrogen
+C2H5+O=CH2O+CH3                 ethyl-radical oxygen-atom               = aldehyde methyl-radical
+C2H6+3-CH2=C2H5+CH3             ethane triplet-methylene                = ethyl-radical methyl-radical
+C2H6+CH=C3H6+H                  ethane methylyne                        = propene hydrogen-radical

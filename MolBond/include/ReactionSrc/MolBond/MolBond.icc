@@ -1,0 +1,152 @@
+/*  FILE     MolBond.icc
+**  PACKAGE  MolBond
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    Inline functions for the "MolBond" package.
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C)  REACTION Project, Edward S. Blurock
+*/
+
+/*S Constructors
+*/
+ 
+/*F SimpleConnection()  . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SimpleConnection::SimpleConnection() 
+     {
+     }
+ 
+/*F SimpleConnection(bond)  . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    bond: The bond to be copied
+**
+**  REMARKS
+**
+*/
+inline SimpleConnection::SimpleConnection(const SimpleConnection& bond)
+: BasicPair<int,int>(bond)
+     {
+     }
+/*F SimpleBond()  . . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SimpleBond::SimpleBond() 
+: SimpleConnection(),
+  BondOrder(0)
+     {
+     }
+/*F SimpleBond(bond)  . . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    bond: The bond to be copied
+**
+**  REMARKS
+**
+*/
+inline SimpleBond::SimpleBond(const SimpleBond& bond) 
+  : SimpleConnection(bond)
+{
+	  BondOrder = bond.BondOrder;
+	  }
+/*F SimpleBond(bond)  . . . . . . . . . . . . . . . . . from SimpleConnection
+**
+**  DESCRIPTION
+**    bond: Bond to be copied
+**
+**  REMARKS
+**
+*/
+inline SimpleBond::SimpleBond(const SimpleConnection& bond) 
+: SimpleConnection(bond),
+    BondOrder(0)
+	  {
+	  } 
+/*F MolFileBond() . . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline MolFileBond::MolFileBond() : SimpleBond()
+	  {
+	  }
+ 
+/*F MolFileBond(bond) . . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    bond: The bond
+**
+**  REMARKS
+**
+*/
+inline MolFileBond::MolFileBond(const MolFileBond& bond) 
+: SimpleBond(bond)
+	  {
+	  }
+/*F ReadMolFileBond(file) . . . . . . . . . . . . . . . . . . Setup bond read
+**
+**  DESCRIPTION
+**      file: The input stream
+**
+**  REMARKS
+**
+*/
+inline ReadMolFileBond::ReadMolFileBond(istream& file)
+: File(file)
+	  {
+	  count = 0;
+	  }
+ 
+/*F MoleculeBond()  . . . . . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline MoleculeBond::MoleculeBond() 
+: MolFileBond()
+     {
+     }
+
+ 
+/*F MoleculeBond(bond)  . . . . . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    bond: The bond
+**
+**  REMARKS
+**
+*/
+inline MoleculeBond::MoleculeBond(const MoleculeBond& bond) 
+: MolFileBond(bond),
+Properties(bond.Properties)
+     {
+     }
+ 
+/*F MoleculeBond(bond)  . . . . . . . . . . . . . . . . . .  from MolFileBond
+**
+**  DESCRIPTION
+**    bond: The bond
+**
+**  REMARKS
+**
+*/
+inline MoleculeBond::MoleculeBond(const MolFileBond& bond) 
+: MolFileBond(bond)
+     {
+     }

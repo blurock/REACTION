@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  RxnMech
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "RxnMech".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     RxnMech Package
+@section  The "RxnMech" Package
+@cindex   package, RxnMech
+@cindex   RxnMech package
+@cindex   rmh namespace
+@cindex   namespaces, rmh
+
+@table @strong
+@item Package name
+@code{RxnMech}
+
+@item Namespace name
+@code{rmh}
+
+@item Header files
+@file{RxnMech.hh}, @file{RxnMechType.hh}
+@end table
+
+
+@include RxnMech/Overview.texi
+
+@include RxnMech/Classes.texi

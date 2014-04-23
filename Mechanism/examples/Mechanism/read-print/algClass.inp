@@ -1,0 +1,44 @@
+ObjectClasses:
+DataType: AlgorithmRun  A sample goal run class
+TestAlgorithmSub
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+Utilities    Initial
+       Transfer    Initial#Utilities
+             MoveData   Initial#Utilities#Transfer               MoveIt
+END
+DataType: TestAlgorithmSub  A sample goal run class
+TestAlgorithmRun
+% **********************************************************
+% The Definition of the AlgorithmRunClass
+% **********************************************************
+MechanismUtilities    Initial
+        Output    Initial#MechanismUtilities
+           Choices Initial#MechanismUtilities#Output
+             PrintOutMechanism    Initial#MechanismUtilities#Output#Choices        Print
+             GetGeneratedMechanism    Initial#MechanismUtilities#Output#Choices        InputGenerated
+        Fill      Initial#MechanismUtilities
+             Choices Initial#MechanismUtilities#Fill
+             FillMechanism            Initial#MechanismUtilities#Fill#Choices      FillMechanism
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+StoreSetOfObjectsProperty StoreSetOfObjectsProperty
+MoveIt                         AlgorithmSummary
+PrintMechLaTeX                 AlgorithmSummary
+PrintMechStandardShort         AlgorithmSummary
+PrintMechStandard              AlgorithmSummary
+InputGenerated                 AlgorithmSummary
+FillMechanism                  AlgorithmSummary
+PrintParameters                KeySet
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

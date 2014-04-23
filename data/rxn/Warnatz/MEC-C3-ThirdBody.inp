@@ -1,0 +1,9 @@
+MaussWarnatz 1 ================= Mauss/Warnatz Mechanism: C3 Third Body Reactions
+Attributes:
+Instance: 1 C3H4P=C3H3+H   propyne = 3-propynyl hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 1.000E+17    0.0     293.0
+Instance: 1 C3H4+M=C3H3+H+M    allene  = 3-propynyl hydrogen-radical
+Warnatz.Maas.Dibble.96 Combustion, Physical and Chemical Fundamentals ; Warnatz, J. Maas, U. and Dibble, R.W. ; page 67 
+ 1.000E+17    0.0     293.0
+END

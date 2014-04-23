@@ -1,0 +1,14 @@
+ObjectClasses:
+END
+ClassNamePairs:
+InstanceNameList          KeyWords
+ToMove                    KeySet
+StoreSetOfObjectsProperty StoreSetOfObjectsProperty
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

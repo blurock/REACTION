@@ -1,0 +1,12 @@
+ObjectClasses:
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+Baulch    StandardReactionRates
+END
+%% -------------------------------------------------

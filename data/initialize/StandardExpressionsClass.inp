@@ -1,0 +1,59 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Power Function
+Power PowerODReal
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Gaussian Function
+Gaussian GaussianODReal
+%% -------------------------------------------------
+DataType: RealFunctionParameterized   A Line Function
+Line LinearODReal
+%%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SimpleExpression
++    NumOpPlus
+-    NumOpMinus
+*    NumOpMultiply
+/    NumOpDivide
+AND            LogicalAND
+OR             LogicalOR
+NOT            LogicalNOT
+END
+%% -------------------------------------------------
+DataType: SimpleExpression  A Numeric Tree
+IntrinsicExpression
+ToLogic        RealToLogic
+ToReal         LogicToReal
+Set                       ParameterSetOperation
+Do                        DoOperation
+Compare                   LogicalDescriptionCompare
+Substitute                ParametersInFunction
+Extract                   ParameterExtract
+Vector                    FormVector
+Power                     Power
+Gaussian                  Gaussian
+Line                      Line
+GreaterThanZero           FuzzyPredicate
+LessThanZero              FuzzyPredicate
+EqualToZero               FuzzyPredicate
+%%% GenericPredicate          PyramidPredicate
+END
+ODReal -Infinity T +Infinity T PowerODReal 0.0
+ODReal -Infinity T +Infinity T GaussianODReal 0.0 0.0 0.0
+ODReal -Infinity T +Infinity T LinearODReal 0.0 0.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 1.0  -1.0 1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 1.0 1.0 0.0  -1.0 -1.0 1.0
+ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  -1.0 0.0 1.0
+%%%ODReal -Infinity T +Infinity T PyramidODReal 0.0 1.0 0.0  -1.0 0.0 1.0
+%% -------------------------------------------------
+DataType: ParameterizedExpression    A new numeric parameterized function
+ParameterizedIntrinsicExpression    ParameterSet IntrinsicExpression Object 
+END
+END
+ClassNamePairs:
+END
+ObjectClasses:
+END
+ClassNamePairs:
+END
+END

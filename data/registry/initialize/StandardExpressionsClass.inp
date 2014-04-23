@@ -1,0 +1,20 @@
+ObjectClasses:
+%%% -------------------------------------------------
+DataType: ExpressionTree  A Numeric Tree
+SimpleExpression
+%% -------------------------------------------------
+DataType: SimpleExpression  A Numeric Tree
+IntrinsicExpression
+%% -------------------------------------------------
+DataType: ParameterizedFunction     A new numeric parameterized function
+ParameterizedIntrinsicExpression    ParameterSet IntrinsicExpression Object 
+END
+ClassNamePairs:
+END
+%% -------------------------------------------------
+%%% ObjectClasses:
+%%% END
+%% -------------------------------------------------
+%%% ClassNamePairs:
+%%% END
+%% -------------------------------------------------

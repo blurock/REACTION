@@ -1,0 +1,37 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: BaseAlgorithmRun  Molecule Algorithms
+MoleculeAlgorithmRun
+% **********************************************************
+% The Definition of the GoalRunClass
+% **********************************************************
+%
+% ----------------------------------------------------------
+Utilities    Initial
+       Transfer    Initial#Utilities
+             MoveData   Initial#Utilities#Transfer               MoveIt
+ChargeAlgs Initial
+           Algorithms Initial#ChargeAlgs
+                      EletronegativityAlgorithm Initial#ChargeAlgs#Algorithms Charge
+ThermoProps Initial
+       Algorithms Initial#ThermoProps
+            ThermoValuesAlgorithm Initial#ThermoProps#Algorithms ThermoValues
+       Chemkin    Initial#ThermoProps
+            ConvertToChemkin Initial#ThermoProps#Chemkin         ChemkinValue
+END
+%% -------------------------------------------------
+END
+%% -------------------------------------------------
+ClassNamePairs:
+ComputeSemiEmpirical           AlgorithmSummary
+ThermoMatrix                   AlgorithmSummary
+ChemkinConversion              AlgorithmSummary
+MoveIt                         AlgorithmSummary
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

@@ -1,0 +1,132 @@
+
+/*F ans = Encode(buffer,series) . . . . . . . . . . . . . . . . CpPowerSeries
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    series: The power series
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Encode(CommBuffer& buffer, CpPowerSeries& series)
+     {
+     return series.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,series) . . . . . . . . . . . . . . . . CpPowerSeries
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    series: The power series
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Decode(CommBuffer& buffer, CpPowerSeries& series)
+     {
+     return series.DecodeThis(buffer);
+     }
+/*F ans = Encode(buffer,thm)  . . . . . . . . . . . .  ChemkinBaseTableObject
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    thm: The CHEMKIN constants
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Encode(CommBuffer& buffer, ChemkinBaseTableObject& thm)
+     {
+     return thm.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,thm)  . . . . . . . . . . . .  ChemkinBaseTableObject
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    thm: The CHEMKIN constants
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Decode(CommBuffer& buffer, ChemkinBaseTableObject& thm)
+     {
+     return thm.DecodeThis(buffer);
+     }     
+/*F ans = Encode(buffer,benson) . . . . . . . . . . . . BensonBaseTableObject
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    benson: The Benson Table
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Encode(CommBuffer& buffer, BensonBaseTableObject& benson)
+     {
+     return benson.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,benson) . . . . . . . . . . . . BensonBaseTableObject
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    benson: The Benson Table
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+bool Decode(CommBuffer& buffer, BensonBaseTableObject& benson)
+     {
+     return benson.DecodeThis(buffer);
+     }
+ 
+/*F operator<<(stream,obj)  . . . . . . . . . . . . . .  BensonBaseTableObjec
+**
+**  DESCRIPTION
+**    stream:
+**    obj: 
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const BensonBaseTableObject& obj)
+{
+  return obj.print(stream);
+}
+/*F operator<<(stream,obj)  . . . . . . . . . . . . . .  BensonBaseTableObjec
+**
+**  DESCRIPTION
+**    stream:
+**    obj: 
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const ChemkinBaseTableObject& obj)
+{
+  return obj.print(stream);
+}
+/*F operator<<(stream,obj)  . . . . . . . . . . . . . .  BensonBaseTableObjec
+**
+**  DESCRIPTION
+**    stream:
+**    obj: 
+**  REMARKS
+**
+*/
+ostream& operator<<(ostream &stream, const CpPowerSeries& obj)
+{
+  return obj.print(stream);
+}
+ostream& operator<<(ostream &stream, const BensonBaseTableObject& obj);
+ostream& operator<<(ostream &stream, const ChemkinBaseTableObject& obj);
+ostream& operator<<(ostream &stream, const CpPowerSeries& obj);
+bool Encode(class CommBuffer& buffer, ChemkinBaseTableObject& thm);
+bool Decode(class CommBuffer& buffer, ChemkinBaseTableObject& thm);
+bool Encode(class CommBuffer& buffer, BensonBaseTableObject& thm);
+bool Decode(class CommBuffer& buffer, BensonBaseTableObject& thm);
+bool Encode(CommBuffer& buffer, CpPowerSeries& series);
+bool Decode(CommBuffer& buffer, CpPowerSeries& series);
+

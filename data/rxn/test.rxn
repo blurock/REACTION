@@ -1,0 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Barbieri
+%%
+STD-C2H+O2=HCO+CO            ethynyl-radical oxygen = formyl-radical carbonmonoxide
+ - StandardRateConstants Forward        13.00 0.00 29.31   cm3-mol-s-kJ logA
+STD-CH2+O2=HCO+OH            methylene oxygen = formyl-radical hydroxyl-radical
+ - StandardRateConstants Forward        14.00 0.00 15.49   cm3-mol-s-kJ logA

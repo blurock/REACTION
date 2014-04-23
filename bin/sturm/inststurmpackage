@@ -1,0 +1,169 @@
+#!/bin/sh 
+#
+# FILE     inststurmpackage-generic
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script for instantiating a STURM package.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+
+. `dirname $0`/sturm.sh
+
+
+#F inststurmpackage TPACKAGE GTYPE GPACKAGE*  . . . . Instantiates a package.
+#
+# DESCRIPTION
+#   This script instantiates template package TPACKAGE over ground type
+#   GTYPE coming from packages GPACKAGE and creates the instantiation files
+#   in a subdirectory of the current directory.
+#
+#   For example the line
+#
+#     inststurmpackage Array "Iv_Itvl<DF_DFlt>" Interval DoubleFloat
+#
+#   creates the subdirectory "Array,Itvl,DFlt" and inside creates all .cc files
+#   corresponding to .tcc files included in "$Sturm/include/Sturm/Array.irq".
+#
+#   If the ground type is an internal type, i.e. a type that is not exported
+#   by the package, give the path of the include file defining the type as
+#   a GPACKAGE argument, e.g.
+#
+#     inststurmpackage List FooIntern "SturmSrc/Foo/Intern.hh"
+#
+#   The .irq file must consist of three sections:
+#   * One beginning with "/*I */" followed by statements that should appear
+#     in all instantiation files.
+#   * One beginning with "/*C */" followed by statements instantiating the
+#     class(es).
+#   * One beginning with "/*P */" followed by groups of
+#     - an #include statement for a .tcc file, followed by
+#     - instantiation statements for the functions defined in the file.
+#
+#   Optional instantiation information is taken from the package
+#   specification file "$Sturm/etc/Sturm/Packages".
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+    ERR_FILE=3 # File error.
+#
+
+#
+# 1. Basic definitions.
+#
+
+ARGV0=`basename $0`
+
+HDRFILE=/tmp/inststurmpackage.$$
+
+#
+# 2. Argument and environment check.
+#
+
+if [ "$Sturm" = "" ]; then
+  eecho '$Sturm' is not set!
+  exit $ERR_ENV
+fi
+
+if [ $# -lt 2 -o "$1" = "-h" ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+TPACKAGE=$1; shift
+TYPE=$1; shift
+BTYPE=`echo $TYPE | sed 's/<.*$//'`
+OUTDIR=$TPACKAGE,`echo $TYPE \
+| sed '
+    s/ *//g
+    s/</,/g
+    s/>//g
+    s/[a-zA-Z]*_//g'`
+
+
+
+#
+# 3. Produce header part from .irq file.
+#
+
+awk '
+  /^\/\*I/ { section = 1; }
+  /^\/\*P/ { exit 0; }
+  /^\/\*C/ { exit 0; }
+  /^\/\*.*\*\// { next; }
+  /^\/\*/,/^\*\// { next; }
+           { print };
+' $Sturm/include/Sturm/$TPACKAGE.irq >$HDRFILE
+for GPACKAGE in $*; do
+  if expr "$GPACKAGE" : ".*/" >/dev/null; then
+    echo "#include \"$GPACKAGE\"" >>$HDRFILE
+  else
+    echo "#include \"Sturm/$GPACKAGE.hh\"" >>$HDRFILE
+  fi
+done
+echo "#define STURM_Type $TYPE" >>$HDRFILE
+awk '
+  /^  *C / { if ($2 == BTYPE) { found=1; next; } }
+  /^  *STURM_/ { if (found) { print("#define " $0); next; } }
+          { if (found)  exit 0; }
+' BTYPE=$BTYPE $Sturm/etc/Sturm/Packages >>$HDRFILE
+
+#
+# 4. Produce instantiation files from .irq file.
+#
+
+if [ ! -d $OUTDIR ]; then
+  mkdir $OUTDIR
+  if [ $? != 0 ]; then
+    errexit $ERR_FILE Could not create directory \"$OUTDIR\"!
+  fi
+fi
+awk '
+  /^\/\*I/ { section = 1; }
+  /^\/\*P/ { section = 2; }
+  /^\/\*C/ { print("CLASS"); section = 3; }
+  /^\/\*.*\*\// { next; }
+  /^\/\*/,/^\*\// { next; }
+  /^#include/ {
+	      if (section == 2) {
+	        outfile=$2;
+		gsub(/"/, "", outfile);
+		sub(/SturmSrc\/[a-zA-z]*\//, "", outfile);
+		print("FILE " outfile);
+	      }
+	      }
+      { if (section != 1) print };
+' $Sturm/include/Sturm/$TPACKAGE.irq \
+| while read code file; do
+  case $code in
+  CLASS)
+    outfile=$OUTDIR/_Class_.cc; cp $HDRFILE $outfile
+    ;;
+  FILE)
+    dir=`dirname $file`
+    if [ ! -d $OUTDIR/$dir ]; then
+      mkdir $OUTDIR/$dir
+      if [ $? != 0 ]; then
+        errexit $ERR_FILE Could not create directory \"$OUTDIR/$dir\"!
+      fi
+    fi
+    outfile=$OUTDIR/$dir/`basename $file .tcc`.cc; cp $HDRFILE $outfile
+    ;;
+  *)
+    if [ -f "$outfile" ]; then echo "$code" "$file" >>$outfile; fi
+    ;;
+  esac
+done
+
+#
+# 5. Finished.
+#
+
+rm -f $HDRFILE

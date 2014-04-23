@@ -1,0 +1,25 @@
+ENRG
+EQUI  1.0
+FUEL  H2   0.8
+FUEL  N2   0.2
+OXID  O2   0.21
+OXID  N2   0.79
+PROD  H2O
+PROD  N2
+PRES  1.0
+VOL   67.4
+TAU   3.0E-05
+TINL  298.
+QLOS  0.0
+PRNT  2
+TIME  50   1.E-6
+TIM2  50   1.E-6
+TEMP  1700
+SFLR  1.E-10
+CNTN
+END
+/        continuation problem
+PRNT  1
+SEN   H2 O2 H2O
+EQUI  1.2
+END

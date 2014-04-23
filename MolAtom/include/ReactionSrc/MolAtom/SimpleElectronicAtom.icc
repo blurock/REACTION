@@ -1,0 +1,77 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*Constructor
+*/
+ 
+/*F SimpleElectronicAtom()  . . . . . . . . . . . . . . . . empty constructor
+**
+**  DESCRIPTION
+**    
+**  REMARKS
+**
+*/
+inline SimpleElectronicAtom::SimpleElectronicAtom()
+	  {
+	  }
+ 
+/*F SimpleElectronicAtom(atom)  . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    atom: The atom information
+**
+**  REMARKS
+**
+*/     
+inline SimpleElectronicAtom::SimpleElectronicAtom(const SimpleElectronicAtom& atom)
+  : SimpleBondAtom(atom),
+    Valence(atom.Valence),
+    NumberOfBonds(atom.NumberOfBonds),
+    NumberOfElectrons(atom.NumberOfElectrons),
+    Group(atom.Group),
+    LonePairs(atom.LonePairs),
+    HydrogenCount(atom.HydrogenCount),
+    CovalentRadius(atom.CovalentRadius),
+    Shells(atom.Shells),
+    Screening(atom.Screening),
+    ZEff(atom.ZEff),
+    AtomElectronegativity(atom.AtomElectronegativity),
+    Aromatic(atom.Aromatic)
+{
+}
+
+
+/*F SimpleElectronicAtom(atom)  . . . . . . . . . . . . . .  copy constructor
+**
+**  DESCRIPTION
+**    atom: The atom information
+**
+**  REMARKS
+**
+*/     
+inline SimpleElectronicAtom::SimpleElectronicAtom(const MolFileAtom& atom)
+  : SimpleBondAtom(atom),
+    Valence(0),
+    NumberOfBonds(0),
+    NumberOfElectrons(0.0),
+    Group(0),
+    LonePairs(0),
+    HydrogenCount(0),
+    CovalentRadius(0.0),
+    Screening(0.0),
+    ZEff(0.0),
+    AtomElectronegativity(0.0),
+    Aromatic(0)
+{
+}
+
+

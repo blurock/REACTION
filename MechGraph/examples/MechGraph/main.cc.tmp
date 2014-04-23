@@ -1,0 +1,46 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*I  . . . INCLUDES  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+*/
+#include "Reaction/System.hh"
+#include "Reaction/LstOps.hh"
+#include "Reaction/Matrix.hh"
+#include "Reaction/Pairs.hh"
+#include "Reaction/Graph.hh"
+#include "Reaction/GraphCycle.hh"
+#include "Reaction/Molecule.hh"
+#include "Reaction/MoleculeSet.hh"
+#include "Reaction/Rxn.hh"
+#include "Reaction/DbaseRxn.hh"
+#include "Reaction/RxnMech.hh"
+#include "Reaction/Matrix.hh"
+#include "Reaction/Statistics.hh"
+#include "Reaction/ThermoTables.hh"
+#include "Reaction/Senkin.hh"
+#include "Reaction/Pairs.hh"
+#include "Reaction/Graph.hh"
+#include "Reaction/MechGraph.hh"
+
+template class list<BasicPair<double, DbaseReaction> >;
+template class list<BasicPair<Identify, double> >;
+template class list<BasicPair<Identify, int> >;
+template class list<ObjectList<Identify> >;
+
+int main(int argc, char *argv[])
+     {
+     GraphMechRun runit(argc,argv);
+     InitializeThermPropertyDecodeFunctions();
+     InitializeRxnPropertyDecodeFunctions();
+     InitializeONamePropertyDecodeFunctions();
+     return runit.Run();
+     }

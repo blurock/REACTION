@@ -1,0 +1,349 @@
+Leeds-CH4+C=CH+CH3  methane   +  C       =    CH     + methyl-radical    
+ - StandardRateConstants    Forward  5.00E13     0.00    100.48
+ - Notes  U      1.0                  
+ - Reference  [86GLA/MIL]
+Leeds-CH4+CH2=CH3+CH3  methane   + methylene    =   methyl-radical   + methyl-radical    
+ - StandardRateConstants    Forward  4.30E12     0.00    42.00
+ - Notes  D      1.0     296-707      
+ - Reference  [85BOH/DOB]
+Leeds-CH4+CH2(S)=CH3+CH3  methane   +  CH2(S)  =   methyl-radical   + methyl-radical    
+ - StandardRateConstants    Forward  7.00E13     0.00    0.00
+ - Notes  D      1.0     298          
+ - Reference  [80ASH/FUL], [83LAN/PET]
+Leeds-CH4+C2H=CH3+C2H2  methane   + ethynyl-radical    =   methyl-radical   + ethyne   
+ - StandardRateConstants    Forward  1.81E12     0.00    0.00
+Leeds-C2H2+C2H2=H2CCCCH+H  ethyne  + ethyne   =    H2CCCCH+hydrogen-radical      
+ - StandardRateConstants    Forward  2.00E09     0.00    242.00
+ - Notes   S     1.0     700-1300     
+ - Reference  [88DUR/AMO]
+Leeds-C2H2+O2=C2H+HO2  ethyne  + oxygen     =   ethynyl-radical   + peroxyl-radical    
+ - StandardRateConstants    Forward  1.20E13     0.00    312.00
+ - Notes   S     0.7     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-C2H2+O=CH2+CO  ethyne  + oxygen-atom      =   methylene   + carbonmonoxide     
+ - StandardRateConstants    Forward  2.17E06   2.1     6.57
+Leeds-C2H2+M=C2H+H+M  ethyne +  M        =   ethynyl-radical   + hydrogen-radical  +  M 
+ - StandardRateConstants    Forward  1.14E17     0.00    447.00
+ - ThirdBody   0 0.0  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes  B      0.5    1500-3500     
+ - Reference  [84WAR] (Ar)       4.00E16     0.00    447.00
+Leeds-C2H4+O=H+CH2HCO  ethene  + oxygen-atom      =   hydrogen-radical     +  CH2HCO  
+ - StandardRateConstants    Forward  4.74E06     1.88    0.75
+Leeds-C2H4+O=CH3+HCO  ethene  + oxygen-atom      =   methyl-radical   + formyl-radical    
+ - StandardRateConstants    Forward  8.13E06     1.88    0.75
+Leeds-C2H6+CH2(S)=CH3+C2H5  ethane  +  CH2(S)  =   methyl-radical   + ethyl-radical   
+ - StandardRateConstants    Forward  2.40E14     0.00    0.00
+ - Notes  D      1.0     298          
+ - Reference  [83LAN/PET]
+Leeds-C4H2+O=C3H2+CO  butadiyne  + oxygen-atom      =    C3H2   + carbonmonoxide     
+ - StandardRateConstants    Forward  7.89E12     0.00     5.64
+ - Notes  D      1.0     210- 423     
+ - Reference  [86MIT/NAV]
+Leeds-C4H2+OH=C3H2+HCO  butadiyne  + hydroxyl-radical     =    C3H2   + formyl-radical    
+ - StandardRateConstants    Forward  6.68E12     0.00    -1.71
+ - Notes  D/U    0.3     296- 688     C4H2+OH = (C3H2+HCO)(C4H+H2O)
+ - Reference  [84PER]
+Leeds-O2+CO=CO2+O  oxygen    + carbonmonoxide     =   carbondioxide   + oxygen-atom      
+ - StandardRateConstants    Forward  1.26E13     0.00    196.90
+ - Notes  F      0.7    1000-1400     
+ - Reference  [91KOI]
+Leeds-O2+C=CO+O  oxygen    +  C       =   carbonmonoxide    + oxygen-atom      
+ - StandardRateConstants    Forward  1.20E14     0.00     16.71
+ - Notes  F      0.18   1500-4200     
+ - Reference  [91DEA/DAV]
+Leeds-O2+H+H2O=HO2+H2O  oxygen    + hydrogen-radical    + water    =   peroxyl-radical  + water     
+ - StandardRateConstants    Forward  6.89E15     0.0   -8.73
+ - Notes  D      1.0     298- 639     
+ - Reference  [89HSU/AND]
+Leeds-O2+CH=CO+OH  oxygen    +  CH      =   carbonmonoxide    + hydroxyl-radical     
+ - StandardRateConstants    Forward  1.66E13     0.00    0.00
+Leeds-O2+CH=CO2+H  oxygen    +  CH      =   carbondioxide   + hydrogen-radical      
+ - StandardRateConstants    Forward  1.66E13     0.00    0.00
+Leeds-O2+CH2=CO2+H2  oxygen    + methylene    =   carbondioxide   + hydrogen     
+ - StandardRateConstants    Forward  5.43E12     0.00    6.24
+Leeds-O2+CH2=CO2+H+H  oxygen    + methylene    =   carbondioxide   + hydrogen-radical  + hydrogen-radical
+ - StandardRateConstants    Forward  5.43E12     0.00    6.24
+Leeds-O2+CH2=CO+OH+H  oxygen    + methylene    =   carbonmonoxide    + hydroxyl-radical + hydrogen-radical
+ - StandardRateConstants    Forward  8.15E12     0.00    6.24
+Leeds-O2+CH2=CO+H2O  oxygen    + methylene    =   carbonmonoxide    + water    
+ - StandardRateConstants    Forward  1.48E12     0.00    6.24
+Leeds-O2+CH2=CH2O+O  oxygen    + methylene    =   aldehyde  + oxygen-atom      
+ - StandardRateConstants    Forward  4.20E12     0.00    6.24
+Leeds-O2+CH2(S)=CO+OH+H  oxygen    +  CH2(S)  =   carbonmonoxide    + hydroxyl-radical + hydrogen-radical 
+ - StandardRateConstants    Forward  3.13E13    0.00    0.00
+Leeds-O2+C2H=HCCO+O  oxygen    + ethynyl-radical    =   allenal-radical  + oxygen-atom      
+ - StandardRateConstants    Forward  9.05E12     0.00    0.00
+Leeds-O2+C3H2=HCO+HCCO  oxygen    +  C3H2    =   formyl-radical   + allenal-radical   
+ - StandardRateConstants    Forward  1.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-O2+H2CCCH=CH2CO+HCO  oxygen    +  H2CCCH  =   allenal + formyl-radical    
+ - StandardRateConstants    Forward  3.01E10     0.00    12.00
+ - Notes  D      1.0     500- 900     
+ - Reference  [88SLA/GUT]
+Leeds-CO+O+M=CO2+M  carbonmonoxide    + oxygen-atom    +  M  =   carbondioxide   +  M        
+ - StandardRateConstants    Forward  1.54E15    0.00     12.56
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes  B      0.4     300-2500     
+ - Reference  [86TSA/HAM] (N2)    6.17E14    0.00     12.56
+Leeds-CO+OH=CO2+H  carbonmonoxide    + hydroxyl-radical     =   carbondioxide   + hydrogen-radical       
+ - StandardRateConstants    Forward  1.51E07    1.30     -3.20
+ - Notes  A      0.5     250-2000     
+ - Reference  [76BAU/DRY]
+Leeds-CO+HO2=CO2+OH  carbonmonoxide    + peroxyl-radical    =   carbondioxide   + hydroxyl-radical     
+ - StandardRateConstants    Forward  1.51E14     0.00    99.02
+ - Notes  B      0.3     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-CO2+CH2=CH2O+CO  carbondioxide   + methylene    =   aldehyde  + carbonmonoxide     
+ - StandardRateConstants    Forward  2.35E10     0.00    0.00
+ - Notes  B      0.2     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-CH2O+M=HCO+H+M  aldehyde  =   formyl-radical   + hydrogen-radical
+ - StandardRateConstants    Forward  1.40E36    -5.54   404.58
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+Leeds-CH2O+M=H2+CO+M  aldehyde +  M        =   hydrogen    + carbonmonoxide +  M 
+ - StandardRateConstants    Forward  3.26E36    -5.54   404.58
+ - ThirdBody   0                0.0   0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+Leeds-CH2CO+H=CH3+CO  allenal + hydrogen-radical      =   methyl-radical   + carbonmonoxide     
+ - StandardRateConstants    Forward  1.81E13     0.00     14.13
+Leeds-CH2CO+O=CH2+CO2  allenal + oxygen-atom      =   methylene   + carbondioxide    
+ - StandardRateConstants    Forward  1.33E12     0.00    5.65
+Leeds-CH2CO+O=CH2O+CO  allenal + oxygen-atom      =   aldehyde  + carbonmonoxide     
+ - StandardRateConstants    Forward  4.58E11     0.00    5.65
+Leeds-CH2CO+O=HCO+H+CO  allenal + oxygen-atom      =   formyl-radical   + hydrogen-radical + carbonmonoxide
+ - StandardRateConstants    Forward  2.52E11     0.00    5.65
+Leeds-CH2CO+O=HCO+HCO  allenal + oxygen-atom      =   formyl-radical   + formyl-radical    
+ - StandardRateConstants    Forward  2.52E11     0.00    5.65
+Leeds-CH2CO+OH=CH3+CO2  allenal + hydroxyl-radical     =   methyl-radical   + carbondioxide     
+ - StandardRateConstants    Forward  2.52E12   0.00    0.00
+Leeds-CH2CO+OH=CH2OH+CO  allenal + hydroxyl-radical     =   hydroxymethyl + carbonmonoxide      
+ - StandardRateConstants    Forward  4.68E12   0.00    0.00
+ - Notes  k(overall)=  7.20E12  0.00  0.00   D/U       296 CH2CO+OH = (CH3+CO2)(CH2OH+CO)(CH3O+CO)(HCO+CH2O)(HCCO+H2O)(CH2O+H+CO)
+ - Reference  [92OEH/TEM] 
+Leeds-CH2CO+M=CH2+CO+M  allenal   =   methylene   + carbonmonoxide 
+ - StandardRateConstants    Forward  6.57E15    0.00   241.03
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes  E      1.0    1650-1850     
+ - Reference  [86FRA/BHA]  (Ar)  2.30E15    0.00   241.03
+Leeds-CH2CO+M=HCCO+H+M  allenal  =   allenal-radical  + hydrogen-radical 
+ - StandardRateConstants    Forward  1.14E9     0.00    0.00
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes  E      1.0    2000-2300     
+ - Reference  [86FRA/BHA]        4.00E8     0.00    0.00
+Leeds-C+CH2=C2H+H   C      + methylene    =   ethynyl-radical   + hydrogen-radical      
+ - StandardRateConstants    Forward  5.00E13    0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-C+CH3=C2H2+H   C      + methyl-radical    =   ethyne  + hydrogen-radical      
+ - StandardRateConstants    Forward  5.00E13     0.00    0.00
+ - Notes  U/U    1.0            C+CH3 = (C2H2+H)(C2H+H2)
+ - Reference  [89MIL/BOW]
+Leeds-C+OH=CO+H   C      + hydroxyl-radical     =   carbonmonoxide    + hydrogen-radical      
+ - StandardRateConstants    Forward  5.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-H+CH=C+H2  hydrogen-radical     +  CH      =    C      + hydrogen     
+ - StandardRateConstants    Forward  8.43E12     0.00    0.00
+ - Notes  D      1.0     297          
+ - Reference  [89BEC/ENG]
+Leeds-H+CH2(S)=CH2+H  hydrogen-radical     +  CH2(S)  =   methylene   + hydrogen-radical      
+ - StandardRateConstants    Forward  2.00E14     0.00    0.00
+ - Notes  U/U    1.0                   H+CH2(S) = (CH2+H)(CH+H2)
+ - Reference  [89MIL/BOW]
+Leeds-CH4(+CH4)=CH3+H(+CH4)  methane  (+CH4)    =  methyl-radical   + H    (+CH4
+ - StandardRateConstants    Forward) 2.4E16     0.00    439.01
+ - Low          8.43E17    0.00  379.97   
+ - Troe        0.69  90  2210         
+Leeds-H+O+M=OH+M  hydrogen-radical     + oxygen-atom  =   hydroxyl-radical
+ - StandardRateConstants    Forward  1.18E19    -1.0    0.00
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes  S      0.7     300-2500     
+ - Reference  [86TSA/HAM]         4.71E18    -1.0    0.00
+Leeds-H+CH2OH=CH3+OH  hydrogen-radical     + hydroxymethyl  =   methyl-radical   + hydroxyl-radical     
+ - StandardRateConstants    Forward  1.15E14     0.00    6.00
+Leeds-H+CH2OH=CH2O+H2  hydrogen-radical     + hydroxymethyl  =   aldehyde  + hydrogen     
+ - StandardRateConstants    Forward  3.08E13     0.00    0.00
+Leeds-CH+CH2=C2H2+H   CH     + methylene    =   ethyne  + hydrogen-radical      
+ - StandardRateConstants    Forward  4.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-CH+CH3=C2H3+H   CH     + methyl-radical    =   ethenyl-radical  + hydrogen-radical      
+ - StandardRateConstants    Forward  3.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-CH+C2H3=CH2+C2H2   CH     + ethenyl-radical   =   methylene   + ethyne   
+ - StandardRateConstants    Forward  5.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-CH+OH=HCO+H   CH     + hydroxyl-radical     =   formyl-radical   + hydrogen-radical      
+ - StandardRateConstants    Forward  3.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-CH+HCCO=C2H2+CO   CH     + allenal-radical   =   ethyne  + carbonmonoxide     
+ - StandardRateConstants    Forward  5.00E13     0.00    0.00
+ - Notes  U/U    1.0          CH+HCCO = (C2H2+CO)(C2H+HCO)
+ - Reference  [89MIL/BOW]
+Leeds-CH2+CH2=C2H2+H2  methylene   + methylene    =   ethyne  + hydrogen     
+ - StandardRateConstants    Forward  1.20E13     0.00    3.33
+Leeds-CH2+C2H3=C2H2+CH3  methylene   + ethenyl-radical   =   ethyne  + methyl-radical    
+ - StandardRateConstants    Forward  1.81E13     0.00    0.00
+ - Notes  S      0.5     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-CH2+O=CO+H+H  methylene   + oxygen-atom      =   carbonmonoxide    + hydrogen-radical  + hydrogen-radical
+ - StandardRateConstants    Forward  7.20E13     0.00    0.00
+Leeds-CH2+OH=CH2O+H  methylene   + hydroxyl-radical     =   aldehyde  + hydrogen-radical      
+ - StandardRateConstants    Forward  1.81E13     0.00    0.00
+ - Notes  U      0.5     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-CH2+HCO=CH3+CO  methylene   + formyl-radical    =   methyl-radical   + carbonmonoxide     
+ - StandardRateConstants    Forward  1.81E13     0.00    0.00
+ - Notes  U      0.5     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-CH2+HCCO=C2H3+CO  methylene   + allenal-radical   =   ethenyl-radical  + carbonmonoxide     
+ - StandardRateConstants    Forward  3.00E13     0.00    0.00
+ - Notes  U/U    1.0                  
+ - Reference  [86GLA/MIL]
+Leeds-CH2+HCCO=C2H+CH2O  methylene   + allenal-radical   =   ethynyl-radical   + aldehyde   
+ - StandardRateConstants    Forward  1.00E13     0.00    8.37
+ - Notes  U/U    1.0                  
+ - Reference  [86GLA/MIL]
+Leeds-CH3+HCO=CH4+CO  methyl-radical   + formyl-radical    =   methane   + carbonmonoxide     
+ - StandardRateConstants    Forward  1.20E14     0.00    0.00
+ - Notes  B      0.3     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-C2H+C2H3=C2H2+C2H2  ethynyl-radical   + ethenyl-radical   =   ethyne  + ethyne   
+ - StandardRateConstants    Forward  1.90E13     0.00    0.00
+Leeds-C2H+OH=HCCO+H  ethynyl-radical   + hydroxyl-radical     =   allenal-radical  + hydrogen-radical      
+ - StandardRateConstants    Forward  2.00E13     0.00    0.00
+Leeds-C2H+OH=CH2+CO  ethynyl-radical   + hydroxyl-radical     =   methylene   + carbonmonoxide     
+ - StandardRateConstants    Forward  1.81E13     0.00    0.00
+ - Notes  U/U    0.7     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-C2H3+OH=C2H2+H2O  ethenyl-radical  + hydroxyl-radical     =   ethyne  + water    
+ - StandardRateConstants    Forward  5.00E12     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-C2H5+O=CH2O+CH3  ethyl-radical  + oxygen-atom      =   aldehyde  + methyl-radical    
+ - StandardRateConstants    Forward  6.62E13     0.00    0.00
+Leeds-H2CCCH+O=C2H2+CO+H   H2CCCH + oxygen-atom      =   ethyne  + carbonmonoxide + hydrogen-radical  
+ - StandardRateConstants    Forward  1.39E14   0.00    0.00
+ - Notes  D      1.0     295- 750     
+ - Reference  [91SLA/GUT]
+Leeds-H2CCCH+OH=C3H2+H2O   H2CCCH + hydroxyl-radical     =    C3H2   + water    
+ - StandardRateConstants    Forward  2.00E13     0.00    0.00
+ - Notes  U      1.0                  
+ - Reference  [89MIL/BOW]
+Leeds-H2CCCCH+M=C4H2+H+M   H2CCCCH =   butadiyne  + hydrogen-radical
+ - StandardRateConstants    Forward  1.12E16    0.00    194.62
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+Leeds-O+O+M=O2+M  oxygen-atom     + oxygen-atom  =   oxygen     
+ - StandardRateConstants    Forward  5.40E13    0.00    -7.48
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes   A     0.114   200-4000     
+ - Reference  [86TSA/HAM]  (Ar)   1.89E13    0.00    -7.48
+Leeds-O+CH3O=O2+CH3  oxygen-atom     + methoxy-radical  =  oxygen    + methyl-radical    
+ - StandardRateConstants    Forward  1.33E13     0.00    0.00
+Leeds-O+CH2OH=CH2O+OH  oxygen-atom     + hydroxymethyl  =   aldehyde  + hydroxyl-radical     
+ - StandardRateConstants    Forward  9.03E13     0.00    0.00
+ - Notes   D     1.0     300          
+ - Reference  [88GRO/RIE2]
+Leeds-OH+CH3O=CH2O+H2O  hydroxyl-radical    + methoxy-radical   =   aldehyde  + water     
+ - StandardRateConstants    Forward  1.81E13    0.00    0.00
+ - Notes   S     0.7     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-OH+CH2OH=CH2O+H2O  hydroxyl-radical    + hydroxymethyl  =   aldehyde  + water     
+ - StandardRateConstants    Forward  2.41E13    0.00    0.00
+ - Notes   S     0.5     300-2500     
+ - Reference  [86TSA/HAM]
+Leeds-OH+HCCO=HCO+HCO  hydroxyl-radical    + allenal-radical   =   formyl-radical   + formyl-radical     
+ - StandardRateConstants    Forward  1.00E13    0.00    0.00
+Leeds-OH+HCCO=CH2O+CO  hydroxyl-radical    + allenal-radical   =   aldehyde  + carbonmonoxide      
+ - StandardRateConstants    Forward  1.00E13    0.00    0.00
+Leeds-CH2OH+M=CH2O+H+M  hydroxymethyl  =   aldehyde  + hydrogen-radical
+ - StandardRateConstants    Forward  1.26E16     0.00    125.60
+ - ThirdBody   0                0.00  0.0 0.0
+ - ThirdBody   nitrogen         0.40  0.0 0.0
+ - ThirdBody   oxygen           0.40  0.0 0.0
+ - ThirdBody   carbonmonoxide   0.75  0.0 0.0
+ - ThirdBody   carbon-dioxide   1.5   0.0 0.0
+ - ThirdBody   water            6.5   0.0 0.0
+ - ThirdBody   methane          3.0   0.0 0.0
+ - ThirdBody   ethane           3.0   0.0 0.0
+ - ThirdBody   argon            0.35  0.0 0.0
+ - Notes   E     1.0    1372-1842     
+ - Reference  [89HID/OKI2]       4.40E15     0.00    125.60
+Leeds-HCCO+HCCO=C2H2+CO+CO  allenal-radical  + allenal-radical   =   ethyne + carbonmonoxide + carbonmonoxide
+ - StandardRateConstants    Forward  1.00E13     0.00    0.00
+ - Notes   U/U   1.0                  
+ - Reference  [89MIL/BOW]

@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  Chemkin
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "Chemkin".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     Chemkin Package
+@section  The "Chemkin" Package
+@cindex   package, Chemkin
+@cindex   Chemkin package
+@cindex   chm namespace
+@cindex   namespaces, chm
+
+@table @strong
+@item Package name
+@code{Chemkin}
+
+@item Namespace name
+@code{chm}
+
+@item Header files
+@file{Chemkin.hh}, @file{ChemkinType.hh}
+@end table
+
+
+@include Chemkin/Overview.texi
+
+@include Chemkin/Classes.texi

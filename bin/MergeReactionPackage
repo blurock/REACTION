@@ -1,0 +1,173 @@
+#!/bin/sh
+#
+# FILE     MergeReactionPackage
+# PACKAGE  Reaction
+# AUTHOR  Edward S. Blurock 
+#    (Adapted from  Sturm newsturmpackage, Andreas Neubacher)
+#------------------------------------------------------------------------------
+# CONTENT
+#   Shell script for merging a REACTION package into the library tree.
+#
+#  COPYRIGHT (C) 1996 Edward S. Blurock
+
+#I
+
+. `dirname $0`/Reaction.sh
+
+
+#F MergeReactionPackage PACKAGE . . Copies a package's files into the REACTION tree.
+#
+# DESCRIPTION
+#   This script copies all required files from a package working directory
+#   tree into the REACTION library tree.
+#
+#   The environment variable `Reaction' must be set giving the path to the
+#   REACTION root directory.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+    ERR_FILE=3 # File error.
+#
+
+#
+# 1. Basic definitions.
+#
+
+ARGV0=`basename $0`
+
+if [ "`echo -n`" = "-n" ]; then
+  nlecho () {
+    echo $*
+  }
+else
+  nlecho () {
+    echo -n $*
+  }
+fi
+
+eecho () {
+  echo >&2 "$ARGV0: Error --" $*
+}
+
+ecat () {
+  cat >&2
+}
+
+TMPFILE1=/tmp/mergesturmpackage1.$$
+
+
+#
+# 2. Argument and environment check.
+#
+
+if [ "$Reaction" = "" ]; then
+  eecho '$Reaction' is not set!
+  exit $ERR_ENV
+fi
+
+if [ $# = 0 -o $# -gt 1 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+if [ ! -d $1 ]; then
+  eecho PACKAGE argument \"$1\" invalid!
+  ecat <<ENDOFTEXT
+
+The package working directory "$1" must exist in the current directory
+and be readable.  Please correct the problem (e.g. by changing into the
+correct directory) and run this script again.
+ENDOFTEXT
+  exit $ERR_ARGS
+else
+  PACKAGE=$1
+fi
+
+SRCDIR=`pwd`/$PACKAGE
+DSTDIR=$Reaction
+
+
+#
+# 3. Ask for confirmation.
+#
+
+cat <<ENDOFTEXT
+This script will copy files from the package working directory
+
+	`pwd`/$PACKAGE
+
+for the package "$PACKAGE" into the REACTION library tree rooted at
+
+	$Reaction
+
+Are you sure you want to do this?
+
+ENDOFTEXT
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been copied."
+  exit 0
+else
+  echo
+fi
+
+cd $SRCDIR
+echo The following files will be copied:
+echo ==================================
+files 2>/dev/null | tee $TMPFILE1
+echo ==================================
+answer=x
+while [ "$answer" != "y" -a "$answer" != "n" ]; do
+  nlecho "Please enter 'y' to continue or 'n' to abort: "
+  read answer
+done
+if [ "$answer" = "n" ]; then
+  echo "Setup aborted -- no files and directories have been copied."
+  rm $TMPFILE1
+  exit 0
+else
+  echo
+fi
+
+
+#
+# 4. Copy files.
+#
+
+echo ===========================================================================
+echo Copying files ...
+echo
+
+cd $SRCDIR
+tar -cf - `cat $TMPFILE1` \
+| (cd $DSTDIR; tar -xvf -)
+
+if [ $? != 0 ]; then
+  eecho File copy using 'tar' failed!
+  rm -f $TMPFILE1
+  exit $ERR_FILE
+fi
+
+
+#
+# 5. Finished.
+#
+
+cat <<ENDOFTEXT
+
+===========================================================================
+The files listed above have been copied from the working directory tree for
+package "$PACKAGE" to the REACTION tree in
+
+	$DSTDIR
+
+Now do not forget to rebuild the REACTION library!
+ENDOFTEXT
+
+rm -f $TMPFILE1
+

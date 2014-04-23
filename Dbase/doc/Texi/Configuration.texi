@@ -1,0 +1,13 @@
+@c FILE     Configuration.texi
+@c PACKAGE  Dbase
+@c AUTHOR   Edward S. Blurock
+@c
+@c CONTENT
+@c   Configuration flag settings.
+@c   [Version with function specifications and implementation details.]
+@c
+@c COPYRIGHT (C) CoreObjects Library
+
+@set implementation
+@set functions
+@set manual

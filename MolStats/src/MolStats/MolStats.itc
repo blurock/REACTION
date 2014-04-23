@@ -1,0 +1,157 @@
+/*  FILE     
+**  PACKAGE     REACTION    
+**  AUTHOR   Edward S. Blurock
+**
+**  CONTENT
+**    
+**
+**  REFERENCES
+**
+**  COPYRIGHT (C) 1995  REACTION Project / Edward S. Blurock 
+*/
+ 
+/*S Boolean
+*/
+/*F ans = operator==(x,y) . . . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    x,y: to be compared
+**    ans: true if the atomic numbers are equal
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool operator==(const AtomicNumberCount<ValenceType>& x, 
+		const AtomicNumberCount<ValenceType>& y)
+	  {
+	  return x.AtomicNumber == y.AtomicNumber;
+	  }
+ 
+/*F ans = operator<(x,y)  . . . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    x,y: to be compared
+**    ans: true if the atomic number of x is less than y
+**    
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool operator<(const AtomicNumberCount<ValenceType>& x, 
+			    const AtomicNumberCount<ValenceType>& y)
+	  {
+	  return x.AtomicNumber < y.AtomicNumber;
+	  }
+ 
+/*F ans = operator==(x,y) . . . . . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    x.y: to be compared
+**    ans: true if the list of atomic numbers and valences are the same
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool operator==(const AtomCountList<ValenceType>& x,
+	       const AtomCountList<ValenceType>& y)
+     {
+     return 
+	  ( x.Valences == y.Valences) &&
+	       (x.AtomicNumbers == y.AtomicNumbers);
+     }
+/*S IO
+*/
+ 
+/*F out = operator<<(out,counts)  . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    out: The output stream
+**    counts: to be outputted
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+ostream&  operator<<(ostream& out,
+		     const AtomicNumberCount<ValenceType>& counts)
+	  {
+	  return counts.print(out);
+	  }
+ 
+/*F out = operator<<(out,counts)  . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    out: The output stream
+**    counts: to be outputted
+**    
+**  REMARKS
+**
+*/
+template <class ValenceType>
+ostream& operator<<(ostream& out,
+		    const AtomCountList<ValenceType>& counts)
+     {
+     return counts.print(out);
+     }
+/*F ans = Encode(buffer,cnt)  . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Encode(CommBuffer& buffer, AtomicNumberCount<ValenceType>& cnt)
+     {
+     return cnt.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,cnt)  . . . . . . . . . . . . . . . AtomicNumberCount
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Decode(CommBuffer& buffer, AtomicNumberCount<ValenceType>& cnt)
+     {
+     return cnt.DecodeThis(buffer);
+     }
+/*F ans = Encode(buffer,cnt)  . . . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Encode(CommBuffer& buffer, AtomCountList<ValenceType>& cnt)
+     {
+     return cnt.EncodeThis(buffer);
+     }
+/*F ans = Decode(buffer,cnt)  . . . . . . . . . . . . . . . . . AtomCountList
+**
+**  DESCRIPTION
+**    buffer: The buffer
+**    cnt: The counts
+**    ans: true if successful
+**
+**  REMARKS
+**
+*/
+template <class ValenceType>
+bool Decode(CommBuffer& buffer, AtomCountList<ValenceType>& cnt)
+     {
+     return cnt.DecodeThis(buffer);
+     }

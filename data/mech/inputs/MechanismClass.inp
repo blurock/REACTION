@@ -1,0 +1,34 @@
+ObjectClasses:
+%% -------------------------------------------------
+DataType: Mechanism The standard mechanism
+StandardMechanism 
+NameInInstance: Mechanism
+MoleculeSummary
+ReactionSummary
+StandardMolecule
+StandardReaction
+%  Moldat Information
+Linearity      Integer   1
+Eps            Real      252.0
+Sig            Real      4.760
+Dipole         Real      0.0
+Polarize       Real      0.0
+ZRotation      Real      1.0
+END
+%% -------------------------------------------------
+%% Mechanism Graph
+%% -------------------------------------------------
+DataType: MechanismGraph   The basic mechanism graph
+StandardMechanismGraph MechanismNode MechanismEdge MechanismNode MechanismNode MechanismEdge
+END
+ClassNamePairs:
+% The standard mechanism graph class name
+GraphClassName   String
+END
+%% -------------------------------------------------
+ObjectClasses:
+END
+%% -------------------------------------------------
+ClassNamePairs:
+END
+%% -------------------------------------------------

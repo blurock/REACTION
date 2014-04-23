@@ -1,0 +1,297 @@
+Algorithms  Setup
+Attributes:
+%% -------------------------------------------------
+%%   PrintMechLaTeX                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+PrintReverse LaTeX END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShort         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandardShortWithReverse         AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard ChemkinName PrintReverse END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   PrintMechStandard              AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+Standard END              % The Algorithm Keywords
+Print  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+PrintParameters   KeyWords
+SubMolecules      KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   InputGenerated                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Output END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+InputGenerated  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Generated   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   FillMechanism                  AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Fill END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+FillMechanism  END                          % Algorithm Specification
+                                    % Algorithm Input Parameters
+Parameters   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   MechanismAsGraph               AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities GraphAlg Create END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+MechanismAsGraph  END               % Algorithm Specification
+                                    % Algorithm Input Parameters
+Mechanism String
+GraphClassName String
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   SimpleReduction              AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities GraphAlg Reduce END      % The Algorithm Category
+FindLeaves AllowReverse Iterate END                                % The Algorithm Keywords
+SimpleReduction  END                % Algorithm Specification
+                                    % Algorithm Input Parameters
+Mechanism               String
+StandardMoleculeSummary StandardMoleculeSummary
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   SimpleReductionOnlyForward              AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities GraphAlg Reduce END      % The Algorithm Category
+FindLeaves Iterate END                           % The Algorithm Keywords
+SimpleReduction  END                % Algorithm Specification
+                                    % Algorithm Input Parameters
+Mechanism               String
+StandardMoleculeSummary StandardMoleculeSummary
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   ReduceMechanism                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Reduce END      % The Algorithm Category
+END                                 % The Algorithm Keywords
+Reduce  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+LumpedMechanismName           String
+LumpedMoleculesEquivalentSet  String
+ListOfSpeciesToRemove         KeyWords
+Mechanism                     String
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   AddClassKeyWords                 AlgorithmSummary
+%% -------------------------------------------------
+                                           % The name of the Algorithm
+Initial MechanismUtilities Reduce END      % The Algorithm Category
+ReplaceKey  END                            % The Algorithm Keywords
+ClassKeyWords  END                         % Algorithm Specification
+                                           % Algorithm Input Parameters
+TotalInstanceNameList         KeyWords
+Parameters                    KeyWords
+EquivalentSets                SetOfEquivalentSets
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Predicates END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+Form  END                           % Algorithm Specification
+                                    % Algorithm Input Parameters
+RootName                 String
+VariablesInInstance      KeyWords
+PredicateObject          ExactlyEqualPredicate
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Lumping END      % The Algorithm Category
+AtomsInMolecule END                                 % The Algorithm Keywords
+Distribution  END                   % Algorithm Specification
+                                    % Algorithm Input Parameters
+MoleculeNameList           String
+RootName                   String
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Grouping END      % The Algorithm Category
+AtomsInMolecule END                                 % The Algorithm Keywords
+Matrix  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+TotalInstanceNameList      KeyWords
+AttributeNames             KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                             % The name of the Algorithm
+Initial MechanismUtilities Grouping END      % The Algorithm Category
+FilterOutSingletons END                      % The Algorithm Keywords
+Group  END                                   % Algorithm Specification
+                                             % Algorithm Input Parameters
+EquivalentSets               SetOfEquivalentSets
+DescriptionMatrix            InstanceMatrix
+CutOffCriteria               Real
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Lumping END      % The Algorithm Category
+END                                 % The Algorithm Keywords
+RxnClasses  END                   % Algorithm Specification
+                                    % Algorithm Input Parameters
+ReactionClassList            KeyWords
+Mechanism                    Mechanism
+MolRxnClassesParameterNames  KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%                    AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities Predicates END      % The Algorithm Category
+ END                                % The Algorithm Keywords
+FromKeyWords  END                   % Algorithm Specification
+                                    % Algorithm Input Parameters
+RootName                 String
+PredicateObject          MemberOfKeyWord
+KeyWordList              KeyWords
+ParameterList            KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   CreateLumpedMolecules                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities LumpIt END      % The Algorithm Category
+TakeFirst END                                 % The Algorithm Keywords
+CreateLumpedMolecules  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+MoleculeList     KeyWords
+EquivalentSets   SetOfEquivalentSets
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   CreateLumpedReactions                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities LumpIt END      % The Algorithm Category
+END                                 % The Algorithm Keywords
+CreateLumpedReactions  END                         % Algorithm Specification
+                                    % Algorithm Input Parameters
+LumpedMoleculesEquivalentSet   SetOfEquivalentSets
+EquivalentSets                 SetOfEquivalentSets
+ReactionList                   KeyWords
+END
+                                    % Algorithm Output Parameters
+END
+%% -------------------------------------------------
+%%   CreateLumpedReactions                 AlgorithmSummary
+%% -------------------------------------------------
+                                    % The name of the Algorithm
+Initial MechanismUtilities LumpIt END      % The Algorithm Category
+END                                 % The Algorithm Keywords
+Build END                                % Algorithm Specification
+                                    % Algorithm Input Parameters
+ReactionList     KeyWords
+MoleculeList     KeyWords
+Mechanism        String
+END
+                                    % Algorithm Output Parameters
+END
+%%%%-----------------------------------------------------------------------------
+%%%%   ReadInstancesAlg    AlgorithmSummary
+       Initial  MechanismUtilities  Input  END    % Algorithm Category
+       END                     % Algorithm KeyWords
+       ReadMechanism END                               % Algorithm Specification
+                                              % Algorithm Input Parameters
+                               % (Name-Class Pairs)
+MoleculeClass           String
+ReactionClass           String
+MechanismClass          String
+ChemkinClass            String
+ThermoNameInInstance    String
+ChemkinNameInInstance   String
+LiteratureReference     String
+MoleculeSummaryName     String
+FileRoot                String
+ReactionRate            String
+ThirdBody               String
+ReactionRateHiLow       String
+       END
+                                              % Algorithm Result Parameters
+       END
+%% -------------------------------------------------
+%% =================================================
+%%      The Instances
+%% =================================================
+END

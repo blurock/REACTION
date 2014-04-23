@@ -1,0 +1,33 @@
+@c FILE     Main.texi
+@c PACKAGE  SenkinRates
+@c AUTHOR   Edward S. Blurock
+@c 
+@c CONTENT
+@c   Texinfo documentation for Reaction library package "SenkinRates".
+@c
+@c REFERENCES
+@c
+@c COPYRIGHT (C) Reaction Library
+
+@node     SenkinRates Package
+@section  The "SenkinRates" Package
+@cindex   package, SenkinRates
+@cindex   SenkinRates package
+@cindex   thm namespace
+@cindex   namespaces, thm
+
+@table @strong
+@item Package name
+@code{SenkinRates}
+
+@item Namespace name
+@code{thm}
+
+@item Header files
+@file{SenkinRates.hh}, @file{SenkinRatesType.hh}
+@end table
+
+
+@include SenkinRates/Overview.texi
+
+@include SenkinRates/Classes.texi

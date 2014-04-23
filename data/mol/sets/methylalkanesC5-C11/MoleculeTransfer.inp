@@ -1,0 +1,39 @@
+Transfer of Molecule Set Information
+Attributes:
+%% ------------------------------------
+%% InstanceNameList  KeyWords
+%% ------------------------------------
+2-methylbutane
+2-methylhexane
+2-methyloctane
+2-methylnonane
+2-methyldecane
+3-methylhexane
+3-methylheptane
+3-methyloctane
+3-methylnonane
+3-methyldecane
+4-methylheptane
+4-methyloctane
+4-methylnonane
+4-methyldecane
+5-methylnonane
+5-methyldecane
+END
+%% ------------------------------------
+%% ToMove       KeyWords
+%% ------------------------------------
+FromInstance  StoreMoleculeProperty Molecule 
+Chemkin MoleculeChemkin 
+ShortName ChemkinName
+ChemkinName ShortName
+MoleculeKeys Keys
+Linearity    Linearity
+Eps          Eps
+Sig          Sig
+Dipole       Dipole
+Polarize     Polarize
+ZRotation    ZRotation
+END
+%% ------------------------------------
+END

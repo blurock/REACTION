@@ -1,0 +1,7 @@
+Read /usr/local/Software/Interface/data/initialize/StandardAlgorithmsClass.inp /usr/local/Software/Interface/data/initialize/StandardAlgorithms.inp 0
+Read /usr/local/Software/Interface/data/initialize/StandardLogicClass.inp /usr/local/Software/Interface/data/initialize/StandardLogic.inp 0
+Read /usr/local/Software/Interface/data/initialize/StandardExpressionsClass.inp     /usr/local/Software/Interface/data/initialize/StandardExpressions.inp 0
+Flame SpeciesSensitivity.txt 0.000001
+Print Attribute MatrixObject
+MakeInstanceFromMatrix MatrixObject
+END

@@ -1,0 +1,72 @@
+C2H2+CH=C3H3                    ethyne methylyne                        = 3-propynyl
+C2H2+1-CH2=C3H3+H               ethyne singlet-methylene                = 3-propynyl hydrogen-radical
+C2H2+3-CH2=C3H3+H               ethyne triplet-methylene                = 3-propynyl hydrogen-radical
+C2H2+HCCO=C3H3+CO               ethyne allenal-radical                  = 3-propynyl carbonmonoxide
+C3H3+O=CO+C2H3                  3-propynyl oxygen-atom                  = carbonmonoxide ethenyl-radical
+C3H3+O2=HCCO+CH2O               3-propynyl oxygen                       = allenal-radical aldehyde
+C3H4P+H=C2H2+CH3                propyne hydrogen-radical              = ethyne methyl-radical
+C3H4P=C2H+CH3                   propyne                               = ethynyl-radical methyl-radical
+3-CH2+C2H2=C3H4P                triplet-methylene ethyne                 = propyne
+1-CH2+C2H2=C3H4P                singlet-methylene ethyne                = propyne
+%%%%C3H4P=C3H3+H                    propyne                               = 3-propynyl hydrogen-radical
+C3H4P+H=C3H3+H2                 propyne hydrogen-radical              = 3-propynyl hydrogen
+C3H4P+OH=C3H3+H2O               propyne hydroxyl-radical              = 3-propynyl water
+C3H4P+CH3=C3H3+CH4              propyne methyl-radical                = 3-propynyl methane
+C3H4P+C2H=C3H3+C2H2             propyne ethynyl-radical               = 3-propynyl ethyne
+C3H4P+C2H3=C3H3+C2H4            propyne ethenyl-radical               = 3-propynyl ethene
+C3H4P+O=C2H2+CH2O               propyne oxygen-atom                   = ethyne aldehyde
+C3H4P+O=C2H3+HCO                propyne oxygen-atom                   = ethenyl-radical formyl-radical
+C3H4P+OH=C2H3+CH2O              propyne hydroxyl-radical              = aldehyde
+C3H4P+OH=C2H4+HCO               propyne hydroxyl-radical              = ethene formyl-radical
+C3H4=C3H4P                      allene                                  = propyne
+C3H4+H=C2H2+CH3                 allene hydrogen-radical                 = ethyne methyl-radical
+3-CH2+C2H2=C3H4                 triplet-methylene ethyne                = allene
+1-CH2+C2H2=C3H4                 singlet-methylene ethyne                = allene
+C3H4+M=C3H3+H+M                 allene                                  = 3-propynyl hydrogen-radical
+C3H4+H=C3H3+H2                  allene hydrogen-radical                 = 3-propynyl hydrogen
+C3H4+OH=C3H3+H2O                allene hydroxyl-radical                 = 3-propynyl water
+C3H4+CH3=C3H3+CH4               allene methyl-radical                   = 3-propynyl methyl-radical
+C3H4+C2H=C3H3+C2H2              allene ethynyl-radical                  = 3-propynyl ethyne
+C3H4+O=C2H2+CH2O                allene oxygen-atom                      = ethyne aldehyde
+C3H4+O=C2H3+HCO                 allene oxygen-atom                      = ethenyl-radical formyl-radical
+C3H4+OH=C2H3+CH2O               allene hydroxyl-radical                 = ethenyl-radical aldehyde
+C3H4+OH=C2H4+HCO                allene hydroxyl-radical                 = ethene formyl-radical
+C2H2+CH3=C3H5                   ethyne methyl-radical                   = 3-propenyl-radical
+C2H4+3-CH2=C3H5+H               ethene triplet-methylene                = 3-propenyl-radical hydrogen-radical
+C3H5=C3H4P+H                    3-propenyl-radical                          = propyne hydrogen-radical
+C3H5+H=C3H4P+H2                 3-propenyl-radical hydrogen-radical         = propyne hydrogen
+C3H5+O2=C3H4P+HO2               3-propenyl-radical oxygen                   = propyne peroxyl-radical
+C3H6=C2H3+CH3                   propene                                 = ethenyl-radical methyl-radical
+C3H6=C3H5+H                     propene                                 = 3-propenyl-radical hydrogen-radical
+C3H6+H=C3H5+H2                  propene hydrogen-radical                = 3-propenyl-radical hydrogen
+C3H6+CH3=C3H5+CH4               propene methyl-radical                  = 3-propenyl-radical methane
+C3H6+C2H5=C3H5+C2H6             propene ethyl-radical                   = 3-propenyl-radical ethane
+C3H6+O=C2H4+CH2O                propene oxygen-atom                     = ethene aldehyde
+C3H6+O=C2H5+HCO                 propene oxygen-atom                     = ethyl-radical formyl-radical
+C3H6+O=CH3CO+CH3                propene oxygen-atom                     = ethanoyl-radical methyl-radical
+C3H6+OH=C2H5+CH2O               propene hydroxyl-radical                = ethyl-radical aldehyde
+C3H6+OH=CH3CHO+CH3              propene hydroxyl-radical                = ethanal methyl-radical
+N-C3H7=CH3+C2H4                 1-propyl-radical                        = methyl-radical ethene
+N-C3H7=H+C3H6                   1-propyl-radical                        = hydrogen-radical propene
+N-C3H7+O2=C3H6+HO2              1-propyl-radical oxygen                 = propene peroxyl-radical
+I-C3H7=C3H6+H                   2-propyl-radical                        = propene hydrogen-radical
+I-C3H7=C2H4+CH3                 2-propyl-radical                        = ethene methyl-radical
+C2H5+CH3=C3H8                   ethyl-radical methyl-radical            = propane
+C3H8+H=I-C3H7+H2                propane hydrogen-radical                = 2-propyl-radical hydrogen
+C3H8+H=N-C3H7+H2                propane hydrogen-radical                = 1-propyl-radical hydrogen
+C3H8+O=I-C3H7+OH                propane oxygen-atom                     = 2-propyl-radical hydroxyl-radical
+C3H8+O=N-C3H7+OH                propane oxygen-atom                     = 1-propyl-radical hydroxyl-radical
+C3H8+OH=I-C3H7+H2O              propane hydroxyl-radical                = 2-propyl-radical water
+C3H8+OH=N-C3H7+H2O              propane hydroxyl-radical                = 1-propyl-radical water
+C3H8+HO2=I-C3H7+H2O2            propane peroxyl-radical                 = 2-propyl-radical hydrogen-peroxide
+C3H8+HO2=N-C3H7+H2O2            propane peroxyl-radical                 = 1-propyl-radical hydrogen-peroxide
+C3H8+CH3=CH4+I-C3H7             propane methyl-radical                  = methane 2-propyl-radical 
+CH3+C3H8=CH4+N-C3H7             propane methyl-radical                  = methane 1-propyl-radical
+C3H8+O2=I-C3H7+HO2              propane oxygen                          = 2-propyl-radical peroxyl-radical
+C3H8+O2=N-C3H7+HO2              propane oxygen                          = 1-propyl-radical peroxyl-radical
+C3H8+CH3O=N-C3H7+CH3OH          propane methoxy-radical                 = 1-propyl-radical methanol
+C3H8+CH3O=I-C3H7+CH3OH          propane methoxy-radical                 = 1-propyl-radical methanol
+C3H6O=CH3CO+CH3                 2-propanal                              = ethanoyl-radical methyl-radical
+C3H6O+CH3=CH2CO+CH4+CH3         2-propanal methyl-radical               = allenal methane methyl-radical
+C3H6O+H=CH2CO+H2+CH3            2-propanal hydrogen-radical             = allenal hydrogen methyl-radical
+C3H6O+C2H3=CH2CO+C2H4+CH3       2-propanal ethenyl-radical              = allenal ethene methyl-radical

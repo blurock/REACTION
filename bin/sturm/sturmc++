@@ -1,0 +1,92 @@
+#!/bin/sh
+#
+# FILE     sturmc++-gnu
+# PACKAGE  Maintenance
+# AUTHOR   Andreas Neubacher
+#
+# CONTENT
+#   Shell script used as a wraparound for the GNU C++ compiler.
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+
+#f help . . . . . . . . . . . . . . . . . . . . . Writes help text to STDOUT.
+
+help() {
+  awk '/^#F/,/^$/' <$0 \
+  | sed "s/^#F [A-Za-z][^ ]*/$ARGV0/; s/^#//" >&2
+}
+
+
+#F sturmc++ [C++ compiler options] . . . . . . wraparound for the C++ compiler.
+#
+# DESCRIPTION
+#   This is a wraparound for the C++ compiler, which sets the include file
+#   search path and library search path.
+#
+#   The environment variable `Sturm' must be set giving the path to the
+#   STURM root directory.
+#
+# OPTIONS
+#   Identical to the options that may be given to the C++ compiler.
+#
+#   "-O" compiles and links optimized STURM files,
+#   "-g" compiles and links debugging STURM files, falling back to optimized
+#      libraries if debugging libraries do not exist,
+#   "-DSTURM_PROFILING" compiles and links profiling STURM files, falling
+#      back to optimized libraries if debugging libraries do not exist.
+#   If neither of these option is given, optimized libraries are linked by
+#   default.
+#
+# EXIT CODES
+    ERR_ARGS=1 # Error on arguments.
+    ERR_ENV=2  # Error on environment.
+#
+# REFERENCES
+#   c++(1)
+
+ARGV0=`basename $0`
+
+#
+# 1. Argument and environment check.
+#
+
+if [ $# = 0 ]; then
+  help
+  exit $ERR_ARGS
+fi
+
+if [ "$Sturm" = "" ]; then
+  echo 1>&2 $ARGV0: 'Error -- $Sturm not set!'
+  exit $ERR_ENV
+fi
+
+if expr >/dev/null "$*" : ".*-O"; then
+  lspeed=o
+elif expr >/dev/null "$*" : ".*-g"; then
+  lspeed=d
+elif expr >/dev/null "$*" : ".*-DSTURM_PROFILING"; then
+  lspeed=p
+else
+  lspeed=o
+fi
+
+if expr >/dev/null "$*" : ".*-[cESM]"; then
+  link=
+else
+  if [ $lspeed != o ]; then
+    link="-L$Sturm/lib/Sturm/s$lspeed -L$Sturm/lib/Sturm/so -lgmp -lm"
+  else
+    link="-L$Sturm/lib/Sturm/so -lgmp -lm"
+  fi
+  if expr >/dev/null "$*" : ".*-lWindow"; then
+    link="$link -lXt -lX11"
+  fi
+fi
+
+
+#
+# 2. Call C++ compiler.
+#
+
+exec g++ $* -I$Sturm/include $link

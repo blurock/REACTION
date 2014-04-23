@@ -1,0 +1,91 @@
+InstanceSet  =====================A Set of Instances==========================
+Attributes:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10405100 methane methane
+CH4  CH4  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH4                     C   1H   4    0    0G   300.000  5000.0001000.000      1
+ 1.68347895e+00 1.02372402e-02-3.87512910e-06 6.78558487e-10-4.50342312e-14    2
+-1.00807900e+04 9.62339497e+00 7.78741479e-01 1.74766798e-02-2.78340904e-05    3
+ 3.04970804e-08-1.22393103e-11-9.82522852e+03 1.37221899e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20304100 methyl-radical methyl-radical
+CH3  CH3  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3                     C   1H   3    0    0G   300.000  5000.0001000.000      1
+ 2.84405208e+00 6.13797409e-03-2.23034499e-06 3.78516107e-10-2.45215903e-14    2
+ 1.64378105e+04 5.45269680e+00 2.43044305e+00 1.11240996e-02-1.68021998e-05    3
+ 1.62182907e-08-5.86495305e-12 1.64237793e+04 6.78979397e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10506100 methanol methanol
+CH3OH  CH3OH  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3OH                   C   1H   4O   1    0G   300.000  5000.0001000.000      1
+ 4.02906084e+00 9.37659293e-03-3.05025401e-06 4.35879305e-10-2.22472306e-14    2
+-2.61579102e+04 2.37819600e+00 2.66011500e+00 7.34150782e-03 7.17005105e-06    3
+-8.79319373e-09 2.39056995e-12-2.53534805e+04 1.12326298e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20405100 methoxy-radical methoxy-radical
+CH3O  CH3O  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O                    C   1H   3O   1    0G   300.000  3000.0001000.000      1
+ 3.77080011e+00 7.87149742e-03-2.65638391e-06 3.94443089e-10-2.11261604e-14    2
+ 1.27832497e+02 2.92957497e+00 2.10620403e+00 7.21659511e-03 5.33847196e-06    3
+-7.37763584e-09 2.07561095e-12 9.78601074e+02 1.31521797e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10304100 aldehyde aldehyde
+CH2O  CH2O  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2O                    C   1H   2O   1    0G   300.000  5000.0001000.000      1
+ 2.99560595e+00 6.68132119e-03-2.62895492e-06 4.73715289e-10-3.21251713e-14    2
+-1.53203701e+04 6.91257191e+00 1.65273094e+00 1.26314396e-02-1.88816794e-05    3
+ 2.05003108e-08-8.41323712e-12-1.48654004e+04 1.37848196e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20203100 formyl-radical formyl-radical
+HCO  HCO  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+HCO                     H   1C   1O   1    0G   300.000  5000.0001000.000      1
+ 3.55727100e+00 3.34557309e-03-1.33500600e-06 2.47057291e-10-1.71385106e-14    2
+ 3.91632397e+03 5.55229902e+00 2.89832997e+00 6.19914709e-03-9.62308422e-06    3
+ 1.08982503e-08-4.57488518e-12 4.15992188e+03 8.98361397e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20506100 methylperoxy-radical methylperoxy-radical
+CH3O2  CH3O2  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2                   C   1H   3O   2    0G   300.000  5000.0001385.000      1
+ 5.95787907e+00 7.90728629e-03-2.68246231e-06 4.13891338e-10-2.39007338e-14    2
+-3.78224457e+02-3.53695130e+00 4.26146889e+00 1.00873597e-02-3.21506195e-06    3
+ 2.09409268e-10 4.18339103e-14 4.73129639e+02 6.34599066e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20405101 hydroxymethyl-radical hydroxymethyl-radical
+CH2OH  CH2OH  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH2OH                   H   3C   1O   1    0G   250.000  4000.0001000.000      1
+ 6.32751989e+00 3.60827101e-03-3.20154697e-07-1.93874999e-10 3.50970507e-14    2
+-4.47450879e+03-8.32936573e+00 2.86262798e+00 1.00152697e-02-5.28543580e-07    3
+-5.13853982e-09 2.24604103e-12-3.34967896e+03 1.03979397e+01                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10607100 methyl-hydroperoxide methyl-hydroperoxide
+CH3O2H  CH3O2H  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CH3O2H                  C   1H   4O   2    0G   300.000  5000.0001390.000      1
+ 8.43117046e+00 8.06817878e-03-2.77094932e-06 4.31332248e-10-2.50692140e-14    2
+-1.96678770e+04-1.86137924e+01 3.23442817e+00 1.90129764e-02-1.13386286e-05    3
+ 3.40306650e-09-4.11830211e-13-1.77197930e+04 9.75951099e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 20102100 carbon-monoxide carbon-monoxide
+CO  CO  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CO                      C   1O   1    0    0G   300.000  5000.0001000.000      1
+ 3.02507806e+00 1.44268898e-03-5.63082779e-07 1.01858098e-10-6.91095198e-15    2
+-1.42683496e+04 6.10821819e+00 3.26245189e+00 1.51194097e-03-3.88175522e-06    3
+ 5.58194380e-09-2.47495102e-12-1.43105400e+04 4.84889698e+00                   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Instance: 10203100 carbon-dioxide carbon-dioxide
+CO2  CO2  SourceREACT C1HO END 
+Baulch.et.al.92 J. Phys. Chem. Ref. Data, 21:411-429,1992; D.L. Baulch, et. al.; Hydrocarbon Combustion Reaction Constants
+CO2                     C   1O   2    0    0G   300.000  5000.0001000.000      1
+ 4.45362282e+00 3.14016896e-03-1.27841099e-06 2.39399695e-10-1.66903302e-14    2
+-4.89669609e+04-9.55395877e-01 2.27572489e+00 9.92207229e-03-1.04091096e-05    3
+ 6.86668722e-09-2.11728009e-12-4.83731406e+04 1.01884899e+01                   4
+END
