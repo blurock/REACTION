@@ -32,7 +32,7 @@ $(cREACTION):
 	popd;
 
 $(mREACTION):
-	MergePackage $(subst $(space)$(mergeprefix),$(empty),$(space)$@) Reaction
+	$(MergePackage) $(subst $(space)$(mergeprefix),$(empty),$(space)$@) Reaction
 
 .PHONY: $(cREACTION) $(mREACTION) compileReaction mergeReaction
 
