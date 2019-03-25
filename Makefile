@@ -1,3 +1,6 @@
+SHELL         =/bin/bash
+MergePackage   = $(ANALYSIS_BINARIES)/MergePackage
+
 REACTION=\
 	StaticAtom MolAtom MolBond Molecule Rxn SECharge ThermoTables MolStats ThermoProps Utilities EquilibriumConst\
         Mechanism MechLumping Flame MechanismGraph FullReaction
