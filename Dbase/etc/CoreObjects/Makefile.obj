@@ -1,0 +1,74 @@
+# FILE     Makefile.obj
+# PACKAGE  Dbase
+# AUTHOR   Edward S. Blurock
+#
+# CONTENT
+#   GNU Makefile for object files of the STURM library package "Dbase".
+#   This file should be used from withing the "obj/" tree in the form
+#
+#	make -f $(PackageRoot)/etc/CoreObjects/Makefile.obj all
+#
+#   and will produce ".d" and ".o" files for all ".c" and ".cc" files in the
+#   corresponding directory within the "src/" tree.
+#
+#   If the "src/" tree is not rooted in the same directory as the "obj/"
+#   tree, a path to the source tree must be given by the command line
+#   argument
+#
+#	make SRCDIR=Path-to-src-tree ...
+#
+# COPYRIGHT (C)  STURM Project, 1995 RISC Linz
+
+#I
+include $(PackageRoot)/etc/CoreObjects/MakeDef
+ifeq ($(wildcard Makefile), Makefile)
+  include Makefile
+endif
+
+
+#V Variable definitions.
+
+SRCROOT=$(shell pwd | sed "s/\/obj\/.*$$/\/src/")
+SRCDIR:=$(SRCROOT)/$(shell pwd | sed "s/^.*\/obj\///")
+CSRC=$(filter-out *.c, $(shell cd $(SRCDIR); echo *.c))
+CCSRC=$(filter-out *.cc, $(shell cd $(SRCDIR); echo *.cc))
+ifdef ALTSRCDIR
+  CSRC+=$(filter-out *.c, $(shell cd $(ALTSRCDIR); echo *.c))
+  CCSRC+=$(filter-out *.cc, $(shell cd $(ALTSRCDIR); echo *.cc))
+endif
+OBJS:=\
+  $(patsubst %.c,%.o,$(CSRC))\
+  $(patsubst %.cc,%.o,$(CCSRC))
+
+VPATH=$(SRCDIR) $(ALTSRCDIR)
+
+#D Dependencies.
+
+%.d: %.c
+	@$(SHELL) -ec '$(CC) -MM $(CPPFLAGS) $< | sed '\''s/$*.o/& $@/g'\'' > $@'
+	@echo Updated \"$@\".
+
+%.d: %.cc
+	@$(SHELL) -ec '$(CXX) -MM $(CPPFLAGS) $< | sed '\''s/$*.o/& $@/g'\'' > $@'
+	@echo Updated \"$@\".
+
+
+ifndef CLEAN
+  include $(OBJS:.o=.d)
+endif
+
+
+#F Default targets.
+
+parallel: $(OBJS)
+sequential: $(OBJS)
+any: $(OBJS)
+all: $(OBJS)
+
+clean::
+	$(RM) *.d
+
+
+#f Special targets.
+
+.SUFFIXES: .icc
